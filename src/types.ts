@@ -44,3 +44,10 @@ export interface CheckoutFormValues {
   address: string
   city: string
 }
+
+export interface CheckoutConfirmation {
+  items: CartItem[]
+  delivery: CheckoutFormValues
+  subtotalCents: number
+  totalCents: number
+}

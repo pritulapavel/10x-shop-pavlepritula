@@ -16,8 +16,9 @@ Checkboxes mark verified work only.
 - **12 (complete):** Shared items, `addItem` and the Header badge were brought
   forward for Catalog. `removeItem`, `setQuantity`, `clearCart` and synchronization
   with Catalog, Product and Cart are now implemented and verified.
-- [ ] **14–16: Checkout and review.** Add the checkout form, local order
-  confirmation, and the React concepts review. Checkout remains a protected shell.
+- [x] **14–16: Checkout and review.** Four-field checkout, local confirmation,
+  duplicate-submit protection, and the required React concepts are implemented
+  and verified. Quality, final documentation and deployment stay planned below.
 - [ ] **19–23: Quality.** Check the UI at 375px and desktop, hover/focus states,
   and the purchase flow. Add an Error Boundary, record real debugging sessions,
   and finish with clean typecheck/build results.
@@ -117,3 +118,39 @@ Checkboxes mark verified work only.
   direct clearing without a dialog, and integer-cent currency calculations.
 - Temporary verification routes, overrides and server were removed. No pending
   checks for this stage. Tasks 14–16 remain planned; no Git writes or deployment.
+
+## Stage 14–16 verification
+
+- Checkout has exactly four controlled fields, submit-time React validation,
+  associated labels/errors and visible focus. Invalid submissions preserve values/cart.
+- Cart and Checkout share `calculateSubtotalCents`, `toCents` and `formatUSD`.
+  Confirmation stores independent item/delivery copies and totals before clearing.
+  A ref blocks immediate duplicate submits; submission errors allow a safe retry.
+- Confirmation renders before the empty-cart redirect. Orders use React state
+  only, with no API, persistence, order numbers or extra checkout fields.
+- Passed: `npm run typecheck`, `npm run lint`, and `npm run build`.
+- Browser-verified guest Cart → Login → Checkout, authenticated empty-cart redirect,
+  exact empty/whitespace/short/invalid-email errors, correction and successful submit.
+- Browser-verified matching Cart/Checkout totals (`$39.97`), saved delivery/items,
+  exact confirmation message, disappearing badge, empty Cart and stable confirmation.
+  A rapid double click and a new purchase (`$9.99`) also passed without a page reload.
+- Visually verified Checkout/confirmation at 375px and 1280px, summary below/beside
+  the form, keyboard focus and no horizontal overflow. Browser console was clean.
+- Temporary Node assertions verified trim boundaries, independent item copies,
+  five immediate cached submits processing once, failure before clearing preserving
+  values/cart and allowing retry, confirmation priority and no order API calls.
+- Task 16 review found no new application bugs; DEBUG-LOG.md history is preserved.
+  No pending checks or temporary verification overrides remain for this stage.
+
+### Task 16: examples in the actual code
+
+| Concept | Example |
+| --- | --- |
+| Typed props and children | `CheckoutSummaryProps`; `AuthProvider` and `CartProvider` render `children` |
+| Callback props | `ProductGrid` passes `onAdd`; `QuantityStepper` calls `onChange` |
+| map and stable keys | `ProductGrid`: `product.id`; `CheckoutSummary`: `item.productId` |
+| Conditional rendering | `Checkout`: confirmation, empty redirect, form and errors |
+| Controlled forms and useState | `Login` and `Checkout`: `value`, `onChange`, values/errors state |
+| Shared Context | `AuthContext` and `CartContext` provide state/actions across routes |
+| Effects and cleanup | `Catalog` (`[]`) and `Product` (`[productId]`) abort requests; `ScrollToTop` depends on `pathname` |
+| Immutable updates | `CartContext` functional updates; `Checkout` copies items with `map`/spread |

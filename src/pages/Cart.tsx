@@ -1,14 +1,11 @@
 import { Link } from 'react-router-dom'
 import QuantityStepper from '../components/QuantityStepper'
 import { useCart } from '../context/CartContext'
-import { formatUSD, toCents } from '../utils/currency'
+import { calculateSubtotalCents, formatUSD, toCents } from '../utils/currency'
 
 function Cart() {
   const { items, removeItem, setQuantity, clearCart } = useCart()
-  const subtotalCents = items.reduce(
-    (total, item) => total + toCents(item.price) * item.quantity,
-    0,
-  )
+  const subtotalCents = calculateSubtotalCents(items)
 
   function handleClearCart() {
     if (window.confirm('Clear the cart? This cannot be undone.')) {
