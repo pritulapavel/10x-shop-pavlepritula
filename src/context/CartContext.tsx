@@ -4,6 +4,9 @@ import type { CartState, Product } from '../types'
 
 interface CartContextValue extends CartState {
   addItem: (product: Product, quantity: number) => void
+  removeItem: (productId: number) => void
+  setQuantity: (productId: number, quantity: number) => void
+  clearCart: () => void
 }
 
 interface CartProviderProps {
@@ -31,7 +34,9 @@ export function CartProvider({ children }: CartProviderProps) {
       if (existingItem) {
         return {
           items: currentCart.items.map((item) =>
-            item.productId === product.id ? { ...item, quantity: nextQuantity } : item,
+            item.productId === product.id
+              ? { ...item, quantity: nextQuantity, stock: product.stock }
+              : item,
           ),
         }
       }
@@ -52,8 +57,38 @@ export function CartProvider({ children }: CartProviderProps) {
     })
   }
 
+  function removeItem(productId: number) {
+    setCart((currentCart) => ({
+      items: currentCart.items.filter((item) => item.productId !== productId),
+    }))
+  }
+
+  function setQuantity(productId: number, quantity: number) {
+    if (!Number.isInteger(quantity) || quantity <= 0) {
+      return
+    }
+
+    setCart((currentCart) => {
+      const existingItem = currentCart.items.find((item) => item.productId === productId)
+
+      if (!existingItem || quantity > existingItem.stock) {
+        return currentCart
+      }
+
+      return {
+        items: currentCart.items.map((item) =>
+          item.productId === productId ? { ...item, quantity } : item,
+        ),
+      }
+    })
+  }
+
+  function clearCart() {
+    setCart(() => ({ items: [] }))
+  }
+
   return (
-    <CartContext.Provider value={{ ...cart, addItem }}>
+    <CartContext.Provider value={{ ...cart, addItem, removeItem, setQuantity, clearCart }}>
       {children}
     </CartContext.Provider>
   )

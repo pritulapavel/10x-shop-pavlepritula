@@ -1,19 +1,13 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { Product } from '../types'
+import { formatUSD } from '../utils/currency'
 
 interface ProductCardProps {
   product: Product
   quantityInCart: number
   onAdd: () => void
 }
-
-const usdFormatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2,
-})
 
 function ProductCard({ product, quantityInCart, onAdd }: ProductCardProps) {
   const [quantityBeforeAdd, setQuantityBeforeAdd] = useState<number | null>(null)
@@ -44,7 +38,7 @@ function ProductCard({ product, quantityInCart, onAdd }: ProductCardProps) {
         </h2>
       </Link>
       <p className="mb-4 mt-3 text-lg font-semibold text-slate-900">
-        {usdFormatter.format(product.price)}
+        {formatUSD(product.price)}
       </p>
       <button
         type="button"
