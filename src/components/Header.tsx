@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
+import { useCart } from '../context/CartContext'
 
 const navigationClassName =
   'rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-indigo-50 hover:text-indigo-700'
@@ -10,6 +11,8 @@ function getNavLinkClassName({ isActive }: { isActive: boolean }) {
 
 function Header() {
   const { isLoggedIn, logout } = useAuth()
+  const { items } = useCart()
+  const cartQuantity = items.reduce((total, item) => total + item.quantity, 0)
 
   return (
     <header className="border-b border-slate-200 bg-white">
@@ -29,6 +32,14 @@ function Header() {
           </NavLink>
           <NavLink to="/cart" className={getNavLinkClassName}>
             Cart
+            {cartQuantity > 0 && (
+              <span
+                aria-label={`${cartQuantity} ${cartQuantity === 1 ? 'item' : 'items'} in cart`}
+                className="ml-1 inline-flex min-w-5 items-center justify-center rounded-full bg-indigo-600 px-1.5 py-0.5 text-xs font-semibold text-white"
+              >
+                {cartQuantity}
+              </span>
+            )}
           </NavLink>
           {isLoggedIn ? (
             <button
