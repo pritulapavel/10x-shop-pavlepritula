@@ -6,7 +6,7 @@ interface QuantityStepperProps {
 }
 
 const buttonClassName =
-  'h-10 w-10 cursor-pointer rounded-md text-lg font-medium text-indigo-700 hover:bg-indigo-50 disabled:cursor-not-allowed disabled:text-slate-400 disabled:hover:bg-white'
+  'h-11 w-11 cursor-pointer rounded-md text-lg font-medium text-indigo-700 hover:bg-indigo-50 disabled:cursor-not-allowed disabled:text-slate-400 disabled:hover:bg-white'
 
 function QuantityStepper({ quantity, max, label, onChange }: QuantityStepperProps) {
   return (

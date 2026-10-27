@@ -5,7 +5,7 @@ import { useAuth } from '../context/AuthContext'
 import type { LoginFormValues } from '../types'
 
 const inputClassName =
-  'w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-base text-slate-900 focus:border-indigo-600'
+  'min-h-11 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-base text-slate-900 focus:border-indigo-600'
 
 function Login() {
   const [values, setValues] = useState<LoginFormValues>({ username: '', password: '' })
@@ -112,7 +112,7 @@ function Login() {
       </form>
       <Link
         to="/"
-        className="mt-6 inline-block rounded-sm text-sm font-medium text-indigo-700 underline underline-offset-4 hover:text-indigo-900"
+        className="mt-6 inline-flex min-h-11 min-w-11 items-center rounded-sm text-sm font-medium text-indigo-700 underline underline-offset-4 hover:text-indigo-900"
       >
         ← Back to catalog
       </Link>

@@ -84,7 +84,7 @@ function ProductDetails({ productId }: ProductDetailsProps) {
     <section>
       <Link
         to="/"
-        className="mb-6 inline-block rounded-sm text-sm font-medium text-indigo-700 underline underline-offset-4 hover:text-indigo-900"
+        className="mb-6 inline-flex min-h-11 min-w-11 items-center rounded-sm text-sm font-medium text-indigo-700 underline underline-offset-4 hover:text-indigo-900"
       >
         ← Back to catalog
       </Link>

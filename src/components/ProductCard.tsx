@@ -44,7 +44,7 @@ function ProductCard({ product, quantityInCart, onAdd }: ProductCardProps) {
         type="button"
         disabled={!canAdd}
         onClick={handleAdd}
-        className="mt-auto w-full cursor-pointer rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-700 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-600"
+        className="mt-auto min-h-11 w-full cursor-pointer rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-700 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-600"
       >
         {isOutOfStock ? 'Out of stock' : isStockLimitReached ? 'Stock limit reached' : 'Add to cart'}
       </button>

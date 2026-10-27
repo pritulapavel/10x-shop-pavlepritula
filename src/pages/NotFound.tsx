@@ -7,7 +7,7 @@ function NotFound() {
       <p className="text-slate-600">The page you are looking for does not exist.</p>
       <Link
         to="/"
-        className="inline-block rounded-sm font-medium text-indigo-700 underline underline-offset-4 hover:text-indigo-900"
+        className="inline-flex min-h-11 min-w-11 items-center rounded-sm font-medium text-indigo-700 underline underline-offset-4 hover:text-indigo-900"
       >
         Go to catalog
       </Link>

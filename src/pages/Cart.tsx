@@ -19,7 +19,7 @@ function Cart() {
       {items.length === 0 ? (
         <div className="space-y-4">
           <p className="text-slate-600">Your cart is empty.</p>
-          <Link to="/" className="inline-block rounded-sm font-medium text-indigo-700 underline underline-offset-4 hover:text-indigo-900">
+          <Link to="/" className="inline-flex min-h-11 min-w-11 items-center rounded-sm font-medium text-indigo-700 underline underline-offset-4 hover:text-indigo-900">
             Browse products
           </Link>
         </div>
@@ -37,7 +37,7 @@ function Cart() {
                     className="h-24 w-24 shrink-0 rounded-md bg-slate-50 object-contain"
                   />
                   <div className="min-w-0 flex-1 space-y-3">
-                    <Link to={`/products/${item.productId}`} className="inline-block break-words rounded-sm font-semibold text-slate-900 hover:text-indigo-700">
+                    <Link to={`/products/${item.productId}`} className="inline-flex min-h-11 min-w-11 items-center break-words rounded-sm font-semibold text-slate-900 hover:text-indigo-700">
                       {item.title}
                     </Link>
                     <p className="text-sm text-slate-600">Unit price: {formatUSD(item.price)}</p>
@@ -52,7 +52,7 @@ function Cart() {
                         type="button"
                         aria-label={`Remove ${item.title}`}
                         onClick={() => removeItem(item.productId)}
-                        className="cursor-pointer rounded-sm text-sm font-medium text-red-700 underline underline-offset-4 hover:text-red-900"
+                        className="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-sm text-sm font-medium text-red-700 underline underline-offset-4 hover:text-red-900"
                       >
                         Remove
                       </button>
@@ -70,7 +70,7 @@ function Cart() {
             <button
               type="button"
               onClick={handleClearCart}
-              className="cursor-pointer rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100"
+              className="min-h-11 min-w-11 cursor-pointer rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100"
             >
               Clear cart
             </button>

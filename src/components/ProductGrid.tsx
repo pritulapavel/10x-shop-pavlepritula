@@ -10,7 +10,7 @@ function ProductGrid({ products }: ProductGridProps) {
   const { items, addItem } = useCart()
 
   return (
-    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div className="grid grid-cols-1 gap-6 min-[481px]:grid-cols-2 min-[768px]:grid-cols-3 min-[1025px]:grid-cols-4">
       {products.map((product) => (
         <ProductCard
           key={product.id}
