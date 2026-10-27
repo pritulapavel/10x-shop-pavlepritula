@@ -24,9 +24,9 @@ Checkboxes mark verified work only.
   manually verified Catalog grid boundaries. Source fix references are verified;
   Firefox verification remains pending. See the quality status below.
 - [ ] **24–25 and 28: Delivery (in progress).** English README and CORE REPORT
-  are prepared; DEBUG-LOG preserves four verified bugs. Deployment, the live URL,
-  deployed direct-route refresh checks, a basic deployed-site Lighthouse report,
-  and final verification/documentation updates remain pending.
+  and Vercel deployment configuration are prepared; DEBUG-LOG preserves four
+  verified bugs. Actual deployment, the live URL, hosted direct-route/refresh
+  checks, a basic deployed-site Lighthouse report and final verification remain pending.
 
 ## Planned routes and behavior
 
@@ -57,6 +57,32 @@ Application code, dependencies, configuration and historical verification eviden
 Existing Chrome results were not repeated, and typecheck/lint/build were not rerun
 for Markdown-only changes. The user committed the quality source changes; the agent
 performed no staging, commits, pushes or deployment during this documentation update.
+
+## CORE 24: Vercel deployment preparation (2026-10-27)
+
+- [x] Confirm the application root is the repository root (`D:\Paul Learn\React\10x-shop`).
+  The existing `npm run build` runs `tsc -b && vite build`; Vite's resolved output
+  directory is `dist` and its base is `/`.
+- [x] Add minimal root `vercel.json` with the schema URL and `/(.*)` → `/index.html`
+  SPA rewrite from the [official Vercel Vite guide](https://vercel.com/docs/frameworks/frontend/vite#using-vite-to-make-spas).
+  JSON parsing and checks of the schema URL/rewrite passed. BrowserRouter is unchanged.
+- [x] Document Vercel settings in README: repository `pritulapavel/10x-shop-pavlepritula`,
+  production branch `main`, Vite preset, repository root, `npm run build`, `dist`,
+  and no required environment variables in the current source.
+- [x] Run `npm run build` once successfully for this preparation. Confirm generated
+  `dist/index.html` exists and its referenced local assets exist and are non-empty:
+  `assets/index-B1SdGF_Z.js` and `assets/index-DiCu7KeB.css`.
+- [ ] Publish to Vercel and record the actual live URL.
+- [ ] Verify hosted direct loads and refreshes for Catalog, Login, a valid Product,
+  Cart, Checkout and NotFound; check the guest checkout redirect and hosted purchase flow.
+- [ ] Run and record one basic Lighthouse report on the deployed site.
+
+Deployment configuration is prepared; deployed behavior is not verified. A local
+build or Vite preview does not establish that Vercel routing works. Firefox and its
+version remain pending under CORE 19–23. Existing Chrome QA was not repeated.
+Only vercel.json, README.md and PLAN.md were changed for this preparation; application
+code, dependencies and existing evidence were preserved. No Vercel CLI installation,
+hosting-account connection, staging, commits, pushes or deployment were performed.
 
 ## Stage 1–2 verification
 

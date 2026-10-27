@@ -108,6 +108,27 @@ Verified source revision:
 contains the responsive-grid and interactive-target fixes and ErrorBoundary.
 Its diff was inspected locally; remote push status was not checked.
 
+## Deployment preparation: Vercel
+
+Use these settings when importing the repository into Vercel:
+
+| Setting | Value |
+| --- | --- |
+| Repository | `pritulapavel/10x-shop-pavlepritula` |
+| Production branch | `main` |
+| Framework preset | Vite |
+| Root directory | Repository root (`.`) |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Environment variables | None required by the current source. |
+
+The root `vercel.json` adds the `/index.html` SPA rewrite for BrowserRouter deep
+links, following the [official Vite on Vercel guide](https://vercel.com/docs/frameworks/frontend/vite#using-vite-to-make-spas).
+Configuration is prepared; an actual deployment and hosted direct-route/refresh
+checks are pending. A local build or Vite preview does not verify Vercel routing.
+After publication, record the live URL, verify hosted routes and the purchase flow,
+and run the basic Lighthouse report on the deployed site. Firefox remains pending.
+
 ## Live Demo
 
 **Pending deployment.** No public demo URL is available yet.
