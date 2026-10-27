@@ -18,13 +18,15 @@ Checkboxes mark verified work only.
   with Catalog, Product and Cart are now implemented and verified.
 - [x] **14–16: Checkout and review.** Four-field checkout, local confirmation,
   duplicate-submit protection, and the required React concepts are implemented
-  and verified. Quality, final documentation and deployment stay planned below.
-- [ ] **19–23: Quality.** Check the UI at 375px and desktop, hover/focus states,
-  and the purchase flow. Add an Error Boundary, record real debugging sessions,
-  and finish with clean typecheck/build results.
-- [ ] **24–25 and 28: Delivery.** Deploy, verify direct-route refresh, write the
-  English README, REPORT, and DEBUG-LOG, maintain genuine Git history, and
-  complete final verification. Deployment and Git writes belong to later stages.
+  and verified. Quality and delivery are tracked below.
+- [ ] **19–23: Quality (in progress).** Error Boundary and focused sizing changes
+  pass the automated Chrome checks below; non-browser checks pass and the user
+  manually verified Catalog grid boundaries. Source fix references are verified;
+  Firefox verification remains pending. See the quality status below.
+- [ ] **24–25 and 28: Delivery (in progress).** English README and CORE REPORT
+  are prepared; DEBUG-LOG preserves four verified bugs. Deployment, the live URL,
+  deployed direct-route refresh checks, a basic deployed-site Lighthouse report,
+  and final verification/documentation updates remain pending.
 
 ## Planned routes and behavior
 
@@ -32,6 +34,29 @@ Checkboxes mark verified work only.
 - Login is a local simulation. Checkout requires login and has `fullName`,
   `email`, `address`, and `city`. Order confirmation is local.
 - Stay within CORE scope; detailed requirements will guide later stages.
+
+## Submission documentation (2026-10-27)
+
+- [x] Replace the Vite starter README with English project information, actual
+  architecture/dependencies, repository setup, five scripts, source-confirmed
+  local test login, limitations, pending Live Demo and credits including AI assistance.
+- [x] Prepare the English CORE REPORT with delivered/planned scope, recorded
+  verification, three supported debugging challenges, reflection and AI assistance.
+- [x] Review documentation against the current source and read-only Git history;
+  preserve all four DEBUG-LOG entries and their distinct evidence sources.
+- [ ] Complete Firefox verification and record its version when an approved
+  working connection is available. CORE 19–23 remains in progress.
+- [ ] Deploy, record the live URL, verify deployed direct-route refresh and run
+  one basic Lighthouse report on the deployed site.
+- [x] Verify the user's source commit and record genuine references for the
+  Catalog breakpoint and interactive-target fixes. The diff also contains ErrorBoundary.
+- [ ] Complete final submission verification and synchronize the documents with those results.
+
+This source-reference update changed README.md, REPORT.md, PLAN.md and DEBUG-LOG.md only.
+Application code, dependencies, configuration and historical verification evidence were preserved.
+Existing Chrome results were not repeated, and typecheck/lint/build were not rerun
+for Markdown-only changes. The user committed the quality source changes; the agent
+performed no staging, commits, pushes or deployment during this documentation update.
 
 ## Stage 1–2 verification
 
@@ -154,3 +179,164 @@ Checkboxes mark verified work only.
 | Shared Context | `AuthContext` and `CartContext` provide state/actions across routes |
 | Effects and cleanup | `Catalog` (`[]`) and `Product` (`[productId]`) abort requests; `ScrollToTop` depends on `pathname` |
 | Immutable updates | `CartContext` functional updates; `Checkout` copies items with `map`/spread |
+
+## Stage 19–23: current quality status (2026-10-27)
+
+- Preserved the existing changes. Typed class ErrorBoundary uses
+  `getDerivedStateFromError` and `componentDidCatch`, an intentional error diagnostic,
+  the exact fallback text, and a Reload button. Router/providers occur once, inside
+  the boundary. Existing API/form error handling and application state remain unchanged.
+- Passed again after removing the temporary render fault: `npm run typecheck`,
+  `npm run lint`, and `npm run build`.
+- Passed direct class assertions for normal children, derived fallback state,
+  exact fallback text, diagnostic content, and the reload callback. Actual React
+  child-render catching and browser Reload recovery now also pass, as recorded below.
+- Generated production CSS contains the 481/768/1025px media rules and the
+  minimum-size utilities. The five Catalog boundary measurements remain the user's
+  manual evidence below; they were not repeated. ProductGrid and its styles were unchanged.
+- Started the existing Vite production preview at `http://127.0.0.1:4173/` when it
+  returned connection refused. The connected Chrome extension confirmed that exact
+  URL and allowed local-project access. The earlier Windows Computer Use URL failure
+  was not bypassed; this run used the now-available approved extension connection.
+- Final preview smoke passed in a fresh Chrome tab: real Catalog → Product → Cart,
+  correct item/total and an empty warning/error log. Browser-loaded assets matched
+  final `dist/index.html`: `index-CQB7AyhK.js` and `index-BZy0JIxn.css`.
+- No temporary fault component, crash route/query/button, test override or stray
+  `console.log` remains in application source or the final bundle. The intentional
+  ErrorBoundary diagnostic remains. `src/main.tsx` has the same SHA-256 as before
+  fault injection: `2BB4889AD84312F166FD90458F76907EC99E84CC33ACBB093CE788DD87BA2144`.
+- DEBUG-LOG now has four genuine fixed bugs. The third retains user-operated grid
+  evidence; the fourth records the earlier undersized targets and their automated
+  Chrome retest. Both quality fix references now identify the verified source revision below.
+
+### Browser access, identity and remaining work
+
+| Browser | Version actually confirmed | Current-stage status |
+| --- | --- | --- |
+| Google Chrome | 156.0.8078.48 | Approved extension; automated target, purchase, visual, ErrorBoundary and production checks passed; earlier grid evidence remains user-operated |
+| Firefox | Pending | No Firefox browser connection or app in the available inventory; tests were not run |
+
+The Chrome identity is supported by the connected Chrome extension and metadata of
+the running `C:\Program Files\Google\Chrome\Application\chrome.exe`: ProductName
+Google Chrome, ProductVersion/FileVersion 156.0.8078.48. `chrome://version/` was
+rejected by the URL policy (only HTTP/HTTPS allowed); that navigation was stopped.
+The version was read from local executable metadata, without controlling a blocked
+browser page. The user-supplied Windows 10 Version 22H2 (Build 19045.6456) remains
+operating-system evidence, not browser-version evidence for the earlier manual run.
+
+- Pending verification: Firefox purchase/visual/recovery checks and its version;
+  no approved, working Firefox capability is available. No other browser was
+  relabeled as Firefox. CORE 19–23 remains in progress.
+- **Verified source revision:** [dc67c1adec594662e398eae3bfbae1672c808f31](https://github.com/pritulapavel/10x-shop-pavlepritula/commit/dc67c1adec594662e398eae3bfbae1672c808f31)
+  (`fix: improve responsive sizing and add error boundary`). Read-only local Git
+  inspection confirmed the 481/768/1025px grid transitions, interactive-target sizing
+  corrections and ErrorBoundary implementation/wrapper. Remote push status was not checked.
+
+### Automated Chrome target and visual verification (2026-10-27)
+
+Read-only `getBoundingClientRect()` measurements targeted actual `#root` links,
+buttons and form controls identified in source. There are no custom clickable
+containers; the quantity `role="group"` is not a control. Hidden/non-rendered nodes
+were excluded; disabled nodes and controls below the fold were included. There
+were **81 control observations across the eight required screens**, with zero
+widths or heights below 44 CSS px. The fallback Reload was checked separately.
+
+All rows have `innerWidth = 375`. Sizes below are actual width × height in CSS px;
+the common Header controls are listed after the table.
+
+| Screen | Controls checked | Main-content targets | clientWidth / scrollWidth |
+| --- | --- | --- | --- |
+| Catalog | 28 | 12 product links: 294×232; 12 Add buttons: 294×44 | 360 / 360 |
+| Product `/products/11` | 11 | Back: 113.375×44; 3 gallery buttons: 76×76; −/+: 44×44 (disabled − included); Add: 328×48 | 360 / 360 |
+| Populated Cart | 10 | Product link: 167.28125×44; −/+: 44×44; Remove: 50.984375×44; Clear: 94.671875×44; Proceed: 278×48 | 360 / 360 |
+| Login | 8 | Both inputs and submit: 293×44; Back: 113.375×44 | 375 / 375 |
+| Checkout | 9 | All four inputs: 278×44; Place order: 278×48 | 360 / 360 |
+| Confirmation | 5 | Back to Catalog: 113.78125×44 | 360 / 360 |
+| Empty Cart after order | 5 | Browse products: 121.0625×44 | 375 / 375 |
+| NotFound | 5 | Go to catalog: 98.140625×44 | 375 / 375 |
+
+Header measurements: brand 85.515625×44; Catalog 72.828125×44; Cart 50.65625×44
+or 74.65625×44 with the two-item badge; Log in 63.328125×44; Log out 73.078125×44.
+Catalog included 21 controls below the fold; Product included three, including the
+disabled decrease button; Cart included its below-fold checkout link. The 15px
+difference on scrolling pages is the browser's vertical scrollbar, not overflow.
+
+- Visual screenshots and layout reads passed at 375px and 1280px for Catalog,
+  Product, populated/empty Cart, Login, Checkout, confirmation and NotFound.
+  Document `scrollWidth` equaled `clientWidth`; desktop Catalog had 1265/1265
+  with a scrollbar, and the other desktop screens had 1280/1280.
+- Product content and Checkout/confirmation summaries stack on mobile and sit
+  side by side on desktop. Images loaded; product images have descriptive alt
+  text, gallery thumbnail images use empty alt inside labeled native buttons,
+  fields have associated labels, and landmarks/headings remain semantic.
+- Actual Tab navigation showed a 2px focus outline with a 3px offset on navigation
+  and form inputs. The gallery's selected image/pressed state changed correctly.
+  Pointer hover changed Add from indigo-600 to indigo-700, added the card shadow,
+  and highlighted the quantity button. Disabled decrease buttons were 44×44,
+  visibly muted and not enabled at quantity one.
+
+### Automated Chrome purchase and ErrorBoundary verification
+
+- Guest Catalog → Annibale Colombo Bed → Cart → Login → Checkout → confirmation
+  passed on the production preview. Two units at $1,899.99 produced $3,799.98 in
+  Cart, Checkout and confirmation. Login returned to Checkout with both units intact.
+- Fictional delivery details (Alex Example, alex@example.test, 12 Test Street,
+  Test City), item title, quantity and total remained in confirmation after the
+  live cart cleared and after resizing. The badge disappeared; visiting Cart
+  showed the empty state. Gallery selection, cart quantity editing and item removal
+  also worked. The normal purchase run had no console warnings/errors.
+- An additional native clear-dialog cancellation attempt returned an automation
+  timeout and then no active dialog; the next observed Cart was empty. No new
+  cancellation pass is claimed from that attempt. Earlier stage 10–13 dialog
+  evidence is preserved; the full purchase test was restarted from Catalog.
+- Temporarily rendered a throwing child inside the existing ErrorBoundary in a
+  production build. Chrome showed the exact fallback and useful component diagnostic.
+  Reload measured 89.578125×48 at 375px, with no document overflow.
+- Removed the child/throw from source and built the clean version while the open
+  production page kept its mounted fallback and old script `index-ca7KYRtS.js`.
+  No boundary reset or page navigation occurred during removal. Clicking the actual
+  Reload button loaded `index-CQB7AyhK.js`, removed the fallback and restored Cart.
+  The intentional test exception is not an application bug. Final source/bundle
+  scans found no probe or fault marker; final clean-tab smoke had no warnings/errors.
+
+### Original pre-fix Catalog measurements (preserved)
+
+These are the original **pre-fix embedded-browser** observations. They are not Chrome
+observations. The separate post-fix user-operated Chrome evidence follows below.
+
+| Viewport | Original columns | Intended columns after correction |
+| --- | --- | --- |
+| 480px | 1 | 1 |
+| 481px | 1 | 2 |
+| 1024px | 4 | 3 |
+| 1025px | 4 | 4 |
+
+### User-operated manual Chrome grid verification (2026-10-27)
+
+The user ran the read-only DevTools Console measurement on the production preview's
+Catalog page and supplied these actual post-fix results:
+
+| innerWidth | clientWidth | scrollWidth | gridTemplateColumns | columnCount |
+| --- | --- | --- | --- | --- |
+| 375 | 375 | 375 | `343px` | 1 |
+| 480 | 480 | 480 | `448px` | 1 |
+| 481 | 481 | 481 | `212.5px 212.5px` | 2 |
+| 1024 | 1024 | 1024 | `309.328px 309.328px 309.344px` | 3 |
+| 1025 | 1025 | 1025 | `226.25px 226.25px 226.25px 226.25px` | 4 |
+
+Verified by the user: intended column counts at all five widths and no horizontal
+document overflow on Catalog (`scrollWidth === clientWidth` in every supplied row).
+These manual measurements cover Catalog grid boundaries only; the separate automated
+Chrome evidence above covers other screens, targets, purchase flow and recovery.
+Firefox remains pending. Fix commit:
+[dc67c1adec594662e398eae3bfbae1672c808f31](https://github.com/pritulapavel/10x-shop-pavlepritula/commit/dc67c1adec594662e398eae3bfbae1672c808f31).
+
+### Interactive targets: original pre-fix observations (preserved)
+
+Original embedded-browser 375px targets included: brand link 85.52×28px; navigation 36px high;
+quantity buttons 40×40px; Remove 50.98×20px; Clear cart 94.67×38px;
+catalog Add buttons 40px high; form inputs 42px high; short text links 20–24px high.
+Image selectors were already 76×76px. Their separate automated Chrome post-fix
+measurements are recorded above. These original observations are not relabeled as
+Chrome observations. Quality (Firefox pending), final documentation and deployment
+are not complete; the source fix references are now verified.
