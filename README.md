@@ -100,17 +100,20 @@ Login is a local simulation with no registration or server credential check.
 - Catalog data and image URLs depend on the external DummyJSON service. The catalog
   loads a fixed first set of 12 products.
 - Firefox verification and its version remain pending because no approved connection
-  is available. Deployment, deployed-route refresh checks and the deployed-site
-  Lighthouse report are also pending. Detailed evidence is recorded in PLAN.md.
+  is available. Two user-supplied production Lighthouse reports are saved, but both
+  include extension scripts and do not verify Incognito. A clean Mobile/Navigation
+  Incognito audit with extensions inactive and public repository access remain
+  pending. The production purchase and hosted route checks passed on 2026-10-30;
+  detailed evidence is recorded in PLAN.md and REPORT.md.
 
 Verified source revision:
 [dc67c1adec594662e398eae3bfbae1672c808f31](https://github.com/pritulapavel/10x-shop-pavlepritula/commit/dc67c1adec594662e398eae3bfbae1672c808f31)
 contains the responsive-grid and interactive-target fixes and ErrorBoundary.
 Its diff was inspected locally; remote push status was not checked.
 
-## Deployment preparation: Vercel
+## Deployment: Vercel
 
-Use these settings when importing the repository into Vercel:
+Recorded deployment configuration:
 
 | Setting | Value |
 | --- | --- |
@@ -124,14 +127,37 @@ Use these settings when importing the repository into Vercel:
 
 The root `vercel.json` adds the `/index.html` SPA rewrite for BrowserRouter deep
 links, following the [official Vite on Vercel guide](https://vercel.com/docs/frameworks/frontend/vite#using-vite-to-make-spas).
-Configuration is prepared; an actual deployment and hosted direct-route/refresh
-checks are pending. A local build or Vite preview does not verify Vercel routing.
-After publication, record the live URL, verify hosted routes and the purchase flow,
-and run the basic Lighthouse report on the deployed site. Firefox remains pending.
+The production URL is available. External cloud-Chrome observations confirmed a
+direct product route/reload and the application's NotFound page; the agent's own
+initial Chrome run reached authenticated Checkout with matching Cart/Checkout totals.
+A follow-up in an active Chrome tab on 2026-10-30 verified confirmation, matching
+Cart/Checkout/confirmation totals of $17.98, badge removal and an empty Cart.
+REPORT.md and PLAN.md distinguish these results from earlier local checks and
+record the remaining Lighthouse and Firefox conditions. A separate agent-operated
+Chrome 156.0.8078.76 check verified direct loads/reloads of Catalog, Product, Cart,
+Login and NotFound, plus the guest Checkout redirect
+([route evidence](reports/routes/2026-10-30/evidence.json)). The deployed Git SHA
+has not been independently confirmed.
+
+### Saved Lighthouse evidence
+
+User-supplied Lighthouse **13.5.0** production-catalog audits from 2026-10-30:
+
+| Report | Performance | Accessibility | Best Practices | SEO |
+| --- | --- | --- | --- | --- |
+| [Desktop HTML](reports/lighthouse/2026-10-30/10x-shop-pavlepritula.vercel.app_2026-10-30_23-22-49_DESKTOP.html) | 82 | 100 | 100 | 83 |
+| [Mobile HTML](reports/lighthouse/2026-10-30/10x-shop-pavlepritula.vercel.app_2026-10-30_23-22-49_MOBILE.html) | 96 | 100 | 100 | 83 |
+
+The original JSON files remain alongside the HTML generated with official Lighthouse
+report tooling; the audits were not rerun. Both contain `chrome-extension://` scripts,
+so these scores are earlier observations, not the required clean Incognito result.
+REPORT.md records `fetchTime`, settings, metrics, extension attribution and the
+unfixed meta-description, robots.txt and desktop CLS observations. No score threshold
+or optimization target is assigned.
 
 ## Live Demo
 
-**Pending deployment.** No public demo URL is available yet.
+[Open the production shop](https://10x-shop-pavlepritula.vercel.app/).
 
 ## Credits
 

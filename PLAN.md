@@ -25,8 +25,11 @@ Checkboxes mark verified work only.
   Firefox verification remains pending. See the quality status below.
 - [ ] **24–25 and 28: Delivery (in progress).** English README and CORE REPORT
   and Vercel deployment configuration are prepared; DEBUG-LOG preserves four
-  verified bugs. Actual deployment, the live URL, hosted direct-route/refresh
-  checks, a basic deployed-site Lighthouse report and final verification remain pending.
+  verified bugs. The production URL is available; external route evidence and the
+  agent's completed production Checkout retest are recorded below. Hosted route
+  checks pass and supplied Lighthouse JSON/HTML reports are recorded. A clean
+  Incognito Mobile audit, Firefox, repository visibility and final verification
+  remain pending.
 
 ## Planned routes and behavior
 
@@ -39,15 +42,22 @@ Checkboxes mark verified work only.
 
 - [x] Replace the Vite starter README with English project information, actual
   architecture/dependencies, repository setup, five scripts, source-confirmed
-  local test login, limitations, pending Live Demo and credits including AI assistance.
+  local test login, limitations, Live Demo and credits including AI assistance.
 - [x] Prepare the English CORE REPORT with delivered/planned scope, recorded
   verification, three supported debugging challenges, reflection and AI assistance.
 - [x] Review documentation against the current source and read-only Git history;
   preserve all four DEBUG-LOG entries and their distinct evidence sources.
 - [ ] Complete Firefox verification and record its version when an approved
   working connection is available. CORE 19–23 remains in progress.
-- [ ] Deploy, record the live URL, verify deployed direct-route refresh and run
-  one basic Lighthouse report on the deployed site.
+- [x] Record the user's production deployment URL and confirm availability in Chrome.
+- [x] Complete the focused production purchase, confirmation and empty-Cart check
+  (2026-10-30); evidence is recorded in the Checkout follow-up below.
+- [x] Finish hosted route verification in Chrome (2026-10-30); retain the new
+  agent-operated evidence separately from external observations.
+- [x] Extract the user's saved production Lighthouse audits and render readable
+  HTML without changing their original JSON (2026-10-30).
+- [ ] Obtain one clean deployed-site Mobile/Navigation Lighthouse run in Incognito
+  with extensions inactive; the supplied reports do not establish these conditions.
 - [x] Verify the user's source commit and record genuine references for the
   Catalog breakpoint and interactive-target fixes. The diff also contains ErrorBoundary.
 - [ ] Complete final submission verification and synchronize the documents with those results.
@@ -72,17 +82,267 @@ performed no staging, commits, pushes or deployment during this documentation up
 - [x] Run `npm run build` once successfully for this preparation. Confirm generated
   `dist/index.html` exists and its referenced local assets exist and are non-empty:
   `assets/index-B1SdGF_Z.js` and `assets/index-DiCu7KeB.css`.
-- [ ] Publish to Vercel and record the actual live URL.
-- [ ] Verify hosted direct loads and refreshes for Catalog, Login, a valid Product,
-  Cart, Checkout and NotFound; check the guest checkout redirect and hosted purchase flow.
-- [ ] Run and record one basic Lighthouse report on the deployed site.
+- [x] The user published to Vercel; the production URL is
+  [https://10x-shop-pavlepritula.vercel.app/](https://10x-shop-pavlepritula.vercel.app/).
+  The agent confirmed that URL and rendered application through the approved Chrome connection.
+- [x] Complete the production purchase flow (2026-10-30); the initial inconclusive
+  run and the successful follow-up remain separate records below.
+- [x] Finish hosted direct-load/refresh coverage in Chrome (2026-10-30).
+  External product-route/reload and NotFound observations remain separately attributed.
+- [x] Record the supplied basic Lighthouse audits and generated HTML reports.
+- [ ] Verify the required clean Incognito Mobile/Navigation audit conditions.
 
-Deployment configuration is prepared; deployed behavior is not verified. A local
-build or Vite preview does not establish that Vercel routing works. Firefox and its
-version remain pending under CORE 19–23. Existing Chrome QA was not repeated.
+Deployment configuration is prepared and the production URL is available. A local
+build or Vite preview does not establish that Vercel routing works; hosted evidence
+is recorded separately below. Firefox and its version remain pending under CORE
+19–23. The earlier local Chrome QA was not repeated.
 Only vercel.json, README.md and PLAN.md were changed for this preparation; application
 code, dependencies and existing evidence were preserved. No Vercel CLI installation,
 hosting-account connection, staging, commits, pushes or deployment were performed.
+
+## Production delivery review (2026-10-27)
+
+Local revision at the start of this review:
+`1c977b10f2f1795885990bd58916ba4cdfe09f03` (`feature: prepare Vercel SPA deployment`).
+The working tree was clean. The deployed Git SHA was not independently confirmed;
+the existing verified quality-source revision remains unchanged below.
+
+### External cloud-Chrome evidence supplied by the user
+
+These observations were made externally on 2026-10-27, not executed by this agent.
+The cloud Chrome version was not recorded.
+
+- Catalog rendered 12 products and all 12 images.
+- Direct navigation to `/products/5` and a browser reload both displayed Red Nail Polish.
+- Adding quantity 2 showed a badge of 2 and $17.98 total at $8.99 per unit.
+- Guest checkout redirected to `/login`.
+- `/not-a-route` displayed the application's NotFound page; its Catalog link worked.
+- At a 1363px viewport, the grid had four columns, and document clientWidth and
+  scrollWidth were both 1348px (no horizontal document overflow in that observation).
+
+These observations do not establish authenticated purchase completion, Firefox
+compatibility or Lighthouse results.
+
+### Agent-operated production check
+
+- Actual target URL confirmed: `https://10x-shop-pavlepritula.vercel.app/`.
+- Google Chrome **156.0.8078.48**, identified by the connected Chrome extension and
+  metadata of the running `C:\Program Files\Google\Chrome\Application\chrome.exe`.
+- Product → Cart → guest checkout → local demo login → Checkout passed for
+  Red Nail Polish, two units at $8.99. Cart and Checkout both showed **$17.98**;
+  the badge showed 2. The guest reached `/login`, and `demo` / `123456` returned
+  to `/checkout` with both units intact.
+- Synthetic fields: Alex Example, alex@example.test, 24 Demo Street, Test City.
+  Submit attempts left the Checkout form displayed; no validation alerts or console
+  warnings/errors were captured. The cause was not established. Confirmation,
+  badge disappearance and an empty Cart were not observed and are not marked passed.
+  No application bug or source fix is claimed from this incomplete run.
+
+### Blockers recorded in the October 27 review
+
+Historical status follows. The October 30 import below supersedes artifact
+availability and closes Chrome hosted route coverage; clean-audit conditions remain pending.
+
+- **Browser safety stop:** native Windows Computer Use reported that it
+  "could not determine the current browser URL on Windows with enough confidence
+  to enforce policy". Further browser interaction stopped. The approved extension's
+  management capability only supports normal, non-Incognito windows; no approved
+  route to the required Incognito/DevTools audit remained available after that stop.
+  No alternate driver, CLI audit or safeguard bypass was attempted.
+- [x] Complete the production confirmation/cart-clearing check in the agent-operated
+  2026-10-30 follow-up below. This is new hosted evidence, not a relabeling of local checks.
+- [x] Finish hosted direct-route/refresh coverage in the separate 2026-10-30
+  final evidence review below.
+- [ ] **Lighthouse:** audit the production Catalog in Chrome Incognito with
+  extensions inactive and the Mobile preset. No audit ran in this review, so no
+  artifact, Lighthouse version or actual scores existed at that point. Supplied
+  reports are imported below; a clean run is still needed. No score threshold is assigned.
+- [ ] **Firefox:** no approved Firefox connection/app was available. Its version
+  and production catalog, direct product/reload, purchase, keyboard-focus and
+  375px usability checks remain pending.
+- [ ] **Public repository visibility:** the read-only GitHub metadata request for
+  `pritulapavel/10x-shop-pavlepritula` returned 404. Visibility is unverified; no
+  conclusion about public/private status was drawn from the error.
+
+The earlier request for manual purchase completion is closed by the successful
+2026-10-30 production retest below. The current short handoff is in the final
+delivery evidence section; completed Chrome checks do not need another manual run.
+
+Only README.md, REPORT.md and PLAN.md were updated in this review. Application code,
+dependencies and DEBUG-LOG evidence were preserved; typecheck/lint/build were not
+rerun. No Lighthouse artifact was fabricated, and no staging, commits, pushes or
+deployment were performed. CORE remains incomplete.
+
+## Checkout submission diagnosis (2026-10-30)
+
+Scope: diagnose the unconfirmed production submit only. Git remained at
+`1c977b10f2f1795885990bd58916ba4cdfe09f03`; the existing uncommitted documentation
+was preserved. Chrome was **156.0.8078.76**, identified from the running executable.
+
+### Initial inspection and reproduced symptom
+
+- Before any navigation/reload, the available old tab was at `/`, heading Catalog,
+  authenticated, with no badge, form, delivery fields, alerts or available console
+  warnings/errors. The old failed Checkout was not open, so its exact old field
+  values and error states could not be recovered.
+- A new guest run reached production Checkout with two Red Nail Polish units and
+  matching Cart/Checkout totals of $17.98. Ordinary browser filling was followed
+  by a check of every field:
+
+| Field | Verified synthetic value | aria-invalid before submit |
+| --- | --- | --- |
+| Full name | Test Buyer | false |
+| Email | qa@example.com (visually verified; text reader redacts this input) | false |
+| Address | 12 Test Street | false |
+| City | Tbilisi | false |
+
+- Place order was enabled; form `aria-busy` was false. No inline validation or
+  general submission error was present. After one click in the inactive tab,
+  Checkout stayed visible with badge 2 and total $17.98. Application and extension
+  warning/error captures were separately empty.
+- An empty-Full-name diagnostic attempt also did not show its expected validation
+  alert. The button was inside the correct `noValidate` form, not disabled/inert,
+  and its center was not covered by another element.
+
+### Handler trace and controlled comparison
+
+- Source review: `handleSubmit` prevents default navigation, checks the ref/
+  confirmation duplicate guard, trims and validates the four fields, displays
+  inline errors and stops on invalid data. After validation it locks submission,
+  copies the item/delivery snapshot, calculates integer-cent totals, stores
+  confirmation and calls `clearCart`. The catch displays the general retry message
+  and releases the ref; finally it clears the busy state.
+- `CartContext.clearCart` only performs a React state update to an empty item array.
+  Confirmation renders before the empty-cart redirect. `RequireAuth` redirects
+  guests to Login with `/checkout` return state. There is no order API call;
+  absence of a POST is expected, and absence of a Console exception alone would
+  not rule out the catch branch.
+- Temporary **local-only** console traces were placed before the duplicate guard
+  and around validation, snapshot creation, clearCart and catch. The loaded preview
+  bundle was `index-CG9bitzT.js`. Before activation, neither handler entry nor the
+  expected empty-form validation was captured.
+- Read-only Chrome metadata showed another tab active. API activation was not
+  supported (`tabs.update` rejected `active`; the visibility capability was unavailable).
+  The user selected the test tab without clicking Submit or reloading it.
+- On that same loaded bundle, an ordinary click immediately logged handler entry
+  and four validation errors, and all four inline messages appeared. Valid fields
+  then produced zero errors, `snapshot 1 1798`, clearCart returning, confirmation,
+  a missing badge and an empty local Cart. No exception/catch message was observed.
+- Conclusion: the current reproduced symptom came from the verification action
+  not reaching submission in an inactive tab. Duplicate protection, validation and
+  clearCart were not the cause in this controlled comparison. The original October
+  27 tab's exact state remains unknown; it was not retrospectively reconstructed.
+
+### Successful production retest and cleanup
+
+- [x] Keep the same tab active, navigate it to the production URL and perform
+  Product → Cart → guest Login → Checkout → one actual Place order click.
+- [x] Verify each field with the synthetic values above. All four values were
+  present, `aria-invalid` was false, Place order was enabled and `aria-busy` was false.
+- [x] Cart, Checkout and confirmation totals each equal **$17.98** (2 × $8.99).
+- [x] Exact heading: **Thank you! Your order has been placed.** Delivery details,
+  item/quantity and total remain visible after clearCart; the badge is absent.
+- [x] Navigate to Cart and observe **Your cart is empty.** Production application
+  and extension warning/error logs were separately empty.
+- [x] Restore `src/pages/Checkout.tsx` exactly to its original contents, remove
+  all diagnostic markers from source and the final build, and pass `npm run typecheck`,
+  `npm run lint` and `npm run build`. The final clean bundle is `index-B1SdGF_Z.js`.
+  Temporary local preview and diagnostic browser documents were closed.
+
+Evidence: [full JSON observations/trace](reports/checkout/2026-10-30/evidence.json),
+[background form](reports/checkout/2026-10-30/production-checkout.png),
+[production confirmation](reports/checkout/2026-10-30/production-confirmation.png),
+[empty production Cart](reports/checkout/2026-10-30/production-empty-cart.png).
+The correction was to the verification procedure, not application code. No genuine
+application defect was reproduced, so DEBUG-LOG retains its four existing entries
+and no application fix/publish is required. Documentation/evidence can be committed
+by the user separately. The final evidence review below updates route coverage and
+Lighthouse artifacts; clean-audit conditions, Firefox and public visibility remain
+pending. CORE is not marked complete.
+
+## Final delivery evidence review (2026-10-30)
+
+- [x] Read-only Git inspection: local revision remains
+  `1c977b10f2f1795885990bd58916ba4cdfe09f03`. Existing uncommitted README/REPORT/PLAN
+  changes and `reports/checkout/2026-10-30` were preserved. The deployed Git SHA
+  remains unconfirmed; historical fix references and all four DEBUG-LOG entries
+  are unchanged.
+- [x] Agent-operated production routing in **Google Chrome 156.0.8078.76**, confirmed
+  from the running executable: `/`, `/products/5`, `/cart`, `/login` and
+  `/not-a-route` loaded directly and after reload. Catalog finished loading 12
+  products; Product showed Red Nail Polish; Cart was empty; NotFound was the app's
+  page. Direct guest `/checkout` redirected to `/login`, whose reload stayed on
+  Login. No persistence across reload is claimed for in-memory auth/cart.
+  [Route evidence](reports/routes/2026-10-30/evidence.json) and
+  [Catalog screenshot](reports/routes/2026-10-30/catalog.png) are separate from
+  external cloud-Chrome observations and the preserved $17.98 purchase evidence.
+- [x] Independently parse both **user-supplied**, saved Lighthouse **13.5.0** JSONs
+  from `reports/lighthouse/2026-10-30`. The Desktop file actually present is
+  `10x-shop-pavlepritula.vercel.app_2026-10-30_23-22-49_DESKTOP.json` (the filename
+  without a suffix is absent). Requested/final URL is the production Catalog.
+
+| Audit | Actual fetchTime (UTC) | Asia/Tbilisi (UTC+04:00) | Performance / Accessibility / Best Practices / SEO | Artifacts |
+| --- | --- | --- | --- | --- |
+| Desktop | `2026-10-30T19:22:49.941Z` | 2026-10-30 23:22:49.941 | **82 / 100 / 100 / 83** | [JSON](reports/lighthouse/2026-10-30/10x-shop-pavlepritula.vercel.app_2026-10-30_23-22-49_DESKTOP.json), [HTML](reports/lighthouse/2026-10-30/10x-shop-pavlepritula.vercel.app_2026-10-30_23-22-49_DESKTOP.html) |
+| Mobile | `2026-10-30T19:23:28.105Z` | 2026-10-30 23:23:28.105 | **96 / 100 / 100 / 83** | [JSON](reports/lighthouse/2026-10-30/10x-shop-pavlepritula.vercel.app_2026-10-30_23-22-49_MOBILE.json), [HTML](reports/lighthouse/2026-10-30/10x-shop-pavlepritula.vercel.app_2026-10-30_23-22-49_MOBILE.html) |
+
+- [x] Extract settings, numeric metrics and warnings into REPORT.md. Both runs use
+  Navigation / DevTools and simulated throttling. Reduced Chrome/156.0.0.0 UAs
+  and configured Chrome/136.0.0.0 emulation strings do not supply the full browser
+  build for these audits; the separately checked purchase/route browser was
+  156.0.8078.76. `runWarnings` is empty in both, but extension contamination remains.
+- [x] Render both HTML reports using official Lighthouse 13.5.0 ReportGenerator
+  from a temporary npm cache, without rerunning audits or changing project
+  dependencies. Confirm readable HTML and matching scores through the approved
+  Chrome connection. [Desktop preview](reports/lighthouse/2026-10-30/desktop-html-preview.png)
+  and [Mobile preview](reports/lighthouse/2026-10-30/mobile-html-preview.png) are
+  screenshots of rendered saved reports, not new audits. Original JSON SHA-256
+  checks passed before/after conversion; hashes are recorded in REPORT.md.
+- **Limits/observations:** both contain `chrome-extension://` scripts; Incognito
+  is unverified. All 12 unminified-JS items concern extensions. Unused JS includes
+  five extension items and one application bundle item (46,084 estimated unused
+  application bytes out of 225,674 combined bytes). Missing meta description,
+  HTML returned for robots.txt and Desktop CLS 0.346207 are observations, not
+  verified fixes. No new bug/fix entry or optional optimization was introduced.
+- [x] Recheck supported connection inventory/capabilities only. There is no
+  approved Firefox connection/app or supported Incognito Lighthouse control.
+  The earlier native URL-safety failure was not retried or bypassed. Temporary
+  report-preview tabs/server were closed. No new audit or Firefox test is claimed.
+- [x] Review the documentation diff and pass `git diff --check`; all 12 unique
+  referenced local evidence files exist. Original Lighthouse JSON, checkout
+  evidence and package-file hashes are unchanged. Earlier stage/quality records
+  and historical commit references are preserved.
+- [ ] **Clean Mobile audit:** required Incognito/Navigation/extension-free evidence
+  is still absent; preserve both earlier reports alongside the eventual clean run.
+- [ ] **Firefox:** actual version and production catalog/product-refresh/purchase/
+  375px layout, horizontal-overflow and keyboard-focus checks remain unverified.
+- [ ] **Public repository:** the read-only connector again returned 404 and an
+  anonymous web fetch could not retrieve the page. Neither proves private/missing
+  status. Signed-out access remains unconfirmed.
+- [ ] Close final CORE verification only after these required results are present.
+
+### Short handoff for the blocked checks
+
+1. **Lighthouse:** open Chrome Incognito (`Ctrl+Shift+N`), ensure extensions are
+   inactive there, open the production Catalog, then DevTools → Lighthouse →
+   **Navigation / Mobile**, with Performance, Accessibility, Best Practices and SEO.
+   Run once; save **JSON and HTML** under `reports/lighthouse/` using a new
+   `CLEAN_MOBILE` filename. Record full Chrome version, actual `fetchTime`,
+   Lighthouse version/settings/scores and confirm no extension scripts in the run.
+   Do not overwrite the earlier reports or chase a score.
+   See the [official Lighthouse guide](https://developer.chrome.com/docs/lighthouse/overview).
+2. **Firefox:** record the real version; load Catalog and direct `/products/5`,
+   refresh Product, then use quantity 2 → Cart → guest Checkout → `demo` / `123456`
+   → Checkout with synthetic delivery data → confirmation → empty Cart. Record
+   matching three totals, retained confirmation details and badge removal. At
+   375px check layout/no horizontal document overflow and visible Tab focus.
+3. **GitHub:** while signed out, open the repository URL and confirm its files
+   are readable. Record the outcome without changing visibility.
+
+This pass changes documentation and saved evidence only. Application source,
+configuration, dependencies, DEBUG-LOG and checkout evidence are preserved; npm
+checks were not repeated solely for Markdown/report files. No staging, commit,
+push, deploy, visibility change or course-form submission was performed.
 
 ## Stage 1–2 verification
 
@@ -239,7 +499,7 @@ hosting-account connection, staging, commits, pushes or deployment were performe
 
 | Browser | Version actually confirmed | Current-stage status |
 | --- | --- | --- |
-| Google Chrome | 156.0.8078.48 | Approved extension; automated target, purchase, visual, ErrorBoundary and production checks passed; earlier grid evidence remains user-operated |
+| Google Chrome | 156.0.8078.48 (earlier local QA); 156.0.8078.76 (2026-10-30) | Earlier local QA passed; the focused production Checkout retest passed on 2026-10-30 as recorded above |
 | Firefox | Pending | No Firefox browser connection or app in the available inventory; tests were not run |
 
 The Chrome identity is supported by the connected Chrome extension and metadata of
@@ -364,5 +624,5 @@ quantity buttons 40×40px; Remove 50.98×20px; Clear cart 94.67×38px;
 catalog Add buttons 40px high; form inputs 42px high; short text links 20–24px high.
 Image selectors were already 76×76px. Their separate automated Chrome post-fix
 measurements are recorded above. These original observations are not relabeled as
-Chrome observations. Quality (Firefox pending), final documentation and deployment
-are not complete; the source fix references are now verified.
+Chrome observations. Quality (Firefox pending), final documentation and production
+verification remain incomplete; the source fix references are verified.

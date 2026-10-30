@@ -1,0 +1,642 @@
+{
+  "date": "2026-10-30",
+  "browser": "Google Chrome 156.0.8078.76",
+  "sourceRevision": "1c977b10f2f1795885990bd58916ba4cdfe09f03",
+  "originalFailedCheckoutAvailable": false,
+  "existingTabBeforeNavigation": {
+    "badge": null,
+    "cartLink": "Cart",
+    "fields": [],
+    "formBusy": null,
+    "heading": "Catalog",
+    "submit": [],
+    "totals": [],
+    "url": "https://10x-shop-pavlepritula.vercel.app/",
+    "visibleAlerts": []
+  },
+  "backgroundProductionAttempt": [
+    {
+      "alerts": [],
+      "badge": "2",
+      "cartLink": "Cart2",
+      "fields": [],
+      "formBusy": null,
+      "heading": "Cart",
+      "mainText": "Cart\nRed Nail Polish\n\nUnit price: $8.99\n\n−\n2\n+\nRemove\n\nLine total\n\n$17.98\n\nClear cart\nOrder summary\nSubtotal\n$17.98\nTotal\n$17.98\nProceed to checkout",
+      "submit": [],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/cart",
+      "label": "Cart before order"
+    },
+    {
+      "alerts": [],
+      "badge": "2",
+      "cartLink": "Cart2",
+      "fields": [
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "fullName",
+          "valid": false,
+          "value": ""
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "email",
+          "valid": false,
+          "value": ""
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "address",
+          "valid": false,
+          "value": ""
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "city",
+          "valid": false,
+          "value": ""
+        }
+      ],
+      "formBusy": "false",
+      "heading": "Checkout",
+      "mainText": "Checkout\nFull name\nEmail\nAddress\nCity\nPlace order\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98",
+      "submit": [
+        {
+          "disabled": false,
+          "label": "Place order"
+        }
+      ],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/checkout",
+      "label": "Checkout before fill"
+    },
+    {
+      "alerts": [],
+      "badge": "2",
+      "cartLink": "Cart2",
+      "fields": [
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "fullName",
+          "valid": true,
+          "value": "Test Buyer"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "email",
+          "valid": true,
+          "value": "<redacted>"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "address",
+          "valid": true,
+          "value": "12 Test Street"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "city",
+          "valid": true,
+          "value": "Tbilisi"
+        }
+      ],
+      "formBusy": "false",
+      "heading": "Checkout",
+      "mainText": "Checkout\nFull name\nEmail\nAddress\nCity\nPlace order\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98",
+      "submit": [
+        {
+          "disabled": false,
+          "label": "Place order"
+        }
+      ],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/checkout",
+      "label": "Verified synthetic fields before submit"
+    },
+    {
+      "alerts": [],
+      "badge": "2",
+      "cartLink": "Cart2",
+      "fields": [
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "fullName",
+          "valid": true,
+          "value": "Test Buyer"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "email",
+          "valid": true,
+          "value": "<redacted>"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "address",
+          "valid": true,
+          "value": "12 Test Street"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "city",
+          "valid": true,
+          "value": "Tbilisi"
+        }
+      ],
+      "formBusy": "false",
+      "heading": "Checkout",
+      "mainText": "Checkout\nFull name\nEmail\nAddress\nCity\nPlace order\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98",
+      "submit": [
+        {
+          "disabled": false,
+          "label": "Place order"
+        }
+      ],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/checkout",
+      "label": "After one Place order click"
+    },
+    {
+      "alerts": [],
+      "badge": "2",
+      "cartLink": "Cart2",
+      "fields": [
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "fullName",
+          "valid": false,
+          "value": ""
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "email",
+          "valid": true,
+          "value": "<redacted>"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "address",
+          "valid": true,
+          "value": "12 Test Street"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "city",
+          "valid": true,
+          "value": "Tbilisi"
+        }
+      ],
+      "formBusy": "false",
+      "heading": "Checkout",
+      "mainText": "Checkout\nFull name\nEmail\nAddress\nCity\nPlace order\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98",
+      "submit": [
+        {
+          "disabled": false,
+          "label": "Place order"
+        }
+      ],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/checkout",
+      "label": "Diagnostic submit with empty fullName"
+    },
+    {
+      "alerts": [],
+      "badge": "2",
+      "cartLink": "Cart2",
+      "fields": [
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "fullName",
+          "valid": true,
+          "value": "Test Buyer"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "email",
+          "valid": true,
+          "value": "<redacted>"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "address",
+          "valid": true,
+          "value": "12 Test Street"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "city",
+          "valid": true,
+          "value": "Tbilisi"
+        }
+      ],
+      "formBusy": "false",
+      "heading": "Checkout",
+      "mainText": "Checkout\nFull name\nEmail\nAddress\nCity\nPlace order\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98",
+      "submit": [
+        {
+          "disabled": false,
+          "label": "Place order"
+        }
+      ],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/checkout",
+      "label": "Supported native-key submit result"
+    },
+    {
+      "alerts": [],
+      "badge": "2",
+      "cartLink": "Cart2",
+      "fields": [
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "fullName",
+          "valid": true,
+          "value": "Test Buyer"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "email",
+          "valid": true,
+          "value": "<redacted>"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "address",
+          "valid": true,
+          "value": "12 Test Street"
+        },
+        {
+          "ariaInvalid": "false",
+          "error": null,
+          "name": "city",
+          "valid": true,
+          "value": "Tbilisi"
+        }
+      ],
+      "formBusy": "false",
+      "heading": "Checkout",
+      "mainText": "Checkout\nFull name\nEmail\nAddress\nCity\nPlace order\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98",
+      "submit": [
+        {
+          "disabled": false,
+          "label": "Place order"
+        }
+      ],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/checkout",
+      "label": "State before evidence capture"
+    }
+  ],
+  "emailVerification": "qa@example.com visually verified; input values are redacted by the read-only textual interface.",
+  "backgroundTestTabsActive": {
+    "production": false,
+    "local": false
+  },
+  "localDiagnostic": {
+    "script": "/assets/index-CG9bitzT.js",
+    "beforeActivationTrace": [],
+    "afterActivationValidationTrace": [
+      {
+        "level": "info",
+        "message": "CORE_CHECKOUT_DIAGNOSTIC entered Object",
+        "timestamp": "2026-10-30T17:21:07.933Z",
+        "url": "http://127.0.0.1:4193/assets/index-CG9bitzT.js"
+      },
+      {
+        "level": "info",
+        "message": "CORE_CHECKOUT_DIAGNOSTIC validation Array(4)",
+        "timestamp": "2026-10-30T17:21:07.933Z",
+        "url": "http://127.0.0.1:4193/assets/index-CG9bitzT.js"
+      }
+    ],
+    "validSubmissionResult": {
+      "confirmationText": "Thank you! Your order has been placed.\nDelivery details\nFull name\nTest Buyer\nEmail\nqa@example.com\nAddress\n12 Test Street\nCity\nTbilisi\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98\nBack to Catalog",
+      "badgeCount": 0,
+      "trace": [
+        {
+          "level": "info",
+          "message": "CORE_CHECKOUT_DIAGNOSTIC entered Object",
+          "timestamp": "2026-10-30T17:21:07.933Z",
+          "url": "http://127.0.0.1:4193/assets/index-CG9bitzT.js"
+        },
+        {
+          "level": "info",
+          "message": "CORE_CHECKOUT_DIAGNOSTIC validation Array(4)",
+          "timestamp": "2026-10-30T17:21:07.933Z",
+          "url": "http://127.0.0.1:4193/assets/index-CG9bitzT.js"
+        },
+        {
+          "level": "info",
+          "message": "CORE_CHECKOUT_DIAGNOSTIC entered Object",
+          "timestamp": "2026-10-30T17:21:55.011Z",
+          "url": "http://127.0.0.1:4193/assets/index-CG9bitzT.js"
+        },
+        {
+          "level": "info",
+          "message": "CORE_CHECKOUT_DIAGNOSTIC validation Array(0)",
+          "timestamp": "2026-10-30T17:21:55.011Z",
+          "url": "http://127.0.0.1:4193/assets/index-CG9bitzT.js"
+        },
+        {
+          "level": "info",
+          "message": "CORE_CHECKOUT_DIAGNOSTIC snapshot 1 1798",
+          "timestamp": "2026-10-30T17:21:55.011Z",
+          "url": "http://127.0.0.1:4193/assets/index-CG9bitzT.js"
+        },
+        {
+          "level": "info",
+          "message": "CORE_CHECKOUT_DIAGNOSTIC clearCart returned",
+          "timestamp": "2026-10-30T17:21:55.011Z",
+          "url": "http://127.0.0.1:4193/assets/index-CG9bitzT.js"
+        }
+      ],
+      "emptyCartText": "Cart\n\nYour cart is empty.\n\nBrowse products"
+    }
+  },
+  "activeProductionAttempt": [
+    {
+      "alerts": [],
+      "badge": "2",
+      "fields": [],
+      "formBusy": null,
+      "heading": "Cart",
+      "loadedScript": "/assets/index-B1SdGF_Z.js",
+      "mainText": "Cart\nRed Nail Polish\n\nUnit price: $8.99\n\n−\n2\n+\nRemove\n\nLine total\n\n$17.98\n\nClear cart\nOrder summary\nSubtotal\n$17.98\nTotal\n$17.98\nProceed to checkout",
+      "submit": [],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/cart",
+      "label": "Active production Cart"
+    },
+    {
+      "alerts": [],
+      "badge": "2",
+      "fields": [
+        {
+          "ariaInvalid": "false",
+          "name": "fullName",
+          "valid": false,
+          "value": ""
+        },
+        {
+          "ariaInvalid": "false",
+          "name": "email",
+          "valid": false,
+          "value": ""
+        },
+        {
+          "ariaInvalid": "false",
+          "name": "address",
+          "valid": false,
+          "value": ""
+        },
+        {
+          "ariaInvalid": "false",
+          "name": "city",
+          "valid": false,
+          "value": ""
+        }
+      ],
+      "formBusy": "false",
+      "heading": "Checkout",
+      "loadedScript": "/assets/index-B1SdGF_Z.js",
+      "mainText": "Checkout\nFull name\nEmail\nAddress\nCity\nPlace order\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98",
+      "submit": [
+        {
+          "disabled": false,
+          "label": "Place order"
+        }
+      ],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/checkout",
+      "label": "Active production Checkout before fill"
+    },
+    {
+      "alerts": [],
+      "badge": "2",
+      "fields": [
+        {
+          "ariaInvalid": "false",
+          "name": "fullName",
+          "valid": true,
+          "value": "Test Buyer"
+        },
+        {
+          "ariaInvalid": "false",
+          "name": "email",
+          "valid": true,
+          "value": "<redacted>"
+        },
+        {
+          "ariaInvalid": "false",
+          "name": "address",
+          "valid": true,
+          "value": "12 Test Street"
+        },
+        {
+          "ariaInvalid": "false",
+          "name": "city",
+          "valid": true,
+          "value": "Tbilisi"
+        }
+      ],
+      "formBusy": "false",
+      "heading": "Checkout",
+      "loadedScript": "/assets/index-B1SdGF_Z.js",
+      "mainText": "Checkout\nFull name\nEmail\nAddress\nCity\nPlace order\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98",
+      "submit": [
+        {
+          "disabled": false,
+          "label": "Place order"
+        }
+      ],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/checkout",
+      "label": "Active production verified fields"
+    },
+    {
+      "alerts": [],
+      "badge": null,
+      "fields": [],
+      "formBusy": null,
+      "heading": "Thank you! Your order has been placed.",
+      "loadedScript": "/assets/index-B1SdGF_Z.js",
+      "mainText": "Thank you! Your order has been placed.\nDelivery details\nFull name\nTest Buyer\nEmail\nqa@example.com\nAddress\n12 Test Street\nCity\nTbilisi\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98\nBack to Catalog",
+      "submit": [],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/checkout",
+      "label": "Active production confirmation"
+    },
+    {
+      "alerts": [],
+      "badge": null,
+      "fields": [],
+      "formBusy": null,
+      "heading": "Thank you! Your order has been placed.",
+      "loadedScript": "/assets/index-B1SdGF_Z.js",
+      "mainText": "Thank you! Your order has been placed.\nDelivery details\nFull name\nTest Buyer\nEmail\nqa@example.com\nAddress\n12 Test Street\nCity\nTbilisi\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98\nBack to Catalog",
+      "submit": [],
+      "totals": [
+        {
+          "label": "Subtotal",
+          "value": "$17.98"
+        },
+        {
+          "label": "Total",
+          "value": "$17.98"
+        }
+      ],
+      "url": "https://10x-shop-pavlepritula.vercel.app/checkout",
+      "label": "Production confirmation remains after cart clearing"
+    },
+    {
+      "alerts": [],
+      "badge": null,
+      "fields": [],
+      "formBusy": null,
+      "heading": "Cart",
+      "loadedScript": "/assets/index-B1SdGF_Z.js",
+      "mainText": "Cart\n\nYour cart is empty.\n\nBrowse products",
+      "submit": [],
+      "totals": [],
+      "url": "https://10x-shop-pavlepritula.vercel.app/cart",
+      "label": "Production empty Cart after order"
+    }
+  ],
+  "checks": {
+    "confirmationHeading": true,
+    "matchingTotals": true,
+    "confirmationStableAfterClear": true,
+    "badgeRemoved": true,
+    "cartEmpty": true,
+    "applicationConsoleErrors": [],
+    "extensionConsoleErrors": []
+  },
+  "diagnosis": "The controlled local comparison demonstrated background-tab submission delivery failure in the verification procedure. Activating the same tab made validation and the submit handler execute; the active-tab production purchase then passed without application changes.",
+  "historicalLimit": "The exact state of the original 2026-10-27 Checkout was unavailable and was not reconstructed.",
+  "applicationDefectConfirmed": false,
+  "temporarySourceChangesRestored": true,
+  "result": "Production purchase verified; no application fix or production publication required."
+}

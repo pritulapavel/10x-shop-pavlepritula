@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-30",
+  "source": "Agent-operated approved Chrome extension; direct production loads and reloads",
+  "browser": "Google Chrome",
+  "checks": [
+    {
+      "requestedPath": "/cart",
+      "action": "direct navigation",
+      "headings": [
+        "Cart"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nCart\n\nYour cart is empty.\n\nBrowse products\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/cart"
+    },
+    {
+      "requestedPath": "/cart",
+      "action": "reload",
+      "headings": [
+        "Cart"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nCart\n\nYour cart is empty.\n\nBrowse products\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/cart"
+    },
+    {
+      "requestedPath": "/login",
+      "action": "direct navigation",
+      "headings": [
+        "Log in"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nLog in\nUsername\nPassword\nLog In\n← Back to catalog\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/login"
+    },
+    {
+      "requestedPath": "/login",
+      "action": "reload",
+      "headings": [
+        "Log in"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nLog in\nUsername\nPassword\nLog In\n← Back to catalog\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/login"
+    },
+    {
+      "requestedPath": "/checkout",
+      "action": "direct guest navigation; guard redirect",
+      "headings": [
+        "Log in"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nLog in\nUsername\nPassword\nLog In\n← Back to catalog\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/login"
+    },
+    {
+      "requestedPath": "/login",
+      "action": "reload of guest-guard destination",
+      "headings": [
+        "Log in"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nLog in\nUsername\nPassword\nLog In\n← Back to catalog\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/login"
+    },
+    {
+      "requestedPath": "/not-a-route",
+      "action": "direct navigation",
+      "headings": [
+        "Page not found"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nPage not found\n\nThe page you are looking for does not exist.\n\nGo to catalog\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/not-a-route"
+    },
+    {
+      "requestedPath": "/not-a-route",
+      "action": "reload",
+      "headings": [
+        "Page not found"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nPage not found\n\nThe page you are looking for does not exist.\n\nGo to catalog\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/not-a-route"
+    },
+    {
+      "requestedPath": "/products/5",
+      "action": "direct navigation",
+      "headings": [
+        "Red Nail Polish"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\n← Back to catalog\nRed Nail Polish\n\nThe Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.\n\n$8.99\n\nIn stock\n\nQuantity\n\n−\n1\n+\nAdd to cart\n\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/products/5"
+    },
+    {
+      "requestedPath": "/products/5",
+      "action": "reload",
+      "headings": [
+        "Red Nail Polish"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\n← Back to catalog\nRed Nail Polish\n\nThe Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.\n\n$8.99\n\nIn stock\n\nQuantity\n\n−\n1\n+\nAdd to cart\n\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/products/5"
+    },
+    {
+      "requestedPath": "/",
+      "action": "direct navigation",
+      "headings": [
+        "Catalog"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nCatalog\n\nLoading products...\n\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/"
+    },
+    {
+      "requestedPath": "/",
+      "action": "reload",
+      "headings": [
+        "Catalog"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nCatalog\n\nLoading products...\n\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/"
+    },
+    {
+      "requestedPath": "/",
+      "action": "loaded after reload",
+      "headings": [
+        "Catalog",
+        "Essence Mascara Lash Princess",
+        "Eyeshadow Palette with Mirror",
+        "Powder Canister",
+        "Red Lipstick",
+        "Red Nail Polish",
+        "Calvin Klein CK One",
+        "Chanel Coco Noir Eau De",
+        "Dior J'adore",
+        "Dolce Shine Eau de",
+        "Gucci Bloom Eau de",
+        "Annibale Colombo Bed",
+        "Annibale Colombo Sofa"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nCatalog\nEssence Mascara Lash Princess\n\n$9.99\n\nAdd to cart\n\nEyeshadow Palette with Mirror\n\n$19.99\n\nAdd to cart\n\nPowder Canister\n\n$14.99\n\nAdd to cart\n\nRed Lipstick\n\n$12.99\n\nAdd to cart\n\nRed Nail Polish\n\n$8.99\n\nAdd to cart\n\nCalvin Klein CK One\n\n$49.99\n\nAdd to cart\n\nChanel Coco Noir Eau De\n\n$129.99\n\nAdd to cart\n\nDior J'adore\n\n$89.99\n\nAdd to cart\n\nDolce Shine Eau de\n\n$69.99\n\nAdd to cart\n\nGucci Bloom Eau de\n\n$79.99\n\nAdd to cart\n\nAnnibale Colombo Bed\n\n$1,899.99\n\nAdd to cart\n\nAnnibale Colombo Sofa\n\n$2,499.99\n\nAdd to cart\n\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/"
+    },
+    {
+      "requestedPath": "/",
+      "action": "fresh direct navigation; products loaded",
+      "headings": [
+        "Catalog",
+        "Essence Mascara Lash Princess",
+        "Eyeshadow Palette with Mirror",
+        "Powder Canister",
+        "Red Lipstick",
+        "Red Nail Polish",
+        "Calvin Klein CK One",
+        "Chanel Coco Noir Eau De",
+        "Dior J'adore",
+        "Dolce Shine Eau de",
+        "Gucci Bloom Eau de",
+        "Annibale Colombo Bed",
+        "Annibale Colombo Sofa"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nCatalog\nEssence Mascara Lash Princess\n\n$9.99\n\nAdd to cart\n\nEyeshadow Palette with Mirror\n\n$19.99\n\nAdd to cart\n\nPowder Canister\n\n$14.99\n\nAdd to cart\n\nRed Lipstick\n\n$12.99\n\nAdd to cart\n\nRed Nail Polish\n\n$8.99\n\nAdd to cart\n\nCalvin Klein CK One\n\n$49.99\n\nAdd to cart\n\nChanel Coco Noir Eau De\n\n$129.99\n\nAdd to cart\n\nDior J'adore\n\n$89.99\n\nAdd to cart\n\nDolce Shine Eau de\n\n$69.99\n\nAdd to cart\n\nGucci Bloom Eau de\n\n$79.99\n\nAdd to cart\n\nAnnibale Colombo Bed\n\n$1,899.99\n\nAdd to cart\n\nAnnibale Colombo Sofa\n\n$2,499.99\n\nAdd to cart\n\n10X Shop",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/"
+    }
+  ],
+  "browserVersion": "156.0.8078.76",
+  "browserVersionSource": "Running chrome.exe ProductVersion, inspected with read-only process/path metadata",
+  "scope": "Hosted route rendering and guest Checkout guard only. In-memory auth/cart reset on reload is expected. No repeated purchase or grid-boundary measurements.",
+  "localRevision": "1c977b10f2f1795885990bd58916ba4cdfe09f03",
+  "deployedRevision": "Not independently verified"
+}
