@@ -1,6 +1,6 @@
 # CORE report
 
-Status as of 2026-10-30: implementation through tasks 14–16 is complete.
+Status as of 2026-10-31: implementation through tasks 14–16 is complete.
 CORE 19–23 remains in progress because Firefox verification is pending; delivery
 is incomplete. The focused production purchase retest now passes. Temporary local
 diagnostics were removed, the original source was restored exactly, and typecheck,
@@ -14,10 +14,12 @@ checkout and a local confirmation. These modules are implemented, together with
 responsive styling, an ErrorBoundary and the React concepts review in PLAN.md.
 README.md and this report are prepared; DEBUG-LOG.md contains four genuine fixed bugs.
 
-Hosted direct-route/refresh checks now pass. Two user-supplied production Lighthouse
-audits have been imported and rendered below. Remaining submission items are Firefox
-checks and its version, one clean Incognito Mobile/Navigation audit with extensions
-inactive, repository-visibility confirmation and final verification.
+Hosted direct-route/refresh checks pass. Three user-supplied production Lighthouse
+audits have been imported and rendered below. The latest Mobile/Navigation JSON
+has no extension resources; the user separately confirmed Incognito on October 31.
+Remaining submission items are Firefox checks and its version, signed-out
+repository-access confirmation and final verification. The full Chrome build for
+the latest audit is user-reported; no deployed Git revision is inferred.
 
 **Verified source revision:**
 [dc67c1adec594662e398eae3bfbae1672c808f31](https://github.com/pritulapavel/10x-shop-pavlepritula/commit/dc67c1adec594662e398eae3bfbae1672c808f31)
@@ -228,7 +230,10 @@ HTML screenshots, not evidence of a new audit. SHA-256 before/after conversion:
 - Desktop: `8025d146dbeb816df69155bd0c640ce69974a983dd73333cd4bf7ec4815ac6f6`.
 - Mobile: `b7d9ce091fd9bbd3bf475654744180710acfd0a9717a89236a9f7e787c4005c3`.
 
-### Remaining conditions
+### Remaining conditions at the end of the October 30 review
+
+The later Mobile import and user confirmation below close the Lighthouse-evidence
+condition. The following paragraph preserves the earlier state of that review.
 
 The current approved browser inventory contains Chrome extension access, no Firefox
 connection/app, and no supported Lighthouse/Incognito control. The earlier native
@@ -239,6 +244,70 @@ web fetch could not retrieve the repository; neither establishes private/missing
 status. A signed-out repository-page check is still needed. PLAN.md gives the
 short remaining handoff. CORE stays incomplete; application code and DEBUG-LOG
 were unchanged, and npm checks were not repeated for documentation/report changes.
+
+## Additional Mobile evidence import (2026-10-31)
+
+Read-only inspection found branch `main` at local revision
+`6e1e3317d4708fa70d6f9a96316f3064db741b2d`. The newly supplied
+[mobile_result.json](reports/lighthouse/2026-10-30/mobile_result.json) was already
+in the requested evidence folder and was not moved or changed. This is an import
+and conversion of the user's audit, not a new agent-operated Lighthouse run.
+
+| Independently extracted field | Result |
+| --- | --- |
+| Requested/final URL | `https://10x-shop-pavlepritula.vercel.app/` |
+| Lighthouse / mode | **13.5.0**, Mobile / Navigation, DevTools channel |
+| Actual fetchTime | `2026-10-30T19:55:15.614Z` |
+| Asia/Tbilisi (UTC+04:00) | **2026-10-30 23:55:15.614** |
+| Performance / Accessibility / Best Practices / SEO | **95 / 100 / 100 / 83** |
+| FCP / Speed Index | 1273.105 ms / 1273.105 ms |
+| LCP / Time to Interactive | **2829.442 ms** / 2829.442 ms |
+| Total Blocking Time / CLS | **0 ms / 0** |
+| Runtime error / run warnings | No runtime error recorded; `runWarnings: []` |
+| Extension resources | No `chrome-extension://` occurrences anywhere in the parsed JSON |
+
+No non-empty per-audit warnings were found. Settings use simulated throttling
+(RTT 150 ms, throughput 1638.4 Kbps, CPU slowdown 4), locale `en-US`, the four
+listed categories and storage reset enabled. `screenEmulation.disabled` is true;
+its stored 412×823/DPR 1.75 fields do not independently establish the actual viewport.
+The reduced host/network UA contains Chrome/156.0.0.0; the configured emulated
+UA contains Chrome/136.0.0.0. These values do not identify the full browser build.
+
+**Separate user confirmation, October 31:** the user explicitly answered that this
+audit ran in Incognito. For the full Chrome build, the user answered “the same”,
+referring to the previously recorded **Google Chrome 156.0.8078.76** session.
+That build is recorded as user-reported for this audit, not independently extracted
+from its JSON or from a new browser-version check. Incognito confirmation plus the
+Mobile/Navigation export with no extension resources closes the outstanding
+Lighthouse-evidence condition. Browser-wide extension preferences are not inferred
+from JSON, and the deployed Git revision remains unverified.
+
+The new audit still reports no meta description and HTML for `robots.txt`
+(13 syntax errors). `unminified-javascript` passes with no items; unused JavaScript
+is now only the application `assets/index-DNidW9H4.js`, with 46,084 estimated unused
+bytes out of 89,604 total bytes. These are audit observations, not fixes or an
+optimization campaign. Different bundle filenames do not establish a deployed Git
+revision. The earlier reports' extension limitations and Desktop CLS are preserved.
+
+Codex used the same cached official Lighthouse **13.5.0 ReportGenerator** to create
+[mobile_result.html](reports/lighthouse/2026-10-30/mobile_result.html), then opened
+it through the approved Chrome connection and observed **95 / 100 / 100 / 83**.
+[HTML preview](reports/lighthouse/2026-10-30/mobile_result-html-preview.png) is a
+screenshot of the converted saved report, not a new audit. No project dependency
+was installed or changed. The original JSON SHA-256 remains
+`114a58a5bfcd2fbd6d1fa3e0d667ad591dafa474889bd7540c509406276e8175`.
+
+Whitespace cleanup removed exactly four whitespace-only lines from the older HTML
+reports (two per file), and two equivalent lines from the newly generated HTML.
+Embedded report JSON was compared before/after cleanup and remained identical;
+all original JSON files and Checkout/routes evidence were preserved unchanged.
+DEBUG-LOG retains its four genuine fixed bugs. No application code or SEO behavior
+was changed, and typecheck/lint/build were not rerun for this documentation-only pass.
+The documentation diff was reviewed, `git diff --check` reported no errors, and
+the untracked HTML was also checked with a no-index diff and a line-by-line
+whitespace scan. All three HTML files have zero trailing-whitespace lines;
+all 15 unique referenced local evidence files exist.
+Firefox verification and signed-out GitHub access remain pending; CORE is incomplete.
 
 ## Three implementation and debugging challenges
 
@@ -264,9 +333,9 @@ DEBUG-LOG.md, which also records the singular cart badge-label issue.
 
 A small maintained regression suite for cart stock, checkout snapshots and
 breakpoint boundaries would make the existing checks easier to repeat. Firefox
-verification and a clean production Lighthouse run remain necessary before calling
-the submission finished; the supplied extension-contaminated audits are useful
-observations with explicit limits.
+verification and signed-out repository access remain necessary before calling the
+submission finished. The latest Mobile export and separate user confirmations
+now complement the earlier audits, whose extension limitations remain explicit.
 
 ## AI assistance
 
