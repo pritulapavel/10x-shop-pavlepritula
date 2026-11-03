@@ -30,7 +30,8 @@ Checkboxes mark verified work only.
   checks pass and supplied Lighthouse JSON/HTML reports are recorded. The latest
   Mobile export has no extension resources, with separate user confirmation of
   Incognito. Firefox, signed-out repository access and final verification remain
-  pending.
+  pending. The November 3 cart-persistence enhancement is verified locally;
+  publication and production verification of that change remain pending.
 
 ## Planned routes and behavior
 
@@ -393,6 +394,66 @@ push, deploy, visibility change or course-form submission was performed.
 Only documentation and Lighthouse artifacts changed in this pass. No application
 code, dependency, DEBUG-LOG, Checkout/routes evidence or original JSON was changed;
 typecheck/lint/build were not repeated. No staging, commit, push or deploy was performed.
+
+## Cart persistence and focused CORE review (2026-11-03)
+
+- [x] Inspect repository instructions, current source/docs and read-only Git:
+  `main` at `12079f9399c62789029ca12fde7ea63715502141`; the tree started clean.
+- [x] Implement the user-requested persistence enhancement, separate from the four
+  historical bugs: lazy read-only initialization, unknown-data validation and an
+  effect that writes only `shop_cart`. Invalid carts are rejected as a whole;
+  storage failures do not reset working React state. No auth/delivery/confirmation
+  persistence, dependencies, cross-tab sync or temporary application fault code.
+- [x] Pass **38/38 Node checks** against the actual helper, including malformed and
+  incompatible data, invalid IDs/prices/stock/quantities, duplicates, extra-field
+  removal, repeated initialization without writes and mocked access/read/write failures.
+  [Runnable check](reports/cart-persistence/2026-11-03/check-storage.mjs),
+  [results](reports/cart-persistence/2026-11-03/storage-checks.json).
+- [x] Verify local production build `index-a-XYIfQo.js` at
+  `http://127.0.0.1:4195/` in **Google Chrome 156.0.8078.80** (executable metadata).
+  Add two nail-polish units → reload: badge 2, **$17.98**. Change to three → reload:
+  badge 3, **$26.97**. Add one lipstick → reload: badge 4, **$39.96**. Remove lipstick
+  → reload: three units remain. Remove the last product → reload: empty, no badge.
+  Cancel Clear cart → reload: two units remain; confirm Clear cart → reload: empty.
+- [x] Preserve cart through guest login return and logout/login. Complete a local
+  order for two nail-polish units: Cart/Checkout/confirmation **$17.98**, copied
+  delivery details remain visible, badge disappears, Cart stays empty after reload.
+  **Attribution:** the user activated the test tab and clicked Place order after
+  automation inputs remained inconclusive. Codex inspected the real confirmation
+  and performed Cart/reload checks. This is not a new application bug or a hosted test.
+  [Browser evidence](reports/cart-persistence/2026-11-03/browser-checks.json),
+  [confirmation screenshot](reports/cart-persistence/2026-11-03/confirmation.png),
+  [empty Cart screenshot](reports/cart-persistence/2026-11-03/empty-cart-after-reload.png).
+- [x] Pass `npm run typecheck`, `npm run lint` and `npm run build`. No application
+  warnings/errors were captured. The temporary preview was stopped; no test controls
+  or diagnostic code were added to application source.
+- [x] Review the final diff, pass `git diff --check` and verify all 21 referenced
+  local files. Generated assets exist and match the browser's loaded bundle;
+  DEBUG-LOG, previous evidence, Checkout, types and dependencies are unchanged.
+
+| Mandatory CORE area | Focused source/evidence review |
+| --- | --- |
+| React/Vite/TypeScript/Tailwind/scripts | React/DOM/types 19; React and Tailwind Vite plugins; CSS import; all four strict/unused/fallthrough options; five scripts and referenced TS configs. Current npm checks pass. |
+| Six routes and shared shell | App defines `/`, `/login`, `/products/:id`, `/cart`, guarded `/checkout`, `*`; Layout renders Header/Footer/Outlet. Reuse [hosted route evidence](reports/routes/2026-10-30/evidence.json). |
+| Local login and return | Login trims username, requires a six-character password, returns only the intended Checkout destination; AuthContext stays in memory. Earlier checks plus this focused flow. |
+| DummyJSON Catalog/Product | Effects fetch with status handling/abort cleanup; Catalog loading/error/empty branches; Product validates IDs and handles 404/errors. Reuse stage 7–8/10–13 evidence below. |
+| Shared cart and totals | Immutable actions enforce stock/quantity limits; Header sums units; currency helpers use cents. Existing stock-fix evidence plus current storage/reload checks. |
+| Checkout | Four controlled fields/inline validation, ref duplicate guard, copied confirmation before clearCart; confirmation renders before empty-cart redirect. Earlier evidence plus assisted local persistence flow. |
+| React concepts and types | Typed Product/Cart/form state, props/children, callbacks, map/keys, Context, conditional rendering, effects and immutable updates; see Task 16 examples below. |
+| Responsive/focus/ErrorBoundary/debugging | Reuse original attributed grid/81-target/focus/hover/recovery results below; layout code is unchanged. DEBUG-LOG retains four genuine bugs. No complete QA rerun is claimed. |
+| English documents/history/live routes/Lighthouse | README/PLAN/REPORT present; real Git history inspected; hosted evidence and original October 30 audits retained. Audits and old hosted checks do not measure this enhancement. |
+| Outstanding delivery evidence | Firefox/version absent from approved inventory; signed-out public GitHub access unverified (anonymous fetch 404 is inconclusive); new persistence publication/production retest pending. |
+
+React state remains the UI source. Cart storage is per browser profile/origin
+(protocol/host/port); preview, localhost/127.0.0.1 and production are separate.
+Only the last successful save can be restored after a storage failure. Restored
+stock/prices remain snapshots; no cross-tab synchronization was added. Earlier
+in-memory-cart statements describe their historical revision, not this enhancement.
+
+- [ ] User publishes the new source, then verify add/edit/remove/clear/reload and
+  Checkout-clearing behavior on the production origin. No publication was performed.
+- [ ] Complete actual Firefox verification and signed-out GitHub access.
+- [ ] Close CORE delivery only after those results and final review are present.
 
 ## Stage 1–2 verification
 

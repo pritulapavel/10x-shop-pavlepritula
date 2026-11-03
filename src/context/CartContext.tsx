@@ -1,6 +1,7 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
 import type { CartState, Product } from '../types'
+import { readCart, saveCart } from '../utils/cartStorage'
 
 interface CartContextValue extends CartState {
   addItem: (product: Product, quantity: number) => void
@@ -16,7 +17,11 @@ interface CartProviderProps {
 const CartContext = createContext<CartContextValue | undefined>(undefined)
 
 export function CartProvider({ children }: CartProviderProps) {
-  const [cart, setCart] = useState<CartState>({ items: [] })
+  const [cart, setCart] = useState<CartState>(readCart)
+
+  useEffect(() => {
+    saveCart(cart)
+  }, [cart])
 
   function addItem(product: Product, quantity: number) {
     if (!Number.isInteger(quantity) || quantity <= 0) {

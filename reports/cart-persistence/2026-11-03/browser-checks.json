@@ -1,0 +1,294 @@
+{
+  "date": "2026-11-03",
+  "browser": "Google Chrome",
+  "browserVersion": "156.0.8078.80",
+  "browserVersionSource": "Running chrome.exe ProductVersion",
+  "origin": "http://127.0.0.1:4195",
+  "sourceRevisionAtStart": "12079f9399c62789029ca12fde7ea63715502141",
+  "scope": "Local production preview of uncommitted cart persistence; not production-host verification",
+  "observations": [
+    {
+      "label": "add product 5, quantity 2",
+      "badge": "2 items in cart",
+      "headings": [
+        "Red Nail Polish"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n2\nLog in\n← Back to catalog\nRed Nail Polish\n\nThe Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.\n\n$8.99\n\nIn stock\n\nQuantity\n\n−\n2\n+\n\nIn your cart: 2. Available to add: 77.\n\nAdd to cart\n\nAdded to cart ✓\n\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    },
+    {
+      "label": "after reload: quantity 2 and totals",
+      "badge": "2 items in cart",
+      "headings": [
+        "Cart",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n2\nLog in\nCart\nRed Nail Polish\n\nUnit price: $8.99\n\n−\n2\n+\nRemove\n\nLine total\n\n$17.98\n\nClear cart\nOrder summary\nSubtotal\n$17.98\nTotal\n$17.98\nProceed to checkout\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    },
+    {
+      "label": "stable Cart before quantity edit: 2 × $8.99 = $17.98",
+      "badge": "2 items in cart",
+      "headings": [
+        "Cart",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n2\nLog in\nCart\nRed Nail Polish\n\nUnit price: $8.99\n\n−\n2\n+\nRemove\n\nLine total\n\n$17.98\n\nClear cart\nOrder summary\nSubtotal\n$17.98\nTotal\n$17.98\nProceed to checkout\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    },
+    {
+      "label": "quantity changed to 3",
+      "badge": "3 items in cart",
+      "headings": [
+        "Cart",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n3\nLog in\nCart\nRed Nail Polish\n\nUnit price: $8.99\n\n−\n3\n+\nRemove\n\nLine total\n\n$26.97\n\nClear cart\nOrder summary\nSubtotal\n$26.97\nTotal\n$26.97\nProceed to checkout\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    },
+    {
+      "label": "quantity 3 after reload",
+      "badge": "3 items in cart",
+      "headings": [
+        "Cart",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n3\nLog in\nCart\nRed Nail Polish\n\nUnit price: $8.99\n\n−\n3\n+\nRemove\n\nLine total\n\n$26.97\n\nClear cart\nOrder summary\nSubtotal\n$26.97\nTotal\n$26.97\nProceed to checkout\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    },
+    {
+      "label": "second product added; 4 units, total $39.96",
+      "badge": "4 items in cart",
+      "headings": [
+        "Cart",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n4\nLog in\nCart\nRed Nail Polish\n\nUnit price: $8.99\n\n−\n3\n+\nRemove\n\nLine total\n\n$26.97\n\nRed Lipstick\n\nUnit price: $12.99\n\n−\n1\n+\nRemove\n\nLine total\n\n$12.99\n\nClear cart\nOrder summary\nSubtotal\n$39.96\nTotal\n$39.96\nProceed to checkout\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    },
+    {
+      "label": "two-product cart after reload",
+      "badge": "4 items in cart",
+      "headings": [
+        "Cart",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n4\nLog in\nCart\nRed Nail Polish\n\nUnit price: $8.99\n\n−\n3\n+\nRemove\n\nLine total\n\n$26.97\n\nRed Lipstick\n\nUnit price: $12.99\n\n−\n1\n+\nRemove\n\nLine total\n\n$12.99\n\nClear cart\nOrder summary\nSubtotal\n$39.96\nTotal\n$39.96\nProceed to checkout\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    },
+    {
+      "label": "removed Red Lipstick stays removed after reload; 3 units, $26.97",
+      "badge": "3 items in cart",
+      "headings": [
+        "Cart",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n3\nLog in\nCart\nRed Nail Polish\n\nUnit price: $8.99\n\n−\n3\n+\nRemove\n\nLine total\n\n$26.97\n\nClear cart\nOrder summary\nSubtotal\n$26.97\nTotal\n$26.97\nProceed to checkout\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    },
+    {
+      "label": "removed last item stays empty after reload",
+      "badge": null,
+      "headings": [
+        "Cart"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nCart\n\nYour cart is empty.\n\nBrowse products\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    },
+    {
+      "label": "Clear cart cancel: 2 units, $17.98",
+      "url": "http://127.0.0.1:4195/cart",
+      "ax": "Browser tab: 1418530794, Title: \"10X Shop\", URL: \"http://127.0.0.1:4195/cart\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 22 button Clear cart"
+    },
+    {
+      "label": "cancelled clear after full reload",
+      "url": "http://127.0.0.1:4195/cart",
+      "ax": "Browser tab: 1418530794, Title: \"10X Shop\", URL: \"http://127.0.0.1:4195/cart\".\n1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/cart\n\t2 container root\n\t\t3 container\n\t\t\t4 link Description: 10X Shop, Value: 127.0.0.1:4195/\n\t\t\t5 container Main navigation\n\t\t\t\t6 link Description: Catalog, Value: 127.0.0.1:4195/\n\t\t\t\t7 link Description: Cart 2 items in cart, Value: 127.0.0.1:4195/cart\n\t\t\t\t8 link Description: Log in, Value: 127.0.0.1:4195/login\n\t\t9 container\n\t\t\t10 heading Cart, Value: 1\n\t\t\t\t11 text Cart\n\t\t\t12 content list\n\t\t\t\t13 container\n\t\t\t\t\t14 image Red Nail Polish product thumbnail\n\t\t\t\t\t15 link Description: Red Nail Polish, Value: 127.0.0.1:4195/products/5\n\t\t\t\t\t16 text Unit price:  $8.99\n\t\t\t\t\t17 container Quantity for Red Nail Polish\n\t\t\t\t\t\t18 button Decrease quantity for Red Nail Polish\n\t\t\t\t\t\t19 text 2\n\t\t\t\t\t\t20 button Increase quantity for Red Nail Polish\n\t\t\t\t\t21 button Remove Red Nail Polish\n\t\t\t\t\t22 text Line total $17.98\n\t\t\t23 button Clear cart\n\t\t\t24 container Order summary\n\t\t\t\t25 heading Order summary, Value: 2, ID: summary-heading\n\t\t\t\t\t26 text Order summary\n\t\t\t\t27 definition list\n\t\t\t\t\t28 container Subtotal\n\t\t\t\t\t\t29 text Subtotal\n\t\t\t\t\t30 text $17.98\n\t\t\t\t\t31 container Total\n\t\t\t\t\t\t32 text Total\n\t\t\t\t\t33 text $17.98\n\t\t\t\t34 link Description: Proceed to checkout, Value: 127.0.0.1:4195/checkout\n\t\t35 text 10X Shop\n\nThe focused UI element is 1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/cart"
+    },
+    {
+      "label": "confirmed Clear cart stays empty after reload",
+      "url": "http://127.0.0.1:4195/cart",
+      "ax": "Browser tab: 1418530794, Title: \"10X Shop\", URL: \"http://127.0.0.1:4195/cart\".\n1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/cart\n\t2 container root\n\t\t3 container\n\t\t\t4 link Description: 10X Shop, Value: 127.0.0.1:4195/\n\t\t\t5 container Main navigation\n\t\t\t\t6 link Description: Catalog, Value: 127.0.0.1:4195/\n\t\t\t\t7 link Description: Cart, Value: 127.0.0.1:4195/cart\n\t\t\t\t8 link Description: Log in, Value: 127.0.0.1:4195/login\n\t\t9 container\n\t\t\t10 heading Cart, Value: 1\n\t\t\t\t11 text Cart\n\t\t\t12 text Your cart is empty.\n\t\t\t13 link Description: Browse products, Value: 127.0.0.1:4195/\n\t\t14 text 10X Shop\n\nThe focused UI element is 1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/cart"
+    },
+    {
+      "label": "Cart before purchase: 2 units, $17.98",
+      "url": "http://127.0.0.1:4195/cart",
+      "ax": "Browser tab: 1418530794, Title: \"10X Shop\", URL: \"http://127.0.0.1:4195/cart\".\n1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/cart\n\t2 container root\n\t\t3 container\n\t\t\t4 link Description: 10X Shop, Value: 127.0.0.1:4195/\n\t\t\t5 container Main navigation\n\t\t\t\t6 link Description: Catalog, Value: 127.0.0.1:4195/\n\t\t\t\t7 link Description: Cart 2 items in cart, Value: 127.0.0.1:4195/cart\n\t\t\t\t8 link Description: Log in, Value: 127.0.0.1:4195/login\n\t\t11 container\n\t\t\t12 heading Cart, Value: 1\n\t\t\t\t13 text Cart\n\t\t\t14 content list\n\t\t\t\t15 container\n\t\t\t\t\t16 image Red Nail Polish product thumbnail\n\t\t\t\t\t17 link Description: Red Nail Polish, Value: 127.0.0.1:4195/products/5\n\t\t\t\t\t18 text Unit price:  $8.99\n\t\t\t\t\t19 container Quantity for Red Nail Polish\n\t\t\t\t\t\t20 button Decrease quantity for Red Nail Polish\n\t\t\t\t\t\t21 text 2\n\t\t\t\t\t\t22 button Increase quantity for Red Nail Polish\n\t\t\t\t\t23 button Remove Red Nail Polish\n\t\t\t\t\t24 text Line total $17.98\n\t\t\t25 button Clear cart\n\t\t\t26 container Order summary\n\t\t\t\t27 heading Order summary, Value: 2, ID: summary-heading\n\t\t\t\t\t28 text Order summary\n\t\t\t\t29 definition list\n\t\t\t\t\t30 container Subtotal\n\t\t\t\t\t\t31 text Subtotal\n\t\t\t\t\t32 text $17.98\n\t\t\t\t\t33 container Total\n\t\t\t\t\t\t34 text Total\n\t\t\t\t\t35 text $17.98\n\t\t\t\t36 link Description: Proceed to checkout, Value: 127.0.0.1:4195/checkout\n\t\t10 text 10X Shop\n\nThe focused UI element is 7 link Description: Cart 2 items in cart, URL: 127.0.0.1:4195/cart"
+    },
+    {
+      "label": "guest redirected to Login with badge 2",
+      "url": "http://127.0.0.1:4195/login",
+      "ax": "Browser tab: 1418530794, Title: \"10X Shop\", URL: \"http://127.0.0.1:4195/login\".\n1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/login\n\t2 container root\n\t\t3 container\n\t\t\t4 link Description: 10X Shop, Value: 127.0.0.1:4195/\n\t\t\t5 container Main navigation\n\t\t\t\t6 link Description: Catalog, Value: 127.0.0.1:4195/\n\t\t\t\t7 link Description: Cart 2 items in cart, Value: 127.0.0.1:4195/cart\n\t\t\t\t8 link Description: Log in, Value: 127.0.0.1:4195/login\n\t\t11 container Log in\n\t\t\t12 heading Log in, Value: 1, ID: login-heading\n\t\t\t\t13 text Log in\n\t\t\t14 container\n\t\t\t\t15 text Username\n\t\t\t\t16 text field (settable) Username\n\t\t\t\t17 text Password\n\t\t\t\t18 text field (settable) Password\n\t\t\t\t19 button Log In\n\t\t\t20 link Description: ← Back to catalog, Value: 127.0.0.1:4195/\n\t\t10 text 10X Shop\n\nThe focused UI element is 1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/login"
+    },
+    {
+      "label": "login returned to Checkout; badge 2 and total $17.98",
+      "url": "http://127.0.0.1:4195/checkout",
+      "ax": "Browser tab: 1418530794, Title: \"10X Shop\", URL: \"http://127.0.0.1:4195/checkout\".\n1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/checkout\n\t2 container root\n\t\t3 container\n\t\t\t4 link Description: 10X Shop, Value: 127.0.0.1:4195/\n\t\t\t5 container Main navigation\n\t\t\t\t6 link Description: Catalog, Value: 127.0.0.1:4195/\n\t\t\t\t7 link Description: Cart 2 items in cart, Value: 127.0.0.1:4195/cart\n\t\t\t\t11 button Log out\n\t\t12 container\n\t\t\t13 heading Checkout, Value: 1\n\t\t\t\t14 text Checkout\n\t\t\t15 text Full name\n\t\t\t16 text field (settable) Full name, ID: full-name\n\t\t\t17 text Email\n\t\t\t18 text field (settable) Email\n\t\t\t19 text Address\n\t\t\t20 text field (settable) Address, ID: address\n\t\t\t21 text City\n\t\t\t22 text field (settable) City, ID: city\n\t\t\t23 button Place order\n\t\t\t24 container Order summary\n\t\t\t\t25 heading Order summary, Value: 2, ID: checkout-summary-heading\n\t\t\t\t\t26 text Order summary\n\t\t\t\t27 content list\n\t\t\t\t\t28 container\n\t\t\t\t\t\t29 text Red Nail Polish $8.99  ×  2 $17.98\n\t\t\t\t30 definition list\n\t\t\t\t\t31 container Subtotal\n\t\t\t\t\t\t32 text Subtotal\n\t\t\t\t\t33 text $17.98\n\t\t\t\t\t34 container Total\n\t\t\t\t\t\t35 text Total\n\t\t\t\t\t36 text $17.98\n\t\t10 text 10X Shop\n\nThe focused UI element is 1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/checkout"
+    },
+    {
+      "label": "logout preserved badge 2; Login shown",
+      "url": "http://127.0.0.1:4195/login",
+      "ax": "Browser tab: 1418530794, Title: \"10X Shop\", URL: \"http://127.0.0.1:4195/login\".\n1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/login\n\t2 container root\n\t\t3 container\n\t\t\t4 link Description: 10X Shop, Value: 127.0.0.1:4195/\n\t\t\t5 container Main navigation\n\t\t\t\t6 link Description: Catalog, Value: 127.0.0.1:4195/\n\t\t\t\t7 link Description: Cart 2 items in cart, Value: 127.0.0.1:4195/cart\n\t\t\t\t11 link Description: Log in, Value: 127.0.0.1:4195/login\n\t\t12 container Log in\n\t\t\t13 heading Log in, Value: 1, ID: login-heading\n\t\t\t\t14 text Log in\n\t\t\t15 container\n\t\t\t\t16 text Username\n\t\t\t\t17 text field (settable) Username\n\t\t\t\t18 text Password\n\t\t\t\t19 text field (settable) Password\n\t\t\t\t20 button Log In\n\t\t\t21 link Description: ← Back to catalog, Value: 127.0.0.1:4195/\n\t\t10 text 10X Shop\n\nThe focused UI element is 1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/login"
+    },
+    {
+      "label": "earlier native typing attempt: fields were not populated; not a valid submission check",
+      "url": "http://127.0.0.1:4195/checkout",
+      "ax": "Browser tab: 1418530794, Title: \"10X Shop\", URL: \"http://127.0.0.1:4195/checkout\".\n1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/checkout\n\t2 container root\n\t\t3 container\n\t\t\t4 link Description: 10X Shop, Value: 127.0.0.1:4195/\n\t\t\t5 container Main navigation\n\t\t\t\t6 link Description: Catalog, Value: 127.0.0.1:4195/\n\t\t\t\t7 link Description: Cart 2 items in cart, Value: 127.0.0.1:4195/cart\n\t\t\t\t11 button Log out\n\t\t12 container\n\t\t\t13 heading Checkout, Value: 1\n\t\t\t\t14 text Checkout\n\t\t\t15 text Full name\n\t\t\t16 text field (settable) Full name, ID: full-name\n\t\t\t17 text Email\n\t\t\t18 text field (settable) Email\n\t\t\t19 text Address\n\t\t\t20 text field (settable) Address, ID: address\n\t\t\t21 text City\n\t\t\t22 text field (settable) City, ID: city\n\t\t\t23 button Place order\n\t\t\t24 container Order summary\n\t\t\t\t25 heading Order summary, Value: 2, ID: checkout-summary-heading\n\t\t\t\t\t26 text Order summary\n\t\t\t\t27 content list\n\t\t\t\t\t28 container\n\t\t\t\t\t\t29 text Red Nail Polish $8.99  ×  2 $17.98\n\t\t\t\t30 definition list\n\t\t\t\t\t31 container Subtotal\n\t\t\t\t\t\t32 text Subtotal\n\t\t\t\t\t33 text $17.98\n\t\t\t\t\t34 container Total\n\t\t\t\t\t\t35 text Total\n\t\t\t\t\t36 text $17.98\n\t\t10 text 10X Shop\n\nThe focused UI element is 22 text field (settable) City, ID: city"
+    },
+    {
+      "label": "verified Checkout fields before purchase: Test Buyer, qa@example.com, 12 Test Street, Tbilisi; $17.98",
+      "url": "http://127.0.0.1:4195/checkout",
+      "ax": "Browser tab: 1418530794, Title: \"10X Shop\", URL: \"http://127.0.0.1:4195/checkout\".\n1 AXWebArea 10X Shop, URL: 127.0.0.1:4195/checkout\n\t2 container root\n\t\t3 container\n\t\t\t4 link Description: 10X Shop, Value: 127.0.0.1:4195/\n\t\t\t5 container Main navigation\n\t\t\t\t6 link Description: Catalog, Value: 127.0.0.1:4195/\n\t\t\t\t7 link Description: Cart 2 items in cart, Value: 127.0.0.1:4195/cart\n\t\t\t\t11 button Log out\n\t\t12 container\n\t\t\t13 heading Checkout, Value: 1\n\t\t\t\t14 text Checkout\n\t\t\t15 text Full name\n\t\t\t16 text field (settable) Full name, Value: Test Buyer, ID: full-name\n\t\t\t17 text Email\n\t\t\t18 text field (settable) Email, Value: <redacted>\n\t\t\t19 text Address\n\t\t\t20 text field (settable) Address, Value: 12 Test Street, ID: address\n\t\t\t21 text City\n\t\t\t22 text field (settable) City, Value: Tbilisi, ID: city\n\t\t\t23 button Place order\n\t\t\t24 container Order summary\n\t\t\t\t25 heading Order summary, Value: 2, ID: checkout-summary-heading\n\t\t\t\t\t26 text Order summary\n\t\t\t\t27 content list\n\t\t\t\t\t28 container\n\t\t\t\t\t\t29 text Red Nail Polish $8.99  ×  2 $17.98\n\t\t\t\t30 definition list\n\t\t\t\t\t31 container Subtotal\n\t\t\t\t\t\t32 text Subtotal\n\t\t\t\t\t33 text $17.98\n\t\t\t\t\t34 container Total\n\t\t\t\t\t\t35 text Total\n\t\t\t\t\t36 text $17.98\n\t\t10 text 10X Shop\n\nThe focused UI element is 22 text field (settable) City, Value: Tbilisi, ID: city"
+    },
+    {
+      "label": "fresh same-origin document restores cart, not authentication",
+      "badge": "2 items in cart",
+      "headings": [
+        "Cart",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n2\nLog in\nCart\nRed Nail Polish\n\nUnit price: $8.99\n\n−\n2\n+\nRemove\n\nLine total\n\n$17.98\n\nClear cart\nOrder summary\nSubtotal\n$17.98\nTotal\n$17.98\nProceed to checkout\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    },
+    {
+      "label": "fresh Checkout before submit; total $17.98",
+      "badge": "2 items in cart",
+      "headings": [
+        "Checkout",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n2\nLog out\nCheckout\nFull name\nEmail\nAddress\nCity\nPlace order\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98\n10X Shop",
+      "url": "http://127.0.0.1:4195/checkout"
+    },
+    {
+      "label": "after activation: Login shown, persisted badge 2",
+      "badge": "2 items in cart",
+      "headings": [
+        "Log in"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n2\nLog in\nLog in\nUsername\nPassword\nLog In\n← Back to catalog\n10X Shop",
+      "url": "http://127.0.0.1:4195/login"
+    },
+    {
+      "label": "active Checkout: verified fields and total $17.98",
+      "badge": "2 items in cart",
+      "headings": [
+        "Checkout",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\n2\nLog out\nCheckout\nFull name\nEmail\nAddress\nCity\nPlace order\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98\n10X Shop",
+      "url": "http://127.0.0.1:4195/checkout"
+    },
+    {
+      "label": "confirmation after user-operated Place order click; matching $17.98, badge absent",
+      "badge": null,
+      "headings": [
+        "Thank you! Your order has been placed.",
+        "Delivery details",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog out\nThank you! Your order has been placed.\nDelivery details\nFull name\nTest Buyer\nEmail\nqa@example.com\nAddress\n12 Test Street\nCity\nTbilisi\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98\nBack to Catalog\n10X Shop",
+      "url": "http://127.0.0.1:4195/checkout"
+    },
+    {
+      "label": "confirmation remains mounted after persisted cart cleared",
+      "badge": null,
+      "headings": [
+        "Thank you! Your order has been placed.",
+        "Delivery details",
+        "Order summary"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog out\nThank you! Your order has been placed.\nDelivery details\nFull name\nTest Buyer\nEmail\nqa@example.com\nAddress\n12 Test Street\nCity\nTbilisi\nOrder summary\n\nRed Nail Polish\n\n$8.99 × 2\n$17.98\nSubtotal\n$17.98\nTotal\n$17.98\nBack to Catalog\n10X Shop",
+      "url": "http://127.0.0.1:4195/checkout"
+    },
+    {
+      "label": "Cart empty after successful order",
+      "badge": null,
+      "headings": [
+        "Cart"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog out\nCart\n\nYour cart is empty.\n\nBrowse products\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    },
+    {
+      "label": "Cart still empty after full reload; auth not persisted",
+      "badge": null,
+      "headings": [
+        "Cart"
+      ],
+      "scripts": [
+        "/assets/index-a-XYIfQo.js"
+      ],
+      "text": "10X Shop\nCatalog\nCart\nLog in\nCart\n\nYour cart is empty.\n\nBrowse products\n10X Shop",
+      "url": "http://127.0.0.1:4195/cart"
+    }
+  ],
+  "checkoutSubmission": "User clicked actual Place order after automation input delivery remained inconclusive; user reported success, agent independently inspected resulting confirmation.",
+  "consoleLogs": [],
+  "procedureNotes": [
+    "Some automation actions did not reach the UI reliably, including modal handling and background form submission. No application defect was inferred.",
+    "Chrome tabs.selected() did not establish real active state; management metadata was used to verify the actual target URL/active flag.",
+    "The user activated the test tab and later clicked Place order once; agent inspected confirmation and performed Cart/reload checks.",
+    "Malformed data and storage failures were tested with Node mocks against the actual helper, not by weakening browser settings."
+  ],
+  "checks": {
+    "addAndReload": true,
+    "quantityAndReload": true,
+    "twoProductsAndReload": true,
+    "removeAndReload": true,
+    "removeLastAndReload": true,
+    "cancelClearAndReload": true,
+    "confirmClearAndReload": true,
+    "loginLogoutPreservesCart": true,
+    "confirmationAfterClearing": true,
+    "purchasedItemsDoNotReturn": true
+  }
+}

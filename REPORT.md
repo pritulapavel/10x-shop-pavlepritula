@@ -1,10 +1,10 @@
 # CORE report
 
-Status as of 2026-10-31: implementation through tasks 14–16 is complete.
-CORE 19–23 remains in progress because Firefox verification is pending; delivery
-is incomplete. The focused production purchase retest now passes. Temporary local
-diagnostics were removed, the original source was restored exactly, and typecheck,
-lint and build passed after cleanup. No permanent application fix was required.
+Status as of 2026-11-03: CORE modules through tasks 14–16 are implemented. The
+user-requested cart persistence enhancement passes focused local checks below;
+publication and production verification of this change are pending. CORE 19–23
+remains in progress because Firefox verification is pending. Earlier successful
+hosted checks remain historical evidence for the revision tested at that time.
 
 ## Planned and delivered scope
 
@@ -17,8 +17,9 @@ README.md and this report are prepared; DEBUG-LOG.md contains four genuine fixed
 Hosted direct-route/refresh checks pass. Three user-supplied production Lighthouse
 audits have been imported and rendered below. The latest Mobile/Navigation JSON
 has no extension resources; the user separately confirmed Incognito on October 31.
-Remaining submission items are Firefox checks and its version, signed-out
-repository-access confirmation and final verification. The full Chrome build for
+Remaining submission items are publication/production retest of cart persistence,
+Firefox checks and its version, signed-out repository-access confirmation and
+final verification. The full Chrome build for
 the latest audit is user-reported; no deployed Git revision is inferred.
 
 **Verified source revision:**
@@ -309,6 +310,51 @@ whitespace scan. All three HTML files have zero trailing-whitespace lines;
 all 15 unique referenced local evidence files exist.
 Firefox verification and signed-out GitHub access remain pending; CORE is incomplete.
 
+## Cart persistence and focused CORE review (2026-11-03)
+
+Starting local revision: `12079f9399c62789029ca12fde7ea63715502141`, branch `main`,
+with a clean working tree. This is a user-requested enhancement, not a newly
+discovered CORE bug. CartContext now lazily reads `shop_cart` and saves changes
+in an effect, outside render/updaters. The small `cartStorage.ts` helper treats
+parsed JSON as unknown, validates actual cart fields/stock/quantity/unique-ID
+invariants, copies only cart data and catches storage access/read/write failures.
+It never clears other storage keys. Authentication and confirmation remain in memory.
+
+Local production preview `http://127.0.0.1:4195/`, **Google Chrome 156.0.8078.80**
+(running executable metadata), passed add/reload, quantity/reload, multi-product
+totals/badge, removal/reload including the last item, cancel/confirm Clear cart,
+and login/logout cart preservation. Two nail-polish units restored at **$17.98**;
+quantity three restored at **$26.97**; adding one lipstick restored four units at
+**$39.96**. Checkout and confirmation matched **$17.98**, the confirmation retained
+delivery details after cart clearing, and Cart stayed empty after full reload.
+The user clicked Place order after automation input remained inconclusive;
+Codex independently inspected confirmation/badge/empty-Cart/reload results.
+This is an assisted local check, not an autonomous or production-host purchase claim.
+
+[Browser observations](reports/cart-persistence/2026-11-03/browser-checks.json),
+[confirmation](reports/cart-persistence/2026-11-03/confirmation.png) and
+[empty Cart after reload](reports/cart-persistence/2026-11-03/empty-cart-after-reload.png)
+preserve the results. A separate [Node check](reports/cart-persistence/2026-11-03/check-storage.mjs)
+against the real storage helper passed **38/38** assertions/groups for malformed
+JSON, invalid/duplicate items, read-only initialization, extra-field removal,
+round trips, empty saves and mocked access/read/quota failures
+([results](reports/cart-persistence/2026-11-03/storage-checks.json)). Failure injection
+used mocks, not browser settings or temporary application diagnostics.
+`npm run typecheck`, `npm run lint` and `npm run build` passed; the loaded preview
+bundle was `index-a-XYIfQo.js`. No application console warnings/errors were captured.
+
+Persistence is scoped to the same browser profile/origin; writes are best effort,
+so unavailable storage leaves the cart usable in memory and reload restores only
+the last successful save. Saved stock/prices are snapshots, without cross-tab
+synchronization or a server-side order. The focused mandatory-coverage table is in
+[PLAN.md](PLAN.md#cart-persistence-and-focused-core-review-2026-11-03); no additional
+missing mandatory application behavior was established. DEBUG-LOG's four entries
+and old evidence are unchanged. The October 30 Lighthouse reports do not measure
+this new source. Firefox is unavailable in the approved inventory; an anonymous
+GitHub fetch returned 404, which does not establish repository visibility.
+The user must publish and retest the persistence flow on the production origin;
+Firefox and signed-out repository access remain pending. No commit/push/deploy was done.
+
 ## Three implementation and debugging challenges
 
 1. **Keeping stored stock consistent.** An accepted add validated against fresh
@@ -333,8 +379,8 @@ DEBUG-LOG.md, which also records the singular cart badge-label issue.
 
 A small maintained regression suite for cart stock, checkout snapshots and
 breakpoint boundaries would make the existing checks easier to repeat. Firefox
-verification and signed-out repository access remain necessary before calling the
-submission finished. The latest Mobile export and separate user confirmations
+verification, signed-out repository access and a post-publication persistence
+retest remain necessary before calling the submission finished. The latest Mobile export and separate user confirmations
 now complement the earlier audits, whose extension limitations remain explicit.
 
 ## AI assistance

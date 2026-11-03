@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-03",
+  "tool": "Node v24.16.0, built-in assertions against actual cartStorage.ts",
+  "scope": "Mocked localStorage failure/validation checks, separate from real Chrome UI checks",
+  "passed": 38,
+  "failed": 0,
+  "results": [
+    {
+      "name": "valid initialization reads twice without any writes (StrictMode-safe)",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 1 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 2 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 3 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 4 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 5 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 6 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 7 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 8 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 9 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 10 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 11 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 12 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 13 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 14 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 15 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 16 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 17 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 18 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 19 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 20 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 21 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 22 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 23 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 24 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 25 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 26 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "invalid stored shape/field/invariant 27 is rejected without writing",
+      "passed": true
+    },
+    {
+      "name": "malformed or non-finite JSON is rejected: {broken",
+      "passed": true
+    },
+    {
+      "name": "malformed or non-finite JSON is rejected: {\"items\":[{\"prod",
+      "passed": true
+    },
+    {
+      "name": "missing storage entry and a valid empty cart restore empty",
+      "passed": true
+    },
+    {
+      "name": "zero-priced item with quantity equal to stock is valid",
+      "passed": true
+    },
+    {
+      "name": "unrelated fields are discarded and only cart fields are saved",
+      "passed": true
+    },
+    {
+      "name": "multiple products and changed quantities round-trip",
+      "passed": true
+    },
+    {
+      "name": "saving an empty cart prevents removed or purchased items returning",
+      "passed": true
+    },
+    {
+      "name": "localStorage property access failure is caught on read and write",
+      "passed": true
+    },
+    {
+      "name": "getItem failure is caught",
+      "passed": true
+    },
+    {
+      "name": "quota/write failure does not mutate a working in-memory cart or other keys",
+      "passed": true
+    }
+  ]
+}

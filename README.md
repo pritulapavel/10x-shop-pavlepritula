@@ -10,7 +10,8 @@ purchase flow, from browsing a catalog to viewing an order confirmation.
 
 - DummyJSON catalog of 12 products, with loading, error and empty states.
 - Product details with image selection, quantity controls, stock limits and NotFound handling.
-- Shared cart with a quantity badge, editing, removal, confirmed clearing and USD totals calculated in cents.
+- Shared cart with a quantity badge, editing, removal, confirmed clearing, USD totals
+  calculated in cents and reload persistence under the localStorage key `shop_cart`.
 - Local login/logout and a protected checkout that returns guests to checkout after login.
 - Validated checkout with `fullName`, `email`, `address` and `city`, duplicate-submit protection,
   and a local confirmation snapshot saved before clearing the cart.
@@ -33,7 +34,7 @@ src/
 ├── components/   # Layout, navigation, product cards, summaries, controls, ErrorBoundary
 ├── context/      # AuthContext and CartContext
 ├── pages/        # Catalog, Product, Cart, Login, Checkout, NotFound
-├── utils/        # Shared currency calculations and formatting
+├── utils/        # Currency helpers and validated cart storage
 ├── App.tsx       # Route definitions
 ├── main.tsx      # Router, providers and ErrorBoundary setup
 ├── types.ts      # Shared application types
@@ -43,6 +44,8 @@ src/
 Catalog and Product load DummyJSON data with `fetch` inside effects and use
 `AbortController` cleanup to ignore obsolete requests.
 AuthContext and CartContext share local login state and a cart with stock limits across pages.
+CartContext restores validated `{ items: [...] }` data once through a lazy state
+initializer. A separate effect saves cart changes; React state drives the UI.
 BrowserRouter renders `/`, `/products/:id`, `/cart`, `/login`, protected `/checkout`
 and a `*` NotFound route inside the shared Layout.
 Checkout validates four fields, uses the shared currency helpers and copies the
@@ -92,8 +95,15 @@ Login is a local simulation with no registration or server credential check.
 
 ## Known limitations
 
-- Authentication and cart contents exist only in React memory. They survive route
-  changes but reset on a page reload or tab close; logout preserves the cart.
+- Authentication remains in React memory and resets on reload or tab close.
+  Login/logout preserve the cart; no credentials or delivery details are stored.
+- Cart contents survive reload in the same browser profile and origin (protocol,
+  hostname and port) through `shop_cart`. Local preview and the production URL
+  have separate carts; `localhost` and `127.0.0.1` are also different origins.
+  Malformed/incompatible saved carts are rejected as a whole. If storage is blocked
+  or a write fails, the current cart keeps working in memory; reload can only restore
+  the last successfully saved value. There is no cross-tab synchronization or live
+  stock/price refresh for restored items.
 - Confirmation belongs to the mounted Checkout page. It survives cart clearing,
   but leaving that page or reloading loses it. Orders are not sent to a backend;
   there is no payment processing or order persistence.
@@ -139,6 +149,11 @@ Chrome 156.0.8078.76 check verified direct loads/reloads of Catalog, Product, Ca
 Login and NotFound, plus the guest Checkout redirect
 ([route evidence](reports/routes/2026-10-30/evidence.json)). The deployed Git SHA
 has not been independently confirmed.
+
+Cart persistence was added and verified in a **local production preview on
+2026-11-03**. It still needs user publication and a focused production retest;
+the earlier hosted checks and October 30 Lighthouse audits do not measure this change.
+See [the persistence review](PLAN.md#cart-persistence-and-focused-core-review-2026-11-03).
 
 ### Saved Lighthouse evidence
 
