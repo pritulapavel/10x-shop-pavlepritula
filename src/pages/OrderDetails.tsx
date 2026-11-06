@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import CheckoutSummary from '../components/CheckoutSummary'
 import DeliveryDetails from '../components/DeliveryDetails'
 import { useCart } from '../context/CartContext'
 import { useOrders } from '../context/OrdersContext'
+import { useToast } from '../context/ToastContext'
 import { useOrderClock } from '../hooks/useOrderClock'
 import type { OrderSnapshot } from '../types'
 import { getProduct } from '../utils/api'
@@ -12,20 +13,38 @@ import NotFound from './NotFound'
 
 function OrderContents({ snapshot }: { snapshot: OrderSnapshot }) {
   const { reorder, reorderResult } = useCart()
+  const navigate = useNavigate()
+  const showToast = useToast()
   const order = new Order(snapshot)
   const now = useOrderClock(true)
   const status = order.statusAt(now)
-  const [loading, setLoading] = useState(false)
   const [requestId, setRequestId] = useState<string>()
   const controller = useRef<AbortController | null>(null)
+  const handledId = useRef<string | null>(null)
+  const feedback = requestId && reorderResult?.id === requestId ? reorderResult : undefined
+  const loading = Boolean(requestId && feedback?.added !== 0)
 
   useEffect(() => () => controller.current?.abort(), [])
+
+  useEffect(() => {
+    const request = controller.current
+    if (!feedback || !request || request.signal.aborted || handledId.current === feedback.id) return
+    handledId.current = feedback.id
+    if (feedback.added === 0) {
+      controller.current = null
+      return
+    }
+
+    showToast(feedback.added === feedback.requested
+      ? 'Items added to cart ✓'
+      : `Added ${feedback.added} of ${feedback.requested} items to your cart. The rest were unavailable or exceeded stock limits.`)
+    navigate('/cart')
+  }, [feedback, navigate, showToast])
 
   async function handleReorder() {
     if (controller.current) return
     const request = new AbortController()
     controller.current = request
-    setLoading(true)
     const id = crypto.randomUUID()
     setRequestId(id)
     const results = await Promise.allSettled(snapshot.items.map(async (item) => ({
@@ -35,11 +54,8 @@ function OrderContents({ snapshot }: { snapshot: OrderSnapshot }) {
     if (request.signal.aborted) return
     const entries = results.flatMap((result) => result.status === 'fulfilled' ? [result.value] : [])
     reorder(id, entries, order.itemCount)
-    controller.current = null
-    setLoading(false)
   }
 
-  const feedback = requestId && reorderResult?.id === requestId ? reorderResult : undefined
   return (
     <section className="space-y-6">
       <Link to="/orders" className="secondary-button">← Back to orders</Link>
@@ -68,11 +84,9 @@ function OrderContents({ snapshot }: { snapshot: OrderSnapshot }) {
         </button>
         <Link to="/cart" className="secondary-button">View cart</Link>
       </div>
-      {feedback && (
+      {feedback?.added === 0 && (
         <p role="status" className="text-muted">
-          {feedback.added === 0 ? 'No items could be added. Check product availability.'
-            : feedback.added === feedback.requested ? `Added ${feedback.added} of ${feedback.requested} items to your cart.`
-            : `Added ${feedback.added} of ${feedback.requested} items. The remaining items were unavailable or exceeded stock limits.`}
+          No items could be added. Check product availability.
         </p>
       )}
     </section>

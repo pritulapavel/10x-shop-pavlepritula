@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-06",
+  "browser": "Connected Google Chrome",
+  "baseHead": "fdf9ced12015021fd5b7cb5cedb071fd51de0e69",
+  "url": "http://127.0.0.1:4208/profile",
+  "bundle": "/assets/index-DJmMyxpY.js",
+  "cases": [
+    {
+      "case": "empty",
+      "input": "",
+      "saved": true,
+      "field": {
+        "autocomplete": "tel",
+        "describedBy": null,
+        "invalid": "false",
+        "type": "tel",
+        "value": ""
+      }
+    },
+    {
+      "case": "whitespace only",
+      "input": "   ",
+      "saved": true,
+      "field": {
+        "autocomplete": "tel",
+        "describedBy": null,
+        "invalid": "false",
+        "type": "tel",
+        "value": ""
+      }
+    },
+    {
+      "case": "nine digits",
+      "input": "123456789",
+      "saved": true,
+      "field": {
+        "autocomplete": "tel",
+        "describedBy": null,
+        "invalid": "false",
+        "type": "tel"
+      }
+    },
+    {
+      "case": "fifteen digits",
+      "input": "123456789012345",
+      "saved": true,
+      "field": {
+        "autocomplete": "tel",
+        "describedBy": null,
+        "invalid": "false",
+        "type": "tel"
+      }
+    },
+    {
+      "case": "plus and separators",
+      "input": "+995 (555) 123-456",
+      "saved": true,
+      "field": {
+        "autocomplete": "tel",
+        "describedBy": null,
+        "invalid": "false",
+        "type": "tel"
+      }
+    },
+    {
+      "case": "letters",
+      "input": "abcdefghi",
+      "observedOn": "blur",
+      "error": "Please enter a valid phone number",
+      "field": {
+        "invalid": "true",
+        "describedBy": "profile-phone-error",
+        "type": "tel",
+        "autocomplete": "tel"
+      },
+      "noSuccessToast": true,
+      "headerUnchanged": true
+    },
+    {
+      "case": "punctuation only",
+      "input": "+(). -",
+      "observedOn": "blur",
+      "error": "Please enter a valid phone number",
+      "field": {
+        "invalid": "true",
+        "describedBy": "profile-phone-error",
+        "type": "tel",
+        "autocomplete": "tel"
+      },
+      "noSuccessToast": true,
+      "headerUnchanged": true
+    },
+    {
+      "case": "eight digits",
+      "input": "12345678",
+      "observedOn": "blur",
+      "error": "Please enter a valid phone number",
+      "field": {
+        "invalid": "true",
+        "describedBy": "profile-phone-error",
+        "type": "tel",
+        "autocomplete": "tel"
+      },
+      "noSuccessToast": true,
+      "headerUnchanged": true
+    },
+    {
+      "case": "sixteen digits",
+      "input": "1234567890123456",
+      "observedOn": "submit",
+      "error": "Please enter a valid phone number",
+      "field": {
+        "invalid": "true",
+        "describedBy": "profile-phone-error",
+        "type": "tel",
+        "autocomplete": "tel"
+      },
+      "noSuccessToast": true,
+      "headerUnchanged": true
+    }
+  ],
+  "correction": {
+    "input": "+1 (234) 567-89",
+    "saved": true,
+    "errorGone": true,
+    "headerUpdated": true,
+    "field": {
+      "autocomplete": "tel",
+      "describedBy": null,
+      "invalid": "false",
+      "type": "tel"
+    }
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "date": "2026-11-06",
+  "head": "fdf9ced12015021fd5b7cb5cedb071fd51de0e69",
+  "dirtySource": true,
+  "browser": "Connected Google Chrome; full version not read in this session",
+  "preview": "http://127.0.0.1:4208/",
+  "fixture": "http://127.0.0.1:4207/reports/final/storefront-fixture.html (Vite dev, synthetic inventory and order)",
+  "pagination": {
+    "initial": {
+      "current": "1",
+      "document": [
+        360,
+        360
+      ],
+      "ellipses": 1,
+      "items": 12,
+      "pages": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "17"
+      ],
+      "targets": [
+        [
+          "Previous",
+          88.015625,
+          44,
+          true
+        ],
+        [
+          "1",
+          44,
+          44,
+          false
+        ],
+        [
+          "2",
+          44,
+          44,
+          false
+        ],
+        [
+          "3",
+          44,
+          44,
+          false
+        ],
+        [
+          "4",
+          44,
+          44,
+          false
+        ],
+        [
+          "17",
+          44,
+          44,
+          false
+        ],
+        [
+          "Next",
+          64.25,
+          44,
+          false
+        ]
+      ],
+      "url": "/",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "last": {
+      "current": "17",
+      "document": [
+        360,
+        360
+      ],
+      "ellipses": 1,
+      "items": 2,
+      "pages": [
+        "1",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "targets": [
+        [
+          "Previous",
+          88.015625,
+          44,
+          false
+        ],
+        [
+          "1",
+          44,
+          44,
+          false
+        ],
+        [
+          "14",
+          44,
+          44,
+          false
+        ],
+        [
+          "15",
+          44,
+          44,
+          false
+        ],
+        [
+          "16",
+          44,
+          44,
+          false
+        ],
+        [
+          "17",
+          44,
+          44,
+          false
+        ],
+        [
+          "Next",
+          64.25,
+          44,
+          true
+        ]
+      ],
+      "url": "/?page=17",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "searchSort": {
+      "current": "2",
+      "document": [
+        360,
+        360
+      ],
+      "ellipses": 0,
+      "items": 11,
+      "pages": [
+        "1",
+        "2"
+      ],
+      "targets": [
+        [
+          "Previous",
+          88.015625,
+          44,
+          false
+        ],
+        [
+          "1",
+          44,
+          44,
+          false
+        ],
+        [
+          "2",
+          44,
+          44,
+          false
+        ],
+        [
+          "Next",
+          64.25,
+          44,
+          true
+        ]
+      ],
+      "url": "/?q=phone&sort=price-desc&page=2",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "historyBack": {
+      "current": "1",
+      "document": [
+        360,
+        360
+      ],
+      "ellipses": 0,
+      "items": 12,
+      "pages": [
+        "1",
+        "2"
+      ],
+      "targets": [
+        [
+          "Previous",
+          88.015625,
+          44,
+          true
+        ],
+        [
+          "1",
+          44,
+          44,
+          false
+        ],
+        [
+          "2",
+          44,
+          44,
+          false
+        ],
+        [
+          "Next",
+          64.25,
+          44,
+          false
+        ]
+      ],
+      "url": "/?q=phone&sort=price-desc",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "historyForward": {
+      "current": "2",
+      "document": [
+        360,
+        360
+      ],
+      "ellipses": 0,
+      "items": 11,
+      "pages": [
+        "1",
+        "2"
+      ],
+      "targets": [
+        [
+          "Previous",
+          88.015625,
+          44,
+          false
+        ],
+        [
+          "1",
+          44,
+          44,
+          false
+        ],
+        [
+          "2",
+          44,
+          44,
+          false
+        ],
+        [
+          "Next",
+          64.25,
+          44,
+          true
+        ]
+      ],
+      "url": "/?q=phone&sort=price-desc&page=2",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "categorySort": {
+      "current": "2",
+      "document": [
+        360,
+        360
+      ],
+      "ellipses": 0,
+      "items": 12,
+      "pages": [
+        "1",
+        "2",
+        "3"
+      ],
+      "targets": [
+        [
+          "Previous",
+          88.015625,
+          44,
+          false
+        ],
+        [
+          "1",
+          44,
+          44,
+          false
+        ],
+        [
+          "2",
+          44,
+          44,
+          false
+        ],
+        [
+          "3",
+          44,
+          44,
+          false
+        ],
+        [
+          "Next",
+          64.25,
+          44,
+          false
+        ]
+      ],
+      "url": "/?category=groceries&sort=price-desc&page=2",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "categoryReload": {
+      "current": "2",
+      "document": [
+        360,
+        360
+      ],
+      "ellipses": 0,
+      "items": 12,
+      "pages": [
+        "1",
+        "2",
+        "3"
+      ],
+      "targets": [
+        [
+          "Previous",
+          88.015625,
+          44,
+          false
+        ],
+        [
+          "1",
+          44,
+          44,
+          false
+        ],
+        [
+          "2",
+          44,
+          44,
+          false
+        ],
+        [
+          "3",
+          44,
+          44,
+          false
+        ],
+        [
+          "Next",
+          64.25,
+          44,
+          false
+        ]
+      ],
+      "url": "/?category=groceries&sort=price-desc&page=2",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "middle": {
+      "current": "8",
+      "document": [
+        360,
+        360
+      ],
+      "ellipses": 2,
+      "items": 12,
+      "pages": [
+        "1",
+        "7",
+        "8",
+        "9",
+        "17"
+      ],
+      "targets": [
+        [
+          "Previous",
+          88.015625,
+          44,
+          false
+        ],
+        [
+          "1",
+          44,
+          44,
+          false
+        ],
+        [
+          "7",
+          44,
+          44,
+          false
+        ],
+        [
+          "8",
+          44,
+          44,
+          false
+        ],
+        [
+          "9",
+          44,
+          44,
+          false
+        ],
+        [
+          "17",
+          44,
+          44,
+          false
+        ],
+        [
+          "Next",
+          64.25,
+          44,
+          false
+        ]
+      ],
+      "url": "/?page=8",
+      "viewport": [
+        375,
+        900
+      ]
+    }
+  },
+  "stock": [
+    {
+      "stock": 0,
+      "background": "rgb(254, 242, 242)",
+      "button": "Out of stock",
+      "color": "rgb(185, 28, 28)",
+      "disabled": true,
+      "stockText": "Out of stock",
+      "theme": "light"
+    },
+    {
+      "stock": 0,
+      "background": "rgb(53, 28, 39)",
+      "button": "Out of stock",
+      "color": "rgb(253, 164, 175)",
+      "disabled": true,
+      "stockText": "Out of stock",
+      "theme": "dark"
+    },
+    {
+      "stock": 5,
+      "background": "rgb(255, 251, 235)",
+      "button": "Add to cart",
+      "color": "rgb(146, 64, 14)",
+      "disabled": false,
+      "stockText": "Only 5 left!",
+      "theme": "light"
+    },
+    {
+      "stock": 6,
+      "background": "rgb(236, 253, 245)",
+      "button": "Add to cart",
+      "color": "rgb(4, 120, 87)",
+      "disabled": false,
+      "stockText": "In stock",
+      "theme": "light"
+    },
+    {
+      "stock": 5,
+      "background": "rgb(51, 42, 24)",
+      "button": "Add to cart",
+      "color": "rgb(252, 211, 77)",
+      "disabled": false,
+      "stockText": "Only 5 left!",
+      "theme": "dark"
+    },
+    {
+      "stock": 6,
+      "background": "rgb(16, 46, 38)",
+      "button": "Add to cart",
+      "color": "rgb(110, 231, 183)",
+      "disabled": false,
+      "stockText": "In stock",
+      "theme": "dark"
+    }
+  ],
+  "reorder": {
+    "full": {
+      "savedDetails": "http://127.0.0.1:4207/orders/fixture-existing-order",
+      "badge": "Cart, 3 items in cart",
+      "quantity": "3",
+      "toast": "Items added to cart ✓",
+      "url": "/cart"
+    },
+    "partial": {
+      "badge": "Cart, 3 items in cart",
+      "quantity": "3",
+      "toast": "Added 1 of 2 items to your cart. The rest were unavailable or exceeded stock limits.",
+      "url": "/cart"
+    },
+    "zero": {
+      "badge": "Cart, 2 items in cart",
+      "url": "/orders/fixture-existing-order",
+      "retryEnabled": true,
+      "message": "No items could be added. Check product availability."
+    },
+    "abort": {
+      "url": "http://127.0.0.1:4207/orders",
+      "buttonDisabledWhilePending": true,
+      "requestAborted": true,
+      "badge": "Cart, 1 item in cart",
+      "orderListLabel": "Order #10X-00001"
+    },
+    "savedOrderReload": {
+      "url": "http://127.0.0.1:4207/orders/fixture-existing-order",
+      "label": "Order #10X-00001"
+    }
+  },
+  "productZero": {
+    "button": true,
+    "path": "/products/5",
+    "stepper": []
+  },
+  "production": {
+    "description": null,
+    "entry": "/assets/index-2SMlxQzf.js",
+    "numberedPageButtons": 0,
+    "url": "https://10x-shop-pavlepritula.vercel.app/",
+    "robots": {
+      "contentType": "text/html",
+      "hasRoot": true,
+      "heading": "Page not found",
+      "startsWithRule": false,
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/robots.txt"
+    }
+  }
+}

@@ -19,11 +19,13 @@ The owner reported a manual Firefox 159.0.1 check at 1280 × 800 in a Private Wi
 | Header badge and Cart after order | `no` to badge disappearing and `no` to Cart staying empty after F5 | Initial observations did not meet the expected results. Follow-up did not specify these outcomes |
 | Duplicate submission | `2` reported for new orders; count before submission, order numbers and timing were not supplied | Unexpected result. Duplicate creation from one submission is unconfirmed |
 
-The follow-up said everything was good in a private Firefox window, without replacing the three specific post-order results. Source review found a synchronous submit guard for a mounted Checkout and a warning when the cart cannot be cleared from storage. The warning, the original cart after F5 and the change in order count have not been confirmed. No application fix or Firefox pass was recorded on this basis.
+The first follow-up gave a general positive assessment without replacing the three specific post-order results. No app fix was made on that basis.
 
-## Priority follow-up
+## Owner retest on port 4205
 
-1. If the original session still shows the evidence, return the exact preview URL, product, four amounts and the order count before/after with order numbers and times. Record whether the confirmation retained delivery details, whether it showed `Order saved. The browser could not clear the saved cart.`, and which items remained after F5. If the original evidence is unavailable, repeat only the final order step in a fresh private session on port 4205. Note the Orders count before one rapid double-click on Place order. Expect one new order, the Header badge to disappear and Cart to remain empty after F5. The previously reported promo and validation steps need no repeat.
+The owner reported the purchase retest at `http://127.0.0.1:4205/` on November 6. The accompanying Firefox environment was reported as 159.0.1, 1280 × 800 and a Private Window. The product was entered as `0` without a name, and quantity was one. Cart, Checkout, confirmation and Orders each showed **$26.09**. Orders went from **0 to 1**. The badge disappeared and Cart stayed empty after F5. The reported logout after F5 matches the in-memory session design. The exact bundle, a rapid double-click, and delivery details on the confirmation were not independently captured.
+
+**PASS, owner-reported manual purchase on port 4205.** The final follow-up build at [port 4208](http://127.0.0.1:4208/) adds stock styling, numbered pagination, new order labels and Reorder navigation. Test those changed behaviors and the remaining scenarios below in Firefox. The [Chrome results](../../../../reports/final/chrome-checks.json) cover them separately. This single submission does not establish rapid double-submit protection, the whole Firefox matrix or deployed behavior. No Firefox automation or screenshots were produced.
 
 ## Remaining required checks
 

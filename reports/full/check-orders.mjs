@@ -39,6 +39,8 @@ assert.equal(first.items[0].price, 9.99)
 assert.equal(first.delivery.city, 'Tbilisi')
 assert.deepEqual(orderStorage.read(), { ok: true, value: [second, first] })
 const order = new Order(first)
+assert.equal(order.label, 'Order #10X-00001')
+assert.equal(new Order(second).label, 'Order #10X-00002')
 for (const [elapsed, expected] of [
   [0, 'Processing'], [59_999, 'Processing'], [60_000, 'Shipped'],
   [179_999, 'Shipped'], [180_000, 'Shipped'], [180_001, 'Delivered'],
@@ -50,8 +52,19 @@ const partial = cartReducer({ items: [] }, {
 assert.equal(partial.items[0].quantity, 2)
 assert.equal(partial.items[0].price, 20)
 assert.deepEqual(partial.reorderResult, { id: 'test', added: 2, requested: 6 })
+const product = { id: 5, title: 'Fixture', price: 20, discountPercentage: 0, stock: 6, thumbnail: '/fixture.webp' }
+const full = cartReducer(partial, {
+  type: 'reorder', id: 'full', requested: 4, entries: [{ product, quantity: 4 }],
+})
+assert.equal(full.items[0].quantity, 6)
+assert.deepEqual(full.reorderResult, { id: 'full', added: 4, requested: 4 })
+const zero = cartReducer(full, {
+  type: 'reorder', id: 'zero', requested: 1, entries: [{ product, quantity: 1 }],
+})
+assert.equal(zero.items, full.items)
+assert.deepEqual(zero.reorderResult, { id: 'zero', added: 0, requested: 1 })
 values.set(STORAGE_KEYS.theme, JSON.stringify('dark'))
 assert.equal(orderStorage.remove(), true)
 assert.equal(values.has(STORAGE_KEYS.orders), false)
 assert.equal(values.get(STORAGE_KEYS.theme), '"dark"')
-console.log('Order write failure, retained cart, numbering, frozen snapshots, status boundaries, partial reorder and scoped storage passed')
+console.log('Order storage, labels, snapshots, status boundaries, full/partial/zero reorder and scoped clearing passed')
