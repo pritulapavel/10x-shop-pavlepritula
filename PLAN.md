@@ -10,11 +10,30 @@ First plan created on 2026-10-26 in commit `64d85cc`. This remediation plan bega
 | 4 | FULL reducer, promo and shipping | Implemented on 2026-11-05. Reducer, shipping thresholds and browser promo reload checked |
 | 5 | FULL orders, profile and theme | Implemented on 2026-11-05. Order storage, status boundaries, order reload and Reorder checked. Chrome confirmed profile, theme and scoped clear |
 | 6 | FULL technical criteria and profiling | Implemented and profiled on 2026-11-05. Lazy fallback and Reload checked with an isolated fixture |
-| 7 | Verification, evidence and delivery | Chrome local checks passed. The owner reported partial Firefox 159.0.1 coverage. Order count, totals and cart clearing require clarification before that purchase is closed. Other Firefox scenarios, Edge/Safari, candidate Lighthouse and hosted verification remain pending. [Firefox evidence](docs/compat/firefox/2026-11-06/README.md) · [Resolution table](reports/full/RESOLUTION.md) · [Compatibility](COMPATIBILITY.md) · [Report](REPORT.md) |
+| 7 | Verification, evidence and delivery | Chrome verified the four final changes. The owner confirmed the Firefox purchase on port 4205. Final candidate Firefox and Edge/Safari checks, clean deployed Lighthouse and owner submission remain open. [Grading status](reports/final/GRADING-STATUS.md) · [Compatibility](COMPATIBILITY.md) |
 
-Finish the Firefox order follow-up first, then the remaining required browser checks and the Lighthouse export. The owner still needs to publish the candidate, verify direct routes and static files on the deployed URL, confirm signed-out repository access, record the [demo](reports/full/DEMO.md) and submit the exam. Historical process gaps remain in the report.
+The owner still needs to publish the candidate, verify direct routes and static files on the deployed URL, run clean Lighthouse on that build, confirm signed-out access, record the [demo](reports/full/DEMO.md) and submit the exam. Historical process gaps remain in the report.
 
-The Lighthouse follow-up preserves the owner's 2026-11-06 production reports, fixes local metadata and static resources, and checks thumbnail priority and layout in Chrome. Local Firefox verification of the same candidate uses the existing owner checklist at port 4205. The candidate Lighthouse runs, hosted checks, owner Git publication and exam submission remain open. [Lighthouse evidence](reports/lighthouse/2026-11-06/README.md) · [Firefox checklist](docs/compat/firefox/2026-11-06/README.md)
+The Lighthouse follow-up preserves the two production baseline sets. The final local production preview at port 4208 serves the meta description, robots rules and favicon. The live site still served the earlier entry during the Chrome check. [Lighthouse evidence](reports/lighthouse/2026-11-06/README.md) · [Firefox evidence](docs/compat/firefox/2026-11-06/README.md)
+
+## Three-week work breakdown
+
+Reconstructed on 2026-11-06 for delivery review. The dates are planning windows and the hours are estimates. No tracked hours are available. The first committed plan was `64d85cc` on October 26 at 15:57 Tbilisi, before the first feature commit and after the October 23 deadline.
+
+| Week | Task and scope | Estimated hours | Acceptance |
+| --- | --- | ---: | --- |
+| 1 · Oct 19–25 | Define CORE/FULL scope, repository and Vite foundation | 4 | Dated scope, strict TypeScript, required npm scripts and a buildable scaffold |
+| 2 · Oct 26–Nov 1 | CORE layout, routes and local login | 4 | Protected Checkout returns a guest after valid login. Invalid fields and routes show the specified messages |
+| 2 · Oct 26–Nov 1 | CORE Catalog and Product | 6 | Real data, responsive grid, discounted prices, stock badges and a bounded stepper |
+| 2 · Oct 26–Nov 1 | CORE Cart, Checkout and confirmation | 6 | Shared quantities and totals, stock limits, four validation messages, one order and an empty cart |
+| 2 · Oct 26–Nov 1 | CORE quality and deployment preparation | 4 | Error Boundary recovery, 375 px layout, build checks and SPA routing |
+| 3 · Nov 2–6 | FULL catalog discovery and reviews | 5 | Search, filters, sort and numbered pages survive reload and history. Reviews validate and persist |
+| 3 · Nov 2–6 | FULL cart, saved orders and reorder | 6 | Promo and shipping use shared cents. Saved orders keep their snapshots. Reorder handles full, partial, zero and cancelled requests |
+| 3 · Nov 2–6 | FULL profile, theme and typed infrastructure | 4 | Validated profile, persistent theme, scoped clearing and typed requests with retry and abort |
+| 3 · Nov 2–6 | CORE/FULL verification and owner delivery | 5 | Browser matrix, exact deployed resources, Lighthouse reports, demo and submission |
+| | **Total estimated effort** | **44** | Estimate only |
+
+[Retrospective week 1](docs/progress/week-01.md) · [Week 2](docs/progress/week-02.md) · [Week 3](docs/progress/week-03.md) · [Rubric](reports/final/GRADING-STATUS.md)
 
 ## Risks
 

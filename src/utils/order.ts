@@ -31,7 +31,7 @@ export class Order {
   }
 
   get label() {
-    return `Order #${String(this.snapshot.number).padStart(4, '0')}`
+    return `Order #10X-${String(this.snapshot.number).padStart(5, '0')}`
   }
 
   get itemCount() {

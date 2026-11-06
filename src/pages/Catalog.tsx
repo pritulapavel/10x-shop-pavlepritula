@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useLocation, useSearchParams } from 'react-router-dom'
+import CatalogPagination from '../components/CatalogPagination'
 import CatalogSearch from '../components/CatalogSearch'
 import CatalogSkeleton from '../components/CatalogSkeleton'
 import ProductGrid from '../components/ProductGrid'
@@ -123,15 +124,7 @@ export default function Catalog() {
           <>
             <ProductGrid products={state.data.products} prioritizeFirstImage />
             {pages > 1 && (
-              <nav aria-label="Catalog pagination" className="flex flex-wrap items-center justify-center gap-2 border-t border-line pt-4 sm:gap-3">
-                <button type="button" className="secondary-button" disabled={query.page === 1} onClick={() => change({ page: query.page - 1 })}>
-                  Previous
-                </button>
-                <span aria-current="page" className="rounded-xl bg-accent-soft px-3 py-2 text-sm font-semibold text-on-accent-soft tabular-nums">Page {query.page} of {pages}</span>
-                <button type="button" className="secondary-button" disabled={query.page === pages} onClick={() => change({ page: query.page + 1 })}>
-                  Next
-                </button>
-              </nav>
+              <CatalogPagination page={query.page} pages={pages} onPageChange={(page) => change({ page })} />
             )}
           </>
         )}

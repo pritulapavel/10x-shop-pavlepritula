@@ -6,7 +6,7 @@ The marketplace refinement was checked on 2026-11-06 using the local Vite produc
 | --- | --- | --- |
 | Google Chrome | 156.0.8078.81 | Current light and dark layouts, catalog breakpoints, contrast, focus and pointer states |
 | ChatGPT in-app browser | App-provided browser | Active-tab catalog flow, native select popups, cart interaction and Checkout validation in both themes |
-| Mozilla Firefox | 159.0.1, reported by owner in a Private Window | Partial manual results at 1280 × 800. Promo, reload persistence, login return and four validation errors passed as reported. Post-order cart state and duplicate prevention remain open. [Owner evidence and follow-up](docs/compat/firefox/2026-11-06/README.md) |
+| Mozilla Firefox | 159.0.1, reported by owner in a Private Window | At 1280 × 800 on port 4205, the owner reported promo and validation checks, four matching $26.09 totals, 0 → 1 order and an empty cart after F5. The four final changes and other Firefox scenarios remain open. [Owner evidence](docs/compat/firefox/2026-11-06/README.md) |
 | Microsoft Edge | 156.0.4314.58 installed | The approved browser connector reported Edge unavailable. No compatibility test run |
 
 ## Earlier Header and Footer check with Footer navigation
@@ -45,4 +45,8 @@ The marketplace refinement was checked on 2026-11-06 using the local Vite produc
 
 The final local candidate uses `2f884bf74dc1febde398a05211b0f740772430a4` plus uncommitted Lighthouse fixes on port 4205. Chrome verified thumbnails and layout at 375 and 1920 CSS px in both themes. [Candidate evidence](reports/lighthouse/2026-11-06/candidate/verification.json)
 
-The [Firefox record](docs/compat/firefox/2026-11-06/README.md) separates the blocked automation attempt, the partial owner results, and the post-order outcomes still awaiting clarification. The current Footer has no store navigation, cart badge or logout control. No approved Firefox, Edge or Safari browser connection was available. Browser verification of the published candidate and a new Lighthouse audit remain separate pending checks.
+The final follow-up preview on port 4208 verified numbered pagination with filters and 44 × 44 CSS px targets at 375 px. An isolated Vite fixture verified all three stock colors in both themes, saved-order reload, and full, partial, zero and aborted Reorder. [Chrome evidence](reports/final/chrome-checks.json)
+
+The Profile phone check on the same preview accepted empty, whitespace-only, 9- and 15-digit values and supported formatting. Letters, punctuation-only, 8 digits and 16 digits showed the exact accessible error and did not save or change the Header. Correcting the value saved successfully. [Profile phone checks](reports/final/profile-phone-checks.json)
+
+The [Firefox record](docs/compat/firefox/2026-11-06/README.md) separates the blocked automation from the owner's two manual runs. The current Footer has no store navigation, cart badge or logout control. Edge/Safari, the final Firefox candidate and hosted checks remain separate pending items.
