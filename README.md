@@ -9,7 +9,7 @@
 - **CORE:** Browse product cards and details with stock, ratings and discounts. Use a shared persistent cart, integer-cent pricing, local sign-in and a protected checkout with confirmation.
 - **FULL:** Catalog search, category, sort and numbered pagination use the URL. Search updates it after 400 ms. Back, Forward and reload restore the catalog selection.
 - Product details include a gallery, keyboard-operable review tabs, local reviews and related products.
-- The cart persists locally and accepts promo code `10X10`. Shipping is $10 below a $100 product-discounted subtotal, measured before the promo.
+- The cart persists locally and accepts promo code `10X10` for 10% off items. Shipping is $10 below a $100 product-discounted subtotal, measured before the promo.
 - Checkout saves an order in the browser. Orders show numbers such as `Order #10X-00001`, frozen purchase prices and a simulated timeline. Reorder checks current stock and opens Cart if it adds units.
 - Profile editing updates the current local session. The light/dark theme persists. Confirmed local-data clearing removes cart, orders and reviews while retaining the session and theme.
 
@@ -58,7 +58,11 @@ Use `demo` / `demo123`. Simulated sign-in accepts a nonblank username and a pass
 
 ## Live demo
 
-The [live demo](https://10x-shop-pavlepritula.vercel.app/) was reachable on November 6 and served the earlier `index-2SMlxQzf.js` bundle. The final candidate was checked locally and awaits owner publication. Vercel settings are `main`, repository root, Vite preset, `npm run build`, and `dist` with the SPA fallback. No environment variables are needed. [Delivery plan](PLAN.md) · [Report](REPORT.md) · [Grading status](reports/final/GRADING-STATUS.md) · [Browser evidence](COMPATIBILITY.md)
+The [live demo](https://10x-shop-pavlepritula.vercel.app/) was verified on November 6, including direct Product reload, app NotFound and a simulated purchase. It served `index-C3zB35AX.js`; the follow-up promo hint has been verified locally and awaits publication. Vercel settings are `main`, repository root, Vite preset, `npm run build`, and `dist` with the SPA fallback. No environment variables are needed.
+
+[Delivery plan](PLAN.md) · [Report](REPORT.md) · [Grading status](reports/final/GRADING-STATUS.md) · [Browser evidence](COMPATIBILITY.md) · [Hosted Lighthouse evidence](reports/final/2026-11-06/README.md)
+
+**Demo video:** recording pending. [2:40 walkthrough script](reports/full/DEMO.md)
 
 ## Defense walkthrough
 

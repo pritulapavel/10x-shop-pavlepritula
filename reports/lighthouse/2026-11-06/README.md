@@ -1,5 +1,7 @@
 # Lighthouse evidence · 2026-11-06
 
+For the newer 21:44 Desktop and 21:55 Mobile exports on hosted `index-C3zB35AX.js`, see [dated delivery evidence](../../final/2026-11-06/README.md). Both scored SEO 100; extensions were present and Desktop recorded a screenshot timeout. The reports below are earlier baselines.
+
 The owner supplied production exports for [10X Shop](https://10x-shop-pavlepritula.vercel.app/) at 18:48–18:49 and again at 20:26 Tbilisi. All requested and finished at the production root. Scores are Performance / Accessibility / Best Practices / SEO. The JSON files are unchanged, and the HTML files were generated from them with the official Lighthouse 13.5.0 ReportGenerator.
 
 | Baseline | Audit time (UTC) | Scores | FCP | LCP | TBT | CLS | Reports |
@@ -41,6 +43,6 @@ The earlier SEO candidate was built from `2f884bf74dc1febde398a05211b0f740772430
 
 ## Audit and publication handoff
 
-Lighthouse CLI 13.5.0 returned `Unable to connect to Chrome`. The retained 19:12 Tbilisi launcher log (`lighthouse.y1tv6F/chrome-err.log` in the Windows temporary directory) shows a loopback DevTools listener, repeated GPU process exits (`-1073741790`), then `GPU process isn't usable. Goodbye.` The connected Chrome tool had no Lighthouse capability. The native DevTools attempt stopped at the mandatory Windows URL check because the active Chrome URL could not be determined with enough confidence. There are zero new candidate audits, so candidate scores, performance deltas and median LCP remain pending.
+Lighthouse CLI 13.5.0 returned `Unable to connect to Chrome`. The retained 19:12 Tbilisi launcher log (`lighthouse.y1tv6F/chrome-err.log` in the Windows temporary directory) shows a loopback DevTools listener, repeated GPU process exits (`-1073741790`), then `GPU process isn't usable. Goodbye.` The connected Chrome tool had no Lighthouse capability. The native DevTools attempt stopped at the mandatory Windows URL check because the active Chrome URL could not be determined with enough confidence. The later owner exports establish hosted scores, while the clean post-hint audit and controlled performance comparison remain open.
 
 After owner publication, first verify the source SHA and live entry, description, robots and favicon. In Chrome Incognito with extensions inactive, open the confirmed production URL and run DevTools → Lighthouse → Navigation. Keep simulated throttling and Clear storage enabled. Select Performance, Accessibility, Best Practices and SEO. Run Mobile first and save JSON and HTML into `candidate/` with a `hosted-mobile` prefix. Switch to Desktop where available and save `hosted-desktop`. Keep comparable settings if making a before/after claim, and prioritize required evidence over repetitions. [Chrome Lighthouse instructions](https://developer.chrome.com/docs/lighthouse/overview)

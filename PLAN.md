@@ -10,11 +10,11 @@ First plan created on 2026-10-26 in commit `64d85cc`. This remediation plan bega
 | 4 | FULL reducer, promo and shipping | Implemented on 2026-11-05. Reducer, shipping thresholds and browser promo reload checked |
 | 5 | FULL orders, profile and theme | Implemented on 2026-11-05. Order storage, status boundaries, order reload and Reorder checked. Chrome confirmed profile, theme and scoped clear |
 | 6 | FULL technical criteria and profiling | Implemented and profiled on 2026-11-05. Lazy fallback and Reload checked with an isolated fixture |
-| 7 | Verification, evidence and delivery | Chrome verified the four final changes. The owner confirmed the Firefox purchase on port 4205. Final candidate Firefox and Edge/Safari checks, clean deployed Lighthouse and owner submission remain open. [Grading status](reports/final/GRADING-STATUS.md) · [Compatibility](COMPATIBILITY.md) |
+| 7 | Verification, evidence and delivery | Hosted Product reload, NotFound and purchase passed in the stated browser scopes. The owner confirmed the earlier Firefox purchase on port 4205. Chrome checked the follow-up promo hint locally at 375 and 1920 CSS px in both themes. [Grading status](reports/final/GRADING-STATUS.md) · [Compatibility](COMPATIBILITY.md) |
 
-The owner still needs to publish the candidate, verify direct routes and static files on the deployed URL, run clean Lighthouse on that build, confirm signed-out access, record the [demo](reports/full/DEMO.md) and submit the exam. Historical process gaps remain in the report.
+The owner still needs to publish the promo follow-up, confirm its Vercel revision and run a focused hosted retest, record final Firefox and Edge/Safari evidence, run clean Lighthouse on the deployed candidate, confirm signed-out access, record the [demo](reports/full/DEMO.md) and submit. [Publication steps](reports/final/PUBLICATION.md) · [GitHub tracking](reports/final/GITHUB-TRACKING.md). Historical process gaps remain in the report.
 
-The Lighthouse follow-up preserves the two production baseline sets. The final local production preview at port 4208 serves the meta description, robots rules and favicon. The live site still served the earlier entry during the Chrome check. [Lighthouse evidence](reports/lighthouse/2026-11-06/README.md) · [Firefox evidence](docs/compat/firefox/2026-11-06/README.md)
+The owner-provided 21:44 Desktop and 21:55 Mobile Lighthouse exports show SEO 100 on the hosted `index-C3zB35AX.js` build. Both include extensions; Desktop has a screenshot timeout. The earlier baselines remain historical, and neither set measures the local promo follow-up on port 4209. [Current evidence](reports/final/2026-11-06/README.md) · [Firefox evidence](docs/compat/firefox/2026-11-06/README.md)
 
 ## Three-week work breakdown
 

@@ -33,11 +33,12 @@ export default function PromoForm() {
       <label htmlFor="promo-code" className="control-label">Promo code</label>
       <div className="flex gap-2">
         <input id="promo-code" className="field min-w-0" value={input} maxLength={24}
-          aria-invalid={invalid} aria-describedby={invalid ? 'promo-error' : undefined}
+          aria-invalid={invalid} aria-describedby={invalid ? 'promo-error promo-hint' : 'promo-hint'}
           onChange={(event) => { setInput(event.target.value); setInvalid(false) }} />
         <button type="submit" className="secondary-button shrink-0">Apply</button>
       </div>
       {invalid && <p id="promo-error" role="alert" className="text-sm text-danger">Invalid promo code</p>}
+      <p id="promo-hint" className="text-sm text-muted">Use 10X10 for 10% off items.</p>
     </form>
   )
 }
