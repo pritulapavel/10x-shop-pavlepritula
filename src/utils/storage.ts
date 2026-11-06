@@ -3,9 +3,11 @@ export const STORAGE_KEYS = {
   reviews: 'shop_reviews',
   orders: 'shop_orders',
   theme: 'shop_theme',
+  profiles: 'shop_profiles',
 } as const
 
 type StorageKey = typeof STORAGE_KEYS[keyof typeof STORAGE_KEYS]
+type ReadResult<T> = { ok: true; value: T | undefined } | { ok: false; reason: 'unavailable' | 'invalid' }
 
 export class StorageService<T> {
   readonly key: StorageKey
@@ -16,14 +18,20 @@ export class StorageService<T> {
     this.decode = decode
   }
 
-  read(): { ok: true; value: T | undefined } | { ok: false } {
+  read(): ReadResult<T> {
+    let raw: string | null
     try {
-      const raw = window.localStorage.getItem(this.key)
-      if (raw === null) return { ok: true, value: undefined }
-      const value = this.decode(JSON.parse(raw) as unknown)
-      return value === undefined ? { ok: false } : { ok: true, value }
+      raw = window.localStorage.getItem(this.key)
     } catch {
-      return { ok: false }
+      return { ok: false, reason: 'unavailable' }
+    }
+    if (raw === null) return { ok: true, value: undefined }
+
+    try {
+      const value = this.decode(JSON.parse(raw) as unknown)
+      return value === undefined ? { ok: false, reason: 'invalid' } : { ok: true, value }
+    } catch {
+      return { ok: false, reason: 'invalid' }
     }
   }
 

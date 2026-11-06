@@ -9,6 +9,7 @@ import { useReviews } from '../context/ReviewsContext'
 import { useToast } from '../context/ToastContext'
 import { useTheme } from '../context/ThemeContext'
 import type { Profile as ProfileValues } from '../types'
+import { emptyProfile } from '../utils/profileStorage'
 
 const firstNameMessage = 'First name must be at least 2 characters'
 const lastNameMessage = 'Last name must be at least 2 characters'
@@ -31,15 +32,17 @@ const fields = [
 ] as const
 
 export default function Profile() {
-  const { username, profile, updateProfile } = useAuth()
+  const { username, profile, updateProfile, clearProfiles } = useAuth()
   const { clearSavedCart } = useCart()
   const { clearOrders } = useOrders()
   const { clearReviews } = useReviews()
   const { theme, setTheme } = useTheme()
   const showToast = useToast()
   const [clearStatus, setClearStatus] = useState('')
+  const [saveError, setSaveError] = useState('')
   const form = useFormik<ProfileValues>({
     initialValues: profile,
+    enableReinitialize: true,
     validationSchema: profileSchema,
     onSubmit(values, helpers) {
       const next = {
@@ -48,21 +51,31 @@ export default function Profile() {
         email: values.email.trim(),
         phone: values.phone.trim(),
       }
-      updateProfile(next)
-      helpers.resetForm({ values: next })
-      showToast('Profile saved.')
+      if (updateProfile(next)) {
+        setSaveError('')
+        helpers.resetForm({ values: next })
+        showToast('Profile saved.')
+      } else {
+        setSaveError('Could not save your profile in this browser. Your edits are still in the form. Please try again.')
+      }
       helpers.setSubmitting(false)
     },
   })
 
   function clearLocalData() {
+    const profilesCleared = clearProfiles()
+    if (profilesCleared) {
+      form.resetForm({ values: emptyProfile })
+      setSaveError('')
+    }
     const results = [
       { label: 'cart', success: clearSavedCart() },
       { label: 'orders', success: clearOrders() },
       { label: 'reviews', success: clearReviews() },
+      { label: 'saved profiles', success: profilesCleared },
     ]
     const failures = results.filter((result) => !result.success).map((result) => result.label)
-    setClearStatus(failures.length ? `Could not clear: ${failures.join(', ')}. Please try again.` : 'Local cart, orders and reviews cleared.')
+    setClearStatus(failures.length ? `Could not clear: ${failures.join(', ')}. Please try again.` : 'Local cart, orders, reviews and saved profiles cleared.')
   }
 
   return (
@@ -86,6 +99,7 @@ export default function Profile() {
               </div>
             )
           })}
+          {saveError && <p role="alert" className="field-error">{saveError}</p>}
           <button type="submit" className="primary-button" disabled={form.isSubmitting}>Save profile</button>
         </form>
         <div className="space-y-5">
@@ -100,8 +114,8 @@ export default function Profile() {
           </fieldset>
           <section aria-labelledby="local-data-heading" className="panel space-y-3 p-5">
             <h2 id="local-data-heading" className="text-lg font-semibold">Local data</h2>
-            <p className="text-sm text-muted">Clear cart, orders and reviews from this browser. Your session and theme will stay active.</p>
-            <ConfirmAction label="Clear local data" question="Clear your cart, orders and reviews? This cannot be undone." onConfirm={clearLocalData} />
+            <p className="text-sm text-muted">Clear the cart, orders, reviews and all saved profiles for this shop in this browser. You will stay signed in and keep your theme.</p>
+            <ConfirmAction label="Clear local data" question="Clear the cart, orders, reviews and all saved profiles in this browser? This also resets the current profile form and cannot be undone." onConfirm={clearLocalData} />
             {clearStatus && <p role="status">{clearStatus}</p>}
           </section>
         </div>
