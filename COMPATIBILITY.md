@@ -6,8 +6,18 @@ The marketplace refinement was checked on 2026-11-06 using the local Vite produc
 | --- | --- | --- |
 | Google Chrome | 156.0.8078.81 | Current light and dark layouts, catalog breakpoints, contrast, focus and pointer states |
 | ChatGPT in-app browser | App-provided browser | Active-tab catalog flow, native select popups, cart interaction and Checkout validation in both themes |
-| Mozilla Firefox | 159.0.1, reported by owner in a Private Window | At 1280 × 800 on port 4205, the owner reported promo and validation checks, four matching $26.09 totals, 0 → 1 order and an empty cart after F5. The four final changes and other Firefox scenarios remain open. [Owner evidence](docs/compat/firefox/2026-11-06/README.md) |
+| Mozilla Firefox | 159.0.1, reported by owner in a Private Window | At 1280 × 800 on port 4205, the owner reported promo and validation checks, four matching $26.09 totals, 0 → 1 order and an empty cart after F5. Final-candidate and other Firefox scenarios remain open. [Owner evidence](docs/compat/firefox/2026-11-06/README.md) |
 | Microsoft Edge | 156.0.4314.58 installed | The approved browser connector reported Edge unavailable. No compatibility test run |
+| Safari | Unverified | No approved Safari connection or test result |
+
+## Final delivery follow-up
+
+- Connected Chrome verified hosted Catalog and Product at 375 × 900 CSS px in both themes, with client and scroll widths both 360 px. At 1920 × 897, Catalog rendered 12 product links. Direct Product navigation and reload, invalid-route and missing-product NotFound, and the current Footer were observed. The connected session exposed a reduced UA; 156.0.8078.81 is the separately identified installed Chrome version.
+- A hosted synthetic purchase in the ChatGPT in-app browser showed four Checkout errors before correction and four matching $17.96 totals. The badge disappeared; Order Details reloaded through sign-in; Cart stayed empty after reload. The browser's full build was not independently verified. This was one submission and does not establish duplicate-submit protection.
+- On the local port 4209 preview, connected Chrome verified the promo hint at 375 × 900 and 1920 × 900 in both themes, with no overflow. Input and button heights were 44 px; the button was 71.05 px wide. Invalid promo exposed the error and hint together; applying and removing a valid promo behaved as expected. [Dated browser evidence](reports/final/2026-11-06/README.md)
+- A separate local in-app browser double-click at 1280 × 720 resulted in one saved order, with $18.94 in confirmation and Orders. [Order screenshot](reports/final/2026-11-06/local-double-click-order.jpg)
+
+Final Firefox and Edge or Safari checks remain open. Use the [Firefox checklist](docs/compat/firefox/2026-11-06/README.md) and record each result on the tested candidate.
 
 ## Earlier Header and Footer check with Footer navigation
 
@@ -43,10 +53,10 @@ The marketplace refinement was checked on 2026-11-06 using the local Vite produc
 
 [Measurements](reports/full/chrome-preview.json) · [Purchase confirmation](reports/full/chrome-confirmation.png) · [Light catalog](reports/full/chrome-catalog-light.png) · [Dark catalog at 375 px](reports/full/chrome-catalog-mobile-dark.png)
 
-The final local candidate uses `2f884bf74dc1febde398a05211b0f740772430a4` plus uncommitted Lighthouse fixes on port 4205. Chrome verified thumbnails and layout at 375 and 1920 CSS px in both themes. [Candidate evidence](reports/lighthouse/2026-11-06/candidate/verification.json)
+The earlier Lighthouse candidate used `2f884bf74dc1febde398a05211b0f740772430a4` plus then-uncommitted fixes on port 4205. Chrome verified thumbnails and layout at 375 and 1920 CSS px in both themes. [Candidate evidence](reports/lighthouse/2026-11-06/candidate/verification.json)
 
 The final follow-up preview on port 4208 verified numbered pagination with filters and 44 × 44 CSS px targets at 375 px. An isolated Vite fixture verified all three stock colors in both themes, saved-order reload, and full, partial, zero and aborted Reorder. [Chrome evidence](reports/final/chrome-checks.json)
 
 The Profile phone check on the same preview accepted empty, whitespace-only, 9- and 15-digit values and supported formatting. Letters, punctuation-only, 8 digits and 16 digits showed the exact accessible error and did not save or change the Header. Correcting the value saved successfully. [Profile phone checks](reports/final/profile-phone-checks.json)
 
-The [Firefox record](docs/compat/firefox/2026-11-06/README.md) separates the blocked automation from the owner's two manual runs. The current Footer has no store navigation, cart badge or logout control. Edge/Safari, the final Firefox candidate and hosted checks remain separate pending items.
+The [Firefox record](docs/compat/firefox/2026-11-06/README.md) separates the blocked automation from the owner's two manual runs. The current Footer has no store navigation, cart badge or logout control.

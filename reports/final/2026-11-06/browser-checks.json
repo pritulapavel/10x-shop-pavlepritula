@@ -1,0 +1,402 @@
+{
+  "production": {
+    "root": {
+      "description": "Browse the 10X Shop product catalog, compare prices, and try a demo cart and checkout.",
+      "entry": "/assets/index-C3zB35AX.js",
+      "footerLinks": 6,
+      "footerNav": 0,
+      "lang": "en",
+      "lazy": true,
+      "productLinks": 12,
+      "robots": null,
+      "theme": "light",
+      "title": "10X Shop",
+      "url": "https://10x-shop-pavlepritula.vercel.app/",
+      "viewport": [
+        1920,
+        897
+      ]
+    },
+    "robots": {
+      "status": null,
+      "text": "User-agent: *\nAllow: /",
+      "type": "text/plain"
+    },
+    "favicon": {
+      "root": "svg",
+      "status": null,
+      "type": "image/svg+xml",
+      "viewBox": "0 0 72 72"
+    },
+    "layout": [
+      {
+        "footer": true,
+        "header": true,
+        "heading": "Catalog",
+        "path": "/",
+        "theme": "light",
+        "viewport": [
+          375,
+          900
+        ],
+        "width": [
+          360,
+          360
+        ]
+      },
+      {
+        "footer": true,
+        "header": true,
+        "heading": "Catalog",
+        "path": "/",
+        "theme": "dark",
+        "viewport": [
+          375,
+          900
+        ],
+        "width": [
+          360,
+          360
+        ]
+      },
+      {
+        "footer": true,
+        "header": true,
+        "heading": "Red Nail Polish",
+        "path": "/products/5",
+        "theme": "light",
+        "viewport": [
+          375,
+          900
+        ],
+        "width": [
+          360,
+          360
+        ]
+      },
+      {
+        "footer": true,
+        "header": true,
+        "heading": "Red Nail Polish",
+        "path": "/products/5",
+        "theme": "dark",
+        "viewport": [
+          375,
+          900
+        ],
+        "width": [
+          360,
+          360
+        ]
+      }
+    ],
+    "purchase": {
+      "browser": "ChatGPT in-app browser (engine/full version not independently verified)",
+      "initialCartEmpty": true,
+      "cart": [
+        "    - link \"Cart, 1 item in cart\" [active]:",
+        "      - text: Cart",
+        "  - heading \"Cart\" [level=1]",
+        "    - img \"Red Nail Polish product thumbnail\"",
+        "    - link \"Red Nail Polish\":",
+        "    - generic: $7.96",
+        "    - deletion: $8.99",
+        "    - group \"Quantity for Red Nail Polish\":",
+        "      - button \"Decrease quantity for Red Nail Polish\" [disabled]: −",
+        "      - button \"Increase quantity for Red Nail Polish\": +",
+        "    - button \"Remove Red Nail Polish\": Remove",
+        "    - paragraph: $7.96",
+        "    - definition: $7.96",
+        "    - definition: $10.00",
+        "    - term: Total",
+        "    - definition: $17.96",
+        "    - paragraph: Free shipping from $100 before the promo discount.",
+        "    - link \"Proceed to checkout\":"
+      ],
+      "guestRedirect": "https://10x-shop-pavlepritula.vercel.app/login",
+      "checkout": [
+        "  - heading \"Checkout\" [level=1]",
+        "  - textbox \"Full name\"",
+        "  - textbox \"Email\"",
+        "  - textbox \"Address\"",
+        "  - textbox \"City\"",
+        "  - button \"Place order\"",
+        "      - generic: $7.96",
+        "      - deletion: $8.99",
+        "      - generic: $7.96",
+        "    - definition: $7.96",
+        "    - definition: $10.00",
+        "    - term: Total",
+        "    - definition: $17.96"
+      ],
+      "blankErrors": [
+        "Full name must be at least 3 characters",
+        "Please enter a valid email address",
+        "Address must be at least 5 characters",
+        "City is required"
+      ],
+      "confirmation": [
+        "    - link \"Cart\":",
+        "  - heading \"Thank you! Your order has been placed.\" [level=1]",
+        "    - definition: Test Buyer",
+        "    - definition: qa@example.com",
+        "    - definition: 12 Test Street",
+        "    - definition: Tbilisi",
+        "      - generic: $7.96",
+        "      - deletion: $8.99",
+        "      - generic: $7.96",
+        "    - definition: $7.96",
+        "    - definition: $10.00",
+        "    - term: Total",
+        "    - definition: $17.96",
+        "  - link \"View order\":"
+      ],
+      "saved": {
+        "path": "/orders/0cdc77c9-b44a-4c85-9504-2631226eaede",
+        "snapshot": [
+          "  - heading \"Thank you! Your order has been placed.\" [level=1]",
+          "    - heading \"Delivery details\" [level=2]",
+          "    - heading \"Order summary\" [level=2]",
+          "    - term: Total",
+          "    - definition: $17.96",
+          "  - heading \"Social\" [level=2]"
+        ]
+      },
+      "orderReloadRedirect": "https://10x-shop-pavlepritula.vercel.app/login",
+      "orderReturn": {
+        "url": "https://10x-shop-pavlepritula.vercel.app/orders/0cdc77c9-b44a-4c85-9504-2631226eaede",
+        "totalVisible": true
+      },
+      "emptyAfterReload": true,
+      "directOrderReload": true
+    },
+    "routes": {
+      "origin": "https://10x-shop-pavlepritula.vercel.app/",
+      "directProduct": {
+        "path": "/products/5",
+        "heading": "Red Nail Polish",
+        "sameHeadingOnReload": true
+      },
+      "unknownPath": {
+        "path": "/abc",
+        "heading": "Page not found",
+        "header": true,
+        "footer": true
+      },
+      "missingProduct": {
+        "path": "/products/999999",
+        "heading": "Page not found",
+        "header": true,
+        "footer": true
+      }
+    }
+  },
+  "routes": {
+    "productDirect": {
+      "footer": true,
+      "header": true,
+      "heading": "Red Nail Polish",
+      "path": "/products/5",
+      "theme": "light",
+      "viewport": [
+        1920,
+        897
+      ],
+      "width": [
+        1905,
+        1905
+      ]
+    },
+    "productReload": {
+      "footer": true,
+      "header": true,
+      "heading": "Red Nail Polish",
+      "path": "/products/5",
+      "theme": "light",
+      "viewport": [
+        1920,
+        897
+      ],
+      "width": [
+        1905,
+        1905
+      ]
+    },
+    "/abc": {
+      "footer": true,
+      "header": true,
+      "heading": "Page not found",
+      "path": "/abc",
+      "theme": "light",
+      "viewport": [
+        1920,
+        897
+      ],
+      "width": [
+        1920,
+        1920
+      ]
+    },
+    "/products/999999": {
+      "footer": true,
+      "header": true,
+      "heading": "Page not found",
+      "path": "/products/999999",
+      "theme": "light",
+      "viewport": [
+        1920,
+        897
+      ],
+      "width": [
+        1920,
+        1920
+      ]
+    }
+  },
+  "promo": {
+    "layout": [
+      {
+        "apply": [
+          71.046875,
+          44
+        ],
+        "describedBy": "promo-hint",
+        "document": [
+          360,
+          360
+        ],
+        "hint": "Use 10X10 for 10% off items.",
+        "hintColor": "rgb(88, 101, 122)",
+        "input": [
+          214.953125,
+          44
+        ],
+        "theme": "light",
+        "viewport": [
+          375,
+          900
+        ]
+      },
+      {
+        "apply": [
+          71.046875,
+          44
+        ],
+        "describedBy": "promo-hint",
+        "document": [
+          360,
+          360
+        ],
+        "hint": "Use 10X10 for 10% off items.",
+        "hintColor": "rgb(163, 175, 194)",
+        "input": [
+          214.953125,
+          44
+        ],
+        "theme": "dark",
+        "viewport": [
+          375,
+          900
+        ]
+      },
+      {
+        "apply": [
+          71.046875,
+          44
+        ],
+        "describedBy": "promo-hint",
+        "document": [
+          1920,
+          1920
+        ],
+        "hint": "Use 10X10 for 10% off items.",
+        "hintColor": "rgb(88, 101, 122)",
+        "input": [
+          222.953125,
+          44
+        ],
+        "theme": "light",
+        "viewport": [
+          1920,
+          900
+        ]
+      },
+      {
+        "apply": [
+          71.046875,
+          44
+        ],
+        "describedBy": "promo-hint",
+        "document": [
+          1920,
+          1920
+        ],
+        "hint": "Use 10X10 for 10% off items.",
+        "hintColor": "rgb(163, 175, 194)",
+        "input": [
+          222.953125,
+          44
+        ],
+        "theme": "dark",
+        "viewport": [
+          1920,
+          900
+        ]
+      }
+    ],
+    "invalid": {
+      "describedBy": "promo-error promo-hint",
+      "invalid": "true"
+    },
+    "applied": [
+      [
+        "Subtotal",
+        "$8.94"
+      ],
+      [
+        "Discount (10X10 −10%)",
+        "-$0.89"
+      ],
+      [
+        "Shipping",
+        "$10.00"
+      ],
+      [
+        "Total",
+        "$18.05"
+      ]
+    ],
+    "hintRestored": "promo-hint"
+  },
+  "capturedAt": "2026-11-06T18:02:10.426Z",
+  "localCandidate": {
+    "head": "567a625a470df7f715d7159d62b028eb7ae914b6",
+    "sourceChange": "Uncommitted PromoForm hint",
+    "preview": "http://127.0.0.1:4209/",
+    "entry": "index-BN9bX7CA.js"
+  },
+  "provenance": {
+    "productionRoutes": "Connected Google Chrome; full connected browser version unverified; installed Windows Chrome 156.0.8078.81 was independently identified",
+    "localPromo": "Connected Google Chrome; local Vite production preview",
+    "hostedPurchase": "ChatGPT in-app browser; full version unverified; one synthetic order in separate browser storage"
+  },
+  "localDoubleClick": {
+    "capturedAt": "2026-11-06T18:10:03.611Z",
+    "origin": "http://127.0.0.1:4209/",
+    "browser": "ChatGPT in-app browser, full build unverified",
+    "viewport": [
+      1280,
+      720
+    ],
+    "theme": "light",
+    "action": "One Playwright dblclick on actual Place order button",
+    "ordersBefore": 0,
+    "ordersAfter": 1,
+    "orderNumber": "10X-00001",
+    "confirmationTotal": "$18.94",
+    "savedTotal": "$18.94",
+    "badgeGone": true,
+    "evidence": "local-double-click-order.jpg",
+    "limitation": "UI outcome; no instrumentation of event or handler call counts"
+  }
+}
