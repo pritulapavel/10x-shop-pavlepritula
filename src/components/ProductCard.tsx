@@ -1,12 +1,13 @@
-import { useState } from 'react'
+import { memo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { Product } from '../types'
-import { formatUSD } from '../utils/currency'
+import ProductPrice from './ProductPrice'
+import StockBadge from './StockBadge'
 
 interface ProductCardProps {
   product: Product
   quantityInCart: number
-  onAdd: () => void
+  onAdd: (product: Product, quantity: number) => void
 }
 
 function ProductCard({ product, quantityInCart, onAdd }: ProductCardProps) {
@@ -19,40 +20,48 @@ function ProductCard({ product, quantityInCart, onAdd }: ProductCardProps) {
 
   function handleAdd() {
     setQuantityBeforeAdd(quantityInCart)
-    onAdd()
+    onAdd(product, 1)
   }
 
   return (
-    <article className="flex min-w-0 flex-col rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md">
-      <Link to={`/products/${product.id}`} className="group block rounded-md">
+    <article className="panel product-card motion-safe:transition-[border-color,box-shadow] hover:border-control hover:shadow-sm">
+      <Link to={`/products/${product.id}`} className="group block min-w-0 rounded-xl">
         <img
           src={product.thumbnail}
-          alt={`${product.title} product thumbnail`}
+          alt=""
           width={320}
           height={240}
           loading="lazy"
-          className="h-48 w-full rounded-lg bg-slate-50 object-contain transition-opacity group-hover:opacity-90"
+          className="image-well block aspect-[4/3] h-auto w-full object-contain p-3"
         />
-        <h2 className="mt-4 break-words text-base font-semibold text-slate-900 group-hover:text-indigo-700">
+        <h2 className="mt-3 line-clamp-2 min-h-11 wrap-anywhere text-base leading-[1.375rem] font-semibold text-ink group-hover:text-accent">
           {product.title}
         </h2>
       </Link>
-      <p className="mb-4 mt-3 text-lg font-semibold text-slate-900">
-        {formatUSD(product.price)}
+      <p className="mt-1 truncate text-sm text-muted">
+        <span className="capitalize">{product.category.replaceAll('-', ' ')}</span>
+        {product.brand && <> · {product.brand}</>}
       </p>
+      <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-sm">
+        <span className="font-medium text-muted tabular-nums" aria-label={`Rating ${product.rating} out of 5`}>
+          <span aria-hidden="true" className="text-warning">★ </span>{product.rating}/5
+        </span>
+        <StockBadge stock={product.stock} />
+      </div>
+      <div className="mt-auto pt-3 text-[1.375rem] leading-7"><ProductPrice {...product} /></div>
       <button
         type="button"
         disabled={!canAdd}
         onClick={handleAdd}
-        className="mt-auto min-h-11 w-full cursor-pointer rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-700 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-600"
+        className="primary-button mt-3 w-full"
       >
         {isOutOfStock ? 'Out of stock' : isStockLimitReached ? 'Stock limit reached' : 'Add to cart'}
       </button>
-      <p role="status" className="mt-2 min-h-5 text-sm text-emerald-700">
+      <p role="status" className="mt-1 min-h-5 text-center text-sm font-medium text-success">
         {wasAdded ? 'Added to cart ✓' : ''}
       </p>
     </article>
   )
 }
 
-export default ProductCard
+export default memo(ProductCard)

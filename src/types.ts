@@ -1,3 +1,10 @@
+export interface Review {
+  reviewerName: string
+  rating: number
+  date: string
+  comment: string
+}
+
 export interface Product {
   id: number
   title: string
@@ -6,6 +13,11 @@ export interface Product {
   stock: number
   thumbnail: string
   images: string[]
+  category: string
+  brand?: string
+  rating: number
+  discountPercentage: number
+  reviews: Review[]
 }
 
 export interface ProductsResponse {
@@ -22,10 +34,23 @@ export interface CartItem {
   price: number
   stock: number
   quantity: number
+  discountPercentage?: number
 }
+
+export type ResolvedCartItem = CartItem & Pick<Product, 'discountPercentage'>
+
+export type PromoCode = '10X10'
 
 export interface CartState {
   items: CartItem[]
+  promoCode?: PromoCode
+}
+
+export interface CartTotals {
+  subtotalCents: number
+  promoDiscountCents: number
+  shippingCents: number
+  totalCents: number
 }
 
 export interface AuthState {
@@ -45,9 +70,26 @@ export interface CheckoutFormValues {
   city: string
 }
 
-export interface CheckoutConfirmation {
-  items: CartItem[]
+export interface OrderLine extends ResolvedCartItem {
+  unitPriceCents: number
+  lineTotalCents: number
+}
+
+export interface OrderSnapshot {
+  id: string
+  number: number
+  placedAt: string
+  items: OrderLine[]
   delivery: CheckoutFormValues
-  subtotalCents: number
-  totalCents: number
+  totals: CartTotals
+  promoCode?: PromoCode
+}
+
+export type OrderStatus = 'Processing' | 'Shipped' | 'Delivered'
+
+export interface Profile {
+  firstName: string
+  lastName: string
+  email: string
+  phone: string
 }

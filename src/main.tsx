@@ -4,6 +4,10 @@ import { BrowserRouter } from 'react-router-dom'
 import ErrorBoundary from './components/ErrorBoundary'
 import { AuthProvider } from './context/AuthContext'
 import { CartProvider } from './context/CartContext'
+import { ToastProvider } from './context/ToastContext'
+import { ThemeProvider } from './context/ThemeContext'
+import { OrdersProvider } from './context/OrdersContext'
+import { ReviewsProvider } from './context/ReviewsContext'
 import './index.css'
 import App from './App.tsx'
 
@@ -13,7 +17,13 @@ createRoot(document.getElementById('root')!).render(
       <BrowserRouter>
         <CartProvider>
           <AuthProvider>
-            <App />
+            <OrdersProvider>
+              <ReviewsProvider>
+                <ThemeProvider>
+                  <ToastProvider><App /></ToastProvider>
+                </ThemeProvider>
+              </ReviewsProvider>
+            </OrdersProvider>
           </AuthProvider>
         </CartProvider>
       </BrowserRouter>

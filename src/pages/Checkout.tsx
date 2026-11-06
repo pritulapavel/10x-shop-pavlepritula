@@ -1,16 +1,20 @@
 import { useRef, useState } from 'react'
 import type { FormEvent } from 'react'
 import { Link, Navigate } from 'react-router-dom'
+import DeliveryDetails from '../components/DeliveryDetails'
+import { useOrders } from '../context/OrdersContext'
+import { makeOrderLines } from '../utils/order'
 import CheckoutSummary from '../components/CheckoutSummary'
 import { useCart } from '../context/CartContext'
-import type { CheckoutConfirmation, CheckoutFormValues } from '../types'
-import { calculateSubtotalCents } from '../utils/currency'
+import type { OrderSnapshot, CheckoutFormValues } from '../types'
+import { hasResolvedPrice } from '../utils/currency'
 
 const inputClassName =
-  'min-h-11 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-base text-slate-900 focus:border-indigo-600'
+  'field'
 
 function Checkout() {
-  const { items, clearCart } = useCart()
+  const { items, clearCart, clearSavedCart, totals, promoCode } = useCart()
+  const { placeOrder } = useOrders()
   const [values, setValues] = useState<CheckoutFormValues>({
     fullName: '',
     email: '',
@@ -18,16 +22,17 @@ function Checkout() {
     city: '',
   })
   const [errors, setErrors] = useState<Partial<CheckoutFormValues>>({})
-  const [confirmation, setConfirmation] = useState<CheckoutConfirmation | null>(null)
+  const [confirmation, setConfirmation] = useState<OrderSnapshot | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [cartClearFailed, setCartClearFailed] = useState(false)
   const [submissionError, setSubmissionError] = useState<string | null>(null)
   const submissionStarted = useRef(false)
-  const subtotalCents = calculateSubtotalCents(items)
+  const pricedItems = items.filter(hasResolvedPrice)
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
 
-    if (submissionStarted.current || confirmation) return
+    if (submissionStarted.current || confirmation || !totals || items.length === 0) return
 
     const delivery: CheckoutFormValues = {
       fullName: values.fullName.trim(),
@@ -59,16 +64,13 @@ function Checkout() {
     setIsSubmitting(true)
 
     try {
-      const savedItems = items.map((item) => ({ ...item }))
-      const savedSubtotalCents = calculateSubtotalCents(savedItems)
-
-      setConfirmation({
-        items: savedItems,
-        delivery: { ...delivery },
-        subtotalCents: savedSubtotalCents,
-        totalCents: savedSubtotalCents,
-      })
-      clearCart()
+      const order = placeOrder(pricedItems, delivery, totals, promoCode)
+      if (!order) throw new Error('Order could not be saved')
+      setConfirmation(order)
+      if (!clearSavedCart()) {
+        clearCart()
+        setCartClearFailed(true)
+      }
     } catch {
       setConfirmation(null)
       setSubmissionError('Unable to place your order. Please try again.')
@@ -82,66 +84,45 @@ function Checkout() {
   if (confirmation) {
     return (
       <section>
-        <h1 className="mb-8 text-3xl font-semibold tracking-tight text-slate-900">
+        <h1 className="display-title mb-5 sm:mb-6">
           Thank you! Your order has been placed.
         </h1>
-        <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
-          <section
-            aria-labelledby="delivery-heading"
-            className="min-w-0 rounded-xl border border-slate-200 bg-white p-6 sm:p-8"
-          >
-            <h2 id="delivery-heading" className="mb-6 text-xl font-semibold text-slate-900">
-              Delivery details
-            </h2>
-            <dl className="space-y-4">
-              <div>
-                <dt className="text-sm text-slate-600">Full name</dt>
-                <dd className="break-words font-medium text-slate-900">{confirmation.delivery.fullName}</dd>
-              </div>
-              <div>
-                <dt className="text-sm text-slate-600">Email</dt>
-                <dd className="break-words text-slate-900">{confirmation.delivery.email}</dd>
-              </div>
-              <div>
-                <dt className="text-sm text-slate-600">Address</dt>
-                <dd className="break-words text-slate-900">{confirmation.delivery.address}</dd>
-              </div>
-              <div>
-                <dt className="text-sm text-slate-600">City</dt>
-                <dd className="break-words text-slate-900">{confirmation.delivery.city}</dd>
-              </div>
-            </dl>
-          </section>
+        <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_22rem]">
+          <DeliveryDetails delivery={confirmation.delivery} />
           <CheckoutSummary
             items={confirmation.items}
-            subtotalCents={confirmation.subtotalCents}
-            totalCents={confirmation.totalCents}
+            totals={confirmation.totals}
+            promoCode={confirmation.promoCode}
           />
         </div>
+        {cartClearFailed && <p role="alert" className="mt-4 text-warning">Order saved. The browser could not clear the saved cart.</p>}
         <Link
           to="/"
-          className="mt-6 inline-flex min-h-11 min-w-11 items-center rounded-sm font-medium text-indigo-700 underline underline-offset-4 hover:text-indigo-900"
+          className="mt-6 inline-flex min-h-11 min-w-11 items-center rounded-sm font-medium text-accent underline underline-offset-4 hover:text-accent-hover"
         >
           Back to Catalog
         </Link>
+        <Link to={`/orders/${confirmation.id}`} className="secondary-button ml-3 mt-6">View order</Link>
       </section>
     )
   }
 
-  if (items.length === 0) return <Navigate to="/cart" replace />
+  if (items.length === 0) return <Navigate to="/cart" replace state={{ reason: 'empty-checkout' }} />
+  if (!totals) return <Navigate to="/cart" replace />
 
   return (
     <section>
-      <h1 className="mb-8 text-3xl font-semibold tracking-tight text-slate-900">Checkout</h1>
-      <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
+      <h1 className="display-title mb-5 sm:mb-6">Checkout</h1>
+      <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_22rem]">
         <form
           noValidate
           onSubmit={handleSubmit}
           aria-busy={isSubmitting}
-          className="min-w-0 space-y-5 rounded-xl border border-slate-200 bg-white p-6 sm:p-8"
+          className="panel min-w-0 space-y-4 p-4 sm:p-6"
         >
+          <h2 className="text-xl font-semibold">Delivery details</h2>
           <div>
-            <label htmlFor="full-name" className="mb-2 block text-sm font-medium text-slate-700">
+            <label htmlFor="full-name" className="control-label">
               Full name
             </label>
             <input
@@ -156,13 +137,13 @@ function Checkout() {
               className={inputClassName}
             />
             {errors.fullName && (
-              <p id="full-name-error" role="alert" className="mt-2 text-sm text-red-700">
+              <p id="full-name-error" role="alert" className="field-error">
                 {errors.fullName}
               </p>
             )}
           </div>
           <div>
-            <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-700">
+            <label htmlFor="email" className="control-label">
               Email
             </label>
             <input
@@ -178,13 +159,13 @@ function Checkout() {
               className={inputClassName}
             />
             {errors.email && (
-              <p id="email-error" role="alert" className="mt-2 text-sm text-red-700">
+              <p id="email-error" role="alert" className="field-error">
                 {errors.email}
               </p>
             )}
           </div>
           <div>
-            <label htmlFor="address" className="mb-2 block text-sm font-medium text-slate-700">
+            <label htmlFor="address" className="control-label">
               Address
             </label>
             <input
@@ -199,13 +180,13 @@ function Checkout() {
               className={inputClassName}
             />
             {errors.address && (
-              <p id="address-error" role="alert" className="mt-2 text-sm text-red-700">
+              <p id="address-error" role="alert" className="field-error">
                 {errors.address}
               </p>
             )}
           </div>
           <div>
-            <label htmlFor="city" className="mb-2 block text-sm font-medium text-slate-700">
+            <label htmlFor="city" className="control-label">
               City
             </label>
             <input
@@ -220,23 +201,23 @@ function Checkout() {
               className={inputClassName}
             />
             {errors.city && (
-              <p id="city-error" role="alert" className="mt-2 text-sm text-red-700">
+              <p id="city-error" role="alert" className="field-error">
                 {errors.city}
               </p>
             )}
           </div>
           {submissionError && (
-            <p role="alert" className="text-sm text-red-700">{submissionError}</p>
+            <p role="alert" className="text-sm text-danger">{submissionError}</p>
           )}
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full cursor-pointer rounded-md bg-indigo-600 px-5 py-3 font-semibold text-white transition-colors hover:bg-indigo-700 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-600 sm:w-auto"
+            className="primary-button w-full sm:w-auto"
           >
             Place order
           </button>
         </form>
-        <CheckoutSummary items={items} subtotalCents={subtotalCents} totalCents={subtotalCents} />
+        <CheckoutSummary items={makeOrderLines(pricedItems)} totals={totals} promoCode={promoCode} />
       </div>
     </section>
   )

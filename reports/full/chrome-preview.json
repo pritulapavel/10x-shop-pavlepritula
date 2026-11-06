@@ -1,0 +1,447 @@
+{
+  "date": "2026-11-05",
+  "browser": "Google Chrome 156.0.8078.81",
+  "origin": "http://127.0.0.1:4197",
+  "checks": {
+    "search": {
+      "immediateUrl": "http://127.0.0.1:4197/",
+      "beforeFixFocus": {
+        "name": "BODY",
+        "type": null
+      },
+      "afterFixFocus": "search",
+      "page2": "http://127.0.0.1:4197/?q=phone&sort=price-desc&page=2",
+      "nextDisabled": true,
+      "reload": "http://127.0.0.1:4197/?q=phone&sort=price-desc&page=2"
+    },
+    "category": {
+      "url": "http://127.0.0.1:4197/?category=beauty&sort=price-desc",
+      "searchValue": "",
+      "back": "http://127.0.0.1:4197/?q=phone&sort=price-desc&page=2",
+      "forward": "http://127.0.0.1:4197/?category=beauty&sort=price-desc"
+    },
+    "emptyCatalog": {
+      "normalizedUrl": "http://127.0.0.1:4197/?q=10xnoresults17051",
+      "clearedUrl": "http://127.0.0.1:4197/"
+    },
+    "reviews": {
+      "validation": true,
+      "tab": "true",
+      "firstComment": "Guest\n\n5 out of 5 · Nov 5, 2026\n\nPreview verification review.",
+      "reload": true
+    },
+    "product": {
+      "details": [
+        "Red Nail Polish\n\nBEAUTY · NAIL COUTURE\n\n$7.96\n$8.99\n−11.44%\nIn stock\n\nQuantity\n\n−\n1\n+\nAdd to cart"
+      ],
+      "product": "Red Nail Polish",
+      "related": [
+        "Essence Mascara Lash Princess",
+        "Eyeshadow Palette with Mirror",
+        "Powder Canister",
+        "Red Lipstick"
+      ]
+    },
+    "purchase": {
+      "cartWithoutPromo": {
+        "Shipping": "$10.00",
+        "Subtotal": "$15.92",
+        "Total": "$25.92"
+      },
+      "invalidPromo": true,
+      "cartWithPromo": {
+        "Discount (10X10 −10%)": "-$1.59",
+        "Shipping": "$10.00",
+        "Subtotal": "$15.92",
+        "Total": "$24.33"
+      },
+      "promoReload": {
+        "Discount (10X10 −10%)": "-$1.59",
+        "Shipping": "$10.00",
+        "Subtotal": "$15.92",
+        "Total": "$24.33"
+      },
+      "checkout": {
+        "Discount (10X10 −10%)": "-$1.59",
+        "Shipping": "$10.00",
+        "Subtotal": "$15.92",
+        "Total": "$24.33"
+      },
+      "isolatedRetry": {
+        "origin": "http://127.0.0.1:4198",
+        "total": "$17.96",
+        "checkoutVisible": true,
+        "validSyntheticInputsVisible": true,
+        "clickLeftCityFocused": true,
+        "ariaBusy": "false",
+        "applicationErrors": []
+      },
+      "confirmation": {
+        "method": "Chrome accessibility action on the visible Place order button",
+        "total": [
+          "  - heading \"Thank you! Your order has been placed.\" [level=1]",
+          "    - heading \"Delivery details\" [level=2]",
+          "    - definition: Preview Buyer",
+          "    - definition: Tbilisi",
+          "    - heading \"Order summary\" [level=2]",
+          "    - definition: $24.33"
+        ],
+        "badgeGone": true
+      },
+      "emptyCartAfterReload": true
+    },
+    "legacy": {
+      "failure": {
+        "Shipping": "Pending",
+        "Subtotal": "Pending",
+        "Total": "Pending"
+      },
+      "checkoutWhileFailed": 0,
+      "retry": {
+        "Shipping": "$10.00",
+        "Subtotal": "$53.94",
+        "Total": "$63.94"
+      },
+      "quantityOnResolve": {
+        "Shipping": "$10.00",
+        "Subtotal": "$62.93",
+        "Total": "$72.93"
+      },
+      "removeWhileDelayed": true,
+      "clearWhileDelayed": true
+    },
+    "layout": [
+      {
+        "clientWidth": 360,
+        "columns": 1,
+        "minTargetHeight": 44,
+        "minTargetWidth": 63.328125,
+        "navBelow": true,
+        "scrollWidth": 360,
+        "width": 375
+      },
+      {
+        "clientWidth": 465,
+        "columns": 1,
+        "minTargetHeight": 44,
+        "minTargetWidth": 63.328125,
+        "navBelow": true,
+        "scrollWidth": 465,
+        "width": 480
+      },
+      {
+        "clientWidth": 466,
+        "columns": 2,
+        "minTargetHeight": 44,
+        "minTargetWidth": 63.328125,
+        "navBelow": false,
+        "scrollWidth": 466,
+        "width": 481
+      },
+      {
+        "clientWidth": 753,
+        "columns": 3,
+        "minTargetHeight": 44,
+        "minTargetWidth": 63.328125,
+        "navBelow": false,
+        "scrollWidth": 753,
+        "width": 768
+      },
+      {
+        "clientWidth": 1009,
+        "columns": 3,
+        "minTargetHeight": 44,
+        "minTargetWidth": 63.328125,
+        "navBelow": false,
+        "scrollWidth": 1009,
+        "width": 1024
+      },
+      {
+        "clientWidth": 1010,
+        "columns": 4,
+        "minTargetHeight": 44,
+        "minTargetWidth": 63.328125,
+        "navBelow": false,
+        "scrollWidth": 1010,
+        "width": 1025
+      }
+    ],
+    "focus": {
+      "outline": "2px",
+      "text": "Catalog"
+    },
+    "darkReload": "dark",
+    "profile": {
+      "protectedReturn": "http://127.0.0.1:4197/profile",
+      "errors": [
+        "First name must be at least 2 characters",
+        "Last name must be at least 2 characters",
+        "Please enter a valid email address",
+        "Please enter a valid phone number"
+      ],
+      "themeFromProfile": "light",
+      "validSubmitState": [
+        "    - link \"Profile · Preview Tester\":",
+        "      - generic \"Preview Tester\": · Preview Tester",
+        "  - textbox \"First name\": Preview",
+        "  - textbox \"Last name\": Tester",
+        "  - button \"Save profile\" [active]",
+        "- status: Profile saved."
+      ]
+    },
+    "lazyErrorBoundary": {
+      "environment": "isolated Vite development fixture using the application ErrorBoundary and Suspense",
+      "intentionalRejectedLazyImport": true,
+      "fallback": [
+        "  - heading \"Something went wrong.\" [level=1]",
+        "  - button \"Reload\""
+      ],
+      "reloadRecovered": true
+    },
+    "logout": {
+      "before": "Cart\n2",
+      "after": "Cart\n2",
+      "loginVisible": true
+    },
+    "notFound": {
+      "/abc": true,
+      "/products/abc": [
+        "  - heading \"Page not found\" [level=1]",
+        "  - link \"Go to catalog\":"
+      ],
+      "/products/999999": [
+        "  - heading \"Page not found\" [level=1]",
+        "  - link \"Go to catalog\":"
+      ]
+    },
+    "scopedClear": {
+      "origin": "http://127.0.0.1:4198",
+      "testData": "one cart item; order and review stores empty before clearing",
+      "cancelPreserved": true,
+      "clearStatus": [
+        "    - link \"Cart\":",
+        "    - text: Signed in as",
+        "    - button \"Dark\" [pressed]",
+        "    - status: Local cart, orders and reviews cleared."
+      ]
+    },
+    "emptyOrders": {
+      "heading": true,
+      "browse": true
+    },
+    "emptyCheckout": {
+      "route": "http://127.0.0.1:4198/cart",
+      "lines": [
+        "  - heading \"Cart\" [level=1]",
+        "  - status: Add items to your cart before checking out.",
+        "  - paragraph: Your cart is empty."
+      ]
+    },
+    "checkoutValidation": [
+      "  - alert: Full name must be at least 3 characters",
+      "  - alert: Please enter a valid email address",
+      "  - alert: Address must be at least 5 characters",
+      "  - alert: City is required"
+    ],
+    "secondOriginOrder": {
+      "result": [
+        "    - link \"Cart\":",
+        "  - heading \"Thank you! Your order has been placed.\" [level=1]",
+        "    - heading \"Delivery details\" [level=2]",
+        "    - heading \"Order summary\" [level=2]",
+        "    - definition: $18.94",
+        "  - link \"View order\":"
+      ],
+      "origin": "http://127.0.0.1:4198",
+      "details": [
+        "    - definition: Preview Buyer",
+        "    - definition: 12 Preview Street",
+        "    - definition: Tbilisi",
+        "    - term: Subtotal",
+        "    - term: Shipping",
+        "    - term: Total",
+        "    - definition: $18.94"
+      ],
+      "savedBeforeReload": {
+        "url": "http://127.0.0.1:4198/orders/c08b0007-15b3-4b85-9a5f-6c3316d1eab5",
+        "lines": [
+          "    - link \"Cart\":",
+          "  - 'heading \"Order #0001\" [level=1]'",
+          "    - heading \"Order timeline\" [level=2]",
+          "      - listitem: 1. Processing (current)",
+          "    - heading \"Delivery details\" [level=2]",
+          "    - heading \"Order summary\" [level=2]",
+          "    - definition: $18.94"
+        ]
+      },
+      "afterReload": {
+        "sameRoute": true,
+        "lines": [
+          "    - link \"Cart\":",
+          "  - 'heading \"Order #0001\" [level=1]'",
+          "    - heading \"Order timeline\" [level=2]",
+          "    - heading \"Delivery details\" [level=2]",
+          "    - heading \"Order summary\" [level=2]",
+          "    - definition: $18.94"
+        ]
+      },
+      "emptyCartAfterReload": true,
+      "ordersList": [
+        "  - heading \"Orders\" [level=1]",
+        "    - 'link \"Order #0001 Nov 5, 2026, 9:42 PM 1 item $18.94 Processing\"':",
+        "      - generic: \"Order #0001\"",
+        "      - generic: $18.94"
+      ],
+      "reorder": [
+        "    - link \"Cart 1 item in cart\":",
+        "  - status: Added 1 of 1 items to your cart."
+      ]
+    },
+    "repeatOrder": {
+      "cart": [
+        "    - definition: $8.94",
+        "    - term: Discount (10X10 −10%)",
+        "    - definition: \"-$0.89\"",
+        "    - term: Shipping",
+        "    - definition: $10.00",
+        "    - term: Total",
+        "    - definition: $18.05"
+      ],
+      "checkout": [
+        "    - definition: $8.94",
+        "    - term: Discount (10X10 −10%)",
+        "    - definition: \"-$0.89\"",
+        "    - term: Shipping",
+        "    - definition: $10.00",
+        "    - term: Total",
+        "    - definition: $18.05"
+      ],
+      "confirmation": [
+        "  - heading \"Thank you! Your order has been placed.\" [level=1]",
+        "    - heading \"Delivery details\" [level=2]",
+        "    - definition: Second Preview Buyer",
+        "    - definition: qa@example.test",
+        "    - definition: 12 Preview Street",
+        "    - definition: Tbilisi",
+        "    - heading \"Order summary\" [level=2]",
+        "    - definition: $8.94",
+        "    - definition: \"-$0.89\"",
+        "    - definition: $10.00",
+        "    - definition: $18.05"
+      ],
+      "badgeGone": true,
+      "list": [
+        "    - 'link \"Order #0002 Nov 5, 2026, 9:43 PM 1 item $18.05 Processing\"':",
+        "      - generic: \"Order #0002\"",
+        "      - generic: $18.05",
+        "    - 'link \"Order #0001 Nov 5, 2026, 9:42 PM 1 item $18.94 Processing\"':",
+        "      - generic: \"Order #0001\"",
+        "      - generic: $18.94"
+      ]
+    },
+    "mobileRoutes": {
+      "orders": {
+        "clientWidth": 375,
+        "count": 9,
+        "minHeight": 44,
+        "minWidth": 50.65625,
+        "scrollWidth": 375,
+        "undersized": [],
+        "width": 375
+      },
+      "orderDetails": {
+        "clientWidth": 360,
+        "count": 10,
+        "minHeight": 44,
+        "minWidth": 50.65625,
+        "scrollWidth": 360,
+        "undersized": [],
+        "width": 375
+      },
+      "cart": {
+        "clientWidth": 360,
+        "count": 15,
+        "minHeight": 44,
+        "minWidth": 44,
+        "scrollWidth": 360,
+        "undersized": [],
+        "width": 375
+      },
+      "checkout": {
+        "clientWidth": 360,
+        "count": 12,
+        "minHeight": 44,
+        "minWidth": 66.15625,
+        "scrollWidth": 360,
+        "undersized": [],
+        "width": 375
+      },
+      "profileExpanded": {
+        "clientWidth": 360,
+        "count": 17,
+        "minHeight": 44,
+        "minWidth": 61.890625,
+        "scrollWidth": 360,
+        "undersized": [],
+        "width": 375
+      },
+      "productReviews": {
+        "clientWidth": 360,
+        "count": 24,
+        "minHeight": 44,
+        "minWidth": 44,
+        "scrollWidth": 360,
+        "undersized": [],
+        "width": 375
+      },
+      "login": {
+        "clientWidth": 375,
+        "count": 9,
+        "minHeight": 44,
+        "minWidth": 50.65625,
+        "scrollWidth": 375,
+        "undersized": [],
+        "width": 375
+      },
+      "notFound": {
+        "clientWidth": 375,
+        "count": 8,
+        "minHeight": 44,
+        "minWidth": 50.65625,
+        "scrollWidth": 375,
+        "undersized": [],
+        "width": 375
+      },
+      "emptyCart": {
+        "clientWidth": 375,
+        "count": 8,
+        "minHeight": 44,
+        "minWidth": 50.65625,
+        "scrollWidth": 375,
+        "undersized": [],
+        "width": 375
+      }
+    },
+    "populatedScopedClear": {
+      "before": [
+        "    - link \"Cart 1 item in cart\":",
+        "      - paragraph: Scoped clear verification review."
+      ],
+      "ordersBefore": 2,
+      "cancelKeptPopulatedCart": true,
+      "profileAfter": [
+        "    - link \"Cart\":",
+        "    - text: Signed in as",
+        "    - button \"Dark\" [pressed]",
+        "    - status: Local cart, orders and reviews cleared."
+      ],
+      "ordersEmpty": true,
+      "reviewGoneAfterNavigation": true,
+      "themeAfterReload": "dark"
+    },
+    "unknownOrder": {
+      "url": "http://127.0.0.1:4198/orders/not-an-order",
+      "notFound": true
+    }
+  }
+}

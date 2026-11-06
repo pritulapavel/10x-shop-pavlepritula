@@ -1,42 +1,38 @@
-import type { CartItem } from '../types'
-import { formatUSD, toCents } from '../utils/currency'
+import type { CartTotals, PromoCode, OrderLine } from '../types'
+import { formatCents } from '../utils/currency'
+import ProductPrice from './ProductPrice'
+import TotalsBreakdown from './TotalsBreakdown'
 
 interface CheckoutSummaryProps {
-  items: CartItem[]
-  subtotalCents: number
-  totalCents: number
+  items: OrderLine[]
+  totals: CartTotals
+  promoCode?: PromoCode
 }
 
-function CheckoutSummary({ items, subtotalCents, totalCents }: CheckoutSummaryProps) {
+function CheckoutSummary({ items, totals, promoCode }: CheckoutSummaryProps) {
   return (
     <aside
       aria-labelledby="checkout-summary-heading"
-      className="min-w-0 rounded-xl border border-slate-200 bg-white p-6"
+      className="panel min-w-0 p-4 sm:p-6"
     >
-      <h2 id="checkout-summary-heading" className="text-xl font-semibold text-slate-900">
+      <h2 id="checkout-summary-heading" className="text-xl font-semibold text-ink">
         Order summary
       </h2>
-      <ul className="my-6 divide-y divide-slate-200">
+      <ul className="my-4 divide-y divide-line border-b border-line">
         {items.map((item) => (
-          <li key={item.productId} className="space-y-2 py-4 first:pt-0">
-            <p className="break-words font-medium text-slate-900">{item.title}</p>
-            <div className="flex flex-wrap justify-between gap-2 text-sm text-slate-600">
-              <span>{formatUSD(item.price)} × {item.quantity}</span>
-              <span>{formatUSD(toCents(item.price) * item.quantity / 100)}</span>
+          <li key={item.productId} className="space-y-1.5 py-3 first:pt-0">
+            <p className="break-words font-medium text-ink">{item.title}</p>
+            <div className="flex flex-wrap justify-between gap-2 text-sm text-muted">
+              <div className="flex flex-wrap items-center gap-x-2">
+                <ProductPrice {...item} />
+                <span>× {item.quantity}</span>
+              </div>
+              <span className="font-semibold text-ink tabular-nums">{formatCents(item.lineTotalCents)}</span>
             </div>
           </li>
         ))}
       </ul>
-      <dl className="space-y-4">
-        <div className="flex justify-between gap-4 text-slate-600">
-          <dt>Subtotal</dt>
-          <dd>{formatUSD(subtotalCents / 100)}</dd>
-        </div>
-        <div className="flex justify-between gap-4 border-t border-slate-200 pt-4 text-lg font-semibold text-slate-900">
-          <dt>Total</dt>
-          <dd>{formatUSD(totalCents / 100)}</dd>
-        </div>
-      </dl>
+      <TotalsBreakdown totals={totals} promoCode={promoCode} />
     </aside>
   )
 }

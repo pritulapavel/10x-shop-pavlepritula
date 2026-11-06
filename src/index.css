@@ -1,16 +1,99 @@
 @import "tailwindcss";
 
+@theme inline {
+  --color-canvas: var(--shop-canvas);
+  --color-surface: var(--shop-surface);
+  --color-surface-muted: var(--shop-surface-muted);
+  --color-ink: var(--shop-ink);
+  --color-muted: var(--shop-muted);
+  --color-line: var(--shop-line);
+  --color-control: var(--shop-control);
+  --color-accent: var(--shop-accent);
+  --color-accent-hover: var(--shop-accent-hover);
+  --color-accent-soft: var(--shop-accent-soft);
+  --color-on-accent-soft: var(--shop-on-accent-soft);
+  --color-on-accent: var(--shop-on-accent);
+  --color-focus: var(--shop-focus);
+  --color-disabled-surface: var(--shop-disabled-surface);
+  --color-disabled-ink: var(--shop-disabled-ink);
+  --color-success: var(--shop-success);
+  --color-success-soft: var(--shop-success-soft);
+  --color-danger: var(--shop-danger);
+  --color-danger-soft: var(--shop-danger-soft);
+  --color-warning: var(--shop-warning);
+  --color-warning-soft: var(--shop-warning-soft);
+}
+
 :root {
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light;
+  --shop-canvas: #f5f7fb;
+  --shop-surface: #ffffff;
+  --shop-surface-muted: #edf2f8;
+  --shop-ink: #172033;
+  --shop-muted: #58657a;
+  --shop-line: #dce3ee;
+  --shop-control: #75849b;
+  --shop-accent: #2563eb;
+  --shop-accent-hover: #1d4ed8;
+  --shop-accent-soft: #eaf1ff;
+  --shop-on-accent-soft: #1d4ed8;
+  --shop-on-accent: #ffffff;
+  --shop-focus: #2563eb;
+  --shop-disabled-surface: #e8edf5;
+  --shop-disabled-ink: #58657a;
+  --shop-success: #047857;
+  --shop-success-soft: #ecfdf5;
+  --shop-danger: #b91c1c;
+  --shop-danger-soft: #fef2f2;
+  --shop-warning: #92400e;
+  --shop-warning-soft: #fffbeb;
+  font-family: system-ui, 'Segoe UI', sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --shop-canvas: #0d1118;
+  --shop-surface: #171d29;
+  --shop-surface-muted: #202838;
+  --shop-ink: #f2f5fc;
+  --shop-muted: #a3afc2;
+  --shop-line: #303b4e;
+  --shop-control: #71829b;
+  --shop-accent: #8ab4ff;
+  --shop-accent-hover: #afcbff;
+  --shop-accent-soft: #1d2d49;
+  --shop-on-accent-soft: #afcbff;
+  --shop-on-accent: #0b1730;
+  --shop-focus: #afcbff;
+  --shop-disabled-surface: #293449;
+  --shop-disabled-ink: #a3afc2;
+  --shop-success: #6ee7b7;
+  --shop-success-soft: #102e26;
+  --shop-danger: #fda4af;
+  --shop-danger-soft: #351c27;
+  --shop-warning: #fcd34d;
+  --shop-warning-soft: #332a18;
 }
 
 @layer base {
-  :focus-visible {
-    outline: 2px solid var(--color-indigo-600);
-    outline-offset: 3px;
-  }
+  body { @apply bg-canvas text-ink; }
+  :focus-visible { outline: 2px solid var(--shop-focus); outline-offset: 3px; }
+}
+
+@layer components {
+  .shop-container { @apply mx-auto w-full max-w-7xl px-4 sm:px-6; }
+  .panel { @apply rounded-2xl border border-line bg-surface shadow-xs; }
+  .product-grid { @apply grid grid-cols-1 gap-4 min-[481px]:grid-cols-2 min-[768px]:grid-cols-3 min-[1025px]:grid-cols-4; }
+  .product-card { @apply flex min-w-0 flex-col p-3; }
+  .field { @apply min-h-11 w-full rounded-xl border border-control bg-surface px-3 py-2 text-base text-ink placeholder:text-muted aria-invalid:border-danger aria-invalid:bg-danger-soft; }
+  .control-label { @apply mb-1 block text-sm font-semibold text-ink; }
+  .field-error { @apply mt-1.5 text-sm text-danger; }
+  .primary-button { @apply inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-xl bg-accent px-4 py-2.5 text-center text-sm font-semibold text-on-accent motion-safe:transition-colors not-disabled:hover:bg-accent-hover not-disabled:active:bg-accent-hover disabled:cursor-not-allowed disabled:bg-disabled-surface disabled:text-disabled-ink; }
+  .secondary-button { @apply inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-xl border border-control bg-surface px-4 py-2.5 text-center text-sm font-semibold text-ink motion-safe:transition-colors not-disabled:hover:bg-surface-muted not-disabled:active:bg-surface-muted disabled:cursor-not-allowed disabled:bg-disabled-surface disabled:text-disabled-ink; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-wider text-accent; }
+  .display-title { @apply text-[1.75rem] leading-tight font-semibold tracking-tight sm:text-4xl; }
+  .image-well { @apply rounded-xl bg-surface-muted; }
 }

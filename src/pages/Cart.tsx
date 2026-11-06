@@ -1,46 +1,48 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import ConfirmAction from '../components/ConfirmAction'
+import TotalsBreakdown from '../components/TotalsBreakdown'
+import PromoForm from '../components/PromoForm'
+import ProductPrice from '../components/ProductPrice'
+import { isRecord } from '../utils/decode'
 import QuantityStepper from '../components/QuantityStepper'
 import { useCart } from '../context/CartContext'
-import { calculateSubtotalCents, formatUSD, toCents } from '../utils/currency'
+import { formatCents, hasResolvedPrice, lineTotalCents } from '../utils/currency'
 
 function Cart() {
-  const { items, removeItem, setQuantity, clearCart } = useCart()
-  const subtotalCents = calculateSubtotalCents(items)
-
-  function handleClearCart() {
-    if (window.confirm('Clear the cart? This cannot be undone.')) {
-      clearCart()
-    }
-  }
+  const { items, removeItem, setQuantity, clearCart, priceLoadFailed, retryPrices, totals, promoCode } = useCart()
+  const redirectState: unknown = useLocation().state
+  const emptyCheckout = isRecord(redirectState) && redirectState.reason === 'empty-checkout'
+  const allPricesReady = totals !== undefined
 
   return (
     <section>
-      <h1 className="mb-8 text-3xl font-semibold tracking-tight text-slate-900">Cart</h1>
+      <h1 className="display-title mb-5 sm:mb-6">Cart</h1>
       {items.length === 0 ? (
-        <div className="space-y-4">
-          <p className="text-slate-600">Your cart is empty.</p>
-          <Link to="/" className="inline-flex min-h-11 min-w-11 items-center rounded-sm font-medium text-indigo-700 underline underline-offset-4 hover:text-indigo-900">
+        <div className="panel space-y-3 p-4 sm:p-6">
+          {emptyCheckout && <p role="status" className="text-warning">Add items to your cart before checking out.</p>}
+          <p className="text-muted">Your cart is empty.</p>
+          <Link to="/" className="inline-flex min-h-11 min-w-11 items-center rounded-sm font-medium text-accent underline underline-offset-4 hover:text-accent-hover">
             Browse products
           </Link>
         </div>
       ) : (
-        <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
+        <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_22rem]">
           <div className="min-w-0 space-y-5">
             <ul className="space-y-4">
               {items.map((item) => (
-                <li key={item.productId} className="flex min-w-0 flex-col gap-4 rounded-xl border border-slate-200 bg-white p-4 sm:flex-row">
+                <li key={item.productId} className="flex min-w-0 flex-col gap-4 panel p-4 sm:flex-row">
                   <img
                     src={item.thumbnail}
                     alt={`${item.title} product thumbnail`}
                     width={96}
                     height={96}
-                    className="h-24 w-24 shrink-0 rounded-md bg-slate-50 object-contain"
+                    className="h-24 w-24 shrink-0 rounded-md bg-surface-muted object-contain"
                   />
                   <div className="min-w-0 flex-1 space-y-3">
-                    <Link to={`/products/${item.productId}`} className="inline-flex min-h-11 min-w-11 items-center break-words rounded-sm font-semibold text-slate-900 hover:text-indigo-700">
+                    <Link to={`/products/${item.productId}`} className="inline-flex min-h-11 min-w-11 items-center break-words rounded-sm font-semibold text-ink hover:text-accent">
                       {item.title}
                     </Link>
-                    <p className="text-sm text-slate-600">Unit price: {formatUSD(item.price)}</p>
+                    {hasResolvedPrice(item) ? <ProductPrice {...item} /> : <p>Price pending</p>}
                     <div className="flex flex-wrap items-center gap-4">
                       <QuantityStepper
                         quantity={item.quantity}
@@ -52,44 +54,46 @@ function Cart() {
                         type="button"
                         aria-label={`Remove ${item.title}`}
                         onClick={() => removeItem(item.productId)}
-                        className="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-sm text-sm font-medium text-red-700 underline underline-offset-4 hover:text-red-900"
+                        className="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-sm text-sm font-medium text-danger underline underline-offset-4 hover:bg-danger-soft"
                       >
                         Remove
                       </button>
                     </div>
                   </div>
-                  <div className="shrink-0 text-sm text-slate-600 sm:text-right">
+                  <div className="shrink-0 text-sm text-muted sm:text-right">
                     <p>Line total</p>
-                    <p className="mt-1 text-lg font-semibold text-slate-900">
-                      {formatUSD(toCents(item.price) * item.quantity / 100)}
+                    <p className="mt-1 text-lg font-semibold text-ink">
+                      {hasResolvedPrice(item) ? formatCents(lineTotalCents(item)) : 'Pending'}
                     </p>
                   </div>
                 </li>
               ))}
             </ul>
-            <button
-              type="button"
-              onClick={handleClearCart}
-              className="min-h-11 min-w-11 cursor-pointer rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100"
-            >
-              Clear cart
-            </button>
+            <ConfirmAction label="Clear cart" question="Clear the cart? This cannot be undone." onConfirm={clearCart} />
           </div>
-          <aside aria-labelledby="summary-heading" className="min-w-0 rounded-xl border border-slate-200 bg-white p-6">
-            <h2 id="summary-heading" className="text-xl font-semibold text-slate-900">Order summary</h2>
-            <dl className="my-6 space-y-4">
-              <div className="flex justify-between gap-4 text-slate-600">
-                <dt>Subtotal</dt>
-                <dd>{formatUSD(subtotalCents / 100)}</dd>
+          <aside aria-labelledby="summary-heading" className="panel min-w-0 p-4 sm:p-6">
+            <h2 id="summary-heading" className="text-xl font-semibold text-ink">Order summary</h2>
+            <div className="my-6 space-y-5">
+              <PromoForm />
+              <TotalsBreakdown totals={totals} promoCode={promoCode} />
+              <p className="text-xs text-muted">Free shipping from $100 before the promo discount.</p>
+            </div>
+            {allPricesReady ? (
+              <Link to="/checkout" className="primary-button w-full">
+                Proceed to checkout
+              </Link>
+            ) : (
+              <div className="space-y-3">
+                <p role="status" className={priceLoadFailed ? 'text-warning' : 'text-muted'}>
+                  {priceLoadFailed ? 'Some prices could not be loaded. Retry before checking out.' : 'Loading current prices…'}
+                </p>
+                {priceLoadFailed && (
+                  <button type="button" onClick={retryPrices} className="min-h-11 rounded-md border border-control bg-surface px-4 font-semibold text-ink hover:bg-surface-muted">
+                    Retry prices
+                  </button>
+                )}
               </div>
-              <div className="flex justify-between gap-4 border-t border-slate-200 pt-4 text-lg font-semibold text-slate-900">
-                <dt>Total</dt>
-                <dd>{formatUSD(subtotalCents / 100)}</dd>
-              </div>
-            </dl>
-            <Link to="/checkout" className="block rounded-md bg-indigo-600 px-4 py-3 text-center font-semibold text-white transition-colors hover:bg-indigo-700">
-              Proceed to checkout
-            </Link>
+            )}
           </aside>
         </div>
       )}

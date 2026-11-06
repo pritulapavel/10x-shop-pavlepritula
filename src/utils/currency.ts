@@ -1,4 +1,4 @@
-import type { CartItem } from '../types'
+import type { CartItem, Product, ResolvedCartItem } from '../types'
 
 const usdFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -8,13 +8,30 @@ const usdFormatter = new Intl.NumberFormat('en-US', {
 })
 
 export function toCents(amount: number) {
-  return Math.round((amount + Number.EPSILON) * 100)
+  const cents = amount * 100
+  return Math.round(cents + Number.EPSILON * cents)
 }
 
-export function formatUSD(amount: number) {
-  return usdFormatter.format(toCents(amount) / 100)
+export function formatCents(cents: number) {
+  return usdFormatter.format(cents / 100)
 }
 
-export function calculateSubtotalCents(items: CartItem[]) {
-  return items.reduce((total, item) => total + toCents(item.price) * item.quantity, 0)
+export function discountedPrice(price: number, discountPercentage: number) {
+  return price * (100 - discountPercentage) / 100
+}
+
+export function discountedUnitCents({ price, discountPercentage }: Pick<Product, 'price' | 'discountPercentage'>) {
+  return toCents(discountedPrice(price, discountPercentage))
+}
+
+export function lineTotalCents(item: ResolvedCartItem) {
+  return discountedUnitCents(item) * item.quantity
+}
+
+export function hasResolvedPrice(item: CartItem): item is ResolvedCartItem {
+  return item.discountPercentage !== undefined
+}
+
+export function calculateSubtotalCents(items: ResolvedCartItem[]) {
+  return items.reduce((total, item) => total + lineTotalCents(item), 0)
 }

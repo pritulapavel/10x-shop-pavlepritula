@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { isRecord } from '../utils/decode'
 import { useAuth } from '../context/AuthContext'
 import type { LoginFormValues } from '../types'
 
 const inputClassName =
-  'min-h-11 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-base text-slate-900 focus:border-indigo-600'
+  'field'
 
 function Login() {
   const [values, setValues] = useState<LoginFormValues>({ username: '', password: '' })
@@ -14,11 +15,10 @@ function Login() {
   const navigate = useNavigate()
   const location = useLocation()
   const redirectState: unknown = location.state
-  const returnToCheckout =
-    typeof redirectState === 'object' &&
-    redirectState !== null &&
-    'from' in redirectState &&
-    redirectState.from === '/checkout'
+  const from = isRecord(redirectState) ? redirectState.from : undefined
+  const returnPath = typeof from === 'string' &&
+    (from === '/checkout' || from === '/profile' || from === '/orders' || /^\/orders\/[a-z0-9-]+$/i.test(from))
+    ? from : '/'
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -43,23 +43,23 @@ function Login() {
     }
 
     login(username)
-    navigate(returnToCheckout ? '/checkout' : '/', { replace: true })
+    navigate(returnPath, { replace: true })
   }
 
   return (
     <section
       aria-labelledby="login-heading"
-      className="mx-auto w-full max-w-md rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8"
+      className="panel mx-auto w-full max-w-md p-5 sm:p-7"
     >
       <h1
         id="login-heading"
-        className="mb-6 text-center text-3xl font-semibold tracking-tight text-slate-900"
+        className="display-title mb-5"
       >
         Log in
       </h1>
       <form noValidate onSubmit={handleSubmit} className="space-y-5">
         <div>
-          <label htmlFor="username" className="mb-2 block text-sm font-medium text-slate-700">
+          <label htmlFor="username" className="control-label">
             Username
           </label>
           <input
@@ -75,13 +75,13 @@ function Login() {
             className={inputClassName}
           />
           {errors.username && (
-            <p id="username-error" role="alert" className="mt-2 text-sm text-red-700">
+            <p id="username-error" role="alert" className="field-error">
               {errors.username}
             </p>
           )}
         </div>
         <div>
-          <label htmlFor="password" className="mb-2 block text-sm font-medium text-slate-700">
+          <label htmlFor="password" className="control-label">
             Password
           </label>
           <input
@@ -98,21 +98,21 @@ function Login() {
             className={inputClassName}
           />
           {errors.password && (
-            <p id="password-error" role="alert" className="mt-2 text-sm text-red-700">
+            <p id="password-error" role="alert" className="field-error">
               {errors.password}
             </p>
           )}
         </div>
         <button
           type="submit"
-          className="w-full cursor-pointer rounded-md bg-indigo-600 px-4 py-2.5 font-semibold text-white transition-colors hover:bg-indigo-700"
+          className="primary-button w-full"
         >
           Log In
         </button>
       </form>
       <Link
         to="/"
-        className="mt-6 inline-flex min-h-11 min-w-11 items-center rounded-sm text-sm font-medium text-indigo-700 underline underline-offset-4 hover:text-indigo-900"
+        className="mt-6 inline-flex min-h-11 min-w-11 items-center rounded-sm text-sm font-medium text-accent underline underline-offset-4 hover:text-accent-hover"
       >
         ← Back to catalog
       </Link>

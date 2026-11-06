@@ -158,3 +158,26 @@ Only reproduced issues and verified fixes are recorded here.
 - The same verified source commit adds ErrorBoundary and wraps the Router/providers
   in `src/main.tsx`. The user committed these application changes; remote push
   status was not checked. Historical verification evidence is unchanged.
+
+## Product discounts were omitted from cart totals
+
+- **Reproduction:** Run `node reports/full/check-pricing.mjs`. It imports the baseline currency code from `967e75c` and passes a $9.99 item with a 10% discount and quantity six.
+- **Observed:** The baseline calculated 5,994 cents. The discounted line should be 5,394 cents after rounding the unit to 899 cents.
+- **Fix:** Compute discounted unit cents once in the shared pricing code and multiply by quantity. Preserve original price and discount metadata in storage and order snapshots.
+- **Verification:** The regression confirms 5,394 cents, explicit zero and fractional discounts, repeated additions, and legacy cart round trips. [Pricing check](reports/full/check-pricing.mjs)
+- **Fix commit reference:** Pending owner commit.
+
+## Search lost focus after the debounced URL update
+
+- **Reproduction:** In the local Chrome preview, type `phone` into Search products and let the debounced navigation commit.
+- **Observed:** The URL became `?q=phone` and focus moved to the document body.
+- **Fix:** Keep the search input mounted and reset its draft from the navigation key.
+- **Verification:** Chrome 156.0.8078.81 reported the search field as active after the same URL update. Search pagination and Back/Forward also restored their URLs. [Browser evidence](reports/full/chrome-preview.json)
+- **Fix commit reference:** Pending owner commit.
+
+## Disabled Previous showed the enabled hover accent
+
+- **Reproduction:** Hover over Previous on the first catalog page in the local desktop production preview. The button was disabled and used a `not-allowed` cursor, but its background moved toward the enabled hover accent in both themes.
+- **Cause and fix:** The shared secondary style applied its accent to every hovered element. Limit it to elements outside `:disabled` so secondary links retain their hover styling.
+- **Verification:** Chrome 156.0.8078.81 on the rebuilt preview measured an unchanged disabled background in both themes. The enabled secondary theme toggle still changed background. [Hover evidence](reports/full/chrome-hover.json)
+- **Fix commit reference:** Pending owner commit.
