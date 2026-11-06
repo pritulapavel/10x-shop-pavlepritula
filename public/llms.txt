@@ -1,0 +1,10 @@
+# 10X Shop
+
+> 10X Shop is an educational React storefront that uses live DummyJSON catalog data and simulates shopping without payments.
+
+Products can be browsed, searched, filtered and sorted in the storefront. The demo account, cart and saved orders are browser-local; checkout does not take payment or fulfill orders. The storefront does not provide an AI agent or tool API.
+
+## Storefront
+
+- [Product catalog](https://10x-shop-pavlepritula.vercel.app/): Search, filter and browse the product collection.
+- [Example product](https://10x-shop-pavlepritula.vercel.app/products/5): View product details, stock, prices and reviews.
