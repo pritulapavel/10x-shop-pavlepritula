@@ -9,6 +9,15 @@ The marketplace refinement was checked on 2026-11-06 using the local Vite produc
 | Mozilla Firefox | Unknown | No approved Firefox connection available. Pending |
 | Microsoft Edge | 156.0.4314.58 installed | The approved browser connector reported Edge unavailable. No compatibility test run |
 
+## Header and footer follow-up
+
+- The local production preview was checked on 2026-11-06 in connected Google Chrome. The connector blocked `chrome://version`, so the full build for this pass is unverified. At 375 and 1920 CSS px both themes had no horizontal overflow. The header menu was below the logo at 480 px and beside it at 481 px. The footer reached the bottom of the viewport on the short Cart page.
+- Both menus showed the correct active routes, including Orders at `/orders/footer-qa`. They used accent hover states and a 2 px keyboard outline without underlines. The in-page Cart link retained its underline. The measured Header and Footer controls were at least 59.33 × 44 CSS px. A 65-character account name truncated in the Header without overflowing. Footer muted text contrast was 5.90:1 in light mode and 7.61:1 in dark mode.
+- Both Cart badges matched at one and two items and disappeared at zero. Before the logout fix, logging out from Profile opened `/login` because the protected-route guard observed the session reset before the router committed `/`. After the fix, Footer logout from Profile and Header logout from the nested Orders route both opened Catalog and preserved two cart items.
+- Both brand links loaded the original 10X SVG and pointed to Catalog. The five social anchors used the supplied profile URLs, had 44 px heights, and wrapped into two rows at 375 px. Tab visibly focused the first social link in both themes. LinkedIn opened a separate tab. The SVG and URLs came from the [official 10X site](https://10x.edu.ge/).
+
+[Desktop light](reports/full/footer-desktop-light.jpg) · [Desktop dark](reports/full/footer-desktop-dark.jpg) · [375 px light](reports/full/footer-mobile-light.jpg) · [375 px dark](reports/full/footer-mobile-dark.jpg)
+
 ## Current marketplace presentation
 
 - At 375/480/481/768/1024/1025 CSS px the catalog had 1/1/2/3/3/4 columns. The header wrapped below the wordmark at 375 and 480 px. Measured targets met 44 × 44 CSS px and the sampled screens had no horizontal overflow.
