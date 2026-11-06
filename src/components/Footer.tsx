@@ -1,8 +1,9 @@
 function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-white">
-      <div className="mx-auto w-full max-w-6xl px-4 py-5 text-sm text-slate-500 sm:px-6">
-        10X Shop
+    <footer className="border-t border-line bg-surface">
+      <div className="shop-container flex flex-wrap items-baseline gap-x-3 gap-y-1 py-5 text-sm text-muted">
+        <span className="font-semibold text-ink">10X Shop</span>
+        <span>Product catalog and demo checkout</span>
       </div>
     </footer>
   )

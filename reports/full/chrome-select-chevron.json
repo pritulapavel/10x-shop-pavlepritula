@@ -1,0 +1,853 @@
+{
+  "date": "2026-11-06",
+  "browser": "Google Chrome 156.0.8078.81",
+  "origin": "http://127.0.0.1:4197",
+  "before": {
+    "catalog": {
+      "meta": {
+        "client": 360,
+        "entry": "/assets/index-ZKN7z76q.js",
+        "height": 900,
+        "scroll": 360,
+        "theme": "light",
+        "width": 375
+      },
+      "rows": [
+        {
+          "appearance": "auto",
+          "chevronCount": 0,
+          "control": {
+            "background": "rgb(255, 255, 255)",
+            "border": "1px",
+            "bottom": 483,
+            "color": "rgb(23, 32, 51)",
+            "height": 44,
+            "left": 33,
+            "paddingEnd": "12px",
+            "radius": "8px",
+            "right": 327,
+            "top": 439,
+            "width": 294
+          },
+          "disabled": false,
+          "focus": false,
+          "icon": null,
+          "longest": "All categories",
+          "multiple": false,
+          "name": null,
+          "open": false,
+          "option": "All categories",
+          "outline": "none 3px",
+          "tag": "SELECT",
+          "value": ""
+        },
+        {
+          "appearance": "auto",
+          "chevronCount": 0,
+          "control": {
+            "background": "rgb(255, 255, 255)",
+            "border": "1px",
+            "bottom": 569,
+            "color": "rgb(23, 32, 51)",
+            "height": 44,
+            "left": 33,
+            "paddingEnd": "12px",
+            "radius": "8px",
+            "right": 327,
+            "top": 525,
+            "width": 294
+          },
+          "disabled": false,
+          "focus": false,
+          "icon": null,
+          "longest": "Rating: high to low",
+          "multiple": false,
+          "name": null,
+          "open": false,
+          "option": "Default",
+          "outline": "none 3px",
+          "tag": "SELECT",
+          "value": "default"
+        }
+      ]
+    },
+    "rating": {
+      "meta": {
+        "client": 360,
+        "entry": "/assets/index-ZKN7z76q.js",
+        "height": 900,
+        "scroll": 360,
+        "theme": "light",
+        "width": 375
+      },
+      "rows": [
+        {
+          "appearance": "auto",
+          "chevronCount": 0,
+          "control": {
+            "background": "rgb(254, 242, 242)",
+            "border": "1px",
+            "bottom": 472,
+            "color": "rgb(23, 32, 51)",
+            "height": 44,
+            "left": 49,
+            "paddingEnd": "12px",
+            "radius": "8px",
+            "right": 311,
+            "top": 428,
+            "width": 262
+          },
+          "disabled": false,
+          "focus": false,
+          "icon": null,
+          "longest": "Select rating",
+          "multiple": false,
+          "name": "rating",
+          "open": false,
+          "option": "Select rating",
+          "outline": "none 3px",
+          "tag": "SELECT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  "after": {
+    "mobile-light-rating": {
+      "meta": {
+        "client": 360,
+        "entry": "/assets/index--uANSFht.js",
+        "height": 900,
+        "scroll": 360,
+        "theme": "light",
+        "width": 375
+      },
+      "rows": [
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": false,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              287,
+              450
+            ],
+            "color": "rgb(88, 101, 122)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Rating",
+          "longest": "Select rating",
+          "open": false,
+          "outline": "none 3px rgb(23, 32, 51)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Select rating",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "0",
+          "width": 262
+        }
+      ]
+    },
+    "mobile-light-catalog-long": {
+      "meta": {
+        "client": 360,
+        "entry": "/assets/index--uANSFht.js",
+        "height": 900,
+        "scroll": 360,
+        "theme": "light",
+        "width": 375
+      },
+      "rows": [
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": false,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              303,
+              461
+            ],
+            "color": "rgb(88, 101, 122)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Category",
+          "longest": "Kitchen Accessories",
+          "open": false,
+          "outline": "none 3px rgb(23, 32, 51)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Kitchen Accessories",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "kitchen-accessories",
+          "width": 294
+        },
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": true,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              303,
+              547
+            ],
+            "color": "rgb(88, 101, 122)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Sort",
+          "longest": "Rating: high to low",
+          "open": false,
+          "outline": "solid 2px rgb(37, 99, 235)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Rating: high to low",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "rating-desc",
+          "width": 294
+        }
+      ]
+    },
+    "desktop-light-catalog-long": {
+      "meta": {
+        "client": 1905,
+        "entry": "/assets/index--uANSFht.js",
+        "height": 897,
+        "scroll": 1905,
+        "theme": "light",
+        "width": 1920
+      },
+      "rows": [
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": false,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              1220,
+              343
+            ],
+            "color": "rgb(88, 101, 122)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Category",
+          "longest": "Kitchen Accessories",
+          "open": false,
+          "outline": "none 3px rgb(23, 32, 51)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Kitchen Accessories",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "kitchen-accessories",
+          "width": 291.5
+        },
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": true,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              1527.5,
+              343
+            ],
+            "color": "rgb(88, 101, 122)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Sort",
+          "longest": "Rating: high to low",
+          "open": false,
+          "outline": "solid 2px rgb(37, 99, 235)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Rating: high to low",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "rating-desc",
+          "width": 291.5
+        }
+      ]
+    },
+    "desktop-dark-catalog-long": {
+      "meta": {
+        "client": 1905,
+        "entry": "/assets/index--uANSFht.js",
+        "height": 897,
+        "scroll": 1905,
+        "theme": "dark",
+        "width": 1920
+      },
+      "rows": [
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": false,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              1220,
+              343
+            ],
+            "color": "rgb(163, 175, 194)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Category",
+          "longest": "Kitchen Accessories",
+          "open": false,
+          "outline": "none 3px rgb(242, 245, 252)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Kitchen Accessories",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "kitchen-accessories",
+          "width": 291.5
+        },
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": false,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              1527.5,
+              343
+            ],
+            "color": "rgb(163, 175, 194)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Sort",
+          "longest": "Rating: high to low",
+          "open": false,
+          "outline": "none 3px rgb(242, 245, 252)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Rating: high to low",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "rating-desc",
+          "width": 291.5
+        }
+      ]
+    },
+    "mobile-dark-catalog-long": {
+      "meta": {
+        "client": 360,
+        "entry": "/assets/index--uANSFht.js",
+        "height": 900,
+        "scroll": 360,
+        "theme": "dark",
+        "width": 375
+      },
+      "rows": [
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": false,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              303,
+              461
+            ],
+            "color": "rgb(163, 175, 194)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Category",
+          "longest": "Kitchen Accessories",
+          "open": false,
+          "outline": "none 3px rgb(242, 245, 252)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Kitchen Accessories",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "kitchen-accessories",
+          "width": 294
+        },
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": false,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              303,
+              547
+            ],
+            "color": "rgb(163, 175, 194)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Sort",
+          "longest": "Rating: high to low",
+          "open": false,
+          "outline": "none 3px rgb(242, 245, 252)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Rating: high to low",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "rating-desc",
+          "width": 294
+        }
+      ]
+    },
+    "mobile-dark-rating": {
+      "meta": {
+        "client": 360,
+        "entry": "/assets/index--uANSFht.js",
+        "height": 900,
+        "scroll": 360,
+        "theme": "dark",
+        "width": 375
+      },
+      "rows": [
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": false,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              287,
+              450
+            ],
+            "color": "rgb(163, 175, 194)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Rating",
+          "longest": "Select rating",
+          "open": false,
+          "outline": "none 3px rgb(242, 245, 252)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Select rating",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "0",
+          "width": 262
+        }
+      ]
+    },
+    "desktop-dark-rating": {
+      "meta": {
+        "client": 1905,
+        "entry": "/assets/index--uANSFht.js",
+        "height": 897,
+        "scroll": 1905,
+        "theme": "dark",
+        "width": 1920
+      },
+      "rows": [
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": false,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              1503.5,
+              448
+            ],
+            "color": "rgb(163, 175, 194)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Rating",
+          "longest": "Select rating",
+          "open": false,
+          "outline": "none 3px rgb(242, 245, 252)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Select rating",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "0",
+          "width": 494.375
+        }
+      ]
+    },
+    "desktop-light-rating": {
+      "meta": {
+        "client": 1905,
+        "entry": "/assets/index--uANSFht.js",
+        "height": 897,
+        "scroll": 1905,
+        "theme": "light",
+        "width": 1920
+      },
+      "rows": [
+        {
+          "appearance": "none",
+          "border": "1px",
+          "chevronCount": 1,
+          "focus": false,
+          "height": 44,
+          "icon": {
+            "ariaHidden": "true",
+            "center": [
+              1503.5,
+              448
+            ],
+            "color": "rgb(88, 101, 122)",
+            "focusable": "false",
+            "height": 16,
+            "pointerEvents": "none",
+            "rightInset": 16,
+            "selectUnderArrow": true,
+            "verticalOffset": 0,
+            "width": 16
+          },
+          "label": "Rating",
+          "longest": "Select rating",
+          "open": false,
+          "outline": "none 3px rgb(23, 32, 51)",
+          "paddingEnd": "44px",
+          "radius": "8px",
+          "selected": "Select rating",
+          "tag": "SELECT",
+          "textOverflow": "ellipsis",
+          "value": "0",
+          "width": 494.375
+        }
+      ]
+    }
+  },
+  "interactions": {
+    "ratingArrow": {
+      "label": "Rating",
+      "viewport": 375,
+      "hitTest": true,
+      "opened": false,
+      "beforeOpen": false,
+      "focused": true,
+      "center": [
+        287,
+        450
+      ]
+    },
+    "ratingKeyboard": {
+      "value": "1",
+      "selected": "1 out of 5",
+      "focusVisible": true,
+      "outline": "solid 2px rgb(37, 99, 235)"
+    },
+    "categoryArrow": {
+      "label": "Category",
+      "viewport": 375,
+      "hitTest": true,
+      "opened": false,
+      "beforeOpen": false,
+      "focused": true,
+      "center": [
+        303,
+        461
+      ]
+    },
+    "catalogKeyboard": {
+      "category": {
+        "value": "beauty",
+        "selected": "Beauty",
+        "focus": true,
+        "outline": "solid 2px rgb(37, 99, 235)"
+      },
+      "sort": {
+        "value": "price-desc",
+        "selected": "Price: high to low",
+        "focus": true,
+        "outline": "solid 2px rgb(37, 99, 235)"
+      },
+      "url": "http://127.0.0.1:4197/?category=beauty&sort=price-desc",
+      "products": [
+        {
+          "category": "beauty",
+          "name": "Eyeshadow Palette with Mirror",
+          "original": "$19.99"
+        },
+        {
+          "category": "beauty",
+          "name": "Powder Canister",
+          "original": "$14.99"
+        },
+        {
+          "category": "beauty",
+          "name": "Red Lipstick",
+          "original": "$12.99"
+        },
+        {
+          "category": "beauty",
+          "name": "Essence Mascara Lash Princess",
+          "original": "$9.99"
+        }
+      ]
+    },
+    "sortArrow": {
+      "label": "Sort",
+      "viewport": 1920,
+      "hitTest": true,
+      "opened": false,
+      "beforeOpen": false,
+      "focused": true,
+      "center": [
+        1527.5,
+        343
+      ],
+      "ax": "49 pop up button (collapsed, settable) Sort, Value: Rating: high to low, Secondary Actions: Expand"
+    },
+    "sortNativeExpand": {
+      "open": false,
+      "ax": "49 pop up button (collapsed, settable) Sort, Value: Rating: high to low, Secondary Actions: Expand"
+    },
+    "sortKeyboardPopup": {
+      "open": false,
+      "focus": true,
+      "selected": "Rating: high to low"
+    },
+    "plainNativeControlProbe": {
+      "before": {
+        "appearance": "auto",
+        "focused": false,
+        "open": false,
+        "point": [
+          211,
+          18
+        ]
+      },
+      "after": {
+        "appearance": "auto",
+        "focused": true,
+        "open": false,
+        "point": [
+          211,
+          18
+        ]
+      },
+      "ax": "3 pop up button (collapsed, settable) Unstyled native select, Value: First, Secondary Actions: Expand"
+    },
+    "restoredTheme": "dark",
+    "inAppBrowserArrowClicks": {
+      "browser": "ChatGPT in-app browser",
+      "method": "Coordinate click at the center of each chevron. Verified :open and an expanded native popup in the accessibility tree.",
+      "build": "/assets/index--uANSFht.js",
+      "category": {
+        "before": {
+          "center": [
+            573,
+            343
+          ],
+          "focused": false,
+          "open": false,
+          "selectUnderArrow": true,
+          "value": "",
+          "viewport": {
+            "height": 892,
+            "width": 653
+          }
+        },
+        "after": {
+          "center": [
+            573,
+            343
+          ],
+          "focused": true,
+          "open": true,
+          "selectUnderArrow": true,
+          "value": "",
+          "viewport": {
+            "height": 892,
+            "width": 653
+          }
+        },
+        "accessibility": "20 pop up button (expanded, settable) Category, Value: All categories, Secondary Actions: Collapse"
+      },
+      "sort": {
+        "before": {
+          "center": [
+            287,
+            429
+          ],
+          "focused": false,
+          "open": false,
+          "selectUnderArrow": true,
+          "value": "default",
+          "viewport": {
+            "height": 892,
+            "width": 653
+          }
+        },
+        "after": {
+          "center": [
+            287,
+            429
+          ],
+          "focused": true,
+          "open": true,
+          "selectUnderArrow": true,
+          "value": "default",
+          "viewport": {
+            "height": 892,
+            "width": 653
+          }
+        },
+        "accessibility": "24 pop up button (expanded, settable) Sort, Value: Default, Secondary Actions: Collapse"
+      },
+      "rating": {
+        "before": {
+          "center": [
+            549,
+            446
+          ],
+          "focused": false,
+          "open": false,
+          "selectUnderArrow": true,
+          "value": "0",
+          "viewport": {
+            "height": 892,
+            "width": 653
+          }
+        },
+        "after": {
+          "center": [
+            549,
+            446
+          ],
+          "focused": true,
+          "open": true,
+          "selectUnderArrow": true,
+          "value": "0",
+          "viewport": {
+            "height": 892,
+            "width": 653
+          }
+        },
+        "accessibility": "48 pop up button (expanded, settable) Rating, Value: Select rating, ID: review-rating, Secondary Actions: Collapse"
+      }
+    }
+  },
+  "screenshots": {
+    "catalog-before": {
+      "file": "chrome-select-catalog-before.jpg",
+      "client": 360,
+      "entry": "/assets/index-ZKN7z76q.js",
+      "height": 900,
+      "scroll": 360,
+      "theme": "light",
+      "width": 375
+    },
+    "rating-after": {
+      "file": "chrome-select-rating-after.jpg",
+      "client": 360,
+      "entry": "/assets/index--uANSFht.js",
+      "height": 900,
+      "scroll": 360,
+      "theme": "dark",
+      "width": 375
+    },
+    "catalog-after": {
+      "file": "chrome-select-catalog-after.jpg",
+      "client": 360,
+      "entry": "/assets/index--uANSFht.js",
+      "height": 900,
+      "scroll": 360,
+      "theme": "light",
+      "width": 375
+    }
+  },
+  "limitations": [
+    "The background Google Chrome connection focused the native select but did not expose the popup. A separate click check in the visible ChatGPT in-app browser confirmed that all three native menus opened.",
+    "None of the three production selects is rendered disabled. The shared field has an explicit disabled style and no hover rule."
+  ]
+}

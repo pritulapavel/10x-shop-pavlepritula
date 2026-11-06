@@ -1,0 +1,1346 @@
+{
+  "date": "2026-11-06",
+  "origin": "http://127.0.0.1:4197",
+  "screenshots": {
+    "before-desktop-light": {
+      "file": "marketplace-before-desktop-light.jpg",
+      "client": 1905,
+      "entry": "/assets/index--uANSFht.js",
+      "height": 953,
+      "scroll": 1905,
+      "theme": "light",
+      "width": 1920
+    },
+    "before-mobile-light": {
+      "file": "marketplace-before-mobile-light.jpg",
+      "client": 360,
+      "entry": "/assets/index--uANSFht.js",
+      "height": 900,
+      "scroll": 360,
+      "theme": "light",
+      "width": 375
+    },
+    "catalog-desktop-light": {
+      "file": "marketplace-catalog-desktop-light.jpg",
+      "client": 1905,
+      "entry": "/assets/index-8eyWI5ZX.js",
+      "height": 897,
+      "scroll": 1905,
+      "theme": "light",
+      "width": 1920
+    },
+    "catalog-mobile-light": {
+      "file": "marketplace-catalog-mobile-light.jpg",
+      "client": 360,
+      "entry": "/assets/index-8eyWI5ZX.js",
+      "height": 900,
+      "scroll": 360,
+      "theme": "light",
+      "width": 375
+    },
+    "catalog-desktop-dark": {
+      "file": "marketplace-catalog-desktop-dark.jpg",
+      "client": 1905,
+      "entry": "/assets/index-8eyWI5ZX.js",
+      "height": 897,
+      "scroll": 1905,
+      "theme": "dark",
+      "width": 1920
+    },
+    "catalog-mobile-dark": {
+      "file": "marketplace-catalog-mobile-dark.jpg",
+      "client": 360,
+      "entry": "/assets/index-8eyWI5ZX.js",
+      "height": 900,
+      "scroll": 360,
+      "theme": "dark",
+      "width": 375
+    },
+    "checkout-invalid-light": {
+      "file": "marketplace-checkout-invalid-light.jpg",
+      "client": 1121,
+      "entry": "/assets/index-8eyWI5ZX.js",
+      "height": 892,
+      "scroll": 1121,
+      "theme": "light",
+      "width": 1121
+    },
+    "checkout-invalid-dark": {
+      "file": "marketplace-checkout-invalid-dark.jpg",
+      "client": 1121,
+      "entry": "/assets/index-8eyWI5ZX.js",
+      "height": 892,
+      "scroll": 1121,
+      "theme": "dark",
+      "width": 1121
+    }
+  },
+  "checks": {
+    "lightDesktop": {
+      "cards": 12,
+      "columns": 4,
+      "document": [
+        1905,
+        1905
+      ],
+      "firstCardTop": 302,
+      "firstRowButtons": [
+        681.5,
+        681.5,
+        681.5,
+        681.5
+      ],
+      "heading": {
+        "font": "system-ui, \"Segoe UI\", sans-serif",
+        "size": "36px"
+      },
+      "images": [
+        {
+          "fit": "contain",
+          "loaded": true
+        },
+        {
+          "fit": "contain",
+          "loaded": true
+        },
+        {
+          "fit": "contain",
+          "loaded": true
+        },
+        {
+          "fit": "contain",
+          "loaded": true
+        }
+      ],
+      "minTarget": [
+        63.328125,
+        44
+      ],
+      "targetCount": 34,
+      "width": 1920,
+      "wrap": false
+    },
+    "breakpoints": [
+      {
+        "cards": 12,
+        "columns": 1,
+        "document": [
+          360,
+          360
+        ],
+        "firstCardTop": 494,
+        "firstRowButtons": [
+          897.5
+        ],
+        "heading": {
+          "font": "system-ui, \"Segoe UI\", sans-serif",
+          "size": "28px"
+        },
+        "images": [
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          }
+        ],
+        "minTarget": [
+          59.328125,
+          44
+        ],
+        "targetCount": 34,
+        "width": 375,
+        "wrap": true
+      },
+      {
+        "cards": 12,
+        "columns": 1,
+        "document": [
+          465,
+          465
+        ],
+        "firstCardTop": 470,
+        "firstRowButtons": [
+          952.25
+        ],
+        "heading": {
+          "font": "system-ui, \"Segoe UI\", sans-serif",
+          "size": "28px"
+        },
+        "images": [
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          }
+        ],
+        "minTarget": [
+          59.328125,
+          44
+        ],
+        "targetCount": 34,
+        "width": 480,
+        "wrap": true
+      },
+      {
+        "cards": 12,
+        "columns": 2,
+        "document": [
+          466,
+          466
+        ],
+        "firstCardTop": 420,
+        "firstRowButtons": [
+          758.25,
+          758.25
+        ],
+        "heading": {
+          "font": "system-ui, \"Segoe UI\", sans-serif",
+          "size": "28px"
+        },
+        "images": [
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          }
+        ],
+        "minTarget": [
+          59.328125,
+          44
+        ],
+        "targetCount": 34,
+        "width": 481,
+        "wrap": false
+      },
+      {
+        "cards": 12,
+        "columns": 3,
+        "document": [
+          753,
+          753
+        ],
+        "firstCardTop": 382,
+        "firstRowButtons": [
+          707.734375,
+          707.734375,
+          707.734375
+        ],
+        "heading": {
+          "font": "system-ui, \"Segoe UI\", sans-serif",
+          "size": "36px"
+        },
+        "images": [
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          }
+        ],
+        "minTarget": [
+          63.328125,
+          44
+        ],
+        "targetCount": 34,
+        "width": 768,
+        "wrap": false
+      },
+      {
+        "cards": 12,
+        "columns": 3,
+        "document": [
+          1009,
+          1009
+        ],
+        "firstCardTop": 302,
+        "firstRowButtons": [
+          691.75,
+          691.75,
+          691.75
+        ],
+        "heading": {
+          "font": "system-ui, \"Segoe UI\", sans-serif",
+          "size": "36px"
+        },
+        "images": [
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          }
+        ],
+        "minTarget": [
+          63.328125,
+          44
+        ],
+        "targetCount": 34,
+        "width": 1024,
+        "wrap": false
+      },
+      {
+        "cards": 12,
+        "columns": 4,
+        "document": [
+          1010,
+          1010
+        ],
+        "firstCardTop": 302,
+        "firstRowButtons": [
+          630.875,
+          630.875,
+          630.875,
+          630.875
+        ],
+        "heading": {
+          "font": "system-ui, \"Segoe UI\", sans-serif",
+          "size": "36px"
+        },
+        "images": [
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          },
+          {
+            "fit": "contain",
+            "loaded": true
+          }
+        ],
+        "minTarget": [
+          63.328125,
+          44
+        ],
+        "targetCount": 34,
+        "width": 1025,
+        "wrap": false
+      }
+    ],
+    "lightContrast": [
+      {
+        "label": "body",
+        "kind": "text",
+        "foreground": [
+          23,
+          32,
+          51
+        ],
+        "background": [
+          245,
+          247,
+          251
+        ],
+        "ratio": 15.17
+      },
+      {
+        "label": "range",
+        "kind": "text",
+        "foreground": [
+          88,
+          101,
+          122
+        ],
+        "background": [
+          245,
+          247,
+          251
+        ],
+        "ratio": 5.5
+      },
+      {
+        "label": "active navigation",
+        "kind": "text",
+        "foreground": [
+          29,
+          78,
+          216
+        ],
+        "background": [
+          234,
+          241,
+          255
+        ],
+        "ratio": 5.91
+      },
+      {
+        "label": "price",
+        "kind": "text",
+        "foreground": [
+          23,
+          32,
+          51
+        ],
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "ratio": 16.27
+      },
+      {
+        "label": "original price",
+        "kind": "text",
+        "foreground": [
+          88,
+          101,
+          122
+        ],
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "ratio": 5.9
+      },
+      {
+        "label": "stock",
+        "kind": "text",
+        "foreground": [
+          4,
+          120,
+          87
+        ],
+        "background": [
+          236,
+          253,
+          245
+        ],
+        "ratio": 5.21
+      },
+      {
+        "label": "Add button",
+        "kind": "text",
+        "foreground": [
+          255,
+          255,
+          255
+        ],
+        "background": [
+          37,
+          99,
+          235
+        ],
+        "ratio": 5.17
+      },
+      {
+        "label": "select border",
+        "kind": "border",
+        "foreground": [
+          117,
+          132,
+          155
+        ],
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "ratio": 3.8,
+        "outerRatio": 3.8
+      },
+      {
+        "label": "search focus",
+        "kind": "outline",
+        "foreground": [
+          37,
+          99,
+          235
+        ],
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "ratio": 5.17,
+        "visible": true,
+        "outline": "solid 2px"
+      }
+    ],
+    "darkContrast": [
+      {
+        "label": "body",
+        "kind": "text",
+        "foreground": [
+          242,
+          245,
+          252
+        ],
+        "background": [
+          13,
+          17,
+          24
+        ],
+        "ratio": 17.33
+      },
+      {
+        "label": "range",
+        "kind": "text",
+        "foreground": [
+          163,
+          175,
+          194
+        ],
+        "background": [
+          13,
+          17,
+          24
+        ],
+        "ratio": 8.53
+      },
+      {
+        "label": "active navigation",
+        "kind": "text",
+        "foreground": [
+          175,
+          203,
+          255
+        ],
+        "background": [
+          29,
+          45,
+          73
+        ],
+        "ratio": 8.41
+      },
+      {
+        "label": "price",
+        "kind": "text",
+        "foreground": [
+          242,
+          245,
+          252
+        ],
+        "background": [
+          23,
+          29,
+          41
+        ],
+        "ratio": 15.47
+      },
+      {
+        "label": "original price",
+        "kind": "text",
+        "foreground": [
+          163,
+          175,
+          194
+        ],
+        "background": [
+          23,
+          29,
+          41
+        ],
+        "ratio": 7.61
+      },
+      {
+        "label": "stock",
+        "kind": "text",
+        "foreground": [
+          110,
+          231,
+          183
+        ],
+        "background": [
+          16,
+          46,
+          38
+        ],
+        "ratio": 9.56
+      },
+      {
+        "label": "Add button",
+        "kind": "text",
+        "foreground": [
+          11,
+          23,
+          48
+        ],
+        "background": [
+          138,
+          180,
+          255
+        ],
+        "ratio": 8.52
+      },
+      {
+        "label": "select border",
+        "kind": "border",
+        "foreground": [
+          113,
+          130,
+          155
+        ],
+        "background": [
+          23,
+          29,
+          41
+        ],
+        "ratio": 4.31,
+        "outerRatio": 4.31
+      },
+      {
+        "label": "search focus",
+        "kind": "outline",
+        "foreground": [
+          175,
+          203,
+          255
+        ],
+        "background": [
+          23,
+          29,
+          41
+        ],
+        "ratio": 10.3,
+        "visible": true,
+        "outline": "solid 2px"
+      }
+    ],
+    "darkDesktop": {
+      "cards": 12,
+      "columns": 4,
+      "document": [
+        1905,
+        1905
+      ],
+      "firstCardTop": 302,
+      "firstRowButtons": [
+        681.5,
+        681.5,
+        681.5,
+        681.5
+      ],
+      "heading": {
+        "font": "system-ui, \"Segoe UI\", sans-serif",
+        "size": "36px"
+      },
+      "images": [
+        {
+          "fit": "contain",
+          "loaded": true
+        },
+        {
+          "fit": "contain",
+          "loaded": true
+        },
+        {
+          "fit": "contain",
+          "loaded": true
+        },
+        {
+          "fit": "contain",
+          "loaded": true
+        }
+      ],
+      "minTarget": [
+        63.328125,
+        44
+      ],
+      "targetCount": 34,
+      "width": 1920,
+      "wrap": false
+    },
+    "darkMobile": {
+      "cards": 12,
+      "columns": 1,
+      "document": [
+        360,
+        360
+      ],
+      "firstCardTop": 494,
+      "firstRowButtons": [
+        897.5
+      ],
+      "heading": {
+        "font": "system-ui, \"Segoe UI\", sans-serif",
+        "size": "28px"
+      },
+      "images": [
+        {
+          "fit": "contain",
+          "loaded": true
+        },
+        {
+          "fit": "contain",
+          "loaded": true
+        },
+        {
+          "fit": "contain",
+          "loaded": true
+        },
+        {
+          "fit": "contain",
+          "loaded": true
+        }
+      ],
+      "minTarget": [
+        59.328125,
+        44
+      ],
+      "targetCount": 34,
+      "width": 375,
+      "wrap": true
+    },
+    "darkMobileLongSelect": {
+      "category": {
+        "appearance": "none",
+        "chevron": [
+          16,
+          16
+        ],
+        "height": 44,
+        "hit": true,
+        "icons": 1,
+        "inset": 16,
+        "label": "Kitchen Accessories",
+        "padding": "44px",
+        "pointerEvents": "none",
+        "textOverflow": "ellipsis",
+        "verticalOffset": 0,
+        "width": 302
+      },
+      "sort": {
+        "appearance": "none",
+        "chevron": [
+          16,
+          16
+        ],
+        "height": 44,
+        "hit": true,
+        "icons": 1,
+        "inset": 16,
+        "label": "Rating: high to low",
+        "padding": "44px",
+        "pointerEvents": "none",
+        "textOverflow": "ellipsis",
+        "verticalOffset": 0,
+        "width": 302
+      }
+    },
+    "longNames": [
+      {
+        "clamp": "",
+        "font": "16px",
+        "fullHeight": 44,
+        "line": "22px",
+        "title": "Citrus Squeezer Yellow",
+        "visibleHeight": 44
+      },
+      {
+        "clamp": "",
+        "font": "16px",
+        "fullHeight": 44,
+        "line": "22px",
+        "title": "Black Aluminium Cup",
+        "visibleHeight": 44
+      },
+      {
+        "clamp": "",
+        "font": "16px",
+        "fullHeight": 44,
+        "line": "22px",
+        "title": "Carbon Steel Wok",
+        "visibleHeight": 44
+      }
+    ],
+    "darkDesktopLongSelect": {
+      "category": {
+        "appearance": "none",
+        "chevron": [
+          16,
+          16
+        ],
+        "height": 44,
+        "hit": true,
+        "icons": 1,
+        "inset": 16,
+        "label": "Kitchen Accessories",
+        "padding": "44px",
+        "pointerEvents": "none",
+        "textOverflow": "ellipsis",
+        "verticalOffset": 0,
+        "width": 408
+      },
+      "sort": {
+        "appearance": "none",
+        "chevron": [
+          16,
+          16
+        ],
+        "height": 44,
+        "hit": true,
+        "icons": 1,
+        "inset": 16,
+        "label": "Rating: high to low",
+        "padding": "44px",
+        "pointerEvents": "none",
+        "textOverflow": "ellipsis",
+        "verticalOffset": 0,
+        "width": 408
+      }
+    },
+    "darkHover": {
+      "card": {
+        "before": {
+          "background": "rgb(23, 29, 41)",
+          "border": "rgb(48, 59, 78)",
+          "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+          "hover": false
+        },
+        "after": {
+          "background": "rgb(23, 29, 41)",
+          "border": "rgb(113, 130, 155)",
+          "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+          "hover": true,
+          "disabled": false
+        }
+      },
+      "add": {
+        "before": {
+          "background": "rgb(138, 180, 255)",
+          "border": "rgb(11, 23, 48)",
+          "shadow": "none",
+          "hover": false
+        },
+        "after": {
+          "background": "rgb(175, 203, 255)",
+          "border": "rgb(11, 23, 48)",
+          "shadow": "none",
+          "hover": true,
+          "disabled": false
+        }
+      },
+      "previous": {
+        "before": {
+          "background": "rgb(41, 52, 73)",
+          "border": "rgb(113, 130, 155)",
+          "shadow": "none",
+          "hover": false
+        },
+        "after": {
+          "background": "rgb(41, 52, 73)",
+          "border": "rgb(113, 130, 155)",
+          "shadow": "none",
+          "hover": true,
+          "disabled": true
+        }
+      }
+    },
+    "lightHover": {
+      "card": {
+        "before": {
+          "background": "rgb(255, 255, 255)",
+          "border": "rgb(220, 227, 238)",
+          "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+          "hover": false
+        },
+        "after": {
+          "background": "rgb(255, 255, 255)",
+          "border": "rgb(117, 132, 155)",
+          "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+          "hover": true,
+          "disabled": false
+        }
+      },
+      "add": {
+        "before": {
+          "background": "rgb(37, 99, 235)",
+          "border": "rgb(255, 255, 255)",
+          "shadow": "none",
+          "hover": false
+        },
+        "after": {
+          "background": "rgb(29, 78, 216)",
+          "border": "rgb(255, 255, 255)",
+          "shadow": "none",
+          "hover": true,
+          "disabled": false
+        }
+      },
+      "previous": {
+        "before": {
+          "background": "rgb(232, 237, 245)",
+          "border": "rgb(117, 132, 155)",
+          "shadow": "none",
+          "hover": false
+        },
+        "after": {
+          "background": "rgb(232, 237, 245)",
+          "border": "rgb(117, 132, 155)",
+          "shadow": "none",
+          "hover": true,
+          "disabled": true
+        }
+      }
+    },
+    "lightMobileLongSelect": {
+      "category": {
+        "appearance": "none",
+        "chevron": [
+          16,
+          16
+        ],
+        "height": 44,
+        "hit": true,
+        "icons": 1,
+        "inset": 16,
+        "label": "Kitchen Accessories",
+        "padding": "44px",
+        "pointerEvents": "none",
+        "textOverflow": "ellipsis",
+        "verticalOffset": 0,
+        "width": 302
+      },
+      "sort": {
+        "appearance": "none",
+        "chevron": [
+          16,
+          16
+        ],
+        "height": 44,
+        "hit": true,
+        "icons": 1,
+        "inset": 16,
+        "label": "Rating: high to low",
+        "padding": "44px",
+        "pointerEvents": "none",
+        "textOverflow": "ellipsis",
+        "verticalOffset": 0,
+        "width": 302
+      }
+    },
+    "longProductTitle": {
+      "clamp": "2",
+      "display": "flow-root",
+      "height": 44,
+      "lineHeight": "22px",
+      "name": "Essence Mascara Lash Princess",
+      "scroll": 44,
+      "width": 183
+    },
+    "lightPlaceholder": {
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(88, 101, 122)",
+      "opacity": 1,
+      "ratio": 5.9
+    },
+    "darkPlaceholder": {
+      "bg": "rgb(23, 29, 41)",
+      "color": "rgb(163, 175, 194)",
+      "opacity": 1,
+      "ratio": 7.61
+    },
+    "interaction": {
+      "browser": "ChatGPT in-app browser",
+      "origin": "http://127.0.0.1:4201",
+      "entry": "/assets/index-8eyWI5ZX.js",
+      "searchImmediate": "http://127.0.0.1:4201/",
+      "search": "http://127.0.0.1:4201/?q=phone",
+      "categoryPicker": {
+        "before": {
+          "center": [
+            779,
+            243
+          ],
+          "focused": false,
+          "open": false
+        },
+        "after": {
+          "center": [
+            779,
+            243
+          ],
+          "focused": true,
+          "open": true
+        }
+      },
+      "category": {
+        "url": "http://127.0.0.1:4201/?category=kitchen-accessories",
+        "search": "",
+        "chip": 1
+      },
+      "sortPicker": {
+        "before": {
+          "center": [
+            1041,
+            243
+          ],
+          "focused": false,
+          "open": false
+        },
+        "after": {
+          "center": [
+            1041,
+            243
+          ],
+          "focused": true,
+          "open": true
+        }
+      },
+      "sort": "http://127.0.0.1:4201/?category=kitchen-accessories&sort=price-desc",
+      "page2": {
+        "url": "http://127.0.0.1:4201/?category=kitchen-accessories&sort=price-desc&page=2",
+        "count": 12,
+        "range": "Showing 13–24 of 30 products"
+      },
+      "back": "http://127.0.0.1:4201/?category=kitchen-accessories&sort=price-desc",
+      "forward": "http://127.0.0.1:4201/?category=kitchen-accessories&sort=price-desc&page=2",
+      "reload": {
+        "url": "http://127.0.0.1:4201/?category=kitchen-accessories&sort=price-desc&page=2",
+        "page": "Page 2 of 3"
+      },
+      "categoryChipRemoved": "http://127.0.0.1:4201/?sort=price-desc",
+      "searchChipRemoved": "http://127.0.0.1:4201/?sort=price-desc",
+      "catalogAdd": {
+        "url": "http://127.0.0.1:4201/",
+        "badge": 1,
+        "feedback": "Added to cart ✓",
+        "quantity": 1
+      },
+      "productAdd": {
+        "url": "http://127.0.0.1:4201/products/5",
+        "badge": 1,
+        "quantity": 2
+      },
+      "ratingPicker": {
+        "before": {
+          "center": [
+            1016,
+            446
+          ],
+          "focused": false,
+          "open": false
+        },
+        "after": {
+          "center": [
+            1016,
+            446
+          ],
+          "focused": true,
+          "open": true
+        }
+      }
+    },
+    "checkoutLight": {
+      "messages": [
+        "Full name must be at least 3 characters",
+        "Please enter a valid email address",
+        "Address must be at least 5 characters",
+        "City is required"
+      ],
+      "contrast": [
+        {
+          "label": "Full name must be at least 3 characters",
+          "kind": "text",
+          "foreground": [
+            185,
+            28,
+            28
+          ],
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 6.47
+        },
+        {
+          "label": "Please enter a valid email address",
+          "kind": "text",
+          "foreground": [
+            185,
+            28,
+            28
+          ],
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 6.47
+        },
+        {
+          "label": "Address must be at least 5 characters",
+          "kind": "text",
+          "foreground": [
+            185,
+            28,
+            28
+          ],
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 6.47
+        },
+        {
+          "label": "City is required",
+          "kind": "text",
+          "foreground": [
+            185,
+            28,
+            28
+          ],
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 6.47
+        }
+      ],
+      "invalid": 4,
+      "route": "http://127.0.0.1:4201/checkout",
+      "cart": "2",
+      "meta": {
+        "client": 1121,
+        "entry": "/assets/index-8eyWI5ZX.js",
+        "height": 892,
+        "scroll": 1121,
+        "theme": "light",
+        "width": 1121
+      }
+    },
+    "checkoutDark": {
+      "messages": [
+        "Full name must be at least 3 characters",
+        "Please enter a valid email address",
+        "Address must be at least 5 characters",
+        "City is required"
+      ],
+      "contrast": [
+        {
+          "label": "Full name must be at least 3 characters",
+          "kind": "text",
+          "foreground": [
+            253,
+            164,
+            175
+          ],
+          "background": [
+            23,
+            29,
+            41
+          ],
+          "ratio": 8.93
+        },
+        {
+          "label": "Please enter a valid email address",
+          "kind": "text",
+          "foreground": [
+            253,
+            164,
+            175
+          ],
+          "background": [
+            23,
+            29,
+            41
+          ],
+          "ratio": 8.93
+        },
+        {
+          "label": "Address must be at least 5 characters",
+          "kind": "text",
+          "foreground": [
+            253,
+            164,
+            175
+          ],
+          "background": [
+            23,
+            29,
+            41
+          ],
+          "ratio": 8.93
+        },
+        {
+          "label": "City is required",
+          "kind": "text",
+          "foreground": [
+            253,
+            164,
+            175
+          ],
+          "background": [
+            23,
+            29,
+            41
+          ],
+          "ratio": 8.93
+        }
+      ],
+      "invalid": 4,
+      "route": "http://127.0.0.1:4201/checkout",
+      "cart": "2",
+      "meta": {
+        "client": 1121,
+        "entry": "/assets/index-8eyWI5ZX.js",
+        "height": 892,
+        "scroll": 1121,
+        "theme": "dark",
+        "width": 1121
+      }
+    },
+    "checkoutMobile": {
+      "count": 12,
+      "document": [
+        360,
+        360
+      ],
+      "minTarget": [
+        62.828125,
+        44
+      ],
+      "navBelowBrand": true,
+      "width": 375
+    },
+    "confirmationVisual": {
+      "heading": "Thank you! Your order has been placed.",
+      "summary": 1,
+      "geometry": {
+        "count": 9,
+        "document": [
+          360,
+          360
+        ],
+        "minTarget": [
+          62.828125,
+          44
+        ],
+        "navBelowBrand": true,
+        "width": 375
+      }
+    },
+    "orderDetailsVisual": {
+      "geometry": {
+        "count": 10,
+        "document": [
+          360,
+          360
+        ],
+        "minTarget": [
+          62.828125,
+          44
+        ],
+        "navBelowBrand": true,
+        "width": 375
+      },
+      "summary": 1
+    },
+    "ordersVisual": {
+      "count": 8,
+      "document": [
+        375,
+        375
+      ],
+      "minTarget": [
+        62.828125,
+        44
+      ],
+      "navBelowBrand": true,
+      "width": 375
+    },
+    "profileVisual": {
+      "count": 15,
+      "document": [
+        360,
+        360
+      ],
+      "minTarget": [
+        61.890625,
+        44
+      ],
+      "navBelowBrand": true,
+      "width": 375
+    },
+    "emptyCatalog": {
+      "message": "No products found.",
+      "geometry": {
+        "count": 12,
+        "document": [
+          375,
+          375
+        ],
+        "minTarget": [
+          62.828125,
+          44
+        ],
+        "navBelowBrand": true,
+        "width": 375
+      },
+      "clear": 1
+    }
+  },
+  "browsers": {
+    "visual": "Google Chrome 156.0.8078.81",
+    "activeInteractions": "ChatGPT in-app browser",
+    "firefox": "Pending",
+    "edge": "Pending"
+  },
+  "limitations": [
+    "Catalog network error and Retry styling were reviewed in the source. No network failure was induced.",
+    "Hosted verification and current Lighthouse are pending."
+  ]
+}

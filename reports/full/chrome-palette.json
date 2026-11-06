@@ -1,0 +1,7136 @@
+{
+  "date": "2026-11-05",
+  "browser": "Google Chrome 156.0.8078.81",
+  "environment": "Vite production preview at 127.0.0.1:4197. Executable ProductVersion verified on Windows.",
+  "method": "WCAG sRGB relative luminance of computed colors. Background layers and foreground opacity are composited, including placeholder color. Borders are checked on both sides and the offset outline against its adjacent surface.",
+  "cases": {
+    "desktop-dark-catalog": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1905,
+        "height": 953,
+        "scroll": 1905,
+        "theme": "dark",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Page heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            1232,
+            48
+          ]
+        },
+        {
+          "label": "Supporting copy",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 8.53,
+          "opacity": [],
+          "size": [
+            1232,
+            24
+          ]
+        },
+        {
+          "label": "Header logo badge",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            44,
+            36
+          ]
+        },
+        {
+          "label": "Selected navigation",
+          "fg": [
+            175,
+            203,
+            255
+          ],
+          "bg": [
+            29,
+            45,
+            73
+          ],
+          "textRatio": 8.41,
+          "opacity": [],
+          "size": [
+            72.828125,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "underline"
+        },
+        {
+          "label": "Inactive navigation",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            50.65625,
+            44
+          ]
+        },
+        {
+          "label": "Search field",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            583,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Search placeholder",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            583,
+            44
+          ]
+        },
+        {
+          "label": "Category filter",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            291.5,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Sort selector",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            291.5,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Product title",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            259,
+            24
+          ]
+        },
+        {
+          "label": "Product original price",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Stock badge",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            16,
+            46,
+            38
+          ],
+          "textRatio": 9.56,
+          "opacity": [],
+          "size": [
+            62.359375,
+            24
+          ]
+        },
+        {
+          "label": "Low-stock badge",
+          "fg": [
+            252,
+            211,
+            77
+          ],
+          "bg": [
+            51,
+            42,
+            24
+          ],
+          "textRatio": 9.81,
+          "opacity": [],
+          "size": [
+            80.671875,
+            24
+          ]
+        },
+        {
+          "label": "Discount badge",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            16,
+            46,
+            38
+          ],
+          "textRatio": 9.56,
+          "opacity": [],
+          "size": [
+            62.40625,
+            20
+          ]
+        },
+        {
+          "label": "Primary Add to cart",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            259,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Theme switch",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            66.15625,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid",
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Disabled Previous",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            41,
+            52,
+            73
+          ],
+          "textRatio": 5.63,
+          "opacity": [],
+          "size": [
+            88.015625,
+            44
+          ],
+          "hover": false,
+          "disabled": true,
+          "cursor": "not-allowed",
+          "underline": "none"
+        },
+        {
+          "label": "Footer",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            1280,
+            60
+          ]
+        }
+      ]
+    },
+    "desktop-light-catalog": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1905,
+        "height": 953,
+        "scroll": 1905,
+        "theme": "light",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Page heading",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 15.17,
+          "opacity": [],
+          "size": [
+            1232,
+            48
+          ]
+        },
+        {
+          "label": "Supporting copy",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 5.5,
+          "opacity": [],
+          "size": [
+            1232,
+            24
+          ]
+        },
+        {
+          "label": "Header logo badge",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            44,
+            36
+          ]
+        },
+        {
+          "label": "Selected navigation",
+          "fg": [
+            29,
+            78,
+            216
+          ],
+          "bg": [
+            234,
+            241,
+            255
+          ],
+          "textRatio": 5.91,
+          "opacity": [],
+          "size": [
+            72.828125,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "underline"
+        },
+        {
+          "label": "Inactive navigation",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            50.65625,
+            44
+          ]
+        },
+        {
+          "label": "Search field",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            583,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Search placeholder",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            583,
+            44
+          ]
+        },
+        {
+          "label": "Category filter",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            291.5,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Sort selector",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            291.5,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Product title",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            259,
+            24
+          ]
+        },
+        {
+          "label": "Product original price",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Stock badge",
+          "fg": [
+            4,
+            120,
+            87
+          ],
+          "bg": [
+            236,
+            253,
+            245
+          ],
+          "textRatio": 5.21,
+          "opacity": [],
+          "size": [
+            62.359375,
+            24
+          ]
+        },
+        {
+          "label": "Low-stock badge",
+          "fg": [
+            146,
+            64,
+            14
+          ],
+          "bg": [
+            255,
+            251,
+            235
+          ],
+          "textRatio": 6.84,
+          "opacity": [],
+          "size": [
+            80.671875,
+            24
+          ]
+        },
+        {
+          "label": "Discount badge",
+          "fg": [
+            4,
+            120,
+            87
+          ],
+          "bg": [
+            236,
+            253,
+            245
+          ],
+          "textRatio": 5.21,
+          "opacity": [],
+          "size": [
+            62.40625,
+            20
+          ]
+        },
+        {
+          "label": "Primary Add to cart",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            259,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Theme switch",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            237,
+            242,
+            248
+          ],
+          "textRatio": 14.45,
+          "opacity": [],
+          "size": [
+            63.890625,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.37,
+          "borderOuter": 3.8,
+          "borderStyle": "solid",
+          "hover": true,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Disabled Previous",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            232,
+            237,
+            245
+          ],
+          "textRatio": 5.02,
+          "opacity": [],
+          "size": [
+            88.015625,
+            44
+          ],
+          "hover": false,
+          "disabled": true,
+          "cursor": "not-allowed",
+          "underline": "none"
+        },
+        {
+          "label": "Footer",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            1280,
+            60
+          ]
+        }
+      ]
+    },
+    "mobile-light-catalog": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "light",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Page heading",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 15.17,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Supporting copy",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 5.5,
+          "opacity": [],
+          "size": [
+            328,
+            24
+          ]
+        },
+        {
+          "label": "Header logo badge",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            44,
+            36
+          ]
+        },
+        {
+          "label": "Selected navigation",
+          "fg": [
+            29,
+            78,
+            216
+          ],
+          "bg": [
+            234,
+            241,
+            255
+          ],
+          "textRatio": 5.91,
+          "opacity": [],
+          "size": [
+            72.828125,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "underline"
+        },
+        {
+          "label": "Inactive navigation",
+          "fg": [
+            29,
+            78,
+            216
+          ],
+          "bg": [
+            234,
+            241,
+            255
+          ],
+          "textRatio": 5.91,
+          "opacity": [],
+          "size": [
+            50.65625,
+            44
+          ]
+        },
+        {
+          "label": "Search field",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            294,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Search placeholder",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            294,
+            44
+          ]
+        },
+        {
+          "label": "Category filter",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            294,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Sort selector",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            294,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Product title",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            294,
+            24
+          ]
+        },
+        {
+          "label": "Product original price",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Stock badge",
+          "fg": [
+            4,
+            120,
+            87
+          ],
+          "bg": [
+            236,
+            253,
+            245
+          ],
+          "textRatio": 5.21,
+          "opacity": [],
+          "size": [
+            62.359375,
+            24
+          ]
+        },
+        {
+          "label": "Low-stock badge",
+          "fg": [
+            146,
+            64,
+            14
+          ],
+          "bg": [
+            255,
+            251,
+            235
+          ],
+          "textRatio": 6.84,
+          "opacity": [],
+          "size": [
+            80.671875,
+            24
+          ]
+        },
+        {
+          "label": "Discount badge",
+          "fg": [
+            4,
+            120,
+            87
+          ],
+          "bg": [
+            236,
+            253,
+            245
+          ],
+          "textRatio": 5.21,
+          "opacity": [],
+          "size": [
+            62.40625,
+            20
+          ]
+        },
+        {
+          "label": "Primary Add to cart",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            294,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Theme switch",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            63.890625,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid",
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Disabled Previous",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            232,
+            237,
+            245
+          ],
+          "textRatio": 5.02,
+          "opacity": [],
+          "size": [
+            88.015625,
+            44
+          ],
+          "hover": false,
+          "disabled": true,
+          "cursor": "not-allowed",
+          "underline": "none"
+        },
+        {
+          "label": "Footer",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            360,
+            60
+          ]
+        }
+      ]
+    },
+    "mobile-dark-catalog": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "dark",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Page heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Supporting copy",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 8.53,
+          "opacity": [],
+          "size": [
+            328,
+            24
+          ]
+        },
+        {
+          "label": "Header logo badge",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            44,
+            36
+          ]
+        },
+        {
+          "label": "Selected navigation",
+          "fg": [
+            175,
+            203,
+            255
+          ],
+          "bg": [
+            29,
+            45,
+            73
+          ],
+          "textRatio": 8.41,
+          "opacity": [],
+          "size": [
+            72.828125,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "underline"
+        },
+        {
+          "label": "Inactive navigation",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            50.65625,
+            44
+          ]
+        },
+        {
+          "label": "Search field",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            294,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Search placeholder",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            294,
+            44
+          ]
+        },
+        {
+          "label": "Category filter",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            294,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Sort selector",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            294,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Product title",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            294,
+            24
+          ]
+        },
+        {
+          "label": "Product original price",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Stock badge",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            16,
+            46,
+            38
+          ],
+          "textRatio": 9.56,
+          "opacity": [],
+          "size": [
+            62.359375,
+            24
+          ]
+        },
+        {
+          "label": "Low-stock badge",
+          "fg": [
+            252,
+            211,
+            77
+          ],
+          "bg": [
+            51,
+            42,
+            24
+          ],
+          "textRatio": 9.81,
+          "opacity": [],
+          "size": [
+            80.671875,
+            24
+          ]
+        },
+        {
+          "label": "Discount badge",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            16,
+            46,
+            38
+          ],
+          "textRatio": 9.56,
+          "opacity": [],
+          "size": [
+            62.40625,
+            20
+          ]
+        },
+        {
+          "label": "Primary Add to cart",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            294,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Theme switch",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            32,
+            40,
+            56
+          ],
+          "textRatio": 13.53,
+          "opacity": [],
+          "size": [
+            66.15625,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 3.78,
+          "borderOuter": 4.31,
+          "borderStyle": "solid",
+          "hover": true,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Disabled Previous",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            41,
+            52,
+            73
+          ],
+          "textRatio": 5.63,
+          "opacity": [],
+          "size": [
+            88.015625,
+            44
+          ],
+          "hover": false,
+          "disabled": true,
+          "cursor": "not-allowed",
+          "underline": "none"
+        },
+        {
+          "label": "Footer",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            360,
+            60
+          ]
+        }
+      ]
+    },
+    "mobile-dark-product-reviews": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "dark",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Product heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Product struck-through price",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 8.53,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Discount badge",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            16,
+            46,
+            38
+          ],
+          "textRatio": 9.56,
+          "opacity": [],
+          "size": [
+            60.828125,
+            20
+          ]
+        },
+        {
+          "label": "Availability",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            16,
+            46,
+            38
+          ],
+          "textRatio": 9.56,
+          "opacity": [],
+          "size": [
+            60.828125,
+            20
+          ]
+        },
+        {
+          "label": "Disabled quantity decrement",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            41,
+            52,
+            73
+          ],
+          "textRatio": 5.63,
+          "opacity": [],
+          "size": [
+            44,
+            44
+          ],
+          "hover": false,
+          "disabled": true,
+          "cursor": "not-allowed",
+          "underline": "none"
+        },
+        {
+          "label": "Quantity increment",
+          "fg": [
+            138,
+            180,
+            255
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 8.08,
+          "opacity": [],
+          "size": [
+            44,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Selected Reviews tab",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            103.828125,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Inactive Description tab",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            106.625,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Review invalid rating",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            53,
+            28,
+            39
+          ],
+          "textRatio": 14.29,
+          "opacity": [],
+          "size": [
+            262,
+            44
+          ],
+          "border": [
+            253,
+            164,
+            175
+          ],
+          "borderInner": 8.25,
+          "borderOuter": 10,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Review invalid comment",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            53,
+            28,
+            39
+          ],
+          "textRatio": 14.29,
+          "opacity": [],
+          "size": [
+            262,
+            90
+          ],
+          "border": [
+            253,
+            164,
+            175
+          ],
+          "borderInner": 8.25,
+          "borderOuter": 10,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Review validation error",
+          "fg": [
+            253,
+            164,
+            175
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 10,
+          "opacity": [],
+          "size": [
+            262,
+            20
+          ]
+        },
+        {
+          "label": "Related product title",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            294,
+            24
+          ]
+        }
+      ]
+    },
+    "mobile-light-product-reviews": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "light",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Product heading",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 15.17,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Product struck-through price",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 5.5,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Discount badge",
+          "fg": [
+            4,
+            120,
+            87
+          ],
+          "bg": [
+            236,
+            253,
+            245
+          ],
+          "textRatio": 5.21,
+          "opacity": [],
+          "size": [
+            60.828125,
+            20
+          ]
+        },
+        {
+          "label": "Availability",
+          "fg": [
+            4,
+            120,
+            87
+          ],
+          "bg": [
+            236,
+            253,
+            245
+          ],
+          "textRatio": 5.21,
+          "opacity": [],
+          "size": [
+            60.828125,
+            20
+          ]
+        },
+        {
+          "label": "Disabled quantity decrement",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            232,
+            237,
+            245
+          ],
+          "textRatio": 5.02,
+          "opacity": [],
+          "size": [
+            44,
+            44
+          ],
+          "hover": false,
+          "disabled": true,
+          "cursor": "not-allowed",
+          "underline": "none"
+        },
+        {
+          "label": "Quantity increment",
+          "fg": [
+            37,
+            99,
+            235
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            44,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Selected Reviews tab",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            103.828125,
+            44
+          ],
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Inactive Description tab",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            106.625,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Review invalid rating",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            254,
+            242,
+            242
+          ],
+          "textRatio": 14.87,
+          "opacity": [],
+          "size": [
+            262,
+            44
+          ],
+          "border": [
+            185,
+            28,
+            28
+          ],
+          "borderInner": 5.91,
+          "borderOuter": 6.03,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Review invalid comment",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            254,
+            242,
+            242
+          ],
+          "textRatio": 14.87,
+          "opacity": [],
+          "size": [
+            262,
+            90
+          ],
+          "border": [
+            185,
+            28,
+            28
+          ],
+          "borderInner": 5.91,
+          "borderOuter": 6.03,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Review validation error",
+          "fg": [
+            185,
+            28,
+            28
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 6.03,
+          "opacity": [],
+          "size": [
+            262,
+            20
+          ]
+        },
+        {
+          "label": "Related product title",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            294,
+            24
+          ]
+        }
+      ]
+    },
+    "mobile-light-cart": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "light",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Cart heading",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 15.17,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Cart badge",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            44,
+            36
+          ]
+        },
+        {
+          "label": "Product link",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            108.40625,
+            44
+          ]
+        },
+        {
+          "label": "Cart original price",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Line total",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            294,
+            28
+          ]
+        },
+        {
+          "label": "Promo invalid field",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            254,
+            242,
+            242
+          ],
+          "textRatio": 14.87,
+          "opacity": [],
+          "size": [
+            198.953125,
+            44
+          ],
+          "border": [
+            185,
+            28,
+            28
+          ],
+          "borderInner": 5.91,
+          "borderOuter": 6.47,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Promo error",
+          "fg": [
+            185,
+            28,
+            28
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 6.47,
+          "opacity": [],
+          "size": [
+            278,
+            20
+          ]
+        },
+        {
+          "label": "Subtotal",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            278,
+            24
+          ]
+        },
+        {
+          "label": "Total",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            278,
+            41
+          ]
+        },
+        {
+          "label": "Warning prompt",
+          "fg": [
+            146,
+            64,
+            14
+          ],
+          "bg": [
+            255,
+            251,
+            235
+          ],
+          "textRatio": 6.84,
+          "opacity": [],
+          "size": [
+            294,
+            24
+          ]
+        },
+        {
+          "label": "Cancel button",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            75.859375,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.66,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Destructive confirm",
+          "fg": [
+            185,
+            28,
+            28
+          ],
+          "bg": [
+            254,
+            242,
+            242
+          ],
+          "textRatio": 5.91,
+          "opacity": [],
+          "size": [
+            145.703125,
+            44
+          ]
+        }
+      ]
+    },
+    "mobile-dark-cart": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "dark",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Cart heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Cart badge",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            44,
+            36
+          ]
+        },
+        {
+          "label": "Product link",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            108.40625,
+            44
+          ]
+        },
+        {
+          "label": "Cart original price",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Line total",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            294,
+            28
+          ]
+        },
+        {
+          "label": "Promo invalid field",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            53,
+            28,
+            39
+          ],
+          "textRatio": 14.29,
+          "opacity": [],
+          "size": [
+            198.953125,
+            44
+          ],
+          "border": [
+            253,
+            164,
+            175
+          ],
+          "borderInner": 8.25,
+          "borderOuter": 8.93,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Promo error",
+          "fg": [
+            253,
+            164,
+            175
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 8.93,
+          "opacity": [],
+          "size": [
+            278,
+            20
+          ]
+        },
+        {
+          "label": "Subtotal",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            278,
+            24
+          ]
+        },
+        {
+          "label": "Total",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            278,
+            41
+          ]
+        },
+        {
+          "label": "Warning prompt",
+          "fg": [
+            252,
+            211,
+            77
+          ],
+          "bg": [
+            51,
+            42,
+            24
+          ],
+          "textRatio": 9.81,
+          "opacity": [],
+          "size": [
+            294,
+            24
+          ]
+        },
+        {
+          "label": "Cancel button",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            75.859375,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 3.61,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Destructive confirm",
+          "fg": [
+            253,
+            164,
+            175
+          ],
+          "bg": [
+            53,
+            28,
+            39
+          ],
+          "textRatio": 8.25,
+          "opacity": [],
+          "size": [
+            145.703125,
+            44
+          ]
+        }
+      ]
+    },
+    "desktop-dark-cart": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1920,
+        "height": 953,
+        "scroll": 1920,
+        "theme": "dark",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Cart heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            1232,
+            48
+          ]
+        },
+        {
+          "label": "Cart badge",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            44,
+            36
+          ]
+        },
+        {
+          "label": "Product link",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            108.40625,
+            44
+          ]
+        },
+        {
+          "label": "Cart original price",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Line total",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            57.265625,
+            28
+          ]
+        },
+        {
+          "label": "Promo invalid field",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            53,
+            28,
+            39
+          ],
+          "textRatio": 14.29,
+          "opacity": [],
+          "size": [
+            190.953125,
+            44
+          ],
+          "border": [
+            253,
+            164,
+            175
+          ],
+          "borderInner": 8.25,
+          "borderOuter": 8.93,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Promo error",
+          "fg": [
+            253,
+            164,
+            175
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 8.93,
+          "opacity": [],
+          "size": [
+            270,
+            20
+          ]
+        },
+        {
+          "label": "Subtotal",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            270,
+            24
+          ]
+        },
+        {
+          "label": "Total",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            270,
+            41
+          ]
+        },
+        {
+          "label": "Warning prompt",
+          "fg": [
+            252,
+            211,
+            77
+          ],
+          "bg": [
+            51,
+            42,
+            24
+          ],
+          "textRatio": 9.81,
+          "opacity": [],
+          "size": [
+            846,
+            24
+          ]
+        },
+        {
+          "label": "Cancel button",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            75.859375,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 3.61,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Destructive confirm",
+          "fg": [
+            253,
+            164,
+            175
+          ],
+          "bg": [
+            53,
+            28,
+            39
+          ],
+          "textRatio": 8.25,
+          "opacity": [],
+          "size": [
+            145.703125,
+            44
+          ]
+        }
+      ]
+    },
+    "desktop-dark-promo-toast": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1920,
+        "height": 953,
+        "scroll": 1920,
+        "theme": "dark",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Success toast",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            16,
+            46,
+            38
+          ],
+          "textRatio": 9.56,
+          "opacity": [],
+          "size": [
+            131.625,
+            20
+          ]
+        },
+        {
+          "label": "Applied promo",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            16,
+            46,
+            38
+          ],
+          "textRatio": 9.56,
+          "opacity": [],
+          "size": [
+            86.703125,
+            20
+          ]
+        },
+        {
+          "label": "Promo deduction",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 11.07,
+          "opacity": [],
+          "size": [
+            270,
+            24
+          ]
+        },
+        {
+          "label": "Total with promo",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            270,
+            41
+          ]
+        },
+        {
+          "label": "Dismiss toast",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            44,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 3.73,
+          "borderStyle": "solid"
+        }
+      ]
+    },
+    "desktop-light-toast": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1920,
+        "height": 953,
+        "scroll": 1920,
+        "theme": "light",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Success toast",
+          "fg": [
+            4,
+            120,
+            87
+          ],
+          "bg": [
+            236,
+            253,
+            245
+          ],
+          "textRatio": 5.21,
+          "opacity": [],
+          "size": [
+            140.390625,
+            20
+          ]
+        },
+        {
+          "label": "Dismiss toast",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            44,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.6,
+          "borderStyle": "solid"
+        }
+      ]
+    },
+    "desktop-light-cart": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1920,
+        "height": 953,
+        "scroll": 1920,
+        "theme": "light",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Cart heading",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 15.17,
+          "opacity": [],
+          "size": [
+            1232,
+            48
+          ]
+        },
+        {
+          "label": "Cart badge",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            44,
+            36
+          ]
+        },
+        {
+          "label": "Product link",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            108.40625,
+            44
+          ]
+        },
+        {
+          "label": "Cart original price",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Line total",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            57.265625,
+            28
+          ]
+        },
+        {
+          "label": "Promo invalid field",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            254,
+            242,
+            242
+          ],
+          "textRatio": 14.87,
+          "opacity": [],
+          "size": [
+            190.953125,
+            44
+          ],
+          "border": [
+            185,
+            28,
+            28
+          ],
+          "borderInner": 5.91,
+          "borderOuter": 6.47,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Promo error",
+          "fg": [
+            185,
+            28,
+            28
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 6.47,
+          "opacity": [],
+          "size": [
+            270,
+            20
+          ]
+        },
+        {
+          "label": "Subtotal",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            270,
+            24
+          ]
+        },
+        {
+          "label": "Total",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            270,
+            41
+          ]
+        },
+        {
+          "label": "Warning prompt",
+          "fg": [
+            146,
+            64,
+            14
+          ],
+          "bg": [
+            255,
+            251,
+            235
+          ],
+          "textRatio": 6.84,
+          "opacity": [],
+          "size": [
+            846,
+            24
+          ]
+        },
+        {
+          "label": "Cancel button",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            75.859375,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.66,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Destructive confirm",
+          "fg": [
+            185,
+            28,
+            28
+          ],
+          "bg": [
+            254,
+            242,
+            242
+          ],
+          "textRatio": 5.91,
+          "opacity": [],
+          "size": [
+            145.703125,
+            44
+          ]
+        }
+      ]
+    },
+    "desktop-light-login": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1920,
+        "height": 953,
+        "scroll": 1920,
+        "theme": "light",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Login title",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            382,
+            48
+          ]
+        },
+        {
+          "label": "Username invalid",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            254,
+            242,
+            242
+          ],
+          "textRatio": 14.87,
+          "opacity": [],
+          "size": [
+            382,
+            44
+          ],
+          "border": [
+            185,
+            28,
+            28
+          ],
+          "borderInner": 5.91,
+          "borderOuter": 6.47,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Password invalid",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            254,
+            242,
+            242
+          ],
+          "textRatio": 14.87,
+          "opacity": [],
+          "size": [
+            382,
+            44
+          ],
+          "border": [
+            185,
+            28,
+            28
+          ],
+          "borderInner": 5.91,
+          "borderOuter": 6.47,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Login validation error",
+          "fg": [
+            185,
+            28,
+            28
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 6.47,
+          "opacity": [],
+          "size": [
+            382,
+            20
+          ]
+        },
+        {
+          "label": "Login button",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            382,
+            44
+          ]
+        },
+        {
+          "label": "Catalog return link",
+          "fg": [
+            37,
+            99,
+            235
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            113.375,
+            44
+          ]
+        }
+      ]
+    },
+    "mobile-dark-login": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 375,
+        "height": 900,
+        "scroll": 375,
+        "theme": "dark",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Login title",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            293,
+            40
+          ]
+        },
+        {
+          "label": "Username invalid",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            53,
+            28,
+            39
+          ],
+          "textRatio": 14.29,
+          "opacity": [],
+          "size": [
+            293,
+            44
+          ],
+          "border": [
+            253,
+            164,
+            175
+          ],
+          "borderInner": 8.25,
+          "borderOuter": 8.93,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Password invalid",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            53,
+            28,
+            39
+          ],
+          "textRatio": 14.29,
+          "opacity": [],
+          "size": [
+            293,
+            44
+          ],
+          "border": [
+            253,
+            164,
+            175
+          ],
+          "borderInner": 8.25,
+          "borderOuter": 8.93,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Login validation error",
+          "fg": [
+            253,
+            164,
+            175
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 8.93,
+          "opacity": [],
+          "size": [
+            293,
+            20
+          ]
+        },
+        {
+          "label": "Login button",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            293,
+            44
+          ]
+        },
+        {
+          "label": "Catalog return link",
+          "fg": [
+            138,
+            180,
+            255
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 8.08,
+          "opacity": [],
+          "size": [
+            113.375,
+            44
+          ]
+        }
+      ]
+    },
+    "mobile-dark-checkout": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "dark",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Checkout heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Checkout input",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            278,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Place order button",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            278,
+            44
+          ]
+        },
+        {
+          "label": "Checkout price",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            278,
+            24
+          ]
+        },
+        {
+          "label": "Checkout original price",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Checkout subtotal",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            278,
+            24
+          ]
+        },
+        {
+          "label": "Checkout final total",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            278,
+            41
+          ]
+        }
+      ]
+    },
+    "desktop-dark-checkout": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1920,
+        "height": 953,
+        "scroll": 1920,
+        "theme": "dark",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Checkout heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            1232,
+            48
+          ]
+        },
+        {
+          "label": "Checkout input",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            814,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Place order button",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            103.5,
+            44
+          ]
+        },
+        {
+          "label": "Checkout price",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            270,
+            24
+          ]
+        },
+        {
+          "label": "Checkout original price",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Checkout subtotal",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            270,
+            24
+          ]
+        },
+        {
+          "label": "Checkout final total",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            270,
+            41
+          ]
+        }
+      ]
+    },
+    "desktop-dark-orders": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1920,
+        "height": 897,
+        "scroll": 1920,
+        "theme": "dark",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Orders heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            1232,
+            48
+          ]
+        },
+        {
+          "label": "Order link title",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            130.625,
+            24
+          ]
+        },
+        {
+          "label": "Order date",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            130.625,
+            19
+          ]
+        },
+        {
+          "label": "Order status",
+          "fg": [
+            175,
+            203,
+            255
+          ],
+          "bg": [
+            29,
+            45,
+            73
+          ],
+          "textRatio": 8.41,
+          "opacity": [],
+          "size": [
+            80.15625,
+            28
+          ]
+        }
+      ]
+    },
+    "desktop-dark-order-detail": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1905,
+        "height": 897,
+        "scroll": 1905,
+        "theme": "dark",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Saved order heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            1232,
+            48
+          ]
+        },
+        {
+          "label": "Back to orders secondary link",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            141.265625,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.83,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Current order timeline",
+          "fg": [
+            175,
+            203,
+            255
+          ],
+          "bg": [
+            29,
+            45,
+            73
+          ],
+          "textRatio": 8.41,
+          "opacity": [],
+          "size": [
+            157.984375,
+            32
+          ]
+        },
+        {
+          "label": "Delivery details label",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            794,
+            20
+          ]
+        },
+        {
+          "label": "Order original price",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Order summary deduction",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 11.07,
+          "opacity": [],
+          "size": [
+            302,
+            24
+          ]
+        },
+        {
+          "label": "Saved order final total",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            302,
+            41
+          ]
+        }
+      ]
+    },
+    "mobile-dark-order-detail": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "dark",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Saved order heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Back to orders secondary link",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            141.265625,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.83,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Current order timeline",
+          "fg": [
+            175,
+            203,
+            255
+          ],
+          "bg": [
+            29,
+            45,
+            73
+          ],
+          "textRatio": 8.41,
+          "opacity": [],
+          "size": [
+            157.984375,
+            32
+          ]
+        },
+        {
+          "label": "Delivery details label",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            286,
+            20
+          ]
+        },
+        {
+          "label": "Order original price",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 7.61,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Order summary deduction",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 11.07,
+          "opacity": [],
+          "size": [
+            278,
+            24
+          ]
+        },
+        {
+          "label": "Saved order final total",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            278,
+            41
+          ]
+        }
+      ]
+    },
+    "desktop-dark-profile": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1920,
+        "height": 897,
+        "scroll": 1920,
+        "theme": "dark",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Profile heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            1232,
+            48
+          ]
+        },
+        {
+          "label": "Profile form input",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            810,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Save profile button",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            106.421875,
+            44
+          ]
+        },
+        {
+          "label": "Selected theme button",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            61.890625,
+            44
+          ]
+        },
+        {
+          "label": "Other theme button",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            66.15625,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Clear local data button",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            131.65625,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Profile validation alert",
+          "fg": [
+            253,
+            164,
+            175
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 8.93,
+          "opacity": [],
+          "size": [
+            810,
+            20
+          ]
+        }
+      ]
+    },
+    "mobile-dark-profile": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "dark",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Profile heading",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 17.33,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Profile form input",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            286,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Save profile button",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            106.421875,
+            44
+          ]
+        },
+        {
+          "label": "Selected theme button",
+          "fg": [
+            11,
+            23,
+            48
+          ],
+          "bg": [
+            138,
+            180,
+            255
+          ],
+          "textRatio": 8.52,
+          "opacity": [],
+          "size": [
+            61.890625,
+            44
+          ]
+        },
+        {
+          "label": "Other theme button",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            66.15625,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Clear local data button",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            131.65625,
+            44
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.31,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Profile validation alert",
+          "fg": [
+            253,
+            164,
+            175
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 8.93,
+          "opacity": [],
+          "size": [
+            286,
+            20
+          ]
+        }
+      ]
+    },
+    "desktop-light-order-detail": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1905,
+        "height": 897,
+        "scroll": 1905,
+        "theme": "light",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Saved order heading",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 15.17,
+          "opacity": [],
+          "size": [
+            1232,
+            48
+          ]
+        },
+        {
+          "label": "Back to orders secondary link",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            141.265625,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.54,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Current order timeline",
+          "fg": [
+            29,
+            78,
+            216
+          ],
+          "bg": [
+            234,
+            241,
+            255
+          ],
+          "textRatio": 5.91,
+          "opacity": [],
+          "size": [
+            157.984375,
+            32
+          ]
+        },
+        {
+          "label": "Delivery details label",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            794,
+            20
+          ]
+        },
+        {
+          "label": "Order original price",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Order summary deduction",
+          "fg": [
+            4,
+            120,
+            87
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.48,
+          "opacity": [],
+          "size": [
+            302,
+            24
+          ]
+        },
+        {
+          "label": "Saved order final total",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            302,
+            41
+          ]
+        }
+      ]
+    },
+    "mobile-light-order-detail": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "light",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Saved order heading",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 15.17,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Back to orders secondary link",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            141.265625,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.54,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Current order timeline",
+          "fg": [
+            29,
+            78,
+            216
+          ],
+          "bg": [
+            234,
+            241,
+            255
+          ],
+          "textRatio": 5.91,
+          "opacity": [],
+          "size": [
+            157.984375,
+            32
+          ]
+        },
+        {
+          "label": "Delivery details label",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            286,
+            20
+          ]
+        },
+        {
+          "label": "Order original price",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Order summary deduction",
+          "fg": [
+            4,
+            120,
+            87
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.48,
+          "opacity": [],
+          "size": [
+            278,
+            24
+          ]
+        },
+        {
+          "label": "Saved order final total",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            278,
+            41
+          ]
+        }
+      ]
+    },
+    "desktop-light-profile": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1920,
+        "height": 897,
+        "scroll": 1920,
+        "theme": "light",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Profile heading",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 15.17,
+          "opacity": [],
+          "size": [
+            1232,
+            48
+          ]
+        },
+        {
+          "label": "Profile form input",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            810,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Save profile button",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            106.421875,
+            44
+          ]
+        },
+        {
+          "label": "Selected theme button",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            64.15625,
+            44
+          ]
+        },
+        {
+          "label": "Other theme button",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            63.890625,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Clear local data button",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            131.65625,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Profile validation alert",
+          "fg": [
+            185,
+            28,
+            28
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 6.47,
+          "opacity": [],
+          "size": [
+            810,
+            20
+          ]
+        }
+      ]
+    },
+    "mobile-light-profile": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "light",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Profile heading",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 15.17,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Profile form input",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            286,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Save profile button",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            106.421875,
+            44
+          ]
+        },
+        {
+          "label": "Selected theme button",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            64.15625,
+            44
+          ]
+        },
+        {
+          "label": "Other theme button",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            63.890625,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Clear local data button",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            131.65625,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Profile validation alert",
+          "fg": [
+            185,
+            28,
+            28
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 6.47,
+          "opacity": [],
+          "size": [
+            286,
+            20
+          ]
+        }
+      ]
+    },
+    "desktop-light-checkout": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1920,
+        "height": 897,
+        "scroll": 1920,
+        "theme": "light",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Checkout heading",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 15.17,
+          "opacity": [],
+          "size": [
+            1232,
+            48
+          ]
+        },
+        {
+          "label": "Checkout input",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            814,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Place order button",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            103.5,
+            44
+          ]
+        },
+        {
+          "label": "Checkout price",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            270,
+            24
+          ]
+        },
+        {
+          "label": "Checkout original price",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Checkout subtotal",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            270,
+            24
+          ]
+        },
+        {
+          "label": "Checkout final total",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            270,
+            41
+          ]
+        }
+      ]
+    },
+    "mobile-light-checkout": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 360,
+        "height": 900,
+        "scroll": 360,
+        "theme": "light",
+        "width": 375
+      },
+      "samples": [
+        {
+          "label": "Checkout heading",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 15.17,
+          "opacity": [],
+          "size": [
+            328,
+            40
+          ]
+        },
+        {
+          "label": "Checkout input",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            278,
+            44
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.8,
+          "borderStyle": "solid"
+        },
+        {
+          "label": "Place order button",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            278,
+            44
+          ]
+        },
+        {
+          "label": "Checkout price",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            278,
+            24
+          ]
+        },
+        {
+          "label": "Checkout original price",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            33.234375,
+            20
+          ]
+        },
+        {
+          "label": "Checkout subtotal",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 5.9,
+          "opacity": [],
+          "size": [
+            278,
+            24
+          ]
+        },
+        {
+          "label": "Checkout final total",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            278,
+            41
+          ]
+        }
+      ]
+    },
+    "light-error-boundary-dev-fixture": {
+      "meta": {
+        "assets": [
+          null,
+          "/@vite/client",
+          "./error-boundary.tsx"
+        ],
+        "client": 1920,
+        "height": 897,
+        "scroll": 1920,
+        "theme": null,
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Fallback error text",
+          "fg": [
+            185,
+            28,
+            28
+          ],
+          "bg": [
+            254,
+            242,
+            242
+          ],
+          "textRatio": 5.91,
+          "opacity": [],
+          "size": [
+            398,
+            36
+          ]
+        },
+        {
+          "label": "Fallback Reload button",
+          "fg": [
+            255,
+            255,
+            255
+          ],
+          "bg": [
+            37,
+            99,
+            235
+          ],
+          "textRatio": 5.17,
+          "opacity": [],
+          "size": [
+            89.578125,
+            48
+          ]
+        }
+      ]
+    },
+    "desktop-dark-gallery": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1905,
+        "height": 897,
+        "scroll": 1905,
+        "theme": "dark",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Disabled primary action",
+          "fg": [
+            163,
+            175,
+            194
+          ],
+          "bg": [
+            41,
+            52,
+            73
+          ],
+          "textRatio": 5.63,
+          "opacity": [],
+          "size": [
+            153.03125,
+            44
+          ],
+          "hover": true,
+          "disabled": true,
+          "cursor": "not-allowed",
+          "underline": "none"
+        },
+        {
+          "label": "Selected gallery border",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            76,
+            76
+          ],
+          "border": [
+            138,
+            180,
+            255
+          ],
+          "borderInner": 8.08,
+          "borderOuter": 9.05,
+          "borderStyle": "solid",
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Other gallery border",
+          "fg": [
+            242,
+            245,
+            252
+          ],
+          "bg": [
+            23,
+            29,
+            41
+          ],
+          "textRatio": 15.47,
+          "opacity": [],
+          "size": [
+            76,
+            76
+          ],
+          "border": [
+            113,
+            130,
+            155
+          ],
+          "borderInner": 4.31,
+          "borderOuter": 4.83,
+          "borderStyle": "solid",
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Availability feedback",
+          "fg": [
+            110,
+            231,
+            183
+          ],
+          "bg": [
+            13,
+            17,
+            24
+          ],
+          "textRatio": 12.41,
+          "opacity": [],
+          "size": [
+            600,
+            20
+          ]
+        }
+      ]
+    },
+    "desktop-light-gallery": {
+      "meta": {
+        "assets": [
+          "/assets/index-ZKN7z76q.js",
+          "/assets/index-B7x8bIgM.css"
+        ],
+        "client": 1905,
+        "height": 897,
+        "scroll": 1905,
+        "theme": "light",
+        "width": 1920
+      },
+      "samples": [
+        {
+          "label": "Disabled primary action",
+          "fg": [
+            88,
+            101,
+            122
+          ],
+          "bg": [
+            232,
+            237,
+            245
+          ],
+          "textRatio": 5.02,
+          "opacity": [],
+          "size": [
+            153.03125,
+            44
+          ],
+          "hover": true,
+          "disabled": true,
+          "cursor": "not-allowed",
+          "underline": "none"
+        },
+        {
+          "label": "Selected gallery border",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            76,
+            76
+          ],
+          "border": [
+            37,
+            99,
+            235
+          ],
+          "borderInner": 5.17,
+          "borderOuter": 4.82,
+          "borderStyle": "solid",
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Other gallery border",
+          "fg": [
+            23,
+            32,
+            51
+          ],
+          "bg": [
+            255,
+            255,
+            255
+          ],
+          "textRatio": 16.27,
+          "opacity": [],
+          "size": [
+            76,
+            76
+          ],
+          "border": [
+            117,
+            132,
+            155
+          ],
+          "borderInner": 3.8,
+          "borderOuter": 3.54,
+          "borderStyle": "solid",
+          "hover": false,
+          "disabled": false,
+          "cursor": "pointer",
+          "underline": "none"
+        },
+        {
+          "label": "Availability feedback",
+          "fg": [
+            4,
+            120,
+            87
+          ],
+          "bg": [
+            245,
+            247,
+            251
+          ],
+          "textRatio": 5.11,
+          "opacity": [],
+          "size": [
+            600,
+            20
+          ]
+        }
+      ]
+    }
+  },
+  "interactions": {
+    "desktopDark": {
+      "focus": {
+        "label": "Search keyboard focus",
+        "fg": [
+          242,
+          245,
+          252
+        ],
+        "bg": [
+          23,
+          29,
+          41
+        ],
+        "textRatio": 15.47,
+        "opacity": [],
+        "size": [
+          583,
+          44
+        ],
+        "border": [
+          113,
+          130,
+          155
+        ],
+        "borderInner": 4.31,
+        "borderOuter": 4.31,
+        "borderStyle": "solid",
+        "focusVisible": true,
+        "outline": "solid 2px offset 3px",
+        "outlineRatio": 10.3
+      },
+      "hover": [
+        {
+          "label": "Cart nav",
+          "before": {
+            "border": "rgb(163, 175, 194)",
+            "borderStyle": "solid",
+            "color": "rgb(163, 175, 194)",
+            "cursor": "pointer",
+            "disabled": false,
+            "filter": "none",
+            "focus": false,
+            "foregroundOpacity": 1,
+            "hover": false,
+            "outline": "rgb(163, 175, 194)",
+            "outlineOffset": "0px",
+            "outlineStyle": "none",
+            "outlineWidth": "3px",
+            "paint": [
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(23, 29, 41)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ]
+            ],
+            "point": [
+              1406,
+              38
+            ],
+            "shadow": "none",
+            "size": [
+              50.65625,
+              44
+            ],
+            "underline": "none"
+          },
+          "after": {
+            "border": "rgb(165, 179, 202)",
+            "borderStyle": "solid",
+            "color": "rgb(165, 179, 202)",
+            "cursor": "pointer",
+            "disabled": false,
+            "filter": "none",
+            "focus": false,
+            "foregroundOpacity": 1,
+            "hover": true,
+            "outline": "rgb(165, 179, 202)",
+            "outlineOffset": "0px",
+            "outlineStyle": "none",
+            "outlineWidth": "3px",
+            "paint": [
+              [
+                "rgba(29, 45, 73, 0.137)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(23, 29, 41)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ]
+            ],
+            "point": [
+              1406,
+              38
+            ],
+            "shadow": "none",
+            "size": [
+              50.65625,
+              44
+            ],
+            "underline": "none"
+          },
+          "ratio": 7.77,
+          "verified": true
+        },
+        {
+          "label": "Secondary theme button",
+          "before": {
+            "border": "rgb(113, 130, 155)",
+            "borderStyle": "solid",
+            "color": "rgb(242, 245, 252)",
+            "cursor": "pointer",
+            "disabled": false,
+            "filter": "none",
+            "focus": false,
+            "foregroundOpacity": 1,
+            "hover": false,
+            "outline": "rgb(242, 245, 252)",
+            "outlineOffset": "0px",
+            "outlineStyle": "none",
+            "outlineWidth": "3px",
+            "paint": [
+              [
+                "rgb(23, 29, 41)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(23, 29, 41)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ]
+            ],
+            "point": [
+              1535,
+              38
+            ],
+            "shadow": "none",
+            "size": [
+              66.15625,
+              44
+            ],
+            "underline": "none"
+          },
+          "after": {
+            "border": "rgb(113, 130, 155)",
+            "borderStyle": "solid",
+            "color": "rgb(242, 245, 252)",
+            "cursor": "pointer",
+            "disabled": false,
+            "filter": "none",
+            "focus": false,
+            "foregroundOpacity": 1,
+            "hover": true,
+            "outline": "rgb(242, 245, 252)",
+            "outlineOffset": "0px",
+            "outlineStyle": "none",
+            "outlineWidth": "3px",
+            "paint": [
+              [
+                "rgb(32, 40, 56)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(23, 29, 41)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ]
+            ],
+            "point": [
+              1535,
+              38
+            ],
+            "shadow": "none",
+            "size": [
+              66.15625,
+              44
+            ],
+            "underline": "none"
+          },
+          "ratio": 13.53,
+          "verified": true
+        },
+        {
+          "label": "Primary Add to cart",
+          "before": {
+            "border": "rgb(11, 23, 48)",
+            "borderStyle": "solid",
+            "color": "rgb(11, 23, 48)",
+            "cursor": "pointer",
+            "disabled": false,
+            "filter": "none",
+            "focus": false,
+            "foregroundOpacity": 1,
+            "hover": false,
+            "outline": "rgb(11, 23, 48)",
+            "outlineOffset": "0px",
+            "outlineStyle": "none",
+            "outlineWidth": "3px",
+            "paint": [
+              [
+                "rgb(138, 180, 255)",
+                1
+              ],
+              [
+                "rgb(23, 29, 41)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ]
+            ],
+            "point": [
+              483,
+              863
+            ],
+            "shadow": "none",
+            "size": [
+              259,
+              44
+            ],
+            "underline": "none"
+          },
+          "after": {
+            "border": "rgb(11, 23, 48)",
+            "borderStyle": "solid",
+            "color": "rgb(11, 23, 48)",
+            "cursor": "pointer",
+            "disabled": false,
+            "filter": "none",
+            "focus": false,
+            "foregroundOpacity": 1,
+            "hover": true,
+            "outline": "rgb(11, 23, 48)",
+            "outlineOffset": "0px",
+            "outlineStyle": "none",
+            "outlineWidth": "3px",
+            "paint": [
+              [
+                "rgb(175, 203, 255)",
+                1
+              ],
+              [
+                "rgb(23, 29, 41)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(13, 17, 24)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ]
+            ],
+            "point": [
+              483,
+              863
+            ],
+            "shadow": "none",
+            "size": [
+              259,
+              44
+            ],
+            "underline": "none"
+          },
+          "ratio": 10.86,
+          "verified": true
+        }
+      ],
+      "disabled": {
+        "label": "Disabled Previous",
+        "before": {
+          "border": "rgb(113, 130, 155)",
+          "borderStyle": "solid",
+          "color": "rgb(163, 175, 194)",
+          "cursor": "not-allowed",
+          "disabled": true,
+          "filter": "none",
+          "focus": false,
+          "foregroundOpacity": 1,
+          "hover": false,
+          "outline": "rgb(163, 175, 194)",
+          "outlineOffset": "0px",
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "paint": [
+            [
+              "rgb(41, 52, 73)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgb(13, 17, 24)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgb(13, 17, 24)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ]
+          ],
+          "point": [
+            870,
+            822
+          ],
+          "shadow": "none",
+          "size": [
+            88.015625,
+            44
+          ],
+          "underline": "none"
+        },
+        "after": {
+          "border": "rgb(113, 130, 155)",
+          "borderStyle": "solid",
+          "color": "rgb(163, 175, 194)",
+          "cursor": "not-allowed",
+          "disabled": true,
+          "filter": "none",
+          "focus": false,
+          "foregroundOpacity": 1,
+          "hover": true,
+          "outline": "rgb(163, 175, 194)",
+          "outlineOffset": "0px",
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "paint": [
+            [
+              "rgb(41, 52, 73)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgb(13, 17, 24)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgb(13, 17, 24)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ]
+          ],
+          "point": [
+            870,
+            822
+          ],
+          "shadow": "none",
+          "size": [
+            88.015625,
+            44
+          ],
+          "underline": "none"
+        },
+        "ratio": 5.63,
+        "verified": true
+      }
+    },
+    "desktopLight": {
+      "focus": {
+        "label": "Search keyboard focus",
+        "fg": [
+          23,
+          32,
+          51
+        ],
+        "bg": [
+          255,
+          255,
+          255
+        ],
+        "textRatio": 16.27,
+        "opacity": [],
+        "size": [
+          583,
+          44
+        ],
+        "border": [
+          117,
+          132,
+          155
+        ],
+        "borderInner": 3.8,
+        "borderOuter": 3.8,
+        "borderStyle": "solid",
+        "focusVisible": true,
+        "outline": "solid 2px offset 3px",
+        "outlineRatio": 5.17
+      },
+      "hover": [
+        {
+          "label": "Primary Add to cart",
+          "before": {
+            "border": "rgb(255, 255, 255)",
+            "borderStyle": "solid",
+            "color": "rgb(255, 255, 255)",
+            "cursor": "pointer",
+            "disabled": false,
+            "filter": "none",
+            "focus": false,
+            "foregroundOpacity": 1,
+            "hover": false,
+            "outline": "rgb(255, 255, 255)",
+            "outlineOffset": "0px",
+            "outlineStyle": "none",
+            "outlineWidth": "3px",
+            "paint": [
+              [
+                "rgb(37, 99, 235)",
+                1
+              ],
+              [
+                "rgb(255, 255, 255)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(245, 247, 251)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(245, 247, 251)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ]
+            ],
+            "point": [
+              483,
+              863
+            ],
+            "shadow": "none",
+            "size": [
+              259,
+              44
+            ],
+            "underline": "none"
+          },
+          "after": {
+            "border": "rgb(255, 255, 255)",
+            "borderStyle": "solid",
+            "color": "rgb(255, 255, 255)",
+            "cursor": "pointer",
+            "disabled": false,
+            "filter": "none",
+            "focus": false,
+            "foregroundOpacity": 1,
+            "hover": true,
+            "outline": "rgb(255, 255, 255)",
+            "outlineOffset": "0px",
+            "outlineStyle": "none",
+            "outlineWidth": "3px",
+            "paint": [
+              [
+                "rgb(29, 78, 216)",
+                1
+              ],
+              [
+                "rgb(255, 255, 255)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(245, 247, 251)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(245, 247, 251)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ]
+            ],
+            "point": [
+              483,
+              863
+            ],
+            "shadow": "none",
+            "size": [
+              259,
+              44
+            ],
+            "underline": "none"
+          },
+          "ratio": 6.7,
+          "verified": true
+        },
+        {
+          "label": "Secondary theme button",
+          "before": {
+            "border": "rgb(117, 132, 155)",
+            "borderStyle": "solid",
+            "color": "rgb(23, 32, 51)",
+            "cursor": "pointer",
+            "disabled": false,
+            "filter": "none",
+            "focus": false,
+            "foregroundOpacity": 1,
+            "hover": false,
+            "outline": "rgb(23, 32, 51)",
+            "outlineOffset": "0px",
+            "outlineStyle": "none",
+            "outlineWidth": "3px",
+            "paint": [
+              [
+                "rgb(255, 255, 255)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(255, 255, 255)",
+                1
+              ],
+              [
+                "rgb(245, 247, 251)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(245, 247, 251)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ]
+            ],
+            "point": [
+              1537,
+              38
+            ],
+            "shadow": "none",
+            "size": [
+              63.890625,
+              44
+            ],
+            "underline": "none"
+          },
+          "after": {
+            "border": "rgb(117, 132, 155)",
+            "borderStyle": "solid",
+            "color": "rgb(23, 32, 51)",
+            "cursor": "pointer",
+            "disabled": false,
+            "filter": "none",
+            "focus": false,
+            "foregroundOpacity": 1,
+            "hover": true,
+            "outline": "rgb(23, 32, 51)",
+            "outlineOffset": "0px",
+            "outlineStyle": "none",
+            "outlineWidth": "3px",
+            "paint": [
+              [
+                "rgb(237, 242, 248)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(255, 255, 255)",
+                1
+              ],
+              [
+                "rgb(245, 247, 251)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ],
+              [
+                "rgb(245, 247, 251)",
+                1
+              ],
+              [
+                "rgba(0, 0, 0, 0)",
+                1
+              ]
+            ],
+            "point": [
+              1537,
+              38
+            ],
+            "shadow": "none",
+            "size": [
+              63.890625,
+              44
+            ],
+            "underline": "none"
+          },
+          "ratio": 14.45,
+          "verified": true
+        }
+      ],
+      "disabled": {
+        "label": "Disabled Previous",
+        "before": {
+          "border": "rgb(117, 132, 155)",
+          "borderStyle": "solid",
+          "color": "rgb(88, 101, 122)",
+          "cursor": "not-allowed",
+          "disabled": true,
+          "filter": "none",
+          "focus": false,
+          "foregroundOpacity": 1,
+          "hover": false,
+          "outline": "rgb(88, 101, 122)",
+          "outlineOffset": "0px",
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "paint": [
+            [
+              "rgb(232, 237, 245)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgb(245, 247, 251)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgb(245, 247, 251)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ]
+          ],
+          "point": [
+            870,
+            822
+          ],
+          "shadow": "none",
+          "size": [
+            88.015625,
+            44
+          ],
+          "underline": "none"
+        },
+        "after": {
+          "border": "rgb(117, 132, 155)",
+          "borderStyle": "solid",
+          "color": "rgb(88, 101, 122)",
+          "cursor": "not-allowed",
+          "disabled": true,
+          "filter": "none",
+          "focus": false,
+          "foregroundOpacity": 1,
+          "hover": true,
+          "outline": "rgb(88, 101, 122)",
+          "outlineOffset": "0px",
+          "outlineStyle": "none",
+          "outlineWidth": "3px",
+          "paint": [
+            [
+              "rgb(232, 237, 245)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgb(245, 247, 251)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ],
+            [
+              "rgb(245, 247, 251)",
+              1
+            ],
+            [
+              "rgba(0, 0, 0, 0)",
+              1
+            ]
+          ],
+          "point": [
+            870,
+            822
+          ],
+          "shadow": "none",
+          "size": [
+            88.015625,
+            44
+          ],
+          "underline": "none"
+        },
+        "ratio": 5.02,
+        "verified": true
+      }
+    },
+    "photo": {
+      "filter": "none",
+      "opacity": 1,
+      "background": "rgb(32, 40, 56)"
+    },
+    "lightReload": {
+      "before": "light",
+      "after": "light"
+    },
+    "skeletonLight": {
+      "opacity": 0.999016,
+      "placeholder": "rgb(237, 242, 248)",
+      "surface": "rgb(255, 255, 255)",
+      "visible": true
+    },
+    "skeletonDark": {
+      "opacity": 0.999544,
+      "placeholder": "rgb(32, 40, 56)",
+      "surface": "rgb(23, 29, 41)",
+      "visible": true
+    },
+    "darkReload": {
+      "before": "dark",
+      "after": "dark"
+    },
+    "cardHover": {
+      "targetHovered": true,
+      "title": {
+        "label": "Hovered product link title",
+        "fg": [
+          138,
+          180,
+          255
+        ],
+        "bg": [
+          23,
+          29,
+          41
+        ],
+        "textRatio": 8.08,
+        "opacity": [],
+        "size": [
+          259,
+          24
+        ]
+      },
+      "photoBefore": {
+        "opacity": 1,
+        "filter": "none"
+      },
+      "photoAfter": {
+        "opacity": 1,
+        "filter": "none"
+      }
+    },
+    "mobileDarkFocus": {
+      "label": "Mobile search keyboard focus",
+      "fg": [
+        242,
+        245,
+        252
+      ],
+      "bg": [
+        23,
+        29,
+        41
+      ],
+      "textRatio": 15.47,
+      "opacity": [],
+      "size": [
+        294,
+        44
+      ],
+      "border": [
+        113,
+        130,
+        155
+      ],
+      "borderInner": 4.31,
+      "borderOuter": 4.31,
+      "borderStyle": "solid",
+      "focusVisible": true,
+      "outline": "solid 2px offset 3px",
+      "outlineRatio": 10.3
+    },
+    "disabledPrimaryDark": {
+      "hover": true,
+      "disabled": true,
+      "cursor": "not-allowed",
+      "before": "rgb(41, 52, 73)",
+      "after": "rgb(41, 52, 73)",
+      "sizeBefore": [
+        153.03125,
+        44
+      ],
+      "sizeAfter": [
+        153.03125,
+        44
+      ],
+      "shadow": "none"
+    },
+    "disabledPrimaryLight": {
+      "hover": true,
+      "disabled": true,
+      "cursor": "not-allowed",
+      "before": "rgb(232, 237, 245)",
+      "after": "rgb(232, 237, 245)",
+      "sizeBefore": [
+        153.03125,
+        44
+      ],
+      "sizeAfter": [
+        153.03125,
+        44
+      ],
+      "shadow": "none"
+    },
+    "testCartRestoredEmpty": true
+  },
+  "screenshots": [
+    "chrome-palette-desktop-dark.jpg",
+    "chrome-palette-mobile-dark.jpg",
+    "chrome-palette-mobile-light.jpg",
+    "chrome-palette-desktop-light.jpg"
+  ],
+  "limitations": [
+    "The preview did not produce Checkout validation alerts from browser input during this palette pass. Validation colors were measured on Login, Review, Profile and promo errors.",
+    "The confirmation page was not regenerated. Its shared delivery and total components were sampled on an existing saved order.",
+    "The Error Boundary fallback was sampled in the existing light development fixture. The palette report does not simulate network failures."
+  ],
+  "captureColors": {
+    "chrome-palette-desktop-dark.jpg": {
+      "focused": "BODY",
+      "height": 897,
+      "nav": "rgb(29, 45, 73)",
+      "switchBg": "rgb(23, 29, 41)",
+      "theme": "dark",
+      "width": 1920,
+      "jpegSize": {
+        "width": 1905,
+        "height": 890
+      }
+    },
+    "chrome-palette-mobile-dark.jpg": {
+      "focused": "BODY",
+      "height": 900,
+      "nav": "rgb(29, 45, 73)",
+      "switchBg": "rgb(23, 29, 41)",
+      "theme": "dark",
+      "width": 375,
+      "jpegSize": {
+        "width": 360,
+        "height": 864
+      }
+    },
+    "chrome-palette-mobile-light.jpg": {
+      "focused": "BUTTON",
+      "height": 900,
+      "nav": "rgb(234, 241, 255)",
+      "switchBg": "rgb(255, 255, 255)",
+      "theme": "light",
+      "width": 375,
+      "jpegSize": {
+        "width": 360,
+        "height": 864
+      }
+    },
+    "chrome-palette-desktop-light.jpg": {
+      "focused": "BUTTON",
+      "height": 897,
+      "nav": "rgb(234, 241, 255)",
+      "switchBg": "rgb(255, 255, 255)",
+      "theme": "light",
+      "width": 1920,
+      "jpegSize": {
+        "width": 1905,
+        "height": 890
+      }
+    }
+  }
+}

@@ -1,0 +1,500 @@
+{
+  "date": "2026-11-05",
+  "browser": "Google Chrome 156.0.8078.81",
+  "versionSource": "Windows Google Chrome executable ProductVersion",
+  "origin": "http://127.0.0.1:4197/",
+  "desktop": {
+    "width": 1920,
+    "height": 897
+  },
+  "finalAssets": {
+    "entry": "/assets/index-4SxzqkYE.js",
+    "stylesheet": "/assets/index-Dp7dRy9h.css"
+  },
+  "method": "Real pointer positioning through the approved Chrome connector with read-only computed style measurements.",
+  "beforeFix": {
+    "entry": "/assets/index-EWmuhdVc.js",
+    "previous": {
+      "light": {
+        "backgroundBefore": "rgb(255, 254, 250)",
+        "backgroundOnHover": "rgb(242, 246, 239)"
+      },
+      "dark": {
+        "backgroundBefore": "rgb(26, 41, 34)",
+        "backgroundOnHover": "rgb(34, 54, 43)"
+      }
+    },
+    "disabled": true,
+    "cursor": "not-allowed"
+  },
+  "afterFix": {
+    "dark": [
+      {
+        "label": "Cart",
+        "before": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": null,
+          "point": [
+            1406,
+            38
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(44, 72, 55)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": null,
+          "point": [
+            1406,
+            38
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Catalog",
+        "before": {
+          "bg": "rgb(44, 72, 55)",
+          "current": "page",
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": null,
+          "point": [
+            1340,
+            38
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(44, 72, 55)",
+          "current": "page",
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": null,
+          "point": [
+            1340,
+            38
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Log in",
+        "before": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": null,
+          "point": [
+            1467,
+            38
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(44, 72, 55)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": null,
+          "point": [
+            1467,
+            38
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Essence Mascara Lash Princess",
+        "before": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": "1",
+          "point": [
+            483,
+            608
+          ],
+          "title": "rgb(238, 245, 236)"
+        },
+        "onHover": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": "0.9",
+          "point": [
+            483,
+            608
+          ],
+          "title": "rgb(169, 220, 180)"
+        }
+      },
+      {
+        "label": "Add to cart",
+        "before": {
+          "bg": "rgb(169, 220, 180)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": null,
+          "point": [
+            483,
+            863
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(196, 235, 202)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": null,
+          "point": [
+            483,
+            863
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Theme toggle",
+        "before": {
+          "bg": "rgb(26, 41, 34)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": null,
+          "point": [
+            1535,
+            38
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(44, 72, 55)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": null,
+          "point": [
+            1535,
+            38
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Previous (first page)",
+        "before": {
+          "bg": "rgb(26, 41, 34)",
+          "current": null,
+          "cursor": "not-allowed",
+          "disabled": true,
+          "hover": false,
+          "image": null,
+          "point": [
+            870,
+            766
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(26, 41, 34)",
+          "current": null,
+          "cursor": "not-allowed",
+          "disabled": true,
+          "hover": true,
+          "image": null,
+          "point": [
+            870,
+            766
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Decrease quantity at one",
+        "before": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "current": null,
+          "cursor": "not-allowed",
+          "disabled": true,
+          "hover": false,
+          "image": null,
+          "point": [
+            992,
+            449
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(26, 41, 34)",
+          "current": null,
+          "cursor": "not-allowed",
+          "disabled": true,
+          "hover": true,
+          "image": null,
+          "point": [
+            992,
+            449
+          ],
+          "title": null
+        }
+      }
+    ],
+    "light": [
+      {
+        "label": "Catalog",
+        "before": {
+          "bg": "rgb(224, 236, 225)",
+          "current": "page",
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": null,
+          "point": [
+            1342,
+            38
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(224, 236, 225)",
+          "current": "page",
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": null,
+          "point": [
+            1342,
+            38
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Cart",
+        "before": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": null,
+          "point": [
+            1408,
+            38
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(224, 236, 225)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": null,
+          "point": [
+            1408,
+            38
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Log in",
+        "before": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": null,
+          "point": [
+            1469,
+            38
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(224, 236, 225)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": null,
+          "point": [
+            1469,
+            38
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Essence Mascara Lash Princess",
+        "before": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": "1",
+          "point": [
+            483,
+            608
+          ],
+          "title": "rgb(24, 38, 32)"
+        },
+        "onHover": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": "0.9",
+          "point": [
+            483,
+            608
+          ],
+          "title": "rgb(32, 93, 70)"
+        }
+      },
+      {
+        "label": "Add to cart",
+        "before": {
+          "bg": "rgb(32, 93, 70)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": null,
+          "point": [
+            483,
+            863
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(23, 71, 51)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": null,
+          "point": [
+            483,
+            863
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Theme toggle",
+        "before": {
+          "bg": "rgb(255, 254, 250)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": false,
+          "image": null,
+          "point": [
+            1537,
+            38
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(224, 236, 225)",
+          "current": null,
+          "cursor": "pointer",
+          "disabled": false,
+          "hover": true,
+          "image": null,
+          "point": [
+            1537,
+            38
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Previous (first page)",
+        "before": {
+          "bg": "rgb(255, 254, 250)",
+          "current": null,
+          "cursor": "not-allowed",
+          "disabled": true,
+          "hover": false,
+          "image": null,
+          "point": [
+            870,
+            766
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(255, 254, 250)",
+          "current": null,
+          "cursor": "not-allowed",
+          "disabled": true,
+          "hover": true,
+          "image": null,
+          "point": [
+            870,
+            766
+          ],
+          "title": null
+        }
+      },
+      {
+        "label": "Decrease quantity at one",
+        "before": {
+          "bg": "rgba(0, 0, 0, 0)",
+          "current": null,
+          "cursor": "not-allowed",
+          "disabled": true,
+          "hover": false,
+          "image": null,
+          "point": [
+            992,
+            449
+          ],
+          "title": null
+        },
+        "onHover": {
+          "bg": "rgb(255, 254, 250)",
+          "current": null,
+          "cursor": "not-allowed",
+          "disabled": true,
+          "hover": true,
+          "image": null,
+          "point": [
+            992,
+            449
+          ],
+          "title": null
+        }
+      }
+    ]
+  }
+}

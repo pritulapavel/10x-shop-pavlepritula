@@ -6,14 +6,14 @@ interface QuantityStepperProps {
 }
 
 const buttonClassName =
-  'h-11 w-11 cursor-pointer rounded-md text-lg font-medium text-indigo-700 hover:bg-indigo-50 disabled:cursor-not-allowed disabled:text-slate-400 disabled:hover:bg-white'
+  'h-11 w-11 cursor-pointer rounded-md text-lg font-medium text-accent not-disabled:hover:bg-accent-soft not-disabled:hover:text-on-accent-soft disabled:cursor-not-allowed disabled:bg-disabled-surface disabled:text-disabled-ink'
 
 function QuantityStepper({ quantity, max, label, onChange }: QuantityStepperProps) {
   return (
     <div
       role="group"
       aria-label={`Quantity for ${label}`}
-      className="inline-flex w-fit items-center rounded-md border border-slate-300 bg-white"
+      className="inline-flex w-fit max-w-full items-center rounded-lg border border-control bg-surface"
     >
       <button
         type="button"

@@ -1,13 +1,18 @@
+import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import RequireAuth from './components/RequireAuth'
 import ScrollToTop from './components/ScrollToTop'
-import Cart from './pages/Cart'
 import Catalog from './pages/Catalog'
-import Checkout from './pages/Checkout'
-import Login from './pages/Login'
 import NotFound from './pages/NotFound'
-import Product from './pages/Product'
+
+const Cart = lazy(() => import('./pages/Cart'))
+const Checkout = lazy(() => import('./pages/Checkout'))
+const Login = lazy(() => import('./pages/Login'))
+const Product = lazy(() => import('./pages/Product'))
+const Orders = lazy(() => import('./pages/Orders'))
+const OrderDetails = lazy(() => import('./pages/OrderDetails'))
+const Profile = lazy(() => import('./pages/Profile'))
 
 function App() {
   return (
@@ -21,6 +26,9 @@ function App() {
           <Route path="cart" element={<Cart />} />
           <Route element={<RequireAuth />}>
             <Route path="checkout" element={<Checkout />} />
+            <Route path="orders" element={<Orders />} />
+            <Route path="orders/:id" element={<OrderDetails />} />
+            <Route path="profile" element={<Profile />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Route>
