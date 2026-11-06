@@ -11,7 +11,7 @@
 - Product details include a gallery, keyboard-operable review tabs, local reviews and related products.
 - The cart persists locally and accepts promo code `10X10` for 10% off items. Shipping is $10 below a $100 product-discounted subtotal, measured before the promo.
 - Checkout saves an order in the browser. Orders show numbers such as `Order #10X-00001`, frozen purchase prices and a simulated timeline. Reorder checks current stock and opens Cart if it adds units.
-- Profile editing updates the current local session. The light/dark theme persists. Confirmed local-data clearing removes cart, orders and reviews while retaining the session and theme.
+- Saved profiles are restored when signing in with the same username. The light/dark theme persists. Confirmed local-data clearing removes the cart, orders, reviews and all saved profiles while retaining the active session and theme.
 
 ## Tech stack
 
@@ -54,7 +54,7 @@ npm run dev
 
 ## Demo account and limitations
 
-Use `demo` / `demo123`. Simulated sign-in accepts a nonblank username and a password of at least six characters. Session and profile state reset on full reload. Cart, theme, reviews and orders are local to the browser profile and origin. Order snapshots include the fictional delivery details entered during the demo.
+Use `demo` / `demo123`. Simulated sign-in accepts a nonblank username and a password of at least six characters. The session resets on full reload; signing in again restores a profile saved for that username, ignoring case and surrounding spaces. Cart, theme, reviews, orders and saved profiles are local to the browser profile and origin. No credentials are saved, and username matching provides no access control, so use fictional details. Order snapshots include the delivery details entered during the demo.
 
 ## Live demo
 
