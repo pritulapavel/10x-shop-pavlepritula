@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-06",
+  "branch": "test/firefox-compatibility",
+  "revision": "2f884bf74dc1febde398a05211b0f740772430a4",
+  "sourceTreeAtBuild": "clean",
+  "appSourceChanges": false,
+  "operatingSystem": "Windows 10 Pro 22H2 (build 19045.6456)",
+  "preview": {
+    "url": "http://127.0.0.1:4204/",
+    "build": "npm run build passed (Vite 8.3.5)",
+    "httpOnly": {
+      "/": 200,
+      "/products/5": 200,
+      "/orders/qa-preview": 200,
+      "/not-found-qa": 200,
+      "/assets/index-2SMlxQzf.js": 200,
+      "/assets/index-CEzaTVqM.css": 200
+    }
+  },
+  "firefox": {
+    "executable": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "executableProductVersion": "159.0.1",
+    "webDriverSession": {
+      "browserName": "firefox",
+      "browserVersion": "159.0.1",
+      "platformName": "windows",
+      "method": "Native WebDriver BiDi over loopback with an isolated temporary profile",
+      "contentTabAvailable": false,
+      "error": "Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809)"
+    },
+    "automaticApprovalReview": "Rejected running the WebDriver process outside the command sandbox because it would bypass the browser verification restriction",
+    "computerUse": "Stopped before interacting with the restored Firefox window because Windows browser URL policy enforcement is not supported for Firefox",
+    "testedViewportsCssPx": [],
+    "testedThemes": [],
+    "scenariosPassed": [],
+    "screenshots": [],
+    "localBrowserStatus": "pending",
+    "deployedBrowserStatus": "pending"
+  }
+}
