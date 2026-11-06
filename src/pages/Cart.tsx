@@ -36,6 +36,7 @@ function Cart() {
                     alt={`${item.title} product thumbnail`}
                     width={96}
                     height={96}
+                    loading="lazy"
                     className="h-24 w-24 shrink-0 rounded-md bg-surface-muted object-contain"
                   />
                   <div className="min-w-0 flex-1 space-y-3">

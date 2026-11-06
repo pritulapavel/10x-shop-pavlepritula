@@ -74,7 +74,7 @@ function ProductDetails({ productId }: ProductDetailsProps) {
                   aria-pressed={selectedImage === index}
                   className={`cursor-pointer rounded-lg border-2 bg-surface p-1 hover:border-focus ${selectedImage === index ? 'border-accent' : 'border-control'}`}
                 >
-                  <img src={image} alt="" width={64} height={64} className="h-16 w-16 object-contain" />
+                  <img src={image} alt="" width={64} height={64} loading="lazy" className="h-16 w-16 object-contain" />
                 </button>
               ))}
             </div>

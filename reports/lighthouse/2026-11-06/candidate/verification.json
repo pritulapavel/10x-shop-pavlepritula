@@ -1,0 +1,545 @@
+{
+  "date": "2026-11-06",
+  "head": "2f884bf74dc1febde398a05211b0f740772430a4",
+  "workingTree": "Uncommitted SEO and thumbnail changes plus existing Firefox documentation",
+  "url": "http://127.0.0.1:4205/",
+  "browser": "Connected Google Chrome; full session build not checked (installed executable 156.0.8078.81)",
+  "mode": "Functional check only. Not a Lighthouse audit.",
+  "lighthouse": {
+    "candidateAudits": 0,
+    "cliVersion": "13.5.0",
+    "cliError": "Unable to connect to Chrome",
+    "connectorCapabilities": [
+      "viewport",
+      "management"
+    ]
+  },
+  "http": {
+    "robots": {
+      "status": 200,
+      "contentType": "text/plain",
+      "body": "User-agent: *\nAllow: /\n"
+    },
+    "favicon": {
+      "status": 200,
+      "path": "/favicon.svg",
+      "contentType": "image/svg+xml",
+      "viewBox": "0 0 72 72"
+    },
+    "spaShellPaths": [
+      "/products/5",
+      "/orders/lighthouse-qa",
+      "/no-such-route"
+    ]
+  },
+  "screenshot": "catalog-mobile-dark.jpg",
+  "layout": [
+    {
+      "bundle": "/assets/index-CTe8ajJU.js",
+      "columns": 4,
+      "description": "Browse the 10X Shop product catalog, compare prices, and try a demo cart and checkout.",
+      "document": [
+        1905,
+        1905
+      ],
+      "high": [
+        1
+      ],
+      "items": 12,
+      "lazy": 12,
+      "loaded": 12,
+      "path": "/",
+      "theme": "light",
+      "viewport": [
+        1920,
+        900
+      ]
+    },
+    {
+      "bundle": "/assets/index-CTe8ajJU.js",
+      "columns": 4,
+      "description": "Browse the 10X Shop product catalog, compare prices, and try a demo cart and checkout.",
+      "document": [
+        1905,
+        1905
+      ],
+      "high": [
+        1
+      ],
+      "items": 12,
+      "lazy": 12,
+      "loaded": 12,
+      "path": "/",
+      "theme": "dark",
+      "viewport": [
+        1920,
+        900
+      ]
+    },
+    {
+      "bundle": "/assets/index-CTe8ajJU.js",
+      "columns": 1,
+      "description": "Browse the 10X Shop product catalog, compare prices, and try a demo cart and checkout.",
+      "document": [
+        360,
+        360
+      ],
+      "high": [
+        1
+      ],
+      "items": 12,
+      "lazy": 12,
+      "loaded": 12,
+      "path": "/",
+      "theme": "light",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    {
+      "bundle": "/assets/index-CTe8ajJU.js",
+      "columns": 1,
+      "description": "Browse the 10X Shop product catalog, compare prices, and try a demo cart and checkout.",
+      "document": [
+        360,
+        360
+      ],
+      "high": [
+        1
+      ],
+      "items": 12,
+      "lazy": 12,
+      "loaded": 12,
+      "path": "/",
+      "theme": "dark",
+      "viewport": [
+        375,
+        900
+      ]
+    }
+  ],
+  "routes": {
+    "product": {
+      "gallery": [],
+      "path": "/products/5",
+      "related": [
+        {
+          "lazy": "lazy",
+          "priority": null
+        },
+        {
+          "lazy": "lazy",
+          "priority": null
+        },
+        {
+          "lazy": "lazy",
+          "priority": null
+        },
+        {
+          "lazy": "lazy",
+          "priority": null
+        }
+      ],
+      "title": "Red Nail Polish"
+    },
+    "productReload": "http://127.0.0.1:4205/products/5",
+    "guestCheckout": "http://127.0.0.1:4205/login",
+    "order": {
+      "route": "/orders/8a4e6a85-0592-4418-8c09-7f8701c633ec",
+      "total": [
+        [
+          "Subtotal",
+          "$7.96"
+        ],
+        [
+          "Shipping",
+          "$10.00"
+        ],
+        [
+          "Total",
+          "$17.96"
+        ]
+      ],
+      "orderGuard": "http://127.0.0.1:4205/login",
+      "direct": {
+        "url": "http://127.0.0.1:4205/orders/8a4e6a85-0592-4418-8c09-7f8701c633ec",
+        "total": [
+          [
+            "Subtotal",
+            "$7.96"
+          ],
+          [
+            "Shipping",
+            "$10.00"
+          ],
+          [
+            "Total",
+            "$17.96"
+          ]
+        ]
+      },
+      "reload": {
+        "url": "http://127.0.0.1:4205/orders/8a4e6a85-0592-4418-8c09-7f8701c633ec",
+        "total": [
+          [
+            "Subtotal",
+            "$7.96"
+          ],
+          [
+            "Shipping",
+            "$10.00"
+          ],
+          [
+            "Total",
+            "$17.96"
+          ]
+        ]
+      }
+    },
+    "gallery": {
+      "main": null,
+      "path": "/products/6",
+      "thumbnails": [
+        {
+          "lazy": "lazy",
+          "loaded": true
+        },
+        {
+          "lazy": "lazy",
+          "loaded": true
+        },
+        {
+          "lazy": "lazy",
+          "loaded": true
+        }
+      ],
+      "title": "Calvin Klein CK One",
+      "secondThumbnailChangedMainImage": true
+    }
+  },
+  "catalog": {
+    "search": {
+      "firstPriorities": [
+        [
+          "lazy",
+          "high"
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ]
+      ],
+      "heading": "Apple AirPods Max Silver",
+      "range": "Showing 1–12 of 23 products",
+      "url": "/?q=phone"
+    },
+    "category": {
+      "firstPriorities": [
+        [
+          "lazy",
+          "high"
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ]
+      ],
+      "heading": "Calvin Klein CK One",
+      "range": "Showing 1–5 of 5 products",
+      "url": "/?category=fragrances"
+    },
+    "sort": {
+      "firstPriorities": [
+        [
+          "lazy",
+          "high"
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ]
+      ],
+      "heading": "Chanel Coco Noir Eau De",
+      "range": "Showing 1–5 of 5 products",
+      "url": "/?category=fragrances&sort=price-desc"
+    },
+    "next": {
+      "firstPriorities": [
+        [
+          "lazy",
+          "high"
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ]
+      ],
+      "heading": "Bedside Table African Cherry",
+      "range": "Showing 13–24 of 194 products",
+      "url": "/?page=2"
+    },
+    "back": {
+      "firstPriorities": [
+        [
+          "lazy",
+          "high"
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ]
+      ],
+      "heading": "Essence Mascara Lash Princess",
+      "range": "Showing 1–12 of 194 products",
+      "url": "/"
+    },
+    "forward": {
+      "firstPriorities": [
+        [
+          "lazy",
+          "high"
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ],
+        [
+          "lazy",
+          null
+        ]
+      ],
+      "heading": "Bedside Table African Cherry",
+      "range": "Showing 13–24 of 194 products",
+      "url": "/?page=2"
+    }
+  },
+  "cart": {
+    "totalAfterReload": [
+      [
+        "Subtotal",
+        "$7.96"
+      ],
+      [
+        "Shipping",
+        "$10.00"
+      ],
+      [
+        "Total",
+        "$17.96"
+      ]
+    ],
+    "badgeAfterReload": "Cart, 1 item in cart",
+    "thumbnailLazy": "lazy",
+    "checkout": [
+      [
+        "Subtotal",
+        "$7.96"
+      ],
+      [
+        "Shipping",
+        "$10.00"
+      ],
+      [
+        "Total",
+        "$17.96"
+      ]
+    ],
+    "confirmation": [
+      [
+        "Subtotal",
+        "$7.96"
+      ],
+      [
+        "Shipping",
+        "$10.00"
+      ],
+      [
+        "Total",
+        "$17.96"
+      ]
+    ],
+    "badgeAfterOrder": 1,
+    "emptyAfterOrderReload": true
+  }
+}

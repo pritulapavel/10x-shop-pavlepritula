@@ -10,9 +10,11 @@ First plan created on 2026-10-26 in commit `64d85cc`. This remediation plan bega
 | 4 | FULL reducer, promo and shipping | Implemented on 2026-11-05. Reducer, shipping thresholds and browser promo reload checked |
 | 5 | FULL orders, profile and theme | Implemented on 2026-11-05. Order storage, status boundaries, order reload and Reorder checked. Chrome confirmed profile, theme and scoped clear |
 | 6 | FULL technical criteria and profiling | Implemented and profiled on 2026-11-05. Lazy fallback and Reload checked with an isolated fixture |
-| 7 | Verification, evidence and delivery | Chrome layout and contrast plus active browser interactions and Checkout errors checked in the local preview. Firefox, Edge or Safari, and hosted verification are pending. [Resolution table](reports/full/RESOLUTION.md) · [Compatibility](COMPATIBILITY.md) · [Report](REPORT.md) |
+| 7 | Verification, evidence and delivery | Chrome local checks passed. The owner reported partial Firefox 159.0.1 coverage. Order count, totals and cart clearing require clarification before that purchase is closed. Other Firefox scenarios, Edge/Safari, candidate Lighthouse and hosted verification remain pending. [Firefox evidence](docs/compat/firefox/2026-11-06/README.md) · [Resolution table](reports/full/RESOLUTION.md) · [Compatibility](COMPATIBILITY.md) · [Report](REPORT.md) |
 
-Estimated remaining work is one Firefox session, one Edge or Safari session, one hosted QA and Lighthouse pass after publication, and one demo recording. Confirm signed-out repository access separately. Historical process gaps remain in the report.
+Finish the Firefox order follow-up first, then the remaining required browser checks and the Lighthouse export. The owner still needs to publish the candidate, verify direct routes and static files on the deployed URL, confirm signed-out repository access, record the [demo](reports/full/DEMO.md) and submit the exam. Historical process gaps remain in the report.
+
+The Lighthouse follow-up preserves the owner's 2026-11-06 production reports, fixes local metadata and static resources, and checks thumbnail priority and layout in Chrome. Local Firefox verification of the same candidate uses the existing owner checklist at port 4205. The candidate Lighthouse runs, hosted checks, owner Git publication and exam submission remain open. [Lighthouse evidence](reports/lighthouse/2026-11-06/README.md) · [Firefox checklist](docs/compat/firefox/2026-11-06/README.md)
 
 ## Risks
 

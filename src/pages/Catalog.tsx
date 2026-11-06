@@ -121,7 +121,7 @@ export default function Catalog() {
           </div>
         ) : (
           <>
-            <ProductGrid products={state.data.products} />
+            <ProductGrid products={state.data.products} prioritizeFirstImage />
             {pages > 1 && (
               <nav aria-label="Catalog pagination" className="flex flex-wrap items-center justify-center gap-2 border-t border-line pt-4 sm:gap-3">
                 <button type="button" className="secondary-button" disabled={query.page === 1} onClick={() => change({ page: query.page - 1 })}>

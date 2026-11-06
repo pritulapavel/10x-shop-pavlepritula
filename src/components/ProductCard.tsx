@@ -6,11 +6,12 @@ import StockBadge from './StockBadge'
 
 interface ProductCardProps {
   product: Product
+  prioritizeImage: boolean
   quantityInCart: number
   onAdd: (product: Product, quantity: number) => void
 }
 
-function ProductCard({ product, quantityInCart, onAdd }: ProductCardProps) {
+function ProductCard({ product, prioritizeImage, quantityInCart, onAdd }: ProductCardProps) {
   const [quantityBeforeAdd, setQuantityBeforeAdd] = useState<number | null>(null)
   const isOutOfStock = product.stock <= 0
   const isStockLimitReached = quantityInCart >= product.stock
@@ -32,6 +33,7 @@ function ProductCard({ product, quantityInCart, onAdd }: ProductCardProps) {
           width={320}
           height={240}
           loading="lazy"
+          fetchPriority={prioritizeImage ? 'high' : undefined}
           className="image-well block aspect-[4/3] h-auto w-full object-contain p-3"
         />
         <h2 className="mt-3 line-clamp-2 min-h-11 wrap-anywhere text-base leading-[1.375rem] font-semibold text-ink group-hover:text-accent">

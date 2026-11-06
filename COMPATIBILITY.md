@@ -6,10 +6,10 @@ The marketplace refinement was checked on 2026-11-06 using the local Vite produc
 | --- | --- | --- |
 | Google Chrome | 156.0.8078.81 | Current light and dark layouts, catalog breakpoints, contrast, focus and pointer states |
 | ChatGPT in-app browser | App-provided browser | Active-tab catalog flow, native select popups, cart interaction and Checkout validation in both themes |
-| Mozilla Firefox | Unknown | No approved Firefox connection available. Pending |
+| Mozilla Firefox | 159.0.1, reported by owner in a Private Window | Partial manual results at 1280 × 800. Promo, reload persistence, login return and four validation errors passed as reported. Post-order cart state and duplicate prevention remain open. [Owner evidence and follow-up](docs/compat/firefox/2026-11-06/README.md) |
 | Microsoft Edge | 156.0.4314.58 installed | The approved browser connector reported Edge unavailable. No compatibility test run |
 
-## Header and footer follow-up
+## Earlier Header and Footer check with Footer navigation
 
 - The local production preview was checked on 2026-11-06 in connected Google Chrome. The connector blocked `chrome://version`, so the full build for this pass is unverified. At 375 and 1920 CSS px both themes had no horizontal overflow. The header menu was below the logo at 480 px and beside it at 481 px. The footer reached the bottom of the viewport on the short Cart page.
 - Both menus showed the correct active routes, including Orders at `/orders/footer-qa`. They used accent hover states and a 2 px keyboard outline without underlines. The in-page Cart link retained its underline. The measured Header and Footer controls were at least 59.33 × 44 CSS px. A 65-character account name truncated in the Header without overflowing. Footer muted text contrast was 5.90:1 in light mode and 7.61:1 in dark mode.
@@ -43,4 +43,6 @@ The marketplace refinement was checked on 2026-11-06 using the local Vite produc
 
 [Measurements](reports/full/chrome-preview.json) · [Purchase confirmation](reports/full/chrome-confirmation.png) · [Light catalog](reports/full/chrome-catalog-light.png) · [Dark catalog at 375 px](reports/full/chrome-catalog-mobile-dark.png)
 
-For Firefox and Edge or Safari, record the full version and check the catalog, direct product and order routes with refresh, purchase and cart clearing, and mobile layout and keyboard focus at 375 px. Verify the published revision once it is available.
+The final local candidate uses `2f884bf74dc1febde398a05211b0f740772430a4` plus uncommitted Lighthouse fixes on port 4205. Chrome verified thumbnails and layout at 375 and 1920 CSS px in both themes. [Candidate evidence](reports/lighthouse/2026-11-06/candidate/verification.json)
+
+The [Firefox record](docs/compat/firefox/2026-11-06/README.md) separates the blocked automation attempt, the partial owner results, and the post-order outcomes still awaiting clarification. The current Footer has no store navigation, cart badge or logout control. No approved Firefox, Edge or Safari browser connection was available. Browser verification of the published candidate and a new Lighthouse audit remain separate pending checks.
