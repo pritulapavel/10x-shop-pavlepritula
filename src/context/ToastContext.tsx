@@ -16,7 +16,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
     <ToastContext.Provider value={(message) => setToast({ message })}>
       {children}
       <div className="pointer-events-none fixed right-4 bottom-4 left-4 z-20 flex justify-end">
-        <div className={toast ? 'panel pointer-events-auto flex max-w-sm items-center gap-3 bg-success-soft p-3 text-success shadow-md' : ''}>
+        <div className={toast ? 'panel pointer-events-auto flex max-w-sm items-center gap-3 bg-success-soft p-3 text-success shadow-raised' : ''}>
           <p role="status" aria-atomic="true" className="text-sm font-semibold">{toast?.message}</p>
           {toast && (
             <button type="button" aria-label="Dismiss notification" className="secondary-button px-2" onClick={() => setToast(null)}>

@@ -25,7 +25,7 @@ function ProductCard({ product, prioritizeImage, quantityInCart, onAdd }: Produc
   }
 
   return (
-    <article className="panel product-card motion-safe:transition-[border-color,box-shadow] hover:border-control hover:shadow-sm">
+    <article className="panel product-card interactive-panel">
       <Link to={`/products/${product.id}`} className="group block min-w-0 rounded-xl">
         <img
           src={product.thumbnail}
@@ -36,7 +36,7 @@ function ProductCard({ product, prioritizeImage, quantityInCart, onAdd }: Produc
           fetchPriority={prioritizeImage ? 'high' : undefined}
           className="image-well block aspect-[4/3] h-auto w-full object-contain p-3"
         />
-        <h2 className="mt-3 line-clamp-2 min-h-11 wrap-anywhere text-base leading-[1.375rem] font-semibold text-ink group-hover:text-accent">
+        <h2 className="mt-3 line-clamp-2 min-h-11 wrap-anywhere text-base leading-[1.375rem] font-semibold tracking-tight text-ink group-hover:text-accent-ink">
           {product.title}
         </h2>
       </Link>
@@ -50,7 +50,7 @@ function ProductCard({ product, prioritizeImage, quantityInCart, onAdd }: Produc
         </span>
         <StockBadge stock={product.stock} />
       </div>
-      <div className="mt-auto pt-3 text-[1.375rem] leading-7"><ProductPrice {...product} /></div>
+      <div className="mt-auto pt-3 text-2xl leading-7"><ProductPrice {...product} /></div>
       <button
         type="button"
         disabled={!canAdd}

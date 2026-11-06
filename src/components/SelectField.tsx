@@ -4,10 +4,10 @@ type SelectFieldProps = Omit<ComponentProps<'select'>, 'className' | 'multiple' 
 
 export default function SelectField(props: SelectFieldProps) {
   return (
-    <span className="relative block">
+    <span className="relative block min-w-0">
       <select
         {...props}
-        className="field block appearance-none truncate pr-11 disabled:cursor-not-allowed disabled:bg-disabled-surface disabled:text-disabled-ink"
+        className="field block min-w-0 appearance-none truncate pr-11 enabled:cursor-pointer disabled:cursor-not-allowed disabled:bg-disabled-surface disabled:text-disabled-ink"
       />
       <svg
         aria-hidden="true"
