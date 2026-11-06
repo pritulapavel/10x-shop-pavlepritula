@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, startTransition, useContext, useState } from 'react'
 import type { ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { AuthState, Profile } from '../types'
@@ -34,9 +34,12 @@ export function AuthProvider({ children }: AuthProviderProps) {
   }
 
   function logout() {
-    setProfile(emptyProfile)
-    setAuth({ username: '', isLoggedIn: false })
-    navigate('/', { replace: true })
+    // Commit the session reset with the route change so RequireAuth doesn't redirect first.
+    startTransition(() => {
+      setProfile(emptyProfile)
+      setAuth({ username: '', isLoggedIn: false })
+      navigate('/', { replace: true })
+    })
   }
 
   return (
