@@ -1,5 +1,7 @@
 # Browser compatibility
 
+The [final visual pass](reports/final/stripe-polish/README.md) adds local Chrome and in-app browser evidence for the new palette, native select popups, Checkout validation and a purchase. The design and discovery files have not been verified on a deployed build. Firefox and Edge/Safari coverage below remains scoped to the earlier evidence.
+
 The marketplace refinement was checked on 2026-11-06 using the local Vite production preview. Earlier production checks are in the [CORE history](reports/core/REPORT.md).
 
 | Browser | Actual version | Coverage |

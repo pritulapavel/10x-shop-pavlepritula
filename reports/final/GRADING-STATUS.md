@@ -2,7 +2,7 @@
 
 [Original assessment of `967e75c`](GRADING-967e75c.md) is preserved byte for byte. This matrix covers its 83 CORE, 46 FULL and one bonus ID. It is a remediation record, not an assessor's revised grade.
 
-Candidate: `test/firefox-compatibility` at `567a625a470df7f715d7159d62b028eb7ae914b6` plus the unstaged promo hint. The local port 4209 preview served `index-BN9bX7CA.js`; the live domain served `index-C3zB35AX.js`. [Dated evidence](2026-11-06/README.md). PASS applies to the stated scope; PARTIAL means incomplete evidence, BLOCKED means a required action could not run here, and HISTORICAL LIMIT identifies a past requirement that cannot be earned retroactively.
+Current candidate: `test/firefox-compatibility` at `106c02d08d5c5030db8eaf746dcfb6ac07a325dc` plus the unstaged [visual and discovery changes](stripe-polish/README.md), verified locally on port 4210. The earlier [delivery evidence](2026-11-06/README.md) remains tied to its recorded builds. PASS applies to the stated scope; PARTIAL means incomplete evidence, BLOCKED means a required action could not run here, and HISTORICAL LIMIT identifies a past requirement that cannot be earned retroactively.
 
 ## Delivery and process
 
@@ -142,7 +142,7 @@ Candidate: `test/firefox-compatibility` at `567a625a470df7f715d7159d62b028eb7ae9
 | B-TW01 | Dark mode, custom variants or utilities | Persistent dark theme via `data-theme` and CSS tokens. Custom Tailwind variants or `@utility` are absent | PARTIAL | Assessor decides whether the implemented dark mode alone earns bonus |
 | C-O01 | Error Boundary fallback and Reload | Shared Error Boundary. Earlier real fault and isolated lazy fixture recovered after Reload | PASS | Final Firefox fallback test remains open |
 | C-O02 | At least three documented real bugs with commit references | [DEBUG-LOG](../../DEBUG-LOG.md) has seven existing verified issues and source commit links | PASS | None |
-| C-O03 | 375 px responsiveness, Header through 480 px, required grid | Historical Chrome per-route measurements and current 375 px pagination 44 px/no overflow | PASS | Repeat final live Catalog/Product/Cart/Checkout viewport checks |
+| C-O03 | 375 px responsiveness, Header through 480 px, required grid | [Local visual pass](stripe-polish/README.md) measured all six Catalog boundaries, Header wrap, 44 px targets and overflow | PASS | Repeat focused viewport checks after publication |
 | C-O04 | Accessibility semantics, labels, alt and focus | Shared semantic layout, named inputs, decorative alt/title links, accessible pagination | PASS | Final Firefox/Edge keyboard spot-check remains open |
 | C-O05 | No stray production console logging | Source review found only intentional Error Boundary `console.error` | PASS | None |
 | C-O06 | Chrome and Firefox functional verification | Connected Chrome checked the hosted routes and local hint. Owner Firefox purchase on port 4205 had four $26.09 totals and 0 → 1 order | PARTIAL | Finish the Firefox checklist against the final candidate |
