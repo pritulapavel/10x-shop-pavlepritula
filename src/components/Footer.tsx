@@ -42,18 +42,18 @@ const socialProfiles: readonly SocialProfile[] = [
 function Footer() {
   return (
     <footer className="border-t border-line bg-surface">
-      <div className="shop-container pt-5 pb-3 text-sm text-muted">
+      <div className="shop-container pt-5 pb-3 text-sm text-muted sm:pt-6">
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between md:gap-6">
           <div>
             <StoreBrand />
             <p className="mt-1">This is a shop for final exam in 10x.</p>
           </div>
           <div>
-            <h2 className="mb-1 font-semibold text-ink">Social</h2>
-            <ul className="flex flex-wrap gap-1">
+            <h2 className="mb-2 text-sm font-semibold text-ink">Social</h2>
+            <ul className="flex flex-wrap gap-2">
               {socialProfiles.map(({ name, icon, url }) => (
                 <li key={name}>
-                  <a href={url} target="_blank" rel="noopener noreferrer" aria-label={name} className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-xl no-underline motion-safe:transition-colors hover:bg-accent-soft hover:text-on-accent-soft">
+                  <a href={url} target="_blank" rel="noopener noreferrer" aria-label={name} className="secondary-button px-0 text-muted hover:border-focus hover:text-accent-ink">
                     <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor" className="size-4 shrink-0">{icon}</svg>
                   </a>
                 </li>

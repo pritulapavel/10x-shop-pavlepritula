@@ -1,0 +1,1395 @@
+{
+  "preview": "http://127.0.0.1:4210/",
+  "head": "106c02d08d5c5030db8eaf746dcfb6ac07a325dc",
+  "browser": "Connected Google Chrome; full session version not confirmed",
+  "grid": [
+    {
+      "brandLeft": 16,
+      "columns": 1,
+      "document": [
+        360,
+        360
+      ],
+      "lazy": true,
+      "links": [
+        "none",
+        "none",
+        "none"
+      ],
+      "navBelow": true,
+      "navLeft": 16,
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    {
+      "brandLeft": 16,
+      "columns": 1,
+      "document": [
+        465,
+        465
+      ],
+      "lazy": true,
+      "links": [
+        "none",
+        "none",
+        "none"
+      ],
+      "navBelow": true,
+      "navLeft": 16,
+      "viewport": [
+        480,
+        900
+      ]
+    },
+    {
+      "brandLeft": 16,
+      "columns": 2,
+      "document": [
+        466,
+        466
+      ],
+      "lazy": true,
+      "links": [
+        "none",
+        "none",
+        "none"
+      ],
+      "navBelow": false,
+      "navLeft": 167.296875,
+      "viewport": [
+        481,
+        900
+      ]
+    },
+    {
+      "brandLeft": 24,
+      "columns": 3,
+      "document": [
+        753,
+        753
+      ],
+      "lazy": true,
+      "links": [
+        "none",
+        "none",
+        "none"
+      ],
+      "navBelow": false,
+      "navLeft": 426.296875,
+      "viewport": [
+        768,
+        900
+      ]
+    },
+    {
+      "brandLeft": 24,
+      "columns": 3,
+      "document": [
+        1009,
+        1009
+      ],
+      "lazy": true,
+      "links": [
+        "none",
+        "none",
+        "none"
+      ],
+      "navBelow": false,
+      "navLeft": 682.296875,
+      "viewport": [
+        1024,
+        900
+      ]
+    },
+    {
+      "brandLeft": 24,
+      "columns": 4,
+      "document": [
+        1010,
+        1010
+      ],
+      "lazy": true,
+      "links": [
+        "none",
+        "none",
+        "none"
+      ],
+      "navBelow": false,
+      "navLeft": 683.296875,
+      "viewport": [
+        1025,
+        900
+      ]
+    },
+    {
+      "brandLeft": 96.5,
+      "columns": 4,
+      "document": [
+        1425,
+        1425
+      ],
+      "lazy": true,
+      "links": [
+        "none",
+        "none",
+        "none"
+      ],
+      "navBelow": false,
+      "navLeft": 1025.796875,
+      "viewport": [
+        1440,
+        960
+      ]
+    }
+  ],
+  "pages": {
+    "catalog-light-375": {
+      "contrast": {
+        "badge": {
+          "color": "rgb(80, 70, 203)",
+          "ratio": 6.01,
+          "surface": "rgb(240, 239, 255)"
+        },
+        "controlBorder": {
+          "color": "rgb(122, 141, 166)",
+          "ratio": 3.39,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "discount": {
+          "color": "rgb(4, 120, 87)",
+          "ratio": 5.21,
+          "surface": "rgb(236, 253, 245)"
+        },
+        "error": null,
+        "focus": {
+          "ratio": 6.82,
+          "target": "Catalog",
+          "width": "2px"
+        },
+        "label": {
+          "color": "rgb(10, 37, 64)",
+          "ratio": 15.54,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "link": {
+          "color": "rgb(80, 70, 203)",
+          "ratio": 6.01,
+          "surface": "rgb(240, 239, 255)"
+        },
+        "placeholder": {
+          "color": "rgb(66, 84, 102)",
+          "ratio": 7.8,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "primary": {
+          "color": "rgb(255, 255, 255)",
+          "ratio": 4.7,
+          "surface": "rgb(99, 91, 255)"
+        },
+        "promo": null,
+        "total": null
+      },
+      "document": [
+        360,
+        360
+      ],
+      "footer": {
+        "nav": 0,
+        "social": 5
+      },
+      "minHeight": 44,
+      "minWidth": 44,
+      "selects": [
+        {
+          "appearance": "none",
+          "arrow": [
+            16,
+            16
+          ],
+          "centerError": 0,
+          "clipped": "ellipsis",
+          "height": 44,
+          "hit": true,
+          "label": "Category",
+          "padding": "44px",
+          "pointer": "none",
+          "right": 16,
+          "value": "All categories",
+          "width": 302
+        },
+        {
+          "appearance": "none",
+          "arrow": [
+            16,
+            16
+          ],
+          "centerError": 0,
+          "clipped": "ellipsis",
+          "height": 44,
+          "hit": true,
+          "label": "SortDefaultPrice: low to highP",
+          "padding": "44px",
+          "pointer": "none",
+          "right": 16,
+          "value": "Default",
+          "width": 302
+        }
+      ],
+      "targets": 45,
+      "theme": "light",
+      "undersized": [],
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "catalog-light-1440": {
+      "contrast": {
+        "badge": {
+          "color": "rgb(80, 70, 203)",
+          "ratio": 6.01,
+          "surface": "rgb(240, 239, 255)"
+        },
+        "controlBorder": {
+          "color": "rgb(122, 141, 166)",
+          "ratio": 3.39,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "discount": {
+          "color": "rgb(4, 120, 87)",
+          "ratio": 5.21,
+          "surface": "rgb(236, 253, 245)"
+        },
+        "error": null,
+        "focus": {
+          "ratio": 6.82,
+          "target": "Catalog",
+          "width": "2px"
+        },
+        "label": {
+          "color": "rgb(10, 37, 64)",
+          "ratio": 15.54,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "link": {
+          "color": "rgb(80, 70, 203)",
+          "ratio": 6.01,
+          "surface": "rgb(240, 239, 255)"
+        },
+        "placeholder": {
+          "color": "rgb(66, 84, 102)",
+          "ratio": 7.8,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "primary": {
+          "color": "rgb(255, 255, 255)",
+          "ratio": 4.7,
+          "surface": "rgb(99, 91, 255)"
+        },
+        "promo": null,
+        "total": null
+      },
+      "document": [
+        1425,
+        1425
+      ],
+      "footer": {
+        "nav": 0,
+        "social": 5
+      },
+      "minHeight": 44,
+      "minWidth": 44,
+      "selects": [
+        {
+          "appearance": "none",
+          "arrow": [
+            16,
+            16
+          ],
+          "centerError": 0,
+          "clipped": "ellipsis",
+          "height": 44,
+          "hit": true,
+          "label": "Category",
+          "padding": "44px",
+          "pointer": "none",
+          "right": 16,
+          "value": "All categories",
+          "width": 291.5
+        },
+        {
+          "appearance": "none",
+          "arrow": [
+            16,
+            16
+          ],
+          "centerError": 0,
+          "clipped": "ellipsis",
+          "height": 44,
+          "hit": true,
+          "label": "SortDefaultPrice: low to highP",
+          "padding": "44px",
+          "pointer": "none",
+          "right": 16,
+          "value": "Default",
+          "width": 291.5
+        }
+      ],
+      "targets": 45,
+      "theme": "light",
+      "undersized": [],
+      "viewport": [
+        1440,
+        960
+      ]
+    },
+    "catalog-dark-375": {
+      "contrast": {
+        "badge": {
+          "color": "rgb(188, 179, 255)",
+          "ratio": 7.61,
+          "surface": "rgb(37, 36, 81)"
+        },
+        "controlBorder": {
+          "color": "rgb(126, 146, 173)",
+          "ratio": 4.93,
+          "surface": "rgb(17, 36, 59)"
+        },
+        "discount": {
+          "color": "rgb(110, 231, 183)",
+          "ratio": 9.56,
+          "surface": "rgb(16, 46, 38)"
+        },
+        "error": null,
+        "focus": {
+          "ratio": 8.24,
+          "target": "Catalog",
+          "width": "2px"
+        },
+        "label": {
+          "color": "rgb(246, 249, 252)",
+          "ratio": 14.84,
+          "surface": "rgb(17, 36, 59)"
+        },
+        "link": {
+          "color": "rgb(188, 179, 255)",
+          "ratio": 7.61,
+          "surface": "rgb(37, 36, 81)"
+        },
+        "placeholder": {
+          "color": "rgb(184, 199, 217)",
+          "ratio": 9.12,
+          "surface": "rgb(17, 36, 59)"
+        },
+        "primary": {
+          "color": "rgb(8, 23, 41)",
+          "ratio": 7.8,
+          "surface": "rgb(169, 159, 255)"
+        },
+        "promo": null,
+        "total": null
+      },
+      "document": [
+        360,
+        360
+      ],
+      "footer": {
+        "nav": 0,
+        "social": 5
+      },
+      "minHeight": 44,
+      "minWidth": 44,
+      "selects": [
+        {
+          "appearance": "none",
+          "arrow": [
+            16,
+            16
+          ],
+          "centerError": 0,
+          "clipped": "ellipsis",
+          "height": 44,
+          "hit": true,
+          "label": "Category",
+          "padding": "44px",
+          "pointer": "none",
+          "right": 16,
+          "value": "All categories",
+          "width": 302
+        },
+        {
+          "appearance": "none",
+          "arrow": [
+            16,
+            16
+          ],
+          "centerError": 0,
+          "clipped": "ellipsis",
+          "height": 44,
+          "hit": true,
+          "label": "SortDefaultPrice: low to highP",
+          "padding": "44px",
+          "pointer": "none",
+          "right": 16,
+          "value": "Default",
+          "width": 302
+        }
+      ],
+      "targets": 45,
+      "theme": "dark",
+      "undersized": [],
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "catalog-dark-1440": {
+      "contrast": {
+        "badge": {
+          "color": "rgb(188, 179, 255)",
+          "ratio": 7.61,
+          "surface": "rgb(37, 36, 81)"
+        },
+        "controlBorder": {
+          "color": "rgb(126, 146, 173)",
+          "ratio": 4.93,
+          "surface": "rgb(17, 36, 59)"
+        },
+        "discount": {
+          "color": "rgb(110, 231, 183)",
+          "ratio": 9.56,
+          "surface": "rgb(16, 46, 38)"
+        },
+        "error": null,
+        "focus": {
+          "ratio": 8.24,
+          "target": "Catalog",
+          "width": "2px"
+        },
+        "label": {
+          "color": "rgb(246, 249, 252)",
+          "ratio": 14.84,
+          "surface": "rgb(17, 36, 59)"
+        },
+        "link": {
+          "color": "rgb(188, 179, 255)",
+          "ratio": 7.61,
+          "surface": "rgb(37, 36, 81)"
+        },
+        "placeholder": {
+          "color": "rgb(184, 199, 217)",
+          "ratio": 9.12,
+          "surface": "rgb(17, 36, 59)"
+        },
+        "primary": {
+          "color": "rgb(8, 23, 41)",
+          "ratio": 7.8,
+          "surface": "rgb(169, 159, 255)"
+        },
+        "promo": null,
+        "total": null
+      },
+      "document": [
+        1425,
+        1425
+      ],
+      "footer": {
+        "nav": 0,
+        "social": 5
+      },
+      "minHeight": 44,
+      "minWidth": 44,
+      "selects": [
+        {
+          "appearance": "none",
+          "arrow": [
+            16,
+            16
+          ],
+          "centerError": 0,
+          "clipped": "ellipsis",
+          "height": 44,
+          "hit": true,
+          "label": "Category",
+          "padding": "44px",
+          "pointer": "none",
+          "right": 16,
+          "value": "All categories",
+          "width": 291.5
+        },
+        {
+          "appearance": "none",
+          "arrow": [
+            16,
+            16
+          ],
+          "centerError": 0,
+          "clipped": "ellipsis",
+          "height": 44,
+          "hit": true,
+          "label": "SortDefaultPrice: low to highP",
+          "padding": "44px",
+          "pointer": "none",
+          "right": 16,
+          "value": "Default",
+          "width": 291.5
+        }
+      ],
+      "targets": 45,
+      "theme": "dark",
+      "undersized": [],
+      "viewport": [
+        1440,
+        960
+      ]
+    },
+    "product-dark-1440": {
+      "contrast": {
+        "badge": null,
+        "controlBorder": null,
+        "discount": null,
+        "error": null,
+        "focus": null,
+        "label": null,
+        "link": {
+          "color": "rgb(188, 179, 255)",
+          "ratio": 7.61,
+          "surface": "rgb(37, 36, 81)"
+        },
+        "placeholder": null,
+        "primary": null,
+        "promo": null,
+        "total": null
+      },
+      "document": [
+        1440,
+        1440
+      ],
+      "footer": {
+        "nav": 0,
+        "social": 5
+      },
+      "minHeight": 44,
+      "minWidth": 44,
+      "selects": [],
+      "targets": 11,
+      "theme": "dark",
+      "undersized": [],
+      "viewport": [
+        1440,
+        960
+      ]
+    },
+    "product-dark-375": {
+      "contrast": {
+        "badge": null,
+        "controlBorder": {
+          "color": "rgb(126, 146, 173)",
+          "ratio": 4.93,
+          "surface": "rgb(17, 36, 59)"
+        },
+        "discount": {
+          "color": "rgb(110, 231, 183)",
+          "ratio": 9.56,
+          "surface": "rgb(16, 46, 38)"
+        },
+        "error": null,
+        "focus": null,
+        "label": {
+          "color": "rgb(246, 249, 252)",
+          "ratio": 12.83,
+          "surface": "rgb(25, 47, 75)"
+        },
+        "link": {
+          "color": "rgb(184, 199, 217)",
+          "ratio": 9.12,
+          "surface": "rgb(17, 36, 59)"
+        },
+        "placeholder": null,
+        "primary": {
+          "color": "rgb(8, 23, 41)",
+          "ratio": 7.8,
+          "surface": "rgb(169, 159, 255)"
+        },
+        "promo": null,
+        "total": null
+      },
+      "document": [
+        360,
+        360
+      ],
+      "footer": {
+        "nav": 0,
+        "social": 5
+      },
+      "minHeight": 44,
+      "minWidth": 44,
+      "selects": [],
+      "targets": 25,
+      "theme": "dark",
+      "undersized": [],
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "product-light-375": {
+      "contrast": {
+        "badge": null,
+        "controlBorder": {
+          "color": "rgb(122, 141, 166)",
+          "ratio": 3.39,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "discount": {
+          "color": "rgb(4, 120, 87)",
+          "ratio": 5.21,
+          "surface": "rgb(236, 253, 245)"
+        },
+        "error": null,
+        "focus": null,
+        "label": {
+          "color": "rgb(10, 37, 64)",
+          "ratio": 13.93,
+          "surface": "rgb(238, 243, 249)"
+        },
+        "link": {
+          "color": "rgb(66, 84, 102)",
+          "ratio": 7.8,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "placeholder": null,
+        "primary": {
+          "color": "rgb(255, 255, 255)",
+          "ratio": 4.7,
+          "surface": "rgb(99, 91, 255)"
+        },
+        "promo": null,
+        "total": null
+      },
+      "document": [
+        360,
+        360
+      ],
+      "footer": {
+        "nav": 0,
+        "social": 5
+      },
+      "minHeight": 44,
+      "minWidth": 44,
+      "selects": [],
+      "targets": 25,
+      "theme": "light",
+      "undersized": [],
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "cart-light-375": {
+      "contrast": {
+        "badge": null,
+        "controlBorder": {
+          "color": "rgb(122, 141, 166)",
+          "ratio": 3.39,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "discount": null,
+        "error": null,
+        "focus": null,
+        "label": {
+          "color": "rgb(10, 37, 64)",
+          "ratio": 15.54,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "link": {
+          "color": "rgb(66, 84, 102)",
+          "ratio": 7.8,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "placeholder": null,
+        "primary": {
+          "color": "rgb(185, 28, 28)",
+          "ratio": 5.91,
+          "surface": "rgb(254, 242, 242)"
+        },
+        "promo": {
+          "color": "rgb(66, 84, 102)",
+          "ratio": 7.8,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "total": {
+          "color": "rgb(80, 70, 203)",
+          "ratio": 6.01,
+          "surface": "rgb(240, 239, 255)"
+        }
+      },
+      "document": [
+        360,
+        360
+      ],
+      "footer": {
+        "nav": 0,
+        "social": 5
+      },
+      "minHeight": 44,
+      "minWidth": 44,
+      "selects": [],
+      "targets": 19,
+      "theme": "light",
+      "undersized": [],
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "login-light-375": {
+      "contrast": {
+        "badge": null,
+        "controlBorder": {
+          "color": "rgb(122, 141, 166)",
+          "ratio": 3.39,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "discount": null,
+        "error": null,
+        "focus": null,
+        "label": {
+          "color": "rgb(10, 37, 64)",
+          "ratio": 15.54,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "link": {
+          "color": "rgb(66, 84, 102)",
+          "ratio": 7.8,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "placeholder": null,
+        "primary": {
+          "color": "rgb(255, 255, 255)",
+          "ratio": 4.7,
+          "surface": "rgb(99, 91, 255)"
+        },
+        "promo": null,
+        "total": null
+      },
+      "document": [
+        375,
+        375
+      ],
+      "footer": {
+        "nav": 0,
+        "social": 5
+      },
+      "minHeight": 44,
+      "minWidth": 44,
+      "selects": [],
+      "targets": 16,
+      "theme": "light",
+      "undersized": [],
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "checkout-chrome-light-375": {
+      "contrast": {
+        "badge": null,
+        "controlBorder": {
+          "color": "rgb(122, 141, 166)",
+          "ratio": 3.39,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "discount": null,
+        "error": null,
+        "focus": null,
+        "label": {
+          "color": "rgb(10, 37, 64)",
+          "ratio": 15.54,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "link": {
+          "color": "rgb(66, 84, 102)",
+          "ratio": 7.8,
+          "surface": "rgb(255, 255, 255)"
+        },
+        "placeholder": null,
+        "primary": {
+          "color": "rgb(255, 255, 255)",
+          "ratio": 4.7,
+          "surface": "rgb(99, 91, 255)"
+        },
+        "promo": null,
+        "total": {
+          "color": "rgb(80, 70, 203)",
+          "ratio": 6.01,
+          "surface": "rgb(240, 239, 255)"
+        }
+      },
+      "document": [
+        360,
+        360
+      ],
+      "footer": {
+        "nav": 0,
+        "social": 5
+      },
+      "minHeight": 44,
+      "minWidth": 44,
+      "selects": [],
+      "targets": 18,
+      "theme": "light",
+      "undersized": [],
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "checkout-iab-dark-375": {
+      "document": [
+        360,
+        360
+      ],
+      "errors": [
+        "Full name must be at least 3 characters",
+        "Please enter a valid email address",
+        "Address must be at least 5 characters",
+        "City is required"
+      ],
+      "min": [
+        44,
+        44
+      ],
+      "targets": 18,
+      "theme": "dark",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "checkout-iab-light-375": {
+      "document": [
+        360,
+        360
+      ],
+      "errors": [
+        "Full name must be at least 3 characters",
+        "Please enter a valid email address",
+        "Address must be at least 5 characters",
+        "City is required"
+      ],
+      "min": [
+        44,
+        44
+      ],
+      "targets": 18,
+      "theme": "light",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "profile-iab-light-375": {
+      "document": [
+        360,
+        360
+      ],
+      "errors": [],
+      "min": [
+        44,
+        44
+      ],
+      "targets": 21,
+      "theme": "light",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "profile-iab-dark-375": {
+      "document": [
+        360,
+        360
+      ],
+      "errors": [],
+      "min": [
+        44,
+        44
+      ],
+      "targets": 21,
+      "theme": "dark",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "orders-iab-dark-375": {
+      "document": [
+        375,
+        375
+      ],
+      "errors": [],
+      "min": [
+        44,
+        44
+      ],
+      "targets": 14,
+      "theme": "dark",
+      "viewport": [
+        375,
+        900
+      ]
+    },
+    "catalog-authenticated-iab-dark-375": {
+      "document": [
+        360,
+        360
+      ],
+      "errors": [],
+      "min": [
+        44,
+        44
+      ],
+      "targets": 16,
+      "theme": "dark",
+      "viewport": [
+        375,
+        900
+      ]
+    }
+  },
+  "screens": [
+    "before-catalog-desktop-light.jpg",
+    "before-catalog-mobile-dark.jpg",
+    "after-catalog-mobile-light.jpg",
+    "after-catalog-desktop-light.jpg",
+    "after-catalog-mobile-dark.jpg",
+    "after-catalog-desktop-dark.jpg",
+    "after-product-desktop-dark.jpg",
+    "after-product-mobile-light.jpg",
+    "after-checkout-errors-light.jpg",
+    "after-checkout-errors-dark.jpg",
+    "after-confirmation-desktop-light.jpg",
+    "after-checkout-errors-mobile-dark.jpg",
+    "after-checkout-errors-mobile-light.jpg"
+  ],
+  "selectKeyboard": {
+    "category": [
+      "womens-watches",
+      "Womens Watches"
+    ],
+    "sort": [
+      "price-asc",
+      "Price: low to high"
+    ],
+    "url": "http://127.0.0.1:4210/?category=womens-watches&sort=price-asc",
+    "rating": [
+      "5",
+      "5 out of 5"
+    ]
+  },
+  "ratingArrowPopup": "\t\t\t\t\t48 pop up button (collapsed, settable) Rating, Value: 5 out of 5, ID: review-rating, Secondary Actions: Expand",
+  "purchase": {
+    "browser": "Connected Chrome",
+    "cartBeforePromo": "$17.96",
+    "cart": "$17.16",
+    "redirect": "http://127.0.0.1:4210/login",
+    "checkout": "$17.16",
+    "completed": {
+      "browser": "ChatGPT in-app browser; full build unverified",
+      "cart": "$17.16",
+      "guestRedirect": "http://127.0.0.1:4210/login",
+      "checkout": "$17.16",
+      "viewport": [
+        1280,
+        720
+      ],
+      "errorsLight": [
+        "Full name must be at least 3 characters",
+        "Please enter a valid email address",
+        "Address must be at least 5 characters",
+        "City is required"
+      ],
+      "errorsDark": [
+        "Full name must be at least 3 characters",
+        "Please enter a valid email address",
+        "Address must be at least 5 characters",
+        "City is required"
+      ],
+      "darkPaint": [
+        {
+          "bg": "rgb(53, 28, 39)",
+          "color": "rgb(253, 164, 175)",
+          "height": 32,
+          "message": "Full name must be at least 3 characters",
+          "width": 795
+        },
+        {
+          "bg": "rgb(53, 28, 39)",
+          "color": "rgb(253, 164, 175)",
+          "height": 32,
+          "message": "Please enter a valid email address",
+          "width": 795
+        },
+        {
+          "bg": "rgb(53, 28, 39)",
+          "color": "rgb(253, 164, 175)",
+          "height": 32,
+          "message": "Address must be at least 5 characters",
+          "width": 795
+        },
+        {
+          "bg": "rgb(53, 28, 39)",
+          "color": "rgb(253, 164, 175)",
+          "height": 32,
+          "message": "City is required",
+          "width": 795
+        }
+      ],
+      "lightPaint": [
+        {
+          "bg": "rgb(254, 242, 242)",
+          "color": "rgb(185, 28, 28)",
+          "height": 32,
+          "message": "Full name must be at least 3 characters",
+          "width": 795
+        },
+        {
+          "bg": "rgb(254, 242, 242)",
+          "color": "rgb(185, 28, 28)",
+          "height": 32,
+          "message": "Please enter a valid email address",
+          "width": 795
+        },
+        {
+          "bg": "rgb(254, 242, 242)",
+          "color": "rgb(185, 28, 28)",
+          "height": 32,
+          "message": "Address must be at least 5 characters",
+          "width": 795
+        },
+        {
+          "bg": "rgb(254, 242, 242)",
+          "color": "rgb(185, 28, 28)",
+          "height": 32,
+          "message": "City is required",
+          "width": 795
+        }
+      ],
+      "confirmation": "$17.16",
+      "savedDelivery": true,
+      "badgeGone": true,
+      "order": "$17.16",
+      "orderPath": "http://127.0.0.1:4210/orders/faeee777-3647-4d2e-9460-122d2139e982",
+      "emptyAfterReload": true,
+      "checkoutErrorContrast": {
+        "light": 5.91,
+        "dark": 8.25
+      }
+    }
+  },
+  "popups": {
+    "viewport": [
+      1280,
+      720
+    ],
+    "light": [
+      {
+        "name": "Category",
+        "expanded": true,
+        "state": "20 pop up button (expanded, settable) Category, Value: All categories, Secondary Actions: Collapse"
+      },
+      {
+        "name": "Sort",
+        "point": [
+          1196,
+          247
+        ],
+        "expanded": true,
+        "state": "49 pop up button (expanded, settable) Sort, Value: Default, Secondary Actions: Collapse"
+      },
+      {
+        "name": "Rating",
+        "point": [
+          1175,
+          359.5
+        ],
+        "expanded": true,
+        "state": "278 pop up button (expanded, settable) Rating, Value: Select rating, ID: review-rating, Secondary Actions: Collapse"
+      }
+    ],
+    "dark": [
+      {
+        "name": "Category",
+        "point": [
+          896.25,
+          247
+        ],
+        "expanded": true,
+        "state": "20 pop up button (expanded, settable) Category, Value: All categories, Secondary Actions: Collapse"
+      },
+      {
+        "name": "Sort",
+        "point": [
+          1196,
+          247
+        ],
+        "expanded": true,
+        "state": "49 pop up button (expanded, settable) Sort, Value: Default, Secondary Actions: Collapse"
+      },
+      {
+        "name": "Rating",
+        "point": [
+          1175,
+          359.5
+        ],
+        "expanded": true,
+        "state": "278 pop up button (expanded, settable) Rating, Value: Select rating, ID: review-rating, Secondary Actions: Collapse"
+      }
+    ],
+    "mobile": {
+      "dark": [
+        {
+          "name": "Rating",
+          "point": [
+            286,
+            450
+          ],
+          "expanded": true,
+          "state": "278 pop up button (expanded, settable) Rating, Value: Select rating, ID: review-rating, Secondary Actions: Collapse"
+        },
+        {
+          "name": "Category",
+          "point": [
+            307,
+            339
+          ],
+          "expanded": false,
+          "state": "204 pop up button (collapsed, settable) Category, Value: Kitchen Accessories, Secondary Actions: Expand"
+        },
+        {
+          "name": "Sort",
+          "point": [
+            307,
+            459
+          ],
+          "expanded": true,
+          "state": "233 pop up button (expanded, settable) Sort, Value: Rating: high to low, Secondary Actions: Collapse"
+        },
+        {
+          "name": "Category",
+          "point": [
+            307,
+            379
+          ],
+          "expanded": true,
+          "state": "204 pop up button (expanded, settable) Category, Value: Kitchen Accessories, Secondary Actions: Collapse",
+          "recheck": true
+        }
+      ],
+      "selectedDark": {
+        "doc": [
+          360,
+          360
+        ],
+        "values": [
+          [
+            "Kitchen Accessories",
+            302,
+            "44px"
+          ],
+          [
+            "Rating: high to low",
+            302,
+            "44px"
+          ]
+        ],
+        "viewport": [
+          375,
+          900
+        ]
+      },
+      "light": [
+        {
+          "name": "Rating",
+          "point": [
+            286,
+            450
+          ],
+          "expanded": true,
+          "state": "278 pop up button (expanded, settable) Rating, Value: Select rating, ID: review-rating, Secondary Actions: Collapse"
+        },
+        {
+          "name": "Category",
+          "point": [
+            307,
+            379
+          ],
+          "expanded": true,
+          "state": "204 pop up button (expanded, settable) Category, Value: Kitchen Accessories, Secondary Actions: Collapse"
+        },
+        {
+          "name": "Sort",
+          "point": [
+            307,
+            459
+          ],
+          "expanded": true,
+          "state": "233 pop up button (expanded, settable) Sort, Value: Rating: high to low, Secondary Actions: Collapse"
+        }
+      ],
+      "selectedLight": {
+        "doc": [
+          360,
+          360
+        ],
+        "values": [
+          [
+            "Kitchen Accessories",
+            302,
+            "44px"
+          ],
+          [
+            "Rating: high to low",
+            302,
+            "44px"
+          ]
+        ],
+        "viewport": [
+          375,
+          900
+        ]
+      }
+    }
+  },
+  "hover": {
+    "cardDark": [
+      {
+        "bg": "rgb(17, 36, 59)",
+        "border": "rgb(49, 70, 95)",
+        "color": "rgb(246, 249, 252)",
+        "cursor": "auto",
+        "hover": false,
+        "rect": [
+          24,
+          310,
+          289.25,
+          458.4375
+        ],
+        "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.14) 0px 1px 2px 0px, rgba(0, 0, 0, 0.36) 0px 4px 14px -8px"
+      },
+      {
+        "bg": "rgb(17, 36, 59)",
+        "border": "rgb(126, 146, 173)",
+        "color": "rgb(246, 249, 252)",
+        "cursor": "auto",
+        "hover": true,
+        "rect": [
+          24,
+          310,
+          289.25,
+          458.4375
+        ],
+        "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.55) 0px 8px 24px -10px, rgba(0, 0, 0, 0.14) 0px 2px 5px 0px"
+      }
+    ],
+    "disabledDark": [
+      {
+        "bg": "rgb(38, 59, 85)",
+        "border": "rgb(170, 185, 204)",
+        "color": "rgb(170, 185, 204)",
+        "cursor": "not-allowed",
+        "hover": false,
+        "rect": [
+          672.5,
+          411,
+          44,
+          44
+        ],
+        "shadow": "none"
+      },
+      {
+        "bg": "rgb(38, 59, 85)",
+        "border": "rgb(170, 185, 204)",
+        "color": "rgb(170, 185, 204)",
+        "cursor": "not-allowed",
+        "hover": true,
+        "rect": [
+          672.5,
+          411,
+          44,
+          44
+        ],
+        "shadow": "none"
+      }
+    ],
+    "cardLight": [
+      {
+        "bg": "rgb(255, 255, 255)",
+        "border": "rgb(220, 228, 238)",
+        "color": "rgb(10, 37, 64)",
+        "cursor": "auto",
+        "hover": false,
+        "rect": [
+          24,
+          310,
+          289.25,
+          458.4375
+        ],
+        "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(10, 37, 64, 0.043) 0px 1px 2px 0px, rgba(10, 37, 64, 0.133) 0px 4px 14px -8px"
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "border": "rgb(122, 141, 166)",
+        "color": "rgb(10, 37, 64)",
+        "cursor": "auto",
+        "hover": true,
+        "rect": [
+          24,
+          310,
+          289.25,
+          458.4375
+        ],
+        "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(10, 37, 64, 0.204) 0px 8px 24px -10px, rgba(10, 37, 64, 0.043) 0px 2px 5px 0px"
+      }
+    ]
+  },
+  "profile": {
+    "invalidMessage": "Please enter a valid phone number",
+    "ariaInvalid": "true"
+  },
+  "productionBefore": {
+    "/llms.txt": {
+      "entry": "/assets/index-BN9bX7CA.js",
+      "h1": "Page not found",
+      "text": null,
+      "title": "10X Shop",
+      "type": "text/html"
+    },
+    "/.well-known/ard.json": {
+      "entry": "/assets/index-BN9bX7CA.js",
+      "h1": "Page not found",
+      "text": null,
+      "title": "10X Shop",
+      "type": "text/html"
+    },
+    "/.well-known/ai-catalog.json": {
+      "entry": "/assets/index-BN9bX7CA.js",
+      "h1": "Page not found",
+      "text": null,
+      "title": "10X Shop",
+      "type": "text/html"
+    },
+    "/products/5": {
+      "entry": "/assets/index-BN9bX7CA.js",
+      "h1": "Red Nail Polish",
+      "text": null,
+      "title": "10X Shop",
+      "type": "text/html"
+    }
+  },
+  "finishedAt": "2026-11-06T19:02:54.814Z",
+  "measurementNotes": "Connected Chrome and ChatGPT in-app browser on local preview; published paths were read-only before changes. Target sizes measure rendered DOM rects, including disabled and below the fold. Native popup expanded state was read through accessibility. No post-change hosted run."
+}

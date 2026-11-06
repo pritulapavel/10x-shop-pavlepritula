@@ -49,7 +49,7 @@ function Login() {
   return (
     <section
       aria-labelledby="login-heading"
-      className="panel mx-auto w-full max-w-md p-5 sm:p-7"
+      className="panel mx-auto w-full max-w-md p-5 sm:mt-5 sm:p-8"
     >
       <h1
         id="login-heading"
@@ -112,7 +112,7 @@ function Login() {
       </form>
       <Link
         to="/"
-        className="mt-6 inline-flex min-h-11 min-w-11 items-center rounded-sm text-sm font-medium text-accent underline underline-offset-4 hover:text-accent-hover"
+        className="mt-4 inline-flex min-h-11 min-w-11 items-center rounded-sm text-sm font-medium text-accent-ink underline underline-offset-4 hover:text-accent-hover"
       >
         ← Back to catalog
       </Link>

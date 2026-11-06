@@ -96,13 +96,10 @@ function Checkout() {
           />
         </div>
         {cartClearFailed && <p role="alert" className="mt-4 text-warning">Order saved. The browser could not clear the saved cart.</p>}
-        <Link
-          to="/"
-          className="mt-6 inline-flex min-h-11 min-w-11 items-center rounded-sm font-medium text-accent underline underline-offset-4 hover:text-accent-hover"
-        >
-          Back to Catalog
-        </Link>
-        <Link to={`/orders/${confirmation.id}`} className="secondary-button ml-3 mt-6">View order</Link>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Link to="/" className="secondary-button">Back to Catalog</Link>
+          <Link to={`/orders/${confirmation.id}`} className="primary-button">View order</Link>
+        </div>
       </section>
     )
   }

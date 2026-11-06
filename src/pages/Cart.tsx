@@ -21,7 +21,7 @@ function Cart() {
         <div className="panel space-y-3 p-4 sm:p-6">
           {emptyCheckout && <p role="status" className="text-warning">Add items to your cart before checking out.</p>}
           <p className="text-muted">Your cart is empty.</p>
-          <Link to="/" className="inline-flex min-h-11 min-w-11 items-center rounded-sm font-medium text-accent underline underline-offset-4 hover:text-accent-hover">
+          <Link to="/" className="inline-flex min-h-11 min-w-11 items-center rounded-sm font-medium text-accent-ink underline underline-offset-4 hover:text-accent-hover">
             Browse products
           </Link>
         </div>
@@ -37,10 +37,10 @@ function Cart() {
                     width={96}
                     height={96}
                     loading="lazy"
-                    className="h-24 w-24 shrink-0 rounded-md bg-surface-muted object-contain"
+                    className="image-well h-24 w-24 shrink-0 object-contain"
                   />
                   <div className="min-w-0 flex-1 space-y-3">
-                    <Link to={`/products/${item.productId}`} className="inline-flex min-h-11 min-w-11 items-center break-words rounded-sm font-semibold text-ink hover:text-accent">
+                    <Link to={`/products/${item.productId}`} className="inline-flex min-h-11 min-w-11 items-center break-words rounded-sm font-semibold text-ink hover:text-accent-ink">
                       {item.title}
                     </Link>
                     {hasResolvedPrice(item) ? <ProductPrice {...item} /> : <p>Price pending</p>}
@@ -89,7 +89,7 @@ function Cart() {
                   {priceLoadFailed ? 'Some prices could not be loaded. Retry before checking out.' : 'Loading current prices…'}
                 </p>
                 {priceLoadFailed && (
-                  <button type="button" onClick={retryPrices} className="min-h-11 rounded-md border border-control bg-surface px-4 font-semibold text-ink hover:bg-surface-muted">
+                  <button type="button" onClick={retryPrices} className="secondary-button">
                     Retry prices
                   </button>
                 )}

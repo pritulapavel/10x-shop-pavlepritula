@@ -9,7 +9,7 @@ interface ProductPriceProps {
 export default function ProductPrice({ price, discountPercentage, unitPriceCents }: ProductPriceProps) {
   return (
     <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-      <span className="font-bold tabular-nums">{formatCents(unitPriceCents ?? discountedUnitCents({ price, discountPercentage }))}</span>
+      <span className="font-bold tracking-tight text-ink tabular-nums">{formatCents(unitPriceCents ?? discountedUnitCents({ price, discountPercentage }))}</span>
       {discountPercentage >= 1 && (
         <>
           <del aria-label={`Original price ${formatCents(toCents(price))}`} className="text-sm text-muted">

@@ -21,7 +21,7 @@ export default function Orders() {
             const order = new Order(snapshot)
             return (
               <li key={snapshot.id}>
-                <Link to={`/orders/${snapshot.id}`} className="panel flex min-h-11 flex-wrap items-center justify-between gap-3 p-4 motion-safe:transition-colors hover:border-control">
+                <Link to={`/orders/${snapshot.id}`} className="panel interactive-panel flex min-h-11 flex-wrap items-center justify-between gap-3 p-4 sm:px-5">
                   <div>
                     <span className="block font-bold">{order.label}</span>
                     <time className="text-sm text-muted" dateTime={snapshot.placedAt}>{formatOrderDate(snapshot.placedAt)}</time>

@@ -21,11 +21,11 @@ function ProductDetails({ productId }: ProductDetailsProps) {
   const [quantityBeforeAdd, setQuantityBeforeAdd] = useState<number | null>(null)
   const { items, addItem } = useCart()
 
-  if (state.status === 'loading') return <p role="status" className="text-muted">Loading product...</p>
+  if (state.status === 'loading') return <p role="status" className="panel p-6 text-muted">Loading product...</p>
   if (state.status === 'error') {
     if (isApiError(state.error) && state.error.status === 404) return <NotFound />
     return (
-      <div className="panel space-y-4 p-6">
+      <div className="panel space-y-4 bg-danger-soft p-6">
         <p role="alert" className="text-danger">Unable to load this product. Please try again later.</p>
         <button type="button" onClick={retry} className="secondary-button">Retry</button>
       </div>
@@ -50,12 +50,12 @@ function ProductDetails({ productId }: ProductDetailsProps) {
     <section>
       <Link
         to="/"
-        className="mb-3 inline-flex min-h-11 min-w-11 items-center rounded-xl text-sm font-medium text-accent underline underline-offset-4 hover:text-accent-hover"
+        className="mb-3 inline-flex min-h-11 min-w-11 items-center rounded-control text-sm font-medium text-accent-ink underline underline-offset-4 hover:text-accent-hover"
       >
         ← Back to catalog
       </Link>
-      <div className="grid gap-5 md:grid-cols-2">
-        <div className="min-w-0">
+      <div className="grid items-start gap-5 md:grid-cols-2 lg:gap-6">
+        <div className="panel min-w-0 p-3 sm:p-4">
           <img
             src={mainImage}
             alt={product.title}
@@ -64,7 +64,7 @@ function ProductDetails({ productId }: ProductDetailsProps) {
             className="image-well aspect-square h-auto w-full object-contain p-6"
           />
           {images.length > 1 && (
-            <div className="mt-4 flex flex-wrap gap-3" aria-label="Product images">
+            <div className="mt-3 flex flex-wrap gap-2" aria-label="Product images">
               {images.map((image, index) => (
                 <button
                   key={`${image}-${index}`}
@@ -72,7 +72,7 @@ function ProductDetails({ productId }: ProductDetailsProps) {
                   onClick={() => setSelectedImage(index)}
                   aria-label={`Show image ${index + 1} of ${product.title}`}
                   aria-pressed={selectedImage === index}
-                  className={`cursor-pointer rounded-lg border-2 bg-surface p-1 hover:border-focus ${selectedImage === index ? 'border-accent' : 'border-control'}`}
+                  className={`cursor-pointer rounded-control border-2 p-1 hover:border-focus ${selectedImage === index ? 'border-accent bg-accent-soft' : 'border-control bg-surface'}`}
                 >
                   <img src={image} alt="" width={64} height={64} loading="lazy" className="h-16 w-16 object-contain" />
                 </button>
@@ -80,14 +80,14 @@ function ProductDetails({ productId }: ProductDetailsProps) {
             </div>
           )}
         </div>
-        <div className="panel min-w-0 space-y-4 self-start p-4 sm:p-6">
+        <div className="panel min-w-0 space-y-4 p-4 sm:space-y-5 sm:p-6">
           <div className="space-y-1">
             <p className="eyebrow">{product.category.replaceAll('-', ' ')}{product.brand && ` · ${product.brand}`}</p>
             <h1 className="display-title wrap-anywhere">{product.title}</h1>
           </div>
-          <div className="text-2xl"><ProductPrice {...product} /></div>
+          <div className="text-[1.75rem] leading-tight"><ProductPrice {...product} /></div>
           <StockBadge stock={product.stock} />
-          <div className="space-y-3">
+          <div className="space-y-2 border-t border-line pt-4">
             <p className="text-sm font-medium text-muted">Quantity</p>
             <QuantityStepper
               quantity={quantity}

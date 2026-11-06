@@ -18,9 +18,9 @@ export default function TotalsBreakdown({ totals, promoCode }: { totals?: CartTo
         <dt>Shipping</dt>
         <dd className="shrink-0 font-medium text-ink">{totals ? totals.shippingCents ? formatCents(totals.shippingCents) : 'Free' : 'Pending'}</dd>
       </div>
-      <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 rounded-xl bg-surface-muted px-3 py-2.5 text-base font-semibold">
+      <div className="summary-total">
         <dt>Total</dt>
-        <dd className="text-xl font-bold">{totals ? formatCents(totals.totalCents) : 'Pending'}</dd>
+        <dd className="text-2xl font-bold tracking-tight">{totals ? formatCents(totals.totalCents) : 'Pending'}</dd>
       </div>
     </dl>
   )

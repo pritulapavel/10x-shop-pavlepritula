@@ -46,45 +46,47 @@ export default function Catalog() {
   const showClearFilters = activeFilters && !(state.status === 'success' && total === 0)
   return (
     <section aria-labelledby="catalog-heading" className="space-y-4 sm:space-y-5">
-      <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-1">
-        <div>
-          <p className="eyebrow">Product collection</p>
-          <h1 id="catalog-heading" className="display-title mt-0.5">Catalog</h1>
-        </div>
-        <p role="status" className="text-sm font-medium text-muted tabular-nums sm:pb-1">
-          {state.status === 'success' && total > 0
-            ? `Showing ${state.data.skip + 1}–${state.data.skip + state.data.products.length} of ${total} products`
-            : 'Product collection'}
-        </p>
-      </div>
-
-      <div className="panel grid items-end gap-3 p-3 sm:grid-cols-2 sm:p-4 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)_minmax(0,1fr)]">
-        <CatalogSearch navigationKey={key} value={query.q} onSearch={(q) => change({ q, category: '', page: 1 })} />
-        <label className="min-w-0">
-          <span className="control-label">Category</span>
-          <SelectField value={query.category} onChange={(event) => change({ category: event.target.value, q: '', page: 1 })}>
-            <option value="">All categories</option>
-            {query.category && !categoryList.some((category) => category.slug === query.category) && (
-              <option value={query.category}>{query.category.replaceAll('-', ' ')}</option>
-            )}
-            {categoryList.map(({ slug, name }) => <option value={slug} key={slug}>{name}</option>)}
-          </SelectField>
-        </label>
-        <label className="min-w-0">
-          <span className="control-label">Sort</span>
-          <SelectField value={query.sort} onChange={(event) => {
-            const sort = event.target.value
-            if (isCatalogSort(sort)) change({ sort, page: 1 })
-          }}>
-            {Object.entries(sortOptions).map(([value, option]) => <option value={value} key={value}>{option.label}</option>)}
-          </SelectField>
-        </label>
-        {categories.state.status === 'error' && (
-          <div className="flex flex-wrap items-center gap-2 text-sm text-danger sm:col-span-2 lg:col-span-3">
-            <span role="status">Categories are unavailable.</span>
-            <button type="button" className="secondary-button" onClick={categories.retry}>Retry categories</button>
+      <div className="catalog-intro">
+        <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2">
+          <div>
+            <p className="eyebrow">Product collection</p>
+            <h1 id="catalog-heading" className="display-title mt-0.5">Catalog</h1>
           </div>
-        )}
+          <p role="status" className={state.status === 'success' ? 'catalog-count' : 'sr-only'}>
+            {state.status === 'success' && total > 0
+              ? `Showing ${state.data.skip + 1}–${state.data.skip + state.data.products.length} of ${total} products`
+              : state.status === 'success' ? '0 products' : ''}
+          </p>
+        </div>
+
+        <div className="grid items-end gap-3 sm:grid-cols-2 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)_minmax(0,1fr)]">
+          <CatalogSearch navigationKey={key} value={query.q} onSearch={(q) => change({ q, category: '', page: 1 })} />
+          <label className="min-w-0">
+            <span className="control-label">Category</span>
+            <SelectField value={query.category} onChange={(event) => change({ category: event.target.value, q: '', page: 1 })}>
+              <option value="">All categories</option>
+              {query.category && !categoryList.some((category) => category.slug === query.category) && (
+                <option value={query.category}>{query.category.replaceAll('-', ' ')}</option>
+              )}
+              {categoryList.map(({ slug, name }) => <option value={slug} key={slug}>{name}</option>)}
+            </SelectField>
+          </label>
+          <label className="min-w-0">
+            <span className="control-label">Sort</span>
+            <SelectField value={query.sort} onChange={(event) => {
+              const sort = event.target.value
+              if (isCatalogSort(sort)) change({ sort, page: 1 })
+            }}>
+              {Object.entries(sortOptions).map(([value, option]) => <option value={value} key={value}>{option.label}</option>)}
+            </SelectField>
+          </label>
+          {categories.state.status === 'error' && (
+            <div className="flex flex-wrap items-center gap-2 text-sm text-danger sm:col-span-2 lg:col-span-3">
+              <span role="status">Categories are unavailable.</span>
+              <button type="button" className="secondary-button" onClick={categories.retry}>Retry categories</button>
+            </div>
+          )}
+        </div>
       </div>
 
       {(query.q || activeCategory || showClearFilters) && (
